@@ -1,0 +1,93 @@
+
+.taxLoginLocal{
+  display: block;
+}
+
+.taxUserAgreement{
+  text-align: center;
+  margin-top: 25px;
+}
+.AaiSection .ilForm{
+  display: none;
+}
+
+#wayf_div{
+  margin-top: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-width: 0 !important;
+  overflow: hidden;
+  padding: 0px !important;
+  text-align: center;
+
+}
+
+@media only screen and (min-width: @screen-xs-min){
+  #wayf_div{
+    width: @tax-aai-login-width !important;
+
+  }
+}
+
+#wayf_remember_checkbox_div {
+  display: none;
+}
+
+#wayf_submit_button {
+  width: 100% !important;
+  border: none !important;
+  &:extend(.btn,.btn-primary, .btn-lg);
+}
+#wayf_submit_button:hover {
+  width: 100% !important;
+  border: none !important;
+  &:extend(.btn:hover,.btn-primary:hover);
+}
+
+
+#user_idp {
+  background-color: #FFFFFF;
+  background-image: none;
+  border-radius: 4px;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.42857;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  margin-top: 3px !important;
+  margin-bottom: 5px !important;
+}
+#user_idp_iddtext{
+  height: 24px !important;
+}
+
+/* =====================================
+ * Nutzungsvereinvarung
+ * ===================================== */
+
+.ilStartupSection tbody{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 10px 0 410px;
+
+}
+
+.ilStartupSection tbody tr.std, .ilStartupSection table.fullwidth{
+  background-color: transparent;
+  font-size: 90%;
+
+}
+
+.ilStartupSection tbody ol li ol li{
+  padding: 5px;
+  font-size: 80%;
+}
+
+.logout {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0px 450px 0 450px;
+}

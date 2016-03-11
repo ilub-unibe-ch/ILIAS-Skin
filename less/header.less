@@ -1,0 +1,30 @@
+div.ilTopBar {
+  background-color: @tax-il-top-bar-bg-color;
+  color: @tax-il-top-bar-color;
+}
+
+.ilMainHeader {
+  background-color: @tax-il-main-header-bg-color;
+  height: @tax-il-main-header-height;
+}
+.ilMainHeader > header > .row > a.navbar-brand {
+  margin: @tax-il-logo-top 15px 0;
+}
+
+.ilMainHeader > header > .row > a.navbar-brand > img {
+  width: @tax-il-logo-size;
+  height:@tax-il-logo-size;
+}
+
+@media only screen and (max-width: @screen-sm-min){
+  #ilTopNav.navbar-default {
+      background-color: transparent;
+  }
+  .ilMainHeader > header > .row > a.navbar-brand > img{
+    background-image: url("./images/HeaderIconMobile.svg");
+    padding-top: 40px;
+    padding-left: 40px;
+    height: 0px;
+    width: 0px;
+  }
+}
