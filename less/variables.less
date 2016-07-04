@@ -3,28 +3,28 @@
 
 
 //== Colors
-@brand-primary: rgb(214, 0, 43);
-@brand-secondary: rgb(214, 0, 43);
-@brand-success: rgb(100, 120, 141);
-@brand-info: rgb(100, 120, 141);
-@brand-warning: rgb(230, 87, 34);
-@brand-danger: rgb(214, 0, 43);
+@brand-primary: rgb(76,101,134);
+@brand-secondary: rgb(110,160,60); // Big Title
+@brand-success: rgb(110,160,60);
+@brand-info: rgb(220,180,150);
+@brand-warning: rgb(250,130,40);
+@brand-danger: rgb(250,130,40);
 @background-images-path: "images/";
 @web-font-path: "../../../../templates/default/fonts/";
 @icon-font-path: "../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/";
 @mid-gray: rgb(67, 67, 67);
 @dark-gray: darken(#434343,10%);
-@gray-dark: rgb(102, 102, 102);
+@dark-gray: rgb(102, 102, 102);
 @il-primary-container-bg: rgb(255, 255, 255);
-@il-secondary-container-bg: rgb(250, 250, 250);
-@il-highlight-bg: rgb(217, 230, 244);
-@il-brand-3rd: rgb(187, 225, 195);
+@il-secondary-container-bg: rgb(249,249,249);
+@il-highlight-bg: rgb(255,255,208);
+@il-brand-3rd: rgb(33,197,216);
 
 //== Scaffolding
-@body-bg: rgb(238, 239, 242);
-@text-color: @gray-dark;
-@link-color: rgb(78, 122, 169);
-@link-hover-color: rgb(214, 0, 43);
+@body-bg: rgb(240,240,240);
+@text-color: @dark-gray;
+@link-color: lighten(@brand-primary, 5%);
+@link-hover-color: darken(@link-color, 15%);
 
 //== Typography
 @font-family-sans-serif: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
@@ -64,7 +64,7 @@
 @breadcrumb-padding-horizontal: 6px;
 
 //** Breadcrumb background color
-@breadcrumb-bg: rgba(21, 143, 208, 0);
+@breadcrumb-bg: transparent;
 
 //** Breadcrumb text color
 @breadcrumb-color: @link-color;
@@ -85,13 +85,13 @@
 
 //** Linked badge text color on hover
 @badge-link-hover-color: rgb(255, 255, 255);
-@badge-bg: rgb(214, 0, 43);
+@badge-bg: darken(@brand-warning, 10%);
 
 //** Badge text color in active nav link
 @badge-active-color: rgb(255, 255, 255);
 
 //** Badge background color in active nav link
-@badge-active-bg: rgb(214, 0, 43);
+@badge-active-bg: darken(@brand-warning, 10%);
 @badge-font-weight: bold;
 @badge-line-height: 1;
 @badge-border-radius: 10px;
@@ -117,10 +117,10 @@
 //** Border color for elements within panels
 @panel-inner-border: rgb(221, 221, 221);
 @panel-footer-bg: rgb(245, 245, 245);
-@panel-default-text: @gray-dark;
+@panel-default-text: @dark-gray;
 @panel-default-border: none;
 @panel-default-heading-bg: @il-secondary-container-bg;
-@panel-primary-text: @gray-dark;
+@panel-primary-text: @dark-gray;
 @panel-primary-border: none;
 @panel-primary-heading-bg: @il-primary-container-bg;
 
@@ -139,7 +139,7 @@
 @table-condensed-cell-padding: 5px;
 
 //** Default background color used for all tables.
-@table-bg: rgba(0, 0, 0, 0);
+@table-bg: transparent;
 
 //** Background color used for `.table-striped`.
 @table-bg-accent: rgb(255, 255, 255);
@@ -189,12 +189,12 @@
 @tax-alert-danger-link-color: rgb(135, 12, 37);
 
 //== Unibe specific buttons
-@tax-button-primary-bg-color: rgb(214, 0, 43);
+@tax-button-primary-bg-color: rgb(190, 206, 55);
 @tax-button-primary-color: rgb(255, 255, 255);
-@tax-button-primary-border-color: rgb(214, 0, 43);
-@tax-button-default-bg-color: rgb(100, 120, 141);
+@tax-button-primary-border-color: rgb(190, 206, 55);
+@tax-button-default-bg-color: rgb(41, 186, 217);
 @tax-button-default-color: rgb(255, 255, 255);
-@tax-button-default-border-color: rgb(100, 120, 141);
+@tax-button-default-border-color: rgb(41, 186, 217);
 @tax-button-info-bg-color: rgb(100, 120, 141);
 @tax-button-info-color: rgb(255, 255, 255);
 @tax-button-info-border-color: rgb(100, 120, 141);
