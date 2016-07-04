@@ -3,12 +3,12 @@
 
 
 //== Colors
-@brand-primary: rgb(76,101,134);
-@brand-secondary: rgb(110,160,60); // Big Title
-@brand-success: rgb(110,160,60);
-@brand-info: rgb(220,180,150);
-@brand-warning: rgb(250,130,40);
-@brand-danger: rgb(250,130,40);
+@brand-primary: rgb(41, 186, 217);
+@brand-secondary: rgb(190, 206, 55);
+@brand-success: rgb(221, 75, 114);
+@brand-info: rgb(246, 152, 34);
+@brand-warning: rgb(246, 152, 34);
+@brand-danger: rgb(213, 43, 2);
 @background-images-path: "images/";
 @web-font-path: "../../../../templates/default/fonts/";
 @icon-font-path: "../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/";
@@ -16,15 +16,15 @@
 @dark-gray: darken(#434343,10%);
 @dark-gray: rgb(102, 102, 102);
 @il-primary-container-bg: rgb(255, 255, 255);
-@il-secondary-container-bg: rgb(249,249,249);
-@il-highlight-bg: rgb(255,255,208);
-@il-brand-3rd: rgb(33,197,216);
+@il-secondary-container-bg: rgb(252, 252, 252);
+@il-highlight-bg: rgb(218, 235, 239);
+@il-brand-3rd: rgb(33, 197, 216);
 
 //== Scaffolding
-@body-bg: rgb(240,240,240);
-@text-color: @dark-gray;
-@link-color: lighten(@brand-primary, 5%);
-@link-hover-color: darken(@link-color, 15%);
+@body-bg: rgb(240, 240, 240);
+@text-color: @mid-gray;
+@link-color: rgb(76, 101, 134);
+@link-hover-color: rgb(41, 186, 217);
 
 //== Typography
 @font-family-sans-serif: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
@@ -37,7 +37,9 @@
 @font-size-h4: ceil((@font-size-base * 1.2));
 @font-size-h5: ceil((@font-size-base * 1.1));
 @font-size-h6: @font-size-base;
+
 @line-height-base: 1.428571429;
+
 @padding-base-vertical: 3px;
 @padding-base-horizontal: 8px;
 @padding-large-vertical: 6px;
@@ -54,8 +56,8 @@
 
 //== Navs
 @nav-link-padding: 5px 10px;
-@nav-tabs-border-color: rgb(255, 255, 255);
-@nav-tabs-active-link-hover-border-color: rgb(255, 255, 255);
+@nav-tabs-border-color: rgb(224, 224, 224);
+@nav-tabs-active-link-hover-border-color: rgb(224, 224, 224);
 @il-fixed-menu-height: 117px;
 @il-fixed-menu-height-bar-only: 40px;
 
@@ -99,12 +101,12 @@
 //== Forms
 @input-border-radius: 0;
 @input-border: rgb(204, 204, 204);
-@input-border-focus: @brand-primary;
+@input-border-focus: lighten(@brand-primary, 20%);
 @ilFormInputFontSize: @font-size-small;
 @input-height-base: (floor((@ilFormInputFontSize * @line-height-base)) + (@padding-base-vertical * 2) + 2);
 @ilFormColor: rgb(128, 128, 128);
 @ilFormBgColor: rgb(253, 253, 253);
-@ilMainMenuColor: @brand-primary;
+@ilMainMenuColor: lighten(@brand-primary, 10%);
 @ilButtonFontSize: @font-size-small;
 
 //== Panels
@@ -117,16 +119,16 @@
 //** Border color for elements within panels
 @panel-inner-border: rgb(221, 221, 221);
 @panel-footer-bg: rgb(245, 245, 245);
-@panel-default-text: @dark-gray;
+@panel-default-text: @mid-gray;
 @panel-default-border: none;
 @panel-default-heading-bg: @il-secondary-container-bg;
-@panel-primary-text: @dark-gray;
+@panel-primary-text: @mid-gray;
 @panel-primary-border: none;
 @panel-primary-heading-bg: @il-primary-container-bg;
 
 //== DropDowns
-@dropdown-link-hover-bg: rgb(224, 235, 246);
-@dropdown-link-hover-bg: rgb(224, 235, 246);
+@dropdown-link-hover-bg: rgb(218, 235, 239);
+@dropdown-link-hover-bg: rgb(218, 235, 239);
 
 @il-tag-bg: @btn-default-color;
 
@@ -146,9 +148,9 @@
 
 //** Border color for table and cell borders.
 @table-border-color: rgb(221, 221, 221);
-@il-table-head-bg: rgb(219, 228, 228);
-@il-data-table-bg: @il-secondary-container-bg;
-@il-table-cmd-bg: rgb(219, 228, 228);
+@il-table-head-bg: rgb(218,235,239);
+@il-data-table-bg: rgb(245, 245, 245);
+@il-table-cmd-bg: rgb(218,235,239);
 
 //== Unibe specific
 @tax-aai-login-width: 350px;
