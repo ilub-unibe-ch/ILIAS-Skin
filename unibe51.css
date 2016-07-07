@@ -11791,6 +11791,12 @@ a:focus {
 table.calmini td.calminitoday {
   background-color: #29bad9;
 }
+::selection {
+  background: #daebef;
+}
+::-moz-selection {
+  background: #daebef;
+}
 a#il_mhead_t_focus {
   color: #29bad9;
   vertical-align: middle;
