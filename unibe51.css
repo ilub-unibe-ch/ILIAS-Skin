@@ -11891,8 +11891,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary,
 #wayf_submit_button {
   color: #ffffff;
-  background-color: #bece37;
-  border-color: #bece37;
+  background-color: #81bf42;
+  border-color: #81bf42;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -11901,8 +11901,8 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary,
 #wayf_submit_button:hover {
   color: #ffffff;
-  background-color: #9ba929;
-  border-color: #94a027;
+  background-color: #679a34;
+  border-color: #629232;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -11924,11 +11924,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #bece37;
-  border-color: #bece37;
+  background-color: #81bf42;
+  border-color: #81bf42;
 }
 .btn-primary .badge {
-  color: #bece37;
+  color: #81bf42;
   background-color: #ffffff;
 }
 .btn-info {
