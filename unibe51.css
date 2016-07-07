@@ -11797,6 +11797,11 @@ a#il_mhead_t_focus {
   font-size: 26px;
   cursor: default;
 }
+div.il_droparea:hover {
+  border-color: #29bad9;
+  color: #29bad9;
+  background-color: #daebef;
+}
 #il_prop_cont_item_filter_enabled .checkbox input[type="checkbox"] {
   margin-left: 0;
 }
