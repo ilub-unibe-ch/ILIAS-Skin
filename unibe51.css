@@ -11742,6 +11742,20 @@ div.ilTopBar {
   background-image: url("images/top-image.png");
   color: #ffffff;
 }
+div.ilTopTitle {
+  padding: 0 15px 25px 15px;
+  margin-left: 15px;
+  background-color: #29bad9;
+}
+div#il_startup_logo img {
+  display: none;
+}
+div#ilMainMenuEntries.collapse.navbar-collapse {
+  margin-left: 50px;
+}
+nav#ilTopNav {
+  margin-top: -50px;
+}
 .ilMainHeader {
   background-color: #ffffff;
   height: 75px;
