@@ -11750,9 +11750,11 @@ div.ilTopTitle {
 div#il_startup_logo img {
   display: none;
 }
+
 .ilMainHeader > header > .row > a.navbar-brand {
   display: none;
 }
+
 div#ilMainMenuEntries.collapse.navbar-collapse {
   margin-left: 50px;
 }
