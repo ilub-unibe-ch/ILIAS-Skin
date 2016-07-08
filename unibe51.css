@@ -11750,16 +11750,14 @@ div.ilTopTitle {
 div#il_startup_logo img {
   display: none;
 }
-
 .ilMainHeader > header > .row > a.navbar-brand {
   display: none;
 }
-
 div#ilMainMenuEntries.collapse.navbar-collapse {
   margin-left: 50px;
 }
 nav#ilTopNav {
-  margin-top: -50px;
+  margin-top: -45px;
 }
 .ilMainHeader {
   background-color: #ffffff;
