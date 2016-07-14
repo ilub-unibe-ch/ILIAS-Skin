@@ -11820,7 +11820,9 @@ a#il_mhead_t_focus {
   font-size: 26px;
   cursor: default;
 }
-div.il_droparea:hover {
+div.il_droparea:hover,
+div.ilCOPGDropActice,
+.il_droparea_valid_target {
   border-color: #29bad9;
   color: #29bad9;
   background-color: #daebef;
