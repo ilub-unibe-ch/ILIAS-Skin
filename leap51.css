@@ -11747,6 +11747,14 @@ div.ilTopTitle {
   margin-left: 15px;
   background-color: #29bad9;
 }
+div.ilTopMemberView {
+  background-color: #767676;
+  float: right;
+  padding: 0px 12px;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 12px;
+}
 div#il_startup_logo img {
   display: none;
 }
