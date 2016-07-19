@@ -11747,6 +11747,11 @@ div.ilTopTitle {
   margin-left: 15px;
   background-color: #29bad9;
 }
+div.ilTopTitle.ilTopTitleVisible {
+  padding: 0 15px 0 15px;
+  margin-left: 15px;
+  background-color: #29bad9;
+}
 div.ilTopMemberView {
   background-color: #767676;
   float: right;
