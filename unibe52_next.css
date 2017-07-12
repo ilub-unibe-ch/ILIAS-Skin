@@ -8888,6 +8888,13 @@ input.ilOpenIDBox {
 #ilTopBarNav #userlog .dropdown-menu > li > a {
   padding-left: 50px;
 }
+/* Delos Badge (former ilBadgeSpacer) */
+#ilTopBarNav .il-counter-spacer {
+  font-size: 8px;
+  padding: 0;
+  visibility: hidden;
+}
+
 [dir="rtl"] #ilTopBarNav {
   float: left;
   margin: 0;
