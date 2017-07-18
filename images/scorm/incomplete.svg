@@ -6,19 +6,19 @@
 <g>
 	<g>
 		<g>
-			<circle id="SVGID_1_" fill="#FCFCCA" cx="9" cy="9" r="7.875"/>
+			<circle id="SVGID_1_" fill="#F6F596" cx="9" cy="9" r="7.875"/>
 		</g>
 		<g>
 			<g>
-				<circle id="SVGID_2_" fill="#FCFCCA" cx="9" cy="9" r="7.875"/>
+				<circle id="SVGID_2_" fill="#F6F596" cx="9" cy="9" r="7.875"/>
 			</g>
 			<g>
 				<g>
-					<circle id="SVGID_3_" fill="#FCFCCA" cx="9" cy="9" r="7.875"/>
+					<circle id="SVGID_3_" fill="#F6F596" cx="9" cy="9" r="7.875"/>
 				</g>
 				<g>
 					<g>
-						<circle id="SVGID_4_" fill="#FCFCCA" cx="9" cy="9" r="7.875"/>
+						<circle id="SVGID_4_" fill="#F6F596" cx="9" cy="9" r="7.875"/>
 					</g>
 					<g>
 						<defs>
@@ -27,7 +27,7 @@
 						<clipPath id="SVGID_6_">
 							<use xlink:href="#SVGID_5_"  overflow="visible"/>
 						</clipPath>
-						<rect x="1.125" y="1.125" clip-path="url(#SVGID_6_)" fill="#FCFCCA" width="15.75" height="15.75"/>
+						<rect x="1.125" y="1.125" clip-path="url(#SVGID_6_)" fill="#F6F596" width="15.75" height="15.75"/>
 					</g>
 				</g>
 			</g>
