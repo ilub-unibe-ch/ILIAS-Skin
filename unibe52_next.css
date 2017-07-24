@@ -12793,7 +12793,7 @@ table.mceToolbar td {
   padding: 0px 450px 0 450px;
 }
 div.ilTopBar {
-  background-color: #121212;
+  background-color: #d6002b;
   color: #ffffff;
 }
 .ilMainHeader {
@@ -12833,7 +12833,7 @@ div.il_Block {
   border: 1px solid #dcdcdc;
 }
 .ilContainerBlock .ilContainerBlockHeader {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   border-bottom: 0px solid #dcdcdc;
 }
 .ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
@@ -12973,7 +12973,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #64788d;
+  background-color: #a25fb5;
   border-color: #64788d;
 }
 .btn-info:hover,
@@ -12982,7 +12982,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #4f5f6f;
+  background-color: #88479a;
   border-color: #4b5a69;
 }
 .btn-info:active,
@@ -13005,11 +13005,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #64788d;
+  background-color: #a25fb5;
   border-color: #64788d;
 }
 .btn-info .badge {
-  color: #64788d;
+  color: #a25fb5;
   background-color: #ffffff;
 }
 .btn.disabled,
