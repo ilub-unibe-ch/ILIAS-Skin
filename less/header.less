@@ -6,6 +6,7 @@ div.ilTopBar {
 .ilMainHeader {
   background-color: @tax-il-main-header-bg-color;
   height: @tax-il-main-header-height;
+  border-bottom-color: @tax-il-main-header-border-bottom-color;
 }
 .ilMainHeader > header > .row > a.navbar-brand {
   margin: @tax-il-logo-top 15px 0;
@@ -26,5 +27,43 @@ div.ilTopBar {
     padding-left: 40px;
     height: 0px;
     width: 0px;
+  }
+  #ilTopNav button.navbar-toggle {
+    background-color: @tax-il-top-bar-nav-bg-color;
+
+    &:hover {
+      background-color: @tax-il-top-bar-nav-hover-color;
+    }
+
+  }
+
+}
+
+#ilTopBarNav {
+  .dropdown-menu {
+    background-color: @tax-il-top-bar-nav-hover-color;
+
+    color: @tax-il-top-bar-nav-color;
+    a {
+      color: @tax-il-top-bar-nav-color;
+      &:hover,
+      &:active,
+      &:focus {
+        color: @tax-il-top-bar-nav-hover-color;
+      }
+    }
+  }
+  > li > a {
+  		background-color: @tax-il-top-bar-nav-bg-color;
+  		color: @tax-il-top-bar-nav-color;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @tax-il-top-bar-nav-hover-color;
+    }
+  }
+  > .active > a,
+  > .open > a {
+    background-color: @tax-il-top-bar-nav-hover-color;
   }
 }
