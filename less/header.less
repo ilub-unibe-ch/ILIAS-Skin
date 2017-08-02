@@ -53,7 +53,7 @@ div.ilTopBar {
       }
     }
   }
-  > li > a {
+  > li > a{
   		background-color: @tax-il-top-bar-nav-bg-color;
   		color: @tax-il-top-bar-nav-color;
     &:hover,
@@ -62,6 +62,15 @@ div.ilTopBar {
       background-color: @tax-il-top-bar-nav-hover-color;
     }
   }
+
+  > li.dropdown.open > a {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @tax-il-top-bar-nav-hover-color;
+    }
+  }
+
   > .active > a,
   > .open > a {
     background-color: @tax-il-top-bar-nav-hover-color;
