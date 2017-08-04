@@ -38,13 +38,19 @@ div.ilTopBar {
   }
 
 }
+#ilTopBarNav .ilAwarenessItem .dropdown-menu {
+  &,> li{
+    background-color: @body-bg;
+  }
+
+}
 
 #ilTopBarNav {
   .dropdown-menu {
     background-color: @tax-il-top-bar-nav-hover-color;
 
     color: @tax-il-top-bar-nav-color;
-    a {
+    > a {
       color: @tax-il-top-bar-nav-color;
       &:hover,
       &:active,
