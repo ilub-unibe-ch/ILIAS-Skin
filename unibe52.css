@@ -13017,7 +13017,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #a25fb5;
+  background-color: #64788d;
   border-color: #64788d;
 }
 .btn-info:hover,
@@ -13026,7 +13026,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #88479a;
+  background-color: #4f5f6f;
   border-color: #4b5a69;
 }
 .btn-info:active,
@@ -13049,11 +13049,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #a25fb5;
+  background-color: #64788d;
   border-color: #64788d;
 }
 .btn-info .badge {
-  color: #a25fb5;
+  color: #64788d;
   background-color: #ffffff;
 }
 .btn.disabled,
