@@ -15,12 +15,12 @@ var wayf_URL = "https://wayf.switch.ch/SWITCHaai/WAYF";
 // EntityID of the Service Provider that protects this Resource
 // Examples: "https://econf.switch.ch/shibboleth", "https://dokeos.unige.ch/shibboleth"
 // [Mandatory]
-var wayf_sp_entityID = "https://ilias.unibe.ch/shibboleth";
+var wayf_sp_entityID = document.location.origin+"/shibboleth";
 
 // Shibboleth Service Provider handler URL
 // Examples: "https://point.switch.ch/Shibboleth.sso", "https://rr.aai.switch.ch/aaitest/Shibboleth.sso"
 // [Mandatory, if wayf_use_discovery_service = false]
-var wayf_sp_handlerURL = "https://ilias.unibe.ch/Shibboleth.sso";
+var wayf_sp_handlerURL = document.location.origin+"/Shibboleth.sso";
 var wayf_use_improved_drop_down_list = true;
 // URL on this resource that the user shall be returned to after authentication
 // Examples: "https://econf.switch.ch/aai/home", "https://olat.uzh.ch/my/courses"
@@ -32,7 +32,7 @@ function getUrlVars() {
     });
     return vars;
 }
-var wayf_return_url = "https://ilias.unibe.ch/shib_login.php?target=" + getUrlVars()["target"];
+var wayf_return_url = document.location.origin+"/shib_login.php?target=" + getUrlVars()["target"];
 
 //////////////////// RECOMMENDED SETTINGS ////////////////////
 
@@ -92,6 +92,9 @@ var wayf_return_url = "https://ilias.unibe.ch/shib_login.php?target=" + getUrlVa
 // cookie set at central wayf
 // [Optional, default: true]
 var wayf_auto_login = true;
+
+//Directly redirects if already logged in.
+var wayf_auto_redirect_if_logged_in = true;
 
 // Whether to hide the WAYF after the user was logged in
 // This requires that the _shib_session_* cookie is set when a user
@@ -156,7 +159,7 @@ var wayf_hide_idps = new Array();
 // with a 'return' and an 'entityID' GET Arguments
 // [Optional, if wayf_use_discovery_service = true
 //  or if wayf_additional_idps is not empty, default: commented out]
-var wayf_sp_samlDSURL = "https://ilias.unibe.ch/Shibboleth.sso/Login";
+var wayf_sp_samlDSURL = document.location.origin+"/Shibboleth.sso/Login";
 
 // Default IdP to preselect when central WAYF couldn't guess IdP either
 // This is usually the case the first time ever a user accesses a resource
