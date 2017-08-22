@@ -1,3 +1,7 @@
+//Fix for IE versions to correct location property, see: https://stackoverflow.com/questions/22564167/window-location-origin-gives-wrong-value-when-using-ie
+window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+
+
 // To use this JavaScript, please access:
 // https://wayf.switch.ch/SWITCHaai/WAYF/embedded-wayf.js/snippet.html
 // and copy/paste the resulting HTML snippet to an unprotected web page that
@@ -15,12 +19,12 @@ var wayf_URL = "https://wayf.switch.ch/SWITCHaai/WAYF";
 // EntityID of the Service Provider that protects this Resource
 // Examples: "https://econf.switch.ch/shibboleth", "https://dokeos.unige.ch/shibboleth"
 // [Mandatory]
-var wayf_sp_entityID = document.location.origin+"/shibboleth";
+var wayf_sp_entityID = window.location.origin+"/shibboleth";
 
 // Shibboleth Service Provider handler URL
 // Examples: "https://point.switch.ch/Shibboleth.sso", "https://rr.aai.switch.ch/aaitest/Shibboleth.sso"
 // [Mandatory, if wayf_use_discovery_service = false]
-var wayf_sp_handlerURL = document.location.origin+"/Shibboleth.sso";
+var wayf_sp_handlerURL = window.location.origin+"/Shibboleth.sso";
 var wayf_use_improved_drop_down_list = true;
 // URL on this resource that the user shall be returned to after authentication
 // Examples: "https://econf.switch.ch/aai/home", "https://olat.uzh.ch/my/courses"
@@ -32,7 +36,7 @@ function getUrlVars() {
     });
     return vars;
 }
-var wayf_return_url = document.location.origin+"/shib_login.php?target=" + getUrlVars()["target"];
+var wayf_return_url = window.location.origin+"/shib_login.php?target=" + getUrlVars()["target"];
 
 //////////////////// RECOMMENDED SETTINGS ////////////////////
 
@@ -159,7 +163,7 @@ var wayf_hide_idps = new Array();
 // with a 'return' and an 'entityID' GET Arguments
 // [Optional, if wayf_use_discovery_service = true
 //  or if wayf_additional_idps is not empty, default: commented out]
-var wayf_sp_samlDSURL = document.location.origin+"/Shibboleth.sso/Login";
+var wayf_sp_samlDSURL = window.location.origin+"/Shibboleth.sso/Login";
 
 // Default IdP to preselect when central WAYF couldn't guess IdP either
 // This is usually the case the first time ever a user accesses a resource
