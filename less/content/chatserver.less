@@ -1,0 +1,7 @@
+// It removes the public chat and it's section from the onscreen chat dropdown since it is not used.
+#onscreenchatmenu-content .dropdown-header~.dropdown-header {
+  display: none;
+}
+#onscreenchatmenu-content .dropdown-header~.dropdown-header + .ilOnScreenChatMenuItem {
+  display: none;
+}
