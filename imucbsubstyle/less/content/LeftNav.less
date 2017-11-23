@@ -1,0 +1,128 @@
+#left_nav {
+    display: block;
+    overflow: visible;
+}
+
+.ilTreeView {
+    display: none;
+}
+
+#left_nav div ul{
+    width: 100%;
+}
+
+#left_nav_outer {
+    max-width: 1400px;
+    padding: 15px;
+
+}
+
+#left_nav {
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    top: 0px!important;
+    margin: 0px;
+    padding: 15px;
+    display: block;
+    border: 0px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+#left_nav .dropdownimucb {
+    text-align: center;
+    background-color: #eee;
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 10px 0;
+    position: relative;
+    font-size: 20px;
+    min-height: 80px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+}
+
+.jstree li {
+    white-space: normal!important;
+}
+
+#left_nav .dropdownimucb > a {
+    margin: 0 20px;
+    position: relative;
+    white-space: normal;
+    word-wrap: break-word;
+    display: block;
+}
+
+#left_nav .dropdownimucb > ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#left_nav .dropdownimucb > ul > li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#left_nav .dropdownimucb:hover{
+    background-color: #83d983;
+}
+
+#left_nav .dropdownimucb a:hover{
+    background-color: #94ea94;
+    border-radius: 6px;
+}
+
+#left_nav .dropdownimucb:hover > ul {
+    display: block;
+}
+
+#left_nav .dropdownimucb > ul
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: inherit;
+    z-index: 1000;
+    margin-top: 10px;
+    padding:10px 20%;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 12px 12px;
+    text-align: start;
+    box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
+}
+
+@media (max-width: 1000px) {
+    #left_nav .dropdownimucb > ul{
+        padding: 10px 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #left_nav .dropdownimucb {
+        /*min-height: 40px;*/
+    }
+    #left_nav .dropdownimucb > ul{
+        padding: 10px 10%;
+    }
+}
+
+#left_nav .dropdownimucb > ul > li > a {
+    height: auto;
+    display: inline;
+    /*width: 100%;*/
+    /*text-align: start;*/
+}
+
+#left_nav div ul > li > ins,
+#left_nav div ul > li > a{
+    display: none;
+}
+
+div.osdNotificationContainer{
+    display: none;
+}
+

@@ -1,0 +1,209 @@
+/*
+
+IMUCB_main
+
+*/
+
+body {
+  background-color: @body-bg;
+  //background-color: #fff;
+}
+
+h3.ilHeader.ilContainerBlockHeader {
+  display: none;
+}
+
+.row {
+  margin: auto;
+}
+
+#mainspacekeeper {
+  margin: auto;
+  margin-top: 120px;
+  padding-top: 0px;
+  padding: 0;
+}
+
+#mainscrolldiv {
+  margin: auto;
+}
+
+#fixed_content {
+  width: 100%;
+  position: relative;
+  margin: 0 !important;
+  top: 0!important;
+}
+
+
+.row-eq-height > .il-card {
+  display: flex;
+  flex: 1 1 33%;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*justify-content: center;*/
+}
+
+@media (max-width: 768px) {
+  .row-eq-height {
+    flex-direction: column;
+  }
+}
+
+.ilHighlighted {
+  background-color: #94ea94;
+  border-radius: 6px;
+}
+
+/*Block design*/
+div.ilc_section_Block,
+a.ilc_section_Block {
+  background-image: none!important;
+  border: none!important;
+  border-radius: 20px;
+}
+
+div.il_ContainerItemTitle {
+  text-align: center;
+  width:100%;
+  /*word-wrap: break-word;*/
+  /*word-break: break-all;*/
+}
+
+.ilContainerBlock {
+  border: 0;
+}
+
+.ilContainerBlock .ilContainerBlockHeader {
+  background-color: transparent;
+  width: 100%;
+}
+
+
+.ilCLI > .ilContainerListItemOuter {
+  width: 100%;
+  background-color: #94ea94;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 30px;
+  /*min-height:inherit;*/
+}
+
+.ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon {
+  /*width: 100%;*/
+  /*display: block;*/
+  /*vertical-align: middle;*/
+}
+
+.ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon a {
+  text-align: center;
+}
+
+.ilCLI {
+  padding: 15px;
+  /*min-height: 150px;*/
+  border-bottom: none;
+}
+.ilCLI.ilObjListRow:hover {
+  background-color: #ddd;
+  border-radius: 15px;
+}
+
+.ilCLI h4.il_ContainerItemTitle > a {
+  font-size: 26px;
+}
+
+.ilObjListRow:hover {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1450px) {
+  .ilCLI h4.il_ContainerItemTitle > a {
+    font-size: 22px;
+  }
+}
+
+/*@media only screen and (max-width: 1250px) {*/
+/*.ilCLI h4.il_ContainerItemTitle > a {*/
+/*font-size: 22px;*/
+/*}*/
+/*}*/
+
+@media only screen and (max-width: 1050px) {
+  .ilCLI h4.il_ContainerItemTitle > a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .ilCLI h4.il_ContainerItemTitle > a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ilCLI h4.il_ContainerItemTitle > a {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .ilCLI h4.il_ContainerItemTitle > a {
+    font-size: 12px;
+  }
+}
+
+.ilCLI div.ilContainerListItemContent {
+  width: 100%;
+  align-self: center;
+  /*display: block;*/
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*Buttons*/
+.btn-default, .btn-primary {
+  background-color: #0f7d28;
+  border-color: #0f7d28;
+  border-radius: 8px;
+}
+
+.btn-group > span > .btn-default, .btn-group > span > a.btn-primary {
+  border-radius: 8px 0 0 8px;
+}
+
+/*Accordions*/
+div.ilc_va_ihead_VAccordIHead {
+  background-color: #fff!important;
+  border-radius: 8px!important;
+}
+
+div.ilc_va_icntr_VAccordICntr {
+  border: 0!important;
+}
+
+/*all divs and navs*/
+div, nav, .alert, fieldset {
+  border-radius: 20px;
+}
+
+div.ilFormHeader {
+  padding: 15px;
+}
+
+div {
+  word-break: normal;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 20px;
+  }
+}
