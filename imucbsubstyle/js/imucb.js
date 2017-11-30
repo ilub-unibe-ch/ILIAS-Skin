@@ -6,12 +6,12 @@
     if(!tab_perm.length && !subtab_edit_page.length && !admin_tab.length){
         // edit buttons
         $(".il_ContainerListItem > .ilFloatRight").remove();
-        // repository breadcrumb
-        $("#mainscrolldiv > ol.breadcrumb > li:first-child").hide();
         $(".ilMainMenu").hide();
         $("#ilTab").hide();
+        if($("#left_nav")){
+            $("#mainscrolldiv > ol.breadcrumb").hide();
+        }
     }
-
 })();
 
 
