@@ -37,6 +37,9 @@
         my_course_level_1_lis.addClass("col-sm-4");
         my_course_li.children("ul").addClass("row");
         my_course_level_1_lis.addClass("dropdownimucb");
+
+        var my_course_level_2plus_lis = my_course_level_1_lis.find("li");
+        my_course_level_2plus_lis.addClass("dropdownimucbinner");
     }
 })();
 
@@ -60,8 +63,24 @@ $(window).load(function(){
     // remove subtab menu in Learning modules for users
     var subtab_edit_page = $("#subtab_edit_page");
     if(!subtab_edit_page.length){
-        console.log("user in LM");
         $(".ilLMMenu").hide();
     }
 
+});
+
+
+$( document ).ajaxComplete(function() {
+    var my_course_lis = $("#left_nav .dropdownimucb li");
+    my_course_lis.each(function(){
+        $(this).hover(
+            function(){
+                if($(this).hasClass("jstree-closed")) {
+                    console.log("closed");
+                    $(this).addClass("dropdownimucbinner");
+                    $(this).children("ins").click();
+                }
+            },
+            function(){}
+        );
+    });
 });

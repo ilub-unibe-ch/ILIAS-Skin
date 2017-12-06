@@ -13229,6 +13229,9 @@ footer.ilFooter {
 #left_nav .dropdownimucb:hover > ul {
   display: block;
 }
+#left_nav .dropdownimucb:hover li:hover > ul {
+  display: block;
+}
 #left_nav .dropdownimucb > a {
   margin: 0 20px;
   position: relative;
@@ -13247,7 +13250,7 @@ footer.ilFooter {
   background-color: inherit;
   z-index: 1000;
   margin-top: 10px;
-  padding: 10px 20%;
+  padding: 5px 20%;
   border-top: 1px solid #eee;
   border-radius: 0 0 12px 12px;
   text-align: start;
@@ -13262,13 +13265,93 @@ footer.ilFooter {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#left_nav .dropdownimucb > ul > li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#left_nav .dropdownimucb > ul > li > a {
+#left_nav .dropdownimucb > ul li > a {
   height: auto;
   display: inline;
+}
+#left_nav .dropdownimucbinner {
+  background-color: #eee;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 10px 0;
+  position: relative;
+  font-size: 20px;
+  min-height: 80px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background-color: inherit;
+  border: none;
+  min-height: 0;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+#left_nav .dropdownimucbinner:hover {
+  background-color: #83d983;
+}
+#left_nav .dropdownimucbinner:hover > ul {
+  display: block;
+}
+#left_nav .dropdownimucbinner:hover li:hover > ul {
+  display: block;
+}
+#left_nav .dropdownimucbinner > a {
+  margin: 0 20px;
+  position: relative;
+  white-space: normal;
+  word-wrap: break-word;
+  display: block;
+}
+#left_nav .dropdownimucbinner a:hover {
+  background-color: #94ea94;
+  border-radius: 6px;
+}
+#left_nav .dropdownimucbinner > ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: inherit;
+  z-index: 1000;
+  margin-top: 10px;
+  padding: 5px 20%;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 12px 12px;
+  text-align: start;
+  box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
+}
+@media (max-width: 1000px) {
+  #left_nav .dropdownimucbinner > ul {
+    padding: 10px 10%;
+  }
+}
+#left_nav .dropdownimucbinner > ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#left_nav .dropdownimucbinner > ul li > a {
+  height: auto;
+  display: inline;
+}
+#left_nav .dropdownimucbinner > a {
+  margin: 0;
+}
+#left_nav .dropdownimucbinner > ul {
+  margin-top: 5px;
+  border-top: 0;
+  border-radius: 12px;
+  padding: 5px 10%;
+}
+#left_nav .dropdownimucbinner > ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#left_nav .dropdownimucbinner > ul li > a {
+  height: auto;
+  display: inline;
+}
+#left_nav .dropdownimucbinner .dropdownimucbinner ul {
+  left: 20%;
+  border-top: none;
 }
 #left_nav_outer {
   max-width: 1400px;

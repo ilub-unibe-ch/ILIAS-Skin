@@ -38,6 +38,11 @@
             > ul {
                 display: block;
             }
+            li:hover {
+                > ul{
+                    display:block;
+                }
+            }
         }
         > a {
             margin: 0 20px;
@@ -57,7 +62,7 @@
             background-color: inherit;
             z-index: 1000;
             margin-top: 10px;
-            padding:10px 20%;
+            padding:5px 20%;
             border-top: 1px solid #eee;
             border-radius: 0 0 12px 12px;
             text-align: start;
@@ -68,15 +73,41 @@
             li {
                 margin-top: 5px;
                 margin-bottom: 5px;
-            }
-            > li {
-                margin-top: 10px;
-                margin-bottom: 10px;
                 > a {
                     height: auto;
                     display: inline;
                 }
             }
+        }
+    }
+    .dropdownimucbinner {
+        .dropdownimucb;
+        background-color: inherit;
+        border: none;
+        min-height:0;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+        > a {
+            margin: 0;
+        }
+        > ul {
+            margin-top: 5px;
+            border-top: 0;
+            border-radius: 12px;
+            padding:5px 10%;
+            li {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                > a {
+                    height: auto;
+                    display: inline;
+                }
+            }
+        }
+        .dropdownimucbinner ul{
+            left: 20%;
+            border-top: none;
         }
     }
 }
