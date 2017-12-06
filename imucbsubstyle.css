@@ -13253,7 +13253,6 @@ footer.ilFooter {
   padding: 5px 20%;
   border-top: 1px solid #eee;
   border-radius: 0 0 12px 12px;
-  text-align: start;
   box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
 }
 @media (max-width: 1000px) {
@@ -13316,7 +13315,6 @@ footer.ilFooter {
   padding: 5px 20%;
   border-top: 1px solid #eee;
   border-radius: 0 0 12px 12px;
-  text-align: start;
   box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
 }
 @media (max-width: 1000px) {
@@ -13361,8 +13359,8 @@ footer.ilFooter {
   display: none;
 }
 .jstree li {
-  margin-left: auto;
-  white-space: normal!important;
+  margin-left: auto !important;
+  white-space: normal !important;
 }
 div.osdNotificationContainer {
   display: none;
