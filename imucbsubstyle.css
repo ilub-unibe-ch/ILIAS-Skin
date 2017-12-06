@@ -13361,6 +13361,7 @@ footer.ilFooter {
   display: none;
 }
 .jstree li {
+  margin-left: auto;
   white-space: normal!important;
 }
 div.osdNotificationContainer {

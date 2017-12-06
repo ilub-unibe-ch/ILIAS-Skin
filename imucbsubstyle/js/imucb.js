@@ -46,7 +46,7 @@
 
 // on hover open js-trees
 $(window).load(function(){
-    var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").children("li");
+    var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").find("li");
 
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
     my_course_level_1_lis.each(function(){
