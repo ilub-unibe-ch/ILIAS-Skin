@@ -13329,9 +13329,6 @@ IMUCB_main
 body {
   background-color: #ffffff;
 }
-.ilContainerBlockHeader > h3.ilHeader.ilContainerBlockHeader {
-  display: none;
-}
 .row {
   margin: auto;
 }
@@ -13387,6 +13384,9 @@ div.il_ContainerItemTitle {
 .ilContainerBlock .ilContainerBlockHeader {
   background-color: transparent;
   width: 100%;
+}
+.ilContainerBlockHeader > h3.ilHeader.ilContainerBlockHeader {
+  display: none;
 }
 /* Card objects .ilCLI  */
 .ilCLI {

@@ -9,10 +9,6 @@ body {
   //background-color: #fff;
 }
 
-.ilContainerBlockHeader > h3.ilHeader.ilContainerBlockHeader {
-  display: none;
-}
-
 .row {
   margin: auto;
 }
@@ -69,11 +65,14 @@ div.il_ContainerItemTitle {
 
 .ilContainerBlock {
   border: 0;
+  .ilContainerBlockHeader {
+    background-color: transparent;
+    width: 100%;
+  }
 }
 
-.ilContainerBlock .ilContainerBlockHeader {
-  background-color: transparent;
-  width: 100%;
+.ilContainerBlockHeader > h3.ilHeader.ilContainerBlockHeader {
+  display: none;
 }
 
 /* Card objects .ilCLI  */

@@ -4,11 +4,10 @@
     var subtab_edit_page = $("#subtab_edit_page");
     var admin_tab = $("#mm_adm_tr");
     if(!tab_perm.length && !subtab_edit_page.length && !admin_tab.length){
-        // edit buttons
         $(".il_ContainerListItem > .ilFloatRight").remove();
         $(".ilMainMenu").hide();
         $("#ilTab").hide();
-        if($("#left_nav")){
+        if($("#left_nav").length){
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
     }
@@ -19,7 +18,10 @@
 (function() {
     var left_nav = $("#left_nav");
     if(!left_nav.length){
-        document.getElementById("imgtree").click();
+        var imgtree = document.getElementById("imgtree");
+        if(imgtree){
+            imgtree.click();
+        }
     }
     if(left_nav) {
         var left_nav_lis = left_nav.find("li");
@@ -55,5 +57,11 @@ $(window).load(function(){
         );
     });
 
+    // remove subtab menu in Learning modules for users
+    var subtab_edit_page = $("#subtab_edit_page");
+    if(!subtab_edit_page.length){
+        console.log("user in LM");
+        $(".ilLMMenu").hide();
+    }
 
 });
