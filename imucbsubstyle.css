@@ -13163,9 +13163,6 @@ footer.ilFooter {
 #ilTopBarNav #awareness_trigger {
   display: none;
 }
-#ilTopBar {
-  background-color: #0f7d28;
-}
 #ilTopBarNav > li > a {
   background-color: #fff;
   color: #0f7d28;
@@ -13173,6 +13170,9 @@ footer.ilFooter {
 }
 #ilTopBarNav > li > a:hover {
   background-color: #94ea94;
+}
+#ilTopBar {
+  background-color: #0f7d28;
 }
 .ilMainHeader {
   border-bottom: 1px solid #c6cdd5;
@@ -13190,20 +13190,7 @@ footer.ilFooter {
   display: none;
 }
 #left_nav {
-  display: block;
   overflow: visible;
-}
-.ilTreeView {
-  display: none;
-}
-#left_nav div ul {
-  width: 100%;
-}
-#left_nav_outer {
-  max-width: 1400px;
-  padding: 15px;
-}
-#left_nav {
   width: 100%;
   max-width: 1400px;
   position: relative;
@@ -13217,6 +13204,13 @@ footer.ilFooter {
   border-radius: 20px;
   background-color: #fff;
 }
+#left_nav div ul {
+  width: 100%;
+}
+#left_nav div ul > li > ins,
+#left_nav div ul > li > a {
+  display: none;
+}
 #left_nav .dropdownimucb {
   text-align: center;
   background-color: #eee;
@@ -13229,8 +13223,11 @@ footer.ilFooter {
   border: 2px solid #fff;
   border-radius: 12px;
 }
-.jstree li {
-  white-space: normal!important;
+#left_nav .dropdownimucb:hover {
+  background-color: #83d983;
+}
+#left_nav .dropdownimucb:hover > ul {
+  display: block;
 }
 #left_nav .dropdownimucb > a {
   margin: 0 20px;
@@ -13239,23 +13236,9 @@ footer.ilFooter {
   word-wrap: break-word;
   display: block;
 }
-#left_nav .dropdownimucb > ul li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-#left_nav .dropdownimucb > ul > li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#left_nav .dropdownimucb:hover {
-  background-color: #83d983;
-}
 #left_nav .dropdownimucb a:hover {
   background-color: #94ea94;
   border-radius: 6px;
-}
-#left_nav .dropdownimucb:hover > ul {
-  display: block;
 }
 #left_nav .dropdownimucb > ul {
   display: none;
@@ -13275,23 +13258,27 @@ footer.ilFooter {
     padding: 10px 10%;
   }
 }
-@media (max-width: 1000px) {
-  #left_nav .dropdownimucb {
-    /*min-height: 40px;*/
-  }
-  #left_nav .dropdownimucb > ul {
-    padding: 10px 10%;
-  }
+#left_nav .dropdownimucb > ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#left_nav .dropdownimucb > ul > li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #left_nav .dropdownimucb > ul > li > a {
   height: auto;
   display: inline;
-  /*width: 100%;*/
-  /*text-align: start;*/
 }
-#left_nav div ul > li > ins,
-#left_nav div ul > li > a {
+#left_nav_outer {
+  max-width: 1400px;
+  padding: 15px;
+}
+.ilTreeView {
   display: none;
+}
+.jstree li {
+  white-space: normal!important;
 }
 div.osdNotificationContainer {
   display: none;
@@ -13301,12 +13288,6 @@ div.osdNotificationContainer {
   -moz-border-radius: 6px;
   border-radius: 8px;
 }
-#ilSubTab > li > a:hover {
-  color: #3a4c65;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
 #ilTab {
   margin-bottom: 15px;
 }
@@ -13314,11 +13295,17 @@ div.osdNotificationContainer {
   margin-top: -15px;
   margin-bottom: 0;
 }
+#ilSubTab > li > a:hover {
+  color: #3a4c65;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
 #mainscrolldiv > ol.breadcrumb {
   position: relative;
   background-color: transparent;
 }
-ol.breadcrumb > li {
+#mainscrolldiv > ol.breadcrumb > li {
   padding-top: 10px;
   margin: 5px;
   font-size: 13px;
@@ -13331,16 +13318,13 @@ div.ilc_page_bnav_BottomNavigation {
   border-radius: 12px;
   background-color: #94ea94!important;
 }
-div.ilc_page_cont_PageContainer {
-  border-radius: 48px;
-}
 #ilLMPageContent div.ilc_page_cont_PageContainer {
   border: none;
 }
 /*
-
+*
 IMUCB_main
-
+*
 */
 body {
   background-color: #ffffff;
@@ -13363,10 +13347,6 @@ body {
   margin: 0 !important;
   top: 0!important;
 }
-.row-eq-height > .il-card {
-  display: flex;
-  flex: 1 1 33%;
-}
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13374,12 +13354,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /*justify-content: center;*/
 }
 @media (max-width: 768px) {
   .row-eq-height {
     flex-direction: column;
   }
+}
+.row-eq-height > .il-card {
+  display: flex;
+  flex: 1 1 33%;
 }
 .ilHighlighted {
   background-color: #94ea94;
@@ -13405,47 +13388,40 @@ div.il_ContainerItemTitle {
   background-color: transparent;
   width: 100%;
 }
-.ilCLI > .ilContainerListItemOuter {
-  width: 100%;
-  background-color: #94ea94;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 30px;
-  /*min-height:inherit;*/
-}
-.ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon {
-  /*width: 100%;*/
-  /*display: block;*/
-  /*vertical-align: middle;*/
-}
-.ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon a {
-  text-align: center;
-}
+/* Card objects .ilCLI  */
 .ilCLI {
   padding: 15px;
-  /*min-height: 150px;*/
   border-bottom: none;
 }
 .ilCLI.ilObjListRow:hover {
   background-color: #ddd;
   border-radius: 15px;
 }
+.ilCLI > .ilContainerListItemOuter {
+  width: 100%;
+  background-color: #94ea94;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 30px;
+}
+.ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon a {
+  text-align: center;
+}
+.ilCLI div.ilContainerListItemContent {
+  width: 100%;
+  align-self: center;
+  /*display: block;*/
+  text-align: center;
+  vertical-align: middle;
+}
 .ilCLI h4.il_ContainerItemTitle > a {
   font-size: 26px;
-}
-.ilObjListRow:hover {
-  background-color: transparent;
 }
 @media only screen and (max-width: 1450px) {
   .ilCLI h4.il_ContainerItemTitle > a {
     font-size: 22px;
   }
 }
-/*@media only screen and (max-width: 1250px) {*/
-/*.ilCLI h4.il_ContainerItemTitle > a {*/
-/*font-size: 22px;*/
-/*}*/
-/*}*/
 @media only screen and (max-width: 1050px) {
   .ilCLI h4.il_ContainerItemTitle > a {
     font-size: 18px;
@@ -13466,12 +13442,8 @@ div.il_ContainerItemTitle {
     font-size: 12px;
   }
 }
-.ilCLI div.ilContainerListItemContent {
-  width: 100%;
-  align-self: center;
-  /*display: block;*/
-  text-align: center;
-  vertical-align: middle;
+.ilObjListRow:hover {
+  background-color: transparent;
 }
 /*Buttons*/
 .btn-default,
