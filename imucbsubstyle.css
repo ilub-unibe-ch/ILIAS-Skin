@@ -13544,6 +13544,9 @@ div.ilc_va_ihead_VAccordIHead {
   background-color: #fff!important;
   border-radius: 8px!important;
 }
+div.ilc_va_icont_VAccordICont {
+  background-color: #f7f7f7!important;
+}
 div.ilc_va_icntr_VAccordICntr {
   border: 0!important;
 }
