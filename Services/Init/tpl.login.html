@@ -4,13 +4,10 @@
 <!-- END login_information -->
 
 <div class="ilStartupSection">
-    <script type="text/javascript" src="Customizing/global/skin/unibe50/js/shibboleth.js"></script>
+    <script type="text/javascript" src="Customizing/global/skin/unibe52/js/shibboleth.js"></script>
     <script type="text/javascript" src="https://wayf.switch.ch/SWITCHaai/WAYF/embedded-wayf.js"></script>
+    
     <!-- BEGIN shib_login_form -->
-    <div class="loginContainer" style="display: none;">
-        <a href="https://aai.guest-login.ch/idp/profile/SAML2/Unsolicited/SSO?providerId=https%3A%2F%2Filias-next.unibe.ch%2Fshibboleth&amp;target=https%3A%2F%2Filias-next.unibe.ch%2Fshib_login.php%3Ftarget%3D">Guest Login</a>
-    </div>
-    <!-- EMBEDDED-WAYF-END -->
     <!-- END shib_login_form -->
     <!-- BEGIN cas_login -->
     <p>
@@ -28,15 +25,5 @@
     </p>
     <!-- END agreement -->
 </div>
-<script language="JavaScript">
-    <!--
-    if (document.formlogin.username && document.formlogin.password)
-    {
-        if(document.formlogin.username.value!="") document.formlogin.password.focus();
-        else document.formlogin.username.focus();
-    }
-    //-->
-</script>
-
 
 
