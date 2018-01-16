@@ -25,7 +25,10 @@
     }
     if(left_nav) {
         var left_nav_lis = left_nav.find("li");
-        var course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']");
+        var course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']");
+        if(!course_lis.length){
+            course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']");
+        }
         course_lis.css("margin-left", "0");
         course_lis.not(":has('.ilHighlighted')").hide();
         var my_course_li = course_lis.has('.ilHighlighted').last();
@@ -46,7 +49,10 @@
 
 // on hover open js-trees
 $(window).load(function(){
-    var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").find("li");
+    var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']").has('.ilHighlighted').last().children("ul").find("li");
+    if(!my_course_level_1_lis.length){
+        my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").find("li");
+    }
 
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
     my_course_level_1_lis.each(function(){
