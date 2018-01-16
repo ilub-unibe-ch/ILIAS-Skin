@@ -289,8 +289,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot');
-  src: url('../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -13475,7 +13475,8 @@ div.il_ContainerItemTitle {
   padding: 15px;
   border-bottom: none;
 }
-.ilCLI.ilObjListRow:hover {
+.ilCLI.ilObjListRow:hover,
+.ilCLI.il-card:hover {
   background-color: #ddd;
   border-radius: 15px;
 }
