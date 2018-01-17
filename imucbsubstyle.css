@@ -13195,6 +13195,13 @@ footer.ilFooter {
 #left_nav div ul > li > a {
   display: none;
 }
+#left_nav .root {
+  display: block;
+}
+#left_nav .root li,
+#left_nav .root a {
+  display: block;
+}
 #left_nav .dropdownimucb {
   text-align: center;
   background-color: #eee;
