@@ -33,6 +33,9 @@
         course_lis.not(":has('.ilHighlighted')").hide();
         var my_course_li = course_lis.has('.ilHighlighted').last();
         my_course_li.addClass("root");
+        left_nav_lis.has('.root').css('display','block');
+        my_course_li.css('display','block');
+        my_course_li.find('ul li').css('display','block');
         my_course_li.find("a").show();
         var my_course_level_1_lis = my_course_li.children("ul").children("li");
         course_lis.find("li").has(".ilHighlighted").children('a').children('span').not(":empty").addClass("ilHighlighted");

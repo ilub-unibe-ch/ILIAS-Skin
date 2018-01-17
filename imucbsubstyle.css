@@ -13138,6 +13138,9 @@ footer.ilFooter {
 #ilTopBarNav #ilMMSearch {
   display: none;
 }
+#ilTopBarNav .ilOnScreenChatMenuDropDown {
+  display: none;
+}
 #ilTopBarNav #awareness_trigger {
   display: none;
 }
@@ -13184,6 +13187,9 @@ footer.ilFooter {
 }
 #left_nav div ul {
   width: 100%;
+}
+#left_nav div ul > li {
+  display: none;
 }
 #left_nav div ul > li > ins,
 #left_nav div ul > li > a {
