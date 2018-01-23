@@ -13195,6 +13195,13 @@ footer.ilFooter {
 #left_nav div ul > li > a {
   display: none;
 }
+#left_nav .root {
+  display: block;
+}
+#left_nav .root li,
+#left_nav .root a {
+  display: block;
+}
 #left_nav .dropdownimucb {
   text-align: center;
   background-color: #eee;
@@ -13217,7 +13224,7 @@ footer.ilFooter {
   display: block;
 }
 #left_nav .dropdownimucb > a {
-  margin: 0 20px;
+  margin: 10px 20px;
   position: relative;
   white-space: normal;
   word-wrap: break-word;
@@ -13279,7 +13286,7 @@ footer.ilFooter {
   display: block;
 }
 #left_nav .dropdownimucbinner > a {
-  margin: 0 20px;
+  margin: 10px 20px;
   position: relative;
   white-space: normal;
   word-wrap: break-word;
