@@ -1,12 +1,17 @@
 // hide or remove stuff from users
 (function() {
-    var tab_perm = $("#tab_perm_settings");
-    var subtab_edit_page = $("#subtab_edit_page");
-    var admin_tab = $("#mm_adm_tr");
-    if(!tab_perm.length && !subtab_edit_page.length && !admin_tab.length){
+    var settings = $("[id*=settings]");
+    console.log(settings);
+    var permissions = $("[id*=permissions]");
+    console.log(permissions);
+    var edit = $("[id*=edit]");
+    console.log(edit);
+    var admin = $("[id*=adm]");
+    if(!settings.length && !permissions.length && !edit.length && !admin.length){
         $(".il_ContainerListItem > .ilFloatRight").remove();
         $(".ilMainMenu").hide();
         $("#ilTab").hide();
+        // left_nav is only visible in a course folder. otherwise show breadcrumb for navigation
         if($("#left_nav").length){
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
@@ -57,6 +62,12 @@ $(window).load(function(){
         my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").find("li");
     }
 
+    // remove left_nav if we are not in a course folder (so that breadcrumb gets displayed)
+    if(!my_course_level_1_lis.length){
+        $("#left_nav_outer").remove();
+        $("#left_nav").remove();
+    }
+
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
     my_course_level_1_lis.each(function(){
         $(this).hover(
@@ -69,12 +80,6 @@ $(window).load(function(){
         );
     });
 
-    // remove subtab menu in Learning modules for users
-    var subtab_edit_page = $("#subtab_edit_page");
-    if(!subtab_edit_page.length){
-        $(".ilLMMenu").hide();
-    }
-
 });
 
 
@@ -85,7 +90,6 @@ $( document ).ajaxComplete(function() {
         $(this).hover(
             function(){
                 if($(this).hasClass("jstree-closed")) {
-                    console.log("closed");
                     $(this).addClass("dropdownimucbinner");
                     $(this).children("ins").click();
                 }
