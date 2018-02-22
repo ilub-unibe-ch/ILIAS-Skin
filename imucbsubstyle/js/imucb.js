@@ -17,9 +17,9 @@
         $(".il_ContainerListItem > .ilFloatRight").remove();
         $(".ilMainMenu").hide();
         $("#ilTab").hide();
-        // left_nav is only visible in a course folder. otherwise show breadcrumb for navigation
-        if($("#left_nav").length){
-            // $("#mainscrolldiv > ol.breadcrumb").hide();
+        // left_nav/_outer is only visible in a course folder. otherwise show breadcrumb for navigation
+        if($("#left_nav").length || $("#left_nav_outer").length){
+            $("#mainscrolldiv > ol.breadcrumb").hide();
         }
     }
 })();
@@ -37,14 +37,11 @@
     if(left_nav) {
         var left_nav_lis = left_nav.find("li");
         // the last kategorie/course in the navigation tree
-        // var course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[alt*='Kurs']");
-        // if(!course_lis.length){
-            course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[src*='crs']"," a> img[src*='cat']");
-            // console.log(course_lis);
-        // }
+        course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[src*='crs']"," a> img[src*='cat']");
         course_lis.css("margin-left", "0");
         var my_course_li = course_lis.has('.ilHighlighted').last();
         my_course_li.addClass("root");
+        // my_course_li.parent().siblings('a').css('display','block');
         // make all lis of the same branch visible in order to display the navigation menu.
         left_nav_lis.has('.root').css('display','block');
         // highlight the current course/module visible in the navigation menu
@@ -64,15 +61,12 @@
 
 // on hover open js-trees
 $(window).load(function(){
-    // var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']").has('.ilHighlighted').last().children("ul").find("li");
-    // if(!my_course_level_1_lis.length){
-        my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']").has('.ilHighlighted').last().children("ul").find("li");
-    // }
 
-    // remove left_nav if we are not in a course folder (so that breadcrumb gets displayed)
+    // remove left_nav if we are not in a course folder and display breadcrumb)
+    my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']", "a > img[src*='cat']").has('.ilHighlighted').last().children("ul").find("li");
     if(!my_course_level_1_lis.length){
-        // $("#left_nav_outer").remove();
-        // $("#left_nav").remove();
+        $("#left_nav_outer").remove();
+        $("#left_nav").remove();
         $("#mainscrolldiv > ol.breadcrumb").show();
     }
 
