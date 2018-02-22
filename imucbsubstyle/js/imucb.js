@@ -1,19 +1,25 @@
 // hide or remove stuff from users
 (function() {
     var settings = $("[id*=settings]");
-    console.log(settings);
     var permissions = $("[id*=permissions]");
-    console.log(permissions);
     var edit = $("[id*=edit]");
-    console.log(edit);
     var admin = $("[id*=adm]");
-    if(!settings.length && !permissions.length && !edit.length && !admin.length){
+    var metadata = $("#tab_meta_data");
+    var preconditions = $("#tab_preconditions");
+    var presentation = $("#nontab_pres_mode");
+    var chapters = $("#tab_cont_pages_and_subchapters");
+    var style = $("#tab_cont_style");
+    var standperm = $("#tab_cont_mob_def_prop");
+    var map_areas = $("[id*=map_areas]");
+    if(!settings.length && !permissions.length && !edit.length && !presentation.length && !admin.length
+        && !metadata.length && !presentation.length && !chapters.length && !style.length && !standperm.length
+        && !map_areas.length){
         $(".il_ContainerListItem > .ilFloatRight").remove();
         $(".ilMainMenu").hide();
         $("#ilTab").hide();
         // left_nav is only visible in a course folder. otherwise show breadcrumb for navigation
         if($("#left_nav").length){
-            $("#mainscrolldiv > ol.breadcrumb").hide();
+            // $("#mainscrolldiv > ol.breadcrumb").hide();
         }
     }
 })();
@@ -31,10 +37,11 @@
     if(left_nav) {
         var left_nav_lis = left_nav.find("li");
         // the last kategorie/course in the navigation tree
-        var course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']");
-        if(!course_lis.length){
-            course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']");
-        }
+        // var course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[alt*='Kurs']");
+        // if(!course_lis.length){
+            course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[src*='crs']"," a> img[src*='cat']");
+            // console.log(course_lis);
+        // }
         course_lis.css("margin-left", "0");
         var my_course_li = course_lis.has('.ilHighlighted').last();
         my_course_li.addClass("root");
@@ -57,15 +64,16 @@
 
 // on hover open js-trees
 $(window).load(function(){
-    var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']").has('.ilHighlighted').last().children("ul").find("li");
-    if(!my_course_level_1_lis.length){
-        my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").find("li");
-    }
+    // var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']").has('.ilHighlighted').last().children("ul").find("li");
+    // if(!my_course_level_1_lis.length){
+        my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']").has('.ilHighlighted').last().children("ul").find("li");
+    // }
 
     // remove left_nav if we are not in a course folder (so that breadcrumb gets displayed)
     if(!my_course_level_1_lis.length){
-        $("#left_nav_outer").remove();
-        $("#left_nav").remove();
+        // $("#left_nav_outer").remove();
+        // $("#left_nav").remove();
+        $("#mainscrolldiv > ol.breadcrumb").show();
     }
 
     // on hover simulate click to get the contents of the dropdownimucb if they are not there

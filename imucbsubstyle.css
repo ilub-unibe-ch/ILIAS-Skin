@@ -13177,7 +13177,7 @@ footer.ilFooter {
   position: relative;
   top: 0px!important;
   margin: 0px;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
   display: block;
   border: 0px;
   -webkit-border-radius: 14px;
@@ -13344,7 +13344,7 @@ footer.ilFooter {
 }
 #left_nav_outer {
   max-width: 1400px;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 .ilTreeView {
   display: none;
@@ -13379,9 +13379,7 @@ div.osdNotificationContainer {
   background-color: transparent;
 }
 #mainscrolldiv > ol.breadcrumb > li {
-  padding-top: 10px;
-  margin: 5px;
-  font-size: 13px;
+  font-size: 12px;
 }
 div.ilc_page_tnav_TopNavigation {
   border-radius: 12px;
@@ -13475,7 +13473,7 @@ div.il_ContainerItemTitle {
   width: 100%;
   background-color: #94ea94;
   padding: 20px;
-  margin: 20px 0;
+  margin: 0;
   border-radius: 30px;
 }
 .ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon a {
