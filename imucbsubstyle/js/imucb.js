@@ -16,7 +16,10 @@
         && !map_areas.length){
         $(".il_ContainerListItem > .ilFloatRight").remove();
         $(".ilMainMenu").hide();
-        $("#ilTab").hide();
+        $("#ilTab li:hidden").remove();
+        if($("#ilTab li").length<=2){
+            $("#ilTab").hide();
+        }
         // left_nav/_outer is only visible in a course folder. otherwise show breadcrumb for navigation
         if($("#left_nav").length || $("#left_nav_outer").length){
             $("#mainscrolldiv > ol.breadcrumb").hide();

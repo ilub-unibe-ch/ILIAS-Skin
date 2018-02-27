@@ -13374,6 +13374,11 @@ div.osdNotificationContainer {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+#tab_info_short,
+#tab_info,
+#tab_view_content {
+  display: none;
+}
 #mainscrolldiv > ol.breadcrumb {
   position: relative;
   background-color: transparent;
