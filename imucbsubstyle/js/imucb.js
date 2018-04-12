@@ -16,14 +16,16 @@
         && !map_areas.length){
         $(".il_ContainerListItem > .ilFloatRight").remove();
         $(".ilMainMenu").hide();
-        // $("#ilTab li:hidden").remove();
-        // if($("#ilTab li").length<=2){
-        //     $("#ilTab").hide();
-        // }
-        // left_nav/_outer is only visible in a course folder. otherwise show breadcrumb for navigation
-        if($("#left_nav").length || $("#left_nav_outer").length){
+        current_folder = $("#left_nav div > div ul > li").has('.ilHighlighted').last().children("a").children("img[src*='fold']");
+        $("#tab_info_short").hide();
+        if(current_folder.length){
+            $("#tab_info, #tab_view_content").hide();
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
+        // current_course = $("#left_nav div > div ul > li").has("img[src*='crs']").has('.ilHighlighted').last().children("a").children("img[src*='crs']");
+        // if(current_course.length){
+        //         $("#mainscrolldiv > ol.breadcrumb").hide();
+        // }
     }
 })();
 
