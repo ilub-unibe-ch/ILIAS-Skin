@@ -23,16 +23,16 @@
         // as well as main menu navigation
         $(".ilMainMenu").hide();
         var current_folder = $("#left_nav div > div ul > li").has('.ilHighlighted').last().children("a").children("img[src*='fold']");
-        $("#tab_info_short").hide();
+        // $("#tab_info_short").hide();
         if(current_folder.length){
             // remove the two default tabs of ilias that do not offer useful information for users.
             // so that the tab line and therefore the page is clean.
-            $("#tab_info, #tab_view_content").hide();
+            // $("#tab_info, #tab_view_content").hide();
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
         // remove also permanent link for users
-        $("#current_perma_link").remove();
-        $("label[for=current_perma_link]").remove();
+        $("#ilFooter #current_perma_link").hide();
+        $("#ilFooter label[for=current_perma_link]").hide();
     }
 })();
 
