@@ -30,6 +30,9 @@
             $("#tab_info, #tab_view_content").hide();
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
+        // remove also permanent link for users
+        $("#current_perma_link").remove();
+        $("label[for=current_perma_link]").remove();
     }
 })();
 
