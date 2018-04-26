@@ -23,16 +23,13 @@
         // as well as main menu navigation
         $(".ilMainMenu").hide();
         var current_folder = $("#left_nav div > div ul > li").has('.ilHighlighted').last().children("a").children("img[src*='fold']");
-        // $("#tab_info_short").hide();
+        $("#tab_info_short").hide();
         if(current_folder.length){
-            // remove the two default tabs of ilias that do not offer useful information for users.
-            // so that the tab line and therefore the page is clean.
-            // $("#tab_info, #tab_view_content").hide();
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
         // remove also permanent link for users
-        $("#ilFooter #current_perma_link").hide();
-        $("#ilFooter label[for=current_perma_link]").hide();
+        // $("#ilFooter #current_perma_link").hide();
+        // $("#ilFooter label[for=current_perma_link]").hide();
     }
 })();
 
@@ -49,7 +46,7 @@
         }
     }
     // finds the current root, i.e. the course/category we are in, and add dropdowns for the next level courses/folders
-    if(left_nav) {
+    else if(left_nav) {
         // the last kategorie/course in the navigation tree that is highlighted is the root
         var left_nav_lis = left_nav.find("li");
         var course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[src*='crs']"," a> img[src*='cat']");
@@ -77,6 +74,8 @@
 // on hover open js-trees
 $(window).load(function(){
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
+
+    var root_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']", "a > img[src*='cat']").has('.ilHighlighted').last().children("ul").find("li");
     root_level_1_lis.each(function(){
         $(this).hover(
                 function(){
