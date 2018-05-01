@@ -1,75 +1,80 @@
 // hide or remove stuff from users
+// in this substyle it is needed to have only the necessary parts of ILIAS, without any possible distraction from the learning goal.
+// It leaves only breadcrumbs for navigation to the parent levels on non-folder levels (i.e. categories, courses, etc.)
 (function() {
-    var settings = $("[id*=settings]");
-    console.log(settings);
-    var permissions = $("[id*=permissions]");
-    console.log(permissions);
-    var edit = $("[id*=edit]");
-    console.log(edit);
-    var admin = $("[id*=adm]");
-    if(!settings.length && !permissions.length && !edit.length && !admin.length){
+    // elements that only admins, authors and tutors have
+    // to differentiate between users and non-users
+    let settings = $("[id*=settings]");
+    let permissions = $("[id*=permissions]");
+    let edit = $("[id*=edit]");
+    let admin = $("[id*=adm]");
+    let metadata = $("#tab_meta_data");
+    let preconditions = $("#tab_preconditions");
+    let presentation = $("#nontab_pres_mode");
+    let chapters = $("#tab_cont_pages_and_subchapters");
+    let style = $("#tab_cont_style");
+    let standperm = $("#tab_cont_mob_def_prop");
+    let map_areas = $("[id*=map_areas]");
+    if(!settings.length && !permissions.length && !edit.length && !presentation.length && !admin.length
+        && !metadata.length && !presentation.length && !chapters.length && !style.length && !standperm.length
+        && !map_areas.length && !preconditions.length){
+        // remove right rectangle 'action' that is not very helpful and distracting
         $(".il_ContainerListItem > .ilFloatRight").remove();
+        // as well as main menu navigation
         $(".ilMainMenu").hide();
-        $("#ilTab").hide();
-        // left_nav is only visible in a course folder. otherwise show breadcrumb for navigation
-        if($("#left_nav").length){
+        let current_folder = $("#left_nav div > div ul > li").has('.ilHighlighted').last().children("a").children("img[src*='fold']");
+        $("#tab_info_short, #subtab_info_short").hide();
+        if(current_folder.length){
+            $("#tab_view_content").hide();
             $("#mainscrolldiv > ol.breadcrumb").hide();
         }
     }
 })();
 
 
-// open left_nav, remove other course entries and float content to left
+// open left_nav, remove other course entries and float content to left.
+// left_nav is transformed in a horizontal navigation menu of the folders that the course/category contains.
 (function() {
-    var left_nav = $("#left_nav");
+    let left_nav = $("#left_nav");
+    // if left_nav is not open, opens it for further use.
     if(!left_nav.length){
-        var imgtree = document.getElementById("imgtree");
+        let imgtree = document.getElementById("imgtree");
         if(imgtree){
             imgtree.click();
         }
     }
-    if(left_nav) {
-        var left_nav_lis = left_nav.find("li");
-        // the last kategorie/course in the navigation tree
-        var course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']");
-        if(!course_lis.length){
-            course_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']");
-        }
+    // finds the current root, i.e. the course/category we are in, and add dropdowns for the next level courses/folders
+    else if(left_nav) {
+        // the last kategorie/course in the navigation tree that is highlighted is the root
+        let left_nav_lis = left_nav.find("li");
+        let course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[src*='crs']"," a> img[src*='cat']");
         course_lis.css("margin-left", "0");
-        var my_course_li = course_lis.has('.ilHighlighted').last();
-        my_course_li.addClass("root");
+        let root_li = course_lis.has('.ilHighlighted').last();
+        root_li.addClass("root");
         // make all lis of the same branch visible in order to display the navigation menu.
         left_nav_lis.has('.root').css('display','block');
         // highlight the current course/module visible in the navigation menu
-        var my_course_level_1_lis = my_course_li.children("ul").children("li");
+        let root_level_1_lis = root_li.children("ul").children("li");
+        // In left_nav menu, highlight also the top levels of the level were are in, so that it is visible where we are
         course_lis.find("li").has(".ilHighlighted").children('a').children('span').not(":empty").addClass("ilHighlighted");
         // navigation menu: 3 entries per row as dropdown menus
-        my_course_level_1_lis.addClass("col-sm-4");
-        my_course_li.children("ul").addClass("row");
-        my_course_level_1_lis.addClass("dropdownimucb");
+        root_level_1_lis.addClass("col-sm-4");
+        root_li.children("ul").addClass("row");
+        root_level_1_lis.addClass("dropdownimucb");
 
         // inner dropdown menus that show up only on hover
-        var my_course_level_2plus_lis = my_course_level_1_lis.find("li");
-        my_course_level_2plus_lis.addClass("dropdownimucbinner");
+        let root_level_2plus_lis = root_level_1_lis.find("li");
+        root_level_2plus_lis.addClass("dropdownimucbinner");
     }
 })();
 
 
 // on hover open js-trees
 $(window).load(function(){
-    var my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Kurs']").has('.ilHighlighted').last().children("ul").find("li");
-    if(!my_course_level_1_lis.length){
-        my_course_level_1_lis = $("#left_nav div > div ul > li").has("a > img[alt*='Course']").has('.ilHighlighted').last().children("ul").find("li");
-    }
-
-    // remove left_nav if we are not in a course folder (so that breadcrumb gets displayed)
-    if(!my_course_level_1_lis.length){
-        $("#left_nav_outer").remove();
-        $("#left_nav").remove();
-    }
-
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
-    my_course_level_1_lis.each(function(){
+
+    let root_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']", "a > img[src*='cat']").has('.ilHighlighted').last().children("ul").find("li");
+    root_level_1_lis.each(function(){
         $(this).hover(
                 function(){
                     if($(this).hasClass("jstree-closed")) {
@@ -85,8 +90,8 @@ $(window).load(function(){
 
 // on hover loads asynchronously the subparts of the tree if they are not loaded
 $( document ).ajaxComplete(function() {
-    var my_course_lis = $("#left_nav .dropdownimucb li");
-    my_course_lis.each(function(){
+    let root_lis = $("#left_nav .dropdownimucb li");
+    root_lis.each(function(){
         $(this).hover(
             function(){
                 if($(this).hasClass("jstree-closed")) {
