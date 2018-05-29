@@ -7621,8 +7621,17 @@ select.form-control {
   margin-left: -20px;
   margin-top: 0;
   min-height: 24px;
+  min-width: 13px;
   vertical-align: top;
   line-height: 24px;
+}
+@media only screen and (max-width: 767px) {
+  .radio input[type="radio"],
+  .radio-inline input[type="radio"],
+  .checkbox input[type="checkbox"],
+  .checkbox-inline input[type="checkbox"] {
+    min-width: 16px;
+  }
 }
 [dir="rtl"] .form-horizontal .control-label {
   text-align: left;
@@ -8116,6 +8125,17 @@ div.ilFrmPostHeader span.small {
   margin: 0 0 10px;
   width: 80%;
   float: left;
+}
+@media only screen and (max-width: 767px) {
+  .ilFrmPostContentContainer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ilFrmPostContentContainer img {
+    width: 100%;
+    height: auto !important;
+  }
 }
 .ilFrmPostContent {
   margin-top: 20px;
@@ -11469,7 +11489,7 @@ div.ilPCMyCoursesPath {
   width: 100%;
 }
 .ilAwarenessDropDown .media-left {
-  width: 45px;
+  width: 55px;
 }
 .ilAwarenessDropDown .media-body {
   /* background-image: url('./templates/default/images/scorm/not_attempted.svg'); */
@@ -13174,6 +13194,25 @@ body {
 .row-eq-height > .il-card {
   display: flex;
   flex: 1 1 33%;
+}
+.row-eq-width {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .row-eq-width {
+    flex-direction: row;
+  }
+}
+.row-eq-width > .mc_sr-answer {
+  display: flex;
+  flex: 0 1 20%;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 .ilHighlighted {
   background-color: #94ea94;

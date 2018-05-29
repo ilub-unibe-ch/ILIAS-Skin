@@ -43,6 +43,25 @@ body {
   }
 }
 
+
+.row-eq-width {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
+  > .mc_sr-answer {
+    display: flex;
+    flex: 0 1 20%;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+
 .ilHighlighted {
   background-color: #94ea94;
   border-radius: 6px;
