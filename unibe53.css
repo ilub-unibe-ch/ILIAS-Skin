@@ -15903,6 +15903,14 @@ a.ilSubmitInactive:active {
   border-color: #a0a0a0;
   cursor: not-allowed;
 }
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus {
+  background-color: #ffffff;
+  color: #d6002b;
+  border-color: #ffffff;
+}
+.btn-group.il-btn-month.open span.il-current-month {
+  color: #d6002b;
+}
 #ilTab {
   border-bottom: 2px solid #d6002b;
 }
