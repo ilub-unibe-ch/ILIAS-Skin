@@ -15646,6 +15646,11 @@ div.il_Block,
 table.calmini {
   background-color: #ffffff;
 }
+.ilContainerBlock,
+.ilContainerBlock .ilObjListRow:hover,
+.ilObjListRow:hover {
+  background-color: #edfffa;
+}
 .ilObjListRow {
   border: 1px, #eeeff2;
 }
@@ -15924,6 +15929,9 @@ a.ilSubmitInactive:active {
 }
 ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
   margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fafafa;
 }
 .qtip-default {
   background-color: #e0ebf6;
