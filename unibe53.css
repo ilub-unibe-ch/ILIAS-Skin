@@ -15946,6 +15946,11 @@ div.il_Member {
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header + .ilOnScreenChatMenuItem {
   display: none;
 }
+.popover-content #awareness-content #awareness-list .dropdown-header,
+.popover-content #onscreenchatmenu-content .dropdown-header {
+  font-weight: 600;
+  padding: 6px 10px;
+}
 footer.ilFooter {
   height: 110px;
   background-color: #262626;
