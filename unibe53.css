@@ -15665,6 +15665,7 @@ div.il_Block {
 .ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
   font-size: 18px;
   border-bottom: none;
+  padding-left: 38px;
   background-color: transparent;
 }
 a:hover,
