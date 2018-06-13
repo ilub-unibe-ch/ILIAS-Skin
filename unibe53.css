@@ -15922,6 +15922,9 @@ a.ilSubmitInactive:active {
   color: #ffffff;
   background-color: #d6002b;
 }
+ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
+  margin-bottom: 20px;
+}
 .qtip-default {
   background-color: #e0ebf6;
   border-color: #9cbdde;
