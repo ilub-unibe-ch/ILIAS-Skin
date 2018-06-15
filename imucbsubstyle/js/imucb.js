@@ -68,29 +68,65 @@
     }
 })();
 
+// function to make objects in a row have the same height (as the max height of text of the objects)
+function makeEqualHeight(rowObjects){
+    let max = 0;
+    rowObjects.each(function(){
+        max = Math.max($(this).children('a').children('span').last().height(), max);
+    });
+    console.log(max);
+    max += 4;
+    rowObjects.each(function () {
+        $(this).height(max);
+        // $(this).css("min-height", max+"px");
+    });
+}
+// dynamically fixes the height of the dropdown menu
+$(window).resize(function(){
+    makeEqualHeight($(".dropdownimucb"));
+});
 
 // on hover open js-trees
 $(window).load(function(){
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
 
-    let root_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']", "a > img[src*='cat']").has('.ilHighlighted').last().children("ul").find("li");
-    root_level_1_lis.each(function(){
+    let dropdownimucbs = $(".dropdownimucb");
+
+    dropdownimucbs.each(function(){
         $(this).hover(
-                function(){
-                    if($(this).hasClass("jstree-closed")) {
-                        $(this).children("ins").click();
-                    }
-                },
-                function(){}
+            function(){
+                if($(this).hasClass("jstree-closed")) {
+                    $(this).children("ins").click();
+                }
+            },
+            function(){
+            }
         );
     });
 
-});
+    // adjust left/top nav height to max
+    makeEqualHeight(dropdownimucbs);
 
+    $(".root").hover(
+        function(){
+            $("#fixed_content").hide();
+            makeEqualHeight(dropdownimucbs);
+        },
+        function() {
+            $("#fixed_content").fadeIn();
+            setTimeout(
+                function(){
+                    makeEqualHeight(dropdownimucbs);
+                }, 10
+            );
+        }
+    );
+
+});
 
 // on hover loads asynchronously the subparts of the tree if they are not loaded
 $( document ).ajaxComplete(function() {
-    let root_lis = $("#left_nav .dropdownimucb li");
+    let root_lis = $("#left_nav .root .dropdownimucb li");
     root_lis.each(function(){
         $(this).hover(
             function(){

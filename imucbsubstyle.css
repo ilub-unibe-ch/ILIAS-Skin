@@ -13393,6 +13393,7 @@ img[alt="Icon Learning Module ILIAS"] {
   display: none;
 }
 #left_nav {
+  display: block;
   overflow: visible;
   width: 100%;
   max-width: 1400px;
@@ -13400,7 +13401,6 @@ img[alt="Icon Learning Module ILIAS"] {
   top: 0px!important;
   margin: 0px;
   padding: 15px 15px 0 15px;
-  display: block;
   border: 0px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
@@ -13424,15 +13424,28 @@ img[alt="Icon Learning Module ILIAS"] {
 #left_nav .root a {
   display: block;
 }
+#left_nav .root:hover {
+  z-index: 1000;
+}
+#left_nav .root:hover .dropdownimucb {
+  padding: 10px 0;
+  min-height: 80px;
+}
+#left_nav .root:hover .dropdownimucb a {
+  height: auto;
+}
+#left_nav .root:hover .dropdownimucb a > span {
+  font-size: 18px;
+  line-height: 22px;
+}
 #left_nav .dropdownimucb {
   text-align: center;
   background-color: #eee;
   margin-left: 0px;
   margin-top: 10px;
-  padding: 10px 0;
   position: relative;
   font-size: 20px;
-  min-height: 80px;
+  min-height: 10px;
   border: 2px solid #fff;
   border-radius: 12px;
 }
@@ -13446,11 +13459,12 @@ img[alt="Icon Learning Module ILIAS"] {
   display: block;
 }
 #left_nav .dropdownimucb > a {
-  margin: 10px 20px;
   position: relative;
   white-space: normal;
   word-wrap: break-word;
   display: block;
+  height: initial;
+  font-size: 8px;
 }
 #left_nav .dropdownimucb a:hover {
   background-color: #94ea94;
@@ -13462,7 +13476,6 @@ img[alt="Icon Learning Module ILIAS"] {
   width: 100%;
   background-color: inherit;
   z-index: 1000;
-  margin-top: 10px;
   padding: 5px 20%;
   border-top: 1px solid #eee;
   border-radius: 0 0 12px 12px;
@@ -13481,14 +13494,13 @@ img[alt="Icon Learning Module ILIAS"] {
   height: auto;
   display: inline;
 }
-#left_nav .dropdownimucbinner {
+#left_nav .dropdownimucb .dropdownimucbinner {
   background-color: #eee;
   margin-left: 0px;
   margin-top: 10px;
-  padding: 10px 0;
   position: relative;
   font-size: 20px;
-  min-height: 80px;
+  min-height: 10px;
   border: 2px solid #fff;
   border-radius: 12px;
   background-color: inherit;
@@ -13498,82 +13510,90 @@ img[alt="Icon Learning Module ILIAS"] {
   margin: 0;
   padding: 5px 0;
 }
-#left_nav .dropdownimucbinner:hover {
+#left_nav .dropdownimucb .dropdownimucbinner:hover {
   background-color: #83d983;
 }
-#left_nav .dropdownimucbinner:hover > ul {
+#left_nav .dropdownimucb .dropdownimucbinner:hover > ul {
   display: block;
 }
-#left_nav .dropdownimucbinner:hover li:hover > ul {
+#left_nav .dropdownimucb .dropdownimucbinner:hover li:hover > ul {
   display: block;
 }
-#left_nav .dropdownimucbinner > a {
-  margin: 10px 20px;
+#left_nav .dropdownimucb .dropdownimucbinner > a {
   position: relative;
   white-space: normal;
   word-wrap: break-word;
   display: block;
+  height: initial;
+  font-size: 8px;
 }
-#left_nav .dropdownimucbinner a:hover {
+#left_nav .dropdownimucb .dropdownimucbinner a:hover {
   background-color: #94ea94;
   border-radius: 6px;
 }
-#left_nav .dropdownimucbinner > ul {
+#left_nav .dropdownimucb .dropdownimucbinner > ul {
   display: none;
   position: absolute;
   width: 100%;
   background-color: inherit;
   z-index: 1000;
-  margin-top: 10px;
   padding: 5px 20%;
   border-top: 1px solid #eee;
   border-radius: 0 0 12px 12px;
   box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
 }
 @media (max-width: 1000px) {
-  #left_nav .dropdownimucbinner > ul {
+  #left_nav .dropdownimucb .dropdownimucbinner > ul {
     padding: 10px 10%;
   }
 }
-#left_nav .dropdownimucbinner > ul li {
+#left_nav .dropdownimucb .dropdownimucbinner > ul li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#left_nav .dropdownimucbinner > ul li > a {
+#left_nav .dropdownimucb .dropdownimucbinner > ul li > a {
   height: auto;
   display: inline;
 }
-#left_nav .dropdownimucbinner > a {
+#left_nav .dropdownimucb .dropdownimucbinner > a {
   margin: 0;
 }
-#left_nav .dropdownimucbinner > ul {
+#left_nav .dropdownimucb .dropdownimucbinner > ul {
   margin-top: 5px;
   border-top: 0;
   border-radius: 12px;
   padding: 5px 10%;
 }
-#left_nav .dropdownimucbinner > ul li {
+#left_nav .dropdownimucb .dropdownimucbinner > ul li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#left_nav .dropdownimucbinner > ul li > a {
+#left_nav .dropdownimucb .dropdownimucbinner > ul li > a {
   height: auto;
   display: inline;
 }
-#left_nav .dropdownimucbinner .dropdownimucbinner ul {
+#left_nav .dropdownimucb .dropdownimucbinner .dropdownimucbinner ul {
   left: 20%;
   border-top: none;
 }
 #left_nav_outer {
   max-width: 1400px;
-  padding: 15px 15px 0 15px;
+  padding: 0px 15px 0 15px;
+  position: relative;
+  z-index: 100;
 }
 .ilTreeView {
   display: none;
 }
+.jstree a {
+  white-space: normal;
+}
 .jstree li {
   margin-left: auto !important;
   white-space: normal !important;
+}
+.jstree .dropdownimucb a {
+  line-height: 10px;
 }
 div.osdNotificationContainer {
   display: none;
@@ -13636,3 +13656,4 @@ div.ilc_page_bnav_BottomNavigation {
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
 /* @nav-tabs-link-hover-border-color: @brand-primary; */
+/*# sourceMappingURL=imucbsubstyle.css.map */

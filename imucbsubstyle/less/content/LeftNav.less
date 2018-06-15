@@ -7,7 +7,6 @@
     top: 0px!important;
     margin: 0px;
     padding: 15px 15px 0 15px;
-    display: block;
     border: 0px;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
@@ -28,16 +27,32 @@
         li , a {
             display: block;
         }
+        &:hover {
+            z-index: 1000;
+        }
+        &:hover {
+            .dropdownimucb {
+                padding: 10px 0;
+                a {
+                    height: auto;
+                    > span {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+                min-height: 80px;
+            }
+        }
     }
     .dropdownimucb {
         text-align: center;
         background-color: #eee;
         margin-left: 0px;
         margin-top: 10px;
-        padding: 10px 0;
+        //padding: 10px 0;
         position: relative;
         font-size: 20px;
-        min-height: 80px;
+        min-height: 10px;
         border: 2px solid #fff;
         border-radius: 12px;
         &:hover{
@@ -52,11 +67,13 @@
             }
         }
         > a {
-            margin: 10px 20px;
+            //margin: 10px 20px;
             position: relative;
             white-space: normal;
             word-wrap: break-word;
             display: block;
+            height: initial;
+            font-size: 8px;
         }
         a:hover{
             background-color: #94ea94;
@@ -68,7 +85,7 @@
             width: 100%;
             background-color: inherit;
             z-index: 1000;
-            margin-top: 10px;
+            //margin-top: 10px;
             padding:5px 20%;
             border-top: 1px solid #eee;
             border-radius: 0 0 12px 12px;
@@ -86,7 +103,7 @@
             }
         }
     }
-    .dropdownimucbinner {
+    .dropdownimucb .dropdownimucbinner {
         .dropdownimucb;
         background-color: inherit;
         border: none;
@@ -120,16 +137,26 @@
 
 #left_nav_outer {
     max-width: 1400px;
-    padding: 15px 15px 0 15px;
+    padding: 0px 15px 0 15px;
+    position: relative;
+    z-index: 100;
 }
 
 .ilTreeView {
     display: none;
 }
 
-.jstree li {
-    margin-left: auto !important;
-    white-space: normal !important;
+.jstree {
+    a {
+        white-space: normal;
+    }
+    li {
+        margin-left: auto !important;
+        white-space: normal !important;
+    }
+    .dropdownimucb a {
+        line-height: 10px;
+    }
 }
 
 div.osdNotificationContainer{
