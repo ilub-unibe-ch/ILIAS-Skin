@@ -1,17 +1,17 @@
 #left_nav {
     display: block;
-    overflow: visible;
-    width: 100%;
-    max-width: 1400px;
     position: relative;
     top: 0px!important;
     margin: 0px;
-    padding: 15px 15px 0 15px;
     border: 0px;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: @il-body-bg;
+    padding: 15px 15px 0 15px;
+    width: 100%;
+    max-width: 1400px;
+    overflow: visible;
     div ul{
         width: 100%;
         > li {
@@ -22,16 +22,13 @@
             }
         }
     }
-    .root {
+    .il-left_nav-root {
         display: block;
         li , a {
             display: block;
         }
         &:hover {
-            z-index: 1000;
-        }
-        &:hover {
-            .dropdownimucb {
+            .il-left_nav-dropdownimucb {
                 padding: 10px 0;
                 a {
                     height: auto;
@@ -44,19 +41,18 @@
             }
         }
     }
-    .dropdownimucb {
-        text-align: center;
-        background-color: #eee;
+    .il-left_nav-dropdownimucb {
+        position: relative;
         margin-left: 0px;
         margin-top: 10px;
-        //padding: 10px 0;
-        position: relative;
-        font-size: 20px;
-        min-height: 10px;
-        border: 2px solid #fff;
+        border: 2px solid white;
         border-radius: 12px;
+        background-color: @il-dark-white;
+        min-height: 10px;
+        font-size: 20px;
+        text-align: center;
         &:hover{
-            background-color: #83d983;
+            background-color: @il-dropdownimucb-highlight;
             > ul {
                 display: block;
             }
@@ -67,29 +63,27 @@
             }
         }
         > a {
-            //margin: 10px 20px;
-            position: relative;
-            white-space: normal;
-            word-wrap: break-word;
             display: block;
+            position: relative;
             height: initial;
             font-size: 8px;
+            white-space: normal;
+            word-wrap: break-word;
         }
         a:hover{
-            background-color: #94ea94;
             border-radius: 6px;
+            background-color: @il-light-green-imucb;
         }
         > ul {
             display: none;
             position: absolute;
-            width: 100%;
-            background-color: inherit;
             z-index: 1000;
-            //margin-top: 10px;
-            padding:5px 20%;
-            border-top: 1px solid #eee;
+            border-top: 1px solid @il-dark-white;
             border-radius: 0 0 12px 12px;
-            box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
+            box-shadow: 3px 9px 9px 0px @il-dropdownimucb-boxshadow;
+            background-color: inherit;
+            padding:5px 20%;
+            width: 100%;
             @media (max-width: 1000px) {
                 padding: 10px 10%;
             }
@@ -97,20 +91,20 @@
                 margin-top: 5px;
                 margin-bottom: 5px;
                 > a {
-                    height: auto;
                     display: inline;
+                    height: auto;
                 }
             }
         }
     }
-    .dropdownimucb .dropdownimucbinner {
-        .dropdownimucb;
-        background-color: inherit;
+    .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner {
+        .il-left_nav-dropdownimucb;
+        margin: 0;
         border: none;
+        background-color: inherit;
+        padding: 5px 0;
         min-height:0;
         text-align: center;
-        margin: 0;
-        padding: 5px 0;
         > a {
             margin: 0;
         }
@@ -123,12 +117,12 @@
                 margin-top: 5px;
                 margin-bottom: 5px;
                 > a {
-                    height: auto;
                     display: inline;
+                    height: auto;
                 }
             }
         }
-        .dropdownimucbinner ul{
+        .il-left_nav-dropdownimucbinner ul{
             left: 20%;
             border-top: none;
         }
@@ -136,10 +130,10 @@
 }
 
 #left_nav_outer {
-    max-width: 1400px;
-    padding: 0px 15px 0 15px;
     position: relative;
     z-index: 100;
+    padding: 0px 15px 0 15px;
+    max-width: 1400px;
 }
 
 .ilTreeView {
@@ -154,7 +148,7 @@
         margin-left: auto !important;
         white-space: normal !important;
     }
-    .dropdownimucb a {
+    .il-left_nav-dropdownimucb a {
         line-height: 10px;
     }
 }

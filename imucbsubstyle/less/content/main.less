@@ -5,8 +5,7 @@
 */
 
 body {
-  background-color: @body-bg;
-  //background-color: #fff;
+  background-color: @il-body-bg;
 }
 
 .row {
@@ -21,13 +20,13 @@ body {
 }
 
 #fixed_content {
-  width: 100%;
   position: relative;
   margin: 0 !important;
   top: 0!important;
+  width: 100%;
 }
 
-.row-eq-height {
+.il-row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,7 +43,7 @@ body {
 }
 
 
-.row-eq-width {
+.il-row-eq-width {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63,8 +62,8 @@ body {
 }
 
 .ilHighlighted {
-  background-color: #94ea94;
   border-radius: 6px;
+  background-color: @il-light-green-imucb;
 }
 
 #mainscrolldiv {
@@ -83,16 +82,14 @@ body {
 /*Block design*/
 div.ilc_section_Block,
 a.ilc_section_Block {
-  background-image: none!important;
   border: none!important;
   border-radius: 20px;
+  background-image: none!important;
 }
 
 div.il_ContainerItemTitle {
-  text-align: center;
   width:100%;
-  /*word-wrap: break-word;*/
-  /*word-break: break-all;*/
+  text-align: center;
 }
 
 .ilContainerBlock {
@@ -108,24 +105,24 @@ div.il_ContainerItemTitle {
 }
 
 div div.ilc_question_Standard{
-  background-color: #fff;
-  border-color: #666;
+  border-color: @il-dark-gray;
+  background-color: @il-body-bg;
 }
 
 /* Card objects .ilCLI  */
 .ilCLI {
-  padding: 15px;
   border-bottom: none;
+  padding: 15px;
   &.ilObjListRow:hover, &.il-card:hover {
-    background-color: #ddd;
     border-radius: 15px;
+    background-color: @il-gray;
   }
   > .ilContainerListItemOuter {
-    width: 100%;
-    background-color: #94ea94;
-    padding: 20px;
     margin: 0;
     border-radius: 30px;
+    background-color: @il-light-green-imucb;
+    padding: 20px;
+    width: 100%;
     > .ilContainerListItemIcon a {
       text-align: center;
     }
@@ -133,7 +130,6 @@ div div.ilc_question_Standard{
   div.ilContainerListItemContent {
     width: 100%;
     align-self: center;
-    /*display: block;*/
     text-align: center;
     vertical-align: middle;
   }
@@ -161,11 +157,20 @@ div div.ilc_question_Standard{
   background-color: transparent;
 }
 
+/* il_HeaderInner */
+#mainscrolldiv > div.il_HeaderInner {
+  position: relative;
+}
+
+#il_head_action {
+  display: none;
+}
+
 /*Buttons*/
 .btn-default, .btn-primary {
-  background-color: #0f7d28;
-  border-color: #0f7d28;
+  border-color: @il-mid-green-imucb;
   border-radius: 8px;
+  background-color: @il-mid-green-imucb;
 }
 
 .btn-group > span {
@@ -177,12 +182,12 @@ div div.ilc_question_Standard{
 
 /*Accordions*/
 div.ilc_va_ihead_VAccordIHead {
-  background-color: #fff!important;
   border-radius: 8px!important;
+  background-color: @il-body-bg!important;
 }
 
 div.ilc_va_icont_VAccordICont {
-  background-color: #f7f7f7!important;
+  background-color: @il-accordion-bg!important;
 }
 
 div.ilc_va_icntr_VAccordICntr {

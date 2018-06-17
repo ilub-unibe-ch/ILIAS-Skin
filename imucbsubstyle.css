@@ -12834,7 +12834,7 @@ table.mceToolbar td {
   padding: 0px 450px 0 450px;
 }
 div.ilTopBar {
-  background-color: #bd0026;
+  background-color: #0f7d28;
   color: #ffffff;
 }
 .ilMainHeader {
@@ -12861,10 +12861,10 @@ div.ilTopBar {
     width: 0px;
   }
   #ilTopNav button.navbar-toggle {
-    background-color: #8a001c;
+    background-color: #ffffff;
   }
   #ilTopNav button.navbar-toggle:hover {
-    background-color: #660014;
+    background-color: #06300f;
   }
 }
 #ilTopBarNav .ilAwarenessItem .dropdown-menu,
@@ -12872,34 +12872,34 @@ div.ilTopBar {
   background-color: #ffffff;
 }
 #ilTopBarNav .dropdown-menu {
-  background-color: #660014;
-  color: #ffffff;
+  background-color: #06300f;
+  color: #94ea94;
 }
 #ilTopBarNav .dropdown-menu > a {
-  color: #ffffff;
+  color: #94ea94;
 }
 #ilTopBarNav .dropdown-menu > a:hover,
 #ilTopBarNav .dropdown-menu > a:active,
 #ilTopBarNav .dropdown-menu > a:focus {
-  color: #660014;
+  color: #06300f;
 }
 #ilTopBarNav > li > a {
-  background-color: #8a001c;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #94ea94;
 }
 #ilTopBarNav > li > a:hover,
 #ilTopBarNav > li > a:active,
 #ilTopBarNav > li > a:focus {
-  background-color: #660014;
+  background-color: #06300f;
 }
 #ilTopBarNav > li.dropdown.open > a:hover,
 #ilTopBarNav > li.dropdown.open > a:active,
 #ilTopBarNav > li.dropdown.open > a:focus {
-  background-color: #660014;
+  background-color: #06300f;
 }
 #ilTopBarNav > .active > a,
 #ilTopBarNav > .open > a {
-  background-color: #660014;
+  background-color: #06300f;
 }
 .breadcrumb {
   margin-top: 0px;
@@ -13173,12 +13173,12 @@ body {
   padding: 0;
 }
 #fixed_content {
-  width: 100%;
   position: relative;
   margin: 0 !important;
   top: 0!important;
+  width: 100%;
 }
-.row-eq-height {
+.il-row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13187,15 +13187,15 @@ body {
   flex-direction: row;
 }
 @media (max-width: 768px) {
-  .row-eq-height {
+  .il-row-eq-height {
     flex-direction: column;
   }
 }
-.row-eq-height > .il-card {
+.il-row-eq-height > .il-card {
   display: flex;
   flex: 1 1 33%;
 }
-.row-eq-width {
+.il-row-eq-width {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13204,19 +13204,19 @@ body {
   flex-direction: row;
 }
 @media (max-width: 768px) {
-  .row-eq-width {
+  .il-row-eq-width {
     flex-direction: row;
   }
 }
-.row-eq-width > .mc_sr-answer {
+.il-row-eq-width > .mc_sr-answer {
   display: flex;
   flex: 0 1 20%;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
 .ilHighlighted {
-  background-color: #94ea94;
   border-radius: 6px;
+  background-color: #94ea94;
 }
 #mainscrolldiv h1.ilc_heading1_Headline1 {
   margin-top: 5px;
@@ -13231,15 +13231,13 @@ body {
 /*Block design*/
 div.ilc_section_Block,
 a.ilc_section_Block {
-  background-image: none!important;
   border: none!important;
   border-radius: 20px;
+  background-image: none!important;
 }
 div.il_ContainerItemTitle {
-  text-align: center;
   width: 100%;
-  /*word-wrap: break-word;*/
-  /*word-break: break-all;*/
+  text-align: center;
 }
 .ilContainerBlock {
   border: 0;
@@ -13252,25 +13250,25 @@ div.il_ContainerItemTitle {
   display: none;
 }
 div div.ilc_question_Standard {
-  background-color: #fff;
-  border-color: #666;
+  border-color: #666666;
+  background-color: #ffffff;
 }
 /* Card objects .ilCLI  */
 .ilCLI {
-  padding: 15px;
   border-bottom: none;
+  padding: 15px;
 }
 .ilCLI.ilObjListRow:hover,
 .ilCLI.il-card:hover {
-  background-color: #ddd;
   border-radius: 15px;
+  background-color: #dddddd;
 }
 .ilCLI > .ilContainerListItemOuter {
-  width: 100%;
-  background-color: #94ea94;
-  padding: 20px;
   margin: 0;
   border-radius: 30px;
+  background-color: #94ea94;
+  padding: 20px;
+  width: 100%;
 }
 .ilCLI > .ilContainerListItemOuter > .ilContainerListItemIcon a {
   text-align: center;
@@ -13278,7 +13276,6 @@ div div.ilc_question_Standard {
 .ilCLI div.ilContainerListItemContent {
   width: 100%;
   align-self: center;
-  /*display: block;*/
   text-align: center;
   vertical-align: middle;
 }
@@ -13313,13 +13310,20 @@ div div.ilc_question_Standard {
 .ilObjListRow:hover {
   background-color: transparent;
 }
+/* il_HeaderInner */
+#mainscrolldiv > div.il_HeaderInner {
+  position: relative;
+}
+#il_head_action {
+  display: none;
+}
 /*Buttons*/
 .btn-default,
 .btn-primary,
 #wayf_submit_button {
-  background-color: #0f7d28;
   border-color: #0f7d28;
   border-radius: 8px;
+  background-color: #0f7d28;
 }
 .btn-group > span > .btn-default,
 .btn-group > span > a.btn-primary {
@@ -13327,11 +13331,11 @@ div div.ilc_question_Standard {
 }
 /*Accordions*/
 div.ilc_va_ihead_VAccordIHead {
-  background-color: #fff!important;
   border-radius: 8px!important;
+  background-color: #ffffff !important;
 }
 div.ilc_va_icont_VAccordICont {
-  background-color: #f7f7f7!important;
+  background-color: #f7f7f7 !important;
 }
 div.ilc_va_icntr_VAccordICntr {
   border: 0!important;
@@ -13367,45 +13371,29 @@ img[alt="Icon Learning Module ILIAS"] {
   display: none;
 }
 #ilTopBarNav > li > a {
-  background-color: #fff;
-  color: #0f7d28;
   border-radius: 12px;
+  color: #0f7d28;
 }
 #ilTopBarNav > li > a:hover {
   background-color: #94ea94;
 }
-#ilTopBar {
-  background-color: #0f7d28;
-}
 .ilMainHeader {
-  border-bottom: 1px solid #c6cdd5;
-}
-#ilTopNav button.navbar-toggle {
-  background-color: #94ea94;
-}
-#ilTopNav button.navbar-toggle:hover {
-  background-color: #232f3e;
-}
-#mainscrolldiv > div.il_HeaderInner {
-  position: relative;
-}
-#il_head_action {
-  display: none;
+  border-bottom: 1px solid #94ea94;
 }
 #left_nav {
   display: block;
-  overflow: visible;
-  width: 100%;
-  max-width: 1400px;
   position: relative;
   top: 0px!important;
   margin: 0px;
-  padding: 15px 15px 0 15px;
   border: 0px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
+  padding: 15px 15px 0 15px;
+  width: 100%;
+  max-width: 1400px;
+  overflow: visible;
 }
 #left_nav div ul {
   width: 100%;
@@ -13417,170 +13405,167 @@ img[alt="Icon Learning Module ILIAS"] {
 #left_nav div ul > li > a {
   display: none;
 }
-#left_nav .root {
+#left_nav .il-left_nav-root {
   display: block;
 }
-#left_nav .root li,
-#left_nav .root a {
+#left_nav .il-left_nav-root li,
+#left_nav .il-left_nav-root a {
   display: block;
 }
-#left_nav .root:hover {
-  z-index: 1000;
-}
-#left_nav .root:hover .dropdownimucb {
+#left_nav .il-left_nav-root:hover .il-left_nav-dropdownimucb {
   padding: 10px 0;
   min-height: 80px;
 }
-#left_nav .root:hover .dropdownimucb a {
+#left_nav .il-left_nav-root:hover .il-left_nav-dropdownimucb a {
   height: auto;
 }
-#left_nav .root:hover .dropdownimucb a > span {
+#left_nav .il-left_nav-root:hover .il-left_nav-dropdownimucb a > span {
   font-size: 18px;
   line-height: 22px;
 }
-#left_nav .dropdownimucb {
-  text-align: center;
-  background-color: #eee;
+#left_nav .il-left_nav-dropdownimucb {
+  position: relative;
   margin-left: 0px;
   margin-top: 10px;
-  position: relative;
-  font-size: 20px;
-  min-height: 10px;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border-radius: 12px;
+  background-color: #eeeeee;
+  min-height: 10px;
+  font-size: 20px;
+  text-align: center;
 }
-#left_nav .dropdownimucb:hover {
+#left_nav .il-left_nav-dropdownimucb:hover {
   background-color: #83d983;
 }
-#left_nav .dropdownimucb:hover > ul {
+#left_nav .il-left_nav-dropdownimucb:hover > ul {
   display: block;
 }
-#left_nav .dropdownimucb:hover li:hover > ul {
+#left_nav .il-left_nav-dropdownimucb:hover li:hover > ul {
   display: block;
 }
-#left_nav .dropdownimucb > a {
+#left_nav .il-left_nav-dropdownimucb > a {
+  display: block;
   position: relative;
-  white-space: normal;
-  word-wrap: break-word;
-  display: block;
   height: initial;
   font-size: 8px;
+  white-space: normal;
+  word-wrap: break-word;
 }
-#left_nav .dropdownimucb a:hover {
-  background-color: #94ea94;
+#left_nav .il-left_nav-dropdownimucb a:hover {
   border-radius: 6px;
+  background-color: #94ea94;
 }
-#left_nav .dropdownimucb > ul {
+#left_nav .il-left_nav-dropdownimucb > ul {
   display: none;
   position: absolute;
-  width: 100%;
-  background-color: inherit;
   z-index: 1000;
-  padding: 5px 20%;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   border-radius: 0 0 12px 12px;
   box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
+  background-color: inherit;
+  padding: 5px 20%;
+  width: 100%;
 }
 @media (max-width: 1000px) {
-  #left_nav .dropdownimucb > ul {
+  #left_nav .il-left_nav-dropdownimucb > ul {
     padding: 10px 10%;
   }
 }
-#left_nav .dropdownimucb > ul li {
+#left_nav .il-left_nav-dropdownimucb > ul li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#left_nav .dropdownimucb > ul li > a {
-  height: auto;
+#left_nav .il-left_nav-dropdownimucb > ul li > a {
   display: inline;
+  height: auto;
 }
-#left_nav .dropdownimucb .dropdownimucbinner {
-  background-color: #eee;
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner {
+  position: relative;
   margin-left: 0px;
   margin-top: 10px;
-  position: relative;
-  font-size: 20px;
-  min-height: 10px;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border-radius: 12px;
-  background-color: inherit;
+  background-color: #eeeeee;
+  min-height: 10px;
+  font-size: 20px;
+  margin: 0;
   border: none;
+  background-color: inherit;
+  padding: 5px 0;
   min-height: 0;
   text-align: center;
-  margin: 0;
-  padding: 5px 0;
 }
-#left_nav .dropdownimucb .dropdownimucbinner:hover {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner:hover {
   background-color: #83d983;
 }
-#left_nav .dropdownimucb .dropdownimucbinner:hover > ul {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner:hover > ul {
   display: block;
 }
-#left_nav .dropdownimucb .dropdownimucbinner:hover li:hover > ul {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner:hover li:hover > ul {
   display: block;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > a {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > a {
+  display: block;
   position: relative;
-  white-space: normal;
-  word-wrap: break-word;
-  display: block;
   height: initial;
   font-size: 8px;
+  white-space: normal;
+  word-wrap: break-word;
 }
-#left_nav .dropdownimucb .dropdownimucbinner a:hover {
-  background-color: #94ea94;
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner a:hover {
   border-radius: 6px;
+  background-color: #94ea94;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > ul {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul {
   display: none;
   position: absolute;
-  width: 100%;
-  background-color: inherit;
   z-index: 1000;
-  padding: 5px 20%;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   border-radius: 0 0 12px 12px;
   box-shadow: 3px 9px 9px 0px rgba(0, 0, 0, 0.176);
+  background-color: inherit;
+  padding: 5px 20%;
+  width: 100%;
 }
 @media (max-width: 1000px) {
-  #left_nav .dropdownimucb .dropdownimucbinner > ul {
+  #left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul {
     padding: 10px 10%;
   }
 }
-#left_nav .dropdownimucb .dropdownimucbinner > ul li {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > ul li > a {
-  height: auto;
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul li > a {
   display: inline;
+  height: auto;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > a {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > a {
   margin: 0;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > ul {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul {
   margin-top: 5px;
   border-top: 0;
   border-radius: 12px;
   padding: 5px 10%;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > ul li {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#left_nav .dropdownimucb .dropdownimucbinner > ul li > a {
-  height: auto;
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner > ul li > a {
   display: inline;
+  height: auto;
 }
-#left_nav .dropdownimucb .dropdownimucbinner .dropdownimucbinner ul {
+#left_nav .il-left_nav-dropdownimucb .il-left_nav-dropdownimucbinner .il-left_nav-dropdownimucbinner ul {
   left: 20%;
   border-top: none;
 }
 #left_nav_outer {
-  max-width: 1400px;
-  padding: 0px 15px 0 15px;
   position: relative;
   z-index: 100;
+  padding: 0px 15px 0 15px;
+  max-width: 1400px;
 }
 .ilTreeView {
   display: none;
@@ -13592,7 +13577,7 @@ img[alt="Icon Learning Module ILIAS"] {
   margin-left: auto !important;
   white-space: normal !important;
 }
-.jstree .dropdownimucb a {
+.jstree .il-left_nav-dropdownimucb a {
   line-height: 10px;
 }
 div.osdNotificationContainer {
@@ -13611,10 +13596,10 @@ div.osdNotificationContainer {
   margin-bottom: 0;
 }
 #ilSubTab > li > a:hover {
-  color: #3a4c65;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  color: #3a4c65;
 }
 #mainscrolldiv > ol.breadcrumb {
   position: relative;
@@ -13625,11 +13610,11 @@ div.osdNotificationContainer {
 }
 div.ilc_page_tnav_TopNavigation {
   border-radius: 12px;
-  background-color: #94ea94!important;
+  background-color: #94ea94 !important;
 }
 div.ilc_page_bnav_BottomNavigation {
   border-radius: 12px;
-  background-color: #94ea94!important;
+  background-color: #94ea94 !important;
 }
 #ilLMPageContent div.ilc_page_cont_PageContainer {
   border: none;
