@@ -15649,7 +15649,7 @@ table.calmini {
 .ilContainerBlock,
 .ilContainerBlock .ilObjListRow:hover,
 .ilObjListRow:hover {
-  background-color: #edfffa;
+  background-color: #edf3fa;
 }
 .ilObjListRow {
   border: 1px, #eeeff2;
@@ -15665,7 +15665,7 @@ div.il_Block {
 .ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
   font-size: 18px;
   border-bottom: none;
-  padding-left: 38px;
+  padding-left: 42px;
   background-color: transparent;
 }
 a:hover,
@@ -15927,6 +15927,9 @@ a.ilSubmitInactive:active {
 #ilTab > li:hover > a {
   color: #ffffff;
   background-color: #d6002b;
+}
+#ilSubTab {
+  padding: 8px 6px;
 }
 ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
   margin-bottom: 20px;
