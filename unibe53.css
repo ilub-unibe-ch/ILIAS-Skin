@@ -15689,6 +15689,9 @@ a.ilTag:hover {
   background-color: #b1cce9;
   color: #4e7aa9;
 }
+#etherpad-liteFrame {
+  height: 700px;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #abc466;
