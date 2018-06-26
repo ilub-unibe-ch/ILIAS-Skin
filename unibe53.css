@@ -15689,6 +15689,12 @@ a.ilTag:hover {
   background-color: #b1cce9;
   color: #4e7aa9;
 }
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderCollapsed {
+  padding-left: 10px;
+}
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBlockHeader {
+  padding-left: 2px;
+}
 #etherpad-liteFrame {
   height: 700px;
 }
