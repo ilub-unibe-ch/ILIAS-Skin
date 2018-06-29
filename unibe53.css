@@ -15698,6 +15698,9 @@ div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBloc
 #etherpad-liteFrame {
   height: 700px;
 }
+ul.dropdown-menu > li > #mm_pd_lp {
+  display: none;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #abc466;
