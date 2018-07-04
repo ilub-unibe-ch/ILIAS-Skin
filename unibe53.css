@@ -15701,6 +15701,9 @@ div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBloc
 ul.dropdown-menu > li > #mm_pd_lp {
   display: none;
 }
+input.form-control {
+  height: unset;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #abc466;
@@ -15928,6 +15931,9 @@ a.ilSubmitInactive:active {
 }
 .btn-group.il-btn-month.open span.il-current-month {
   color: #d6002b;
+}
+input.btn.btn-default {
+  vertical-align: unset;
 }
 #ilTab {
   border-bottom: 2px solid #d6002b;
