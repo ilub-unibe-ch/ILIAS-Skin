@@ -50,9 +50,9 @@
         let course_lis = $("#left_nav div > div ul > li").has('.ilHighlighted').has("a > img[src*='crs']"," a> img[src*='cat']");
         course_lis.css("margin-left", "0");
         let root_li = course_lis.has('.ilHighlighted').last();
-        root_li.addClass("root");
+        root_li.addClass("il-left_nav-root");
         // make all lis of the same branch visible in order to display the navigation menu.
-        left_nav_lis.has('.root').css('display','block');
+        left_nav_lis.has('.il-left_nav-root').css('display','block');
         // highlight the current course/module visible in the navigation menu
         let root_level_1_lis = root_li.children("ul").children("li");
         // In left_nav menu, highlight also the top levels of the level were are in, so that it is visible where we are
@@ -60,42 +60,76 @@
         // navigation menu: 3 entries per row as dropdown menus
         root_level_1_lis.addClass("col-sm-4");
         root_li.children("ul").addClass("row");
-        root_level_1_lis.addClass("dropdownimucb");
+        root_level_1_lis.addClass("il-left_nav-dropdownimucb");
 
         // inner dropdown menus that show up only on hover
         let root_level_2plus_lis = root_level_1_lis.find("li");
-        root_level_2plus_lis.addClass("dropdownimucbinner");
+        root_level_2plus_lis.addClass("il-left_nav-dropdownimucbinner");
     }
 })();
 
+// function to make objects in a row have the same height (as the max height of text of the objects)
+function makeEqualHeight(rowObjects){
+    let max = 0;
+    rowObjects.each(function(){
+        max = Math.max($(this).children('a').children('span').last().height(), max);
+    });
+    max += 4;
+    rowObjects.each(function () {
+        $(this).height(max);
+    });
+}
+// dynamically fixes the height of the dropdown menu
+$(window).resize(function(){
+    makeEqualHeight($(".il-left_nav-dropdownimucb"));
+});
 
 // on hover open js-trees
 $(window).load(function(){
     // on hover simulate click to get the contents of the dropdownimucb if they are not there
 
-    let root_level_1_lis = $("#left_nav div > div ul > li").has("a > img[src*='crs']", "a > img[src*='cat']").has('.ilHighlighted').last().children("ul").find("li");
-    root_level_1_lis.each(function(){
+    let dropdownimucbs = $(".il-left_nav-dropdownimucb");
+
+    dropdownimucbs.each(function(){
         $(this).hover(
-                function(){
-                    if($(this).hasClass("jstree-closed")) {
-                        $(this).children("ins").click();
-                    }
-                },
-                function(){}
+            function(){
+                if($(this).hasClass("jstree-closed")) {
+                    $(this).children("ins").click();
+                }
+            },
+            function(){
+            }
         );
     });
 
+    // adjust left/top nav height to max
+    makeEqualHeight(dropdownimucbs);
+
+    $(".il-left_nav-root").hover(
+        function(){
+            $("#fixed_content").hide();
+            makeEqualHeight(dropdownimucbs);
+        },
+        function() {
+            setTimeout(
+                function(){
+                    makeEqualHeight(dropdownimucbs);
+                }, 10
+            );
+            $("#fixed_content").fadeIn();
+        }
+    );
+
 });
 
-
-// on hover loads asynchronously the subparts of the tree if they are not loaded
+// on hover loads asynchronously the subparts of the tree (left_nav) if they are not loaded
 $( document ).ajaxComplete(function() {
-    let root_lis = $("#left_nav .dropdownimucb li");
+    let root_lis = $("#left_nav .il-left_nav-root .il-left_nav-dropdownimucb li");
     root_lis.each(function(){
         $(this).hover(
             function(){
                 if($(this).hasClass("jstree-closed")) {
-                    $(this).addClass("dropdownimucbinner");
+                    $(this).addClass("il-left_nav-dropdownimucbinner");
                     $(this).children("ins").click();
                 }
             },
