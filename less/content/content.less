@@ -6,6 +6,11 @@
   background-color: @tax-il-container-block-bg-color;
 }
 
+.ilContainerBlock, .ilContainerBlock .ilObjListRow:hover,
+.ilObjListRow:hover {
+  background-color: @tax-il-container-list-row-bg-color;
+}
+
 .ilObjListRow {
   border: @tax-il-repository-list-row-border;
 }
@@ -22,6 +27,7 @@
 .ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
   font-size: 18px;
   border-bottom: none;
+  padding-left: @tax-il-container-block-header-padding-left;
   background-color: transparent;
 }
 
@@ -54,4 +60,23 @@ a.ilTag {
 a.ilTag:hover {
   background-color: darken(@il-highlight-bg, 10%);
   color: @link-color;
+}
+
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderCollapsed {
+  padding-left: 10px;
+}
+
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBlockHeader {
+  padding-left: 2px;
+}
+#etherpad-liteFrame {
+  height: @tax-il-etherpad-height;
+}
+
+ul.dropdown-menu > li > #mm_pd_lp {
+  display: none;
+}
+
+input.form-control {
+  height: unset;
 }
