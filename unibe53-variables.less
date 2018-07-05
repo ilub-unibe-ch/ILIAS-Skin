@@ -34,7 +34,7 @@
 @web-font-path:		"fonts/";
 
 @mid-gray:		#434343;
-@il-primary-container-bg:		white;
+@il-primary-container-bg:		#ffffff;
 @il-secondary-container-bg:		#fafafa;
 
 @il-highlight-bg:		#d9e6f4;
@@ -47,8 +47,8 @@
 //== Scaffolding
 //
 //##
-@body-bg:		#eeeff2;
-@text-color:		@gray-dark;
+@body-bg:		#f0f0f0;
+@text-color:		#676767;
 @link-color:		#4e7aa9;
 @link-hover-color:		#d6002b;
 
@@ -120,7 +120,7 @@
 //== Iconography
 //
 //##
-@icon-font-path:		"../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/";
+@icon-font-path:		"../../../../libs/bower/bower_components/bootstrap/fonts/";
 
 //== Components
 //
@@ -168,7 +168,7 @@
 //## Variables to control the footer section of ILIAS.
 
 //** controls background color of the footer.
-@il-footer-bg-color:		@brand-primary;
+@il-footer-bg-color:		#262626;
 //** controls the color of the text in the footer.
 @il-footer-color:		white;
 
@@ -199,7 +199,7 @@
 //
 //##
 
-@btn-default-color:		@link-color;
+@btn-default-color:		white;
 @btn-default-border:		#d0d0d0;
 @btn-default-bg:		#fefefe;
 @disabled-btn-bg:		#b0b0b0;
@@ -294,7 +294,7 @@
 //
 //##
 @navbar-height:		40px;
-@il-toolbar-margin:		15px;
+@il-toolbar-margin:		20px;
 @il-toolbar-bg:		@il-secondary-container-bg;
 @il-toolbar-height:		@navbar-height;
 @il-toolbar-border:		1px solid #d8d8d8;
@@ -352,26 +352,36 @@
 //##
 @tax-aai-login-width:		350px;
 @tax-il-top-bar-color:		#ffffff;
-@tax-il-top-bar-bg-color:		darken(@brand-primary, 5%);
+@tax-il-top-bar-bg-color:		darken(@brand-primary, 2%);
 @tax-il-top-bar-nav-color:		lighten(@tax-il-top-bar-bg-color, 70%);
 @tax-il-top-bar-nav-bg-color:		darken(@tax-il-top-bar-bg-color, 10%);
-@tax-il-top-bar-nav-hover-color:		darken(@tax-il-top-bar-bg-color, 17%);
+@tax-il-top-bar-nav-hover-color:		darken(@tax-il-top-bar-bg-color, 16%);
 @tax-il-main-header-bg-color:		#ffffff;
 @tax-il-main-header-height:		80px;
 @tax-il-main-header-border-bottom-color:		#c6cdd5;
-@tax-il-footer-bg-color:		rgb(100, 120, 141);
+@tax-il-footer-bg-color:		#262626;
 @tax-il-footer-height:		110px;
 @tax-il-repository-list-row-border:		1px, #eeeff2;
 @tax-il-container-block-bg-color:		@il-primary-container-bg;
-@tax-il-container-block-border:		1px solid #dcdcdc;
-@tax-il-container-block-header-bg-color:		#f5f5f5;
-@tax-il-container-block-header-border-bottom:		0px solid #dcdcdc;
-@tax-il-tab-color:		@brand-primary;
-@tax-il-tab-bg-color:		@il-primary-container-bg;
-@tax-il-tab-hover-color:		@brand-primary;
-@tax-il-tab-hover-bg-color:		@il-primary-container-bg;
+@tax-il-container-block-border:		0px solid #dcdcdc;
+@tax-il-container-block-header-bg-color:		#f0f0f0;
+@tax-il-container-block-header-border-bottom:		1.5px solid #dcdcdc;
+@tax-il-container-block-header-padding-left:		42px;
+@tax-il-container-list-row-bg-color:		#edf3fa;
+@tax-il-tab-color:		#ffffff;
+@tax-il-tab-bg-color:		@brand-primary;
+@tax-il-tab-hover-color:		@tax-il-tab-color;
+@tax-il-tab-hover-bg-color:		@tax-il-tab-bg-color;
+@tax-il-tab-margin-bottom:		20px;
+@tax-il-tab-margin-borders:		15px;
+@tax-il-tab-margin-background-color:		#fafafa;
+@tax-il-tab-padding-subtab: 	8px 6px;
 @tax-il-logo-size:		40px;
 @tax-il-logo-top:		15px;
+@tax-il-btn-month-color:		#d6002b;
+@tax-il-chat-header-fontweight:		600;
+@tax-il-chat-header-padding:		6px 10px;
+@tax-il-etherpad-height:		700px;
 
 //== Unibe specific alerts
 //
@@ -396,18 +406,21 @@
 //== Unibe specific buttons
 //
 //##
-@tax-button-primary-bg-color:		rgb(214, 0, 43);
+@tax-button-primary-bg-color:		rgb(214,0,43);
 @tax-button-primary-color:		rgb(255, 255, 255);
-@tax-button-primary-border-color:		rgb(214, 0, 43);
-@tax-button-default-bg-color:		rgb(100, 120, 141);
+@tax-button-primary-border-color:		rgb(214,0,43);
+@tax-button-default-bg-color:		@link-color;
 @tax-button-default-color:		rgb(255, 255, 255);
-@tax-button-default-border-color:		rgb(100, 120, 141);
+@tax-button-default-border-color:		@link-color;
 @tax-button-info-bg-color:		@tax-button-default-bg-color;
 @tax-button-info-color:		@tax-button-default-color;
 @tax-button-info-border-color:		@tax-button-default-border-color;
 @tax-button-disabled-bg-color:		rgb(160, 160, 160);
 @tax-button-disabled-color:		rgb(255, 255, 255);
 @tax-button-disabled-border-color:		rgb(160, 160, 160);
+@tax-button-month-text-color:		@brand-primary;
+@tax-button-test-submit-background:		@link-color;
+@tax-button-test-submit-text:		rgb(255, 255, 255);
 
 //== Unibe specific tooltips
 //
