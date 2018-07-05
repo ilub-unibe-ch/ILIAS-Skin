@@ -13241,10 +13241,12 @@ div.il_ContainerItemTitle {
 }
 .ilContainerBlock {
   border: 0;
+  background-color: #ffffff;
 }
 .ilContainerBlock .ilContainerBlockHeader {
   background-color: transparent;
   width: 100%;
+  border: none;
 }
 .ilContainerBlockHeader > h3.ilHeader.ilContainerBlockHeader {
   display: none;
