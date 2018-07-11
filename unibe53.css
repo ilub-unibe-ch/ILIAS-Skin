@@ -15546,6 +15546,20 @@ table.mceToolbar td {
 #user_idp_iddtext {
   height: 24px !important;
 }
+@media (min-width: 768px) {
+  .visible-xs-inline-block-prelogin {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .visible-xs-inline-block-prelogin {
+    display: inline-block !important;
+    heigth: 40px;
+    width: 40px;
+    padding: 3px 3px 3px 3px;
+    filter: invert(100%);
+  }
+}
 /* =====================================
  * Nutzungsvereinvarung
  * ===================================== */
