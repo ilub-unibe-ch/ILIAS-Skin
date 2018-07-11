@@ -15963,6 +15963,9 @@ input.btn.btn-default {
 #ilSubTab {
   padding: 8px 6px;
 }
+#ilSubTab.ilSubTab.nav.nav-pills > li > a:hover {
+  background-color: unset;
+}
 ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
   margin-bottom: 20px;
   margin-left: 15px;
