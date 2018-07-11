@@ -15949,6 +15949,9 @@ a.ilSubmitInactive:active {
 input.btn.btn-default {
   vertical-align: unset;
 }
+span.ilNewsRssIcon {
+  background-color: #e65722;
+}
 #ilTab {
   border-bottom: 2px solid #d6002b;
 }
