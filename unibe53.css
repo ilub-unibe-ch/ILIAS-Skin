@@ -15822,6 +15822,10 @@ ul.dropdown-menu > li > #mm_pd_lp {
 input.form-control {
   height: unset;
 }
+.ilFrmPostContentContainer img {
+  width: auto;
+  height: auto !important;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #abc466;
