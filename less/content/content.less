@@ -1,5 +1,21 @@
 .breadcrumb{
-  margin-top: 0px;
+    margin-top: 0px;
+    position: fixed;
+    left:0;
+    right:0;
+    z-index: 1000;
+    padding-left: 31px;
+    margin-right: auto;
+    margin-left:auto;
+
+}
+
+
+
+@media (max-width:767px) {
+  .breadcrumb {
+    position: relative;
+  }
 }
 
 .ilContainerBlock, .ilContainerBlock .ilObjListRow, div.il_Block,table.calmini {
@@ -52,9 +68,9 @@ div.ilNewObjectSelector{
 }
 
 //Blog Keyword / Tags
-a.ilTag, .ilTag {
+a.ilTag, .ilTag, .ilTagRelVeryLow{
   background-color: @il-highlight-bg;
-  color: @link-color;
+  color: @link-color !important;
 }
 
 a.ilTag:hover {
