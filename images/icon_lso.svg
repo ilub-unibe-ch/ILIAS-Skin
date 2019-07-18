@@ -5,45 +5,57 @@
 <style type="text/css">
 	.st0{clip-path:url(#SVGID_2_);}
 	.st1{fill:#FD9AAE;}
-	.st2{clip-path:url(#SVGID_4_);}
-	.st3{fill:#64788D;}
-	.st4{clip-path:url(#SVGID_6_);}
-	.st5{fill:#D6002B;}
+	.st2{fill:#64788D;}
+	.st3{clip-path:url(#SVGID_6_);}
+	.st4{fill:#D6002B;}
+	.st5{clip-path:url(#SVGID_8_);}
+	.st6{fill:none;}
 </style>
 <title>icon_lrnng-sqnce-bjct_v3</title>
 <g>
-	<defs>
-		<polygon id="SVGID_1_" points="2.7,17.3 16,32 29.3,17.3 		"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<g class="st0">
-		<rect x="2.7" y="17.3" class="st1" width="26.7" height="14.7"/>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="2.7,16.3 16,31 29.3,16.3 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<rect x="2.7" y="16.3" class="st1" width="26.7" height="14.7"/>
+		</g>
 	</g>
 </g>
 <g>
-	<defs>
-		<polygon id="SVGID_3_" points="2.7,8.7 16,23.3 29.3,8.7 		"/>
-	</defs>
-	<use xlink:href="#SVGID_3_"  style="overflow:visible;fill:#64788D;"/>
-	<clipPath id="SVGID_4_">
-		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-	</clipPath>
-	<g class="st2">
-		<rect x="2.7" y="8.7" class="st3" width="26.7" height="14.7"/>
+	<g>
+		<polygon id="SVGID_3_" class="st2" points="2.7,8.7 16,23.3 29.3,8.7 		"/>
+	</g>
+	<g>
+		<defs>
+			<polygon id="SVGID_4_" points="2.7,8.7 16,23.3 29.3,8.7 			"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st3">
+			<rect x="2.7" y="8.7" class="st2" width="26.7" height="14.7"/>
+		</g>
 	</g>
 </g>
 <g>
-	<defs>
-		<polygon id="SVGID_5_" points="2.7,0 16,14.7 29.3,0 		"/>
-	</defs>
-	<use xlink:href="#SVGID_5_"  style="overflow:visible;fill:#D6002B;"/>
-	<clipPath id="SVGID_6_">
-		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
-	</clipPath>
-	<g class="st4">
-		<rect x="2.7" class="st5" width="26.7" height="14.7"/>
+	<g>
+		<polygon id="SVGID_5_" class="st4" points="2.7,1 16,15.7 29.3,1 		"/>
+	</g>
+	<g>
+		<defs>
+			<polygon id="SVGID_7_" points="2.7,1 16,15.7 29.3,1 			"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st5">
+			<rect x="2.7" y="1" class="st4" width="26.7" height="14.7"/>
+		</g>
 	</g>
 </g>
+<rect class="st6" width="32" height="32"/>
 </svg>
