@@ -125,7 +125,7 @@ var wayf_most_used_idps = new Array("https://aai-idp.unibe.ch/idp/shibboleth", "
 // var wayf_hide_categories =  new Array("other", "library");
 // [Optional, commented out by default]
 // var wayf_hide_categories =  new Array();
-var wayf_hide_categories = new Array("tertiaryb", "uppersecondary");
+var wayf_hide_categories = new Array( "uppersecondary");
 
 // EntityIDs of Identity Provider whose category is hidden but that shall be shown anyway
 // If this array is not empty, wayf_show_categories will be disabled because
