@@ -17315,7 +17315,7 @@ table.mceToolbar td {
 .LogoutImg + p + p {
   align-self: flex-end;
 }
-.taxcdLoginLocal {
+#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal {
   color: inherit;
   font-size: inherit;
   max-width: inherit;
