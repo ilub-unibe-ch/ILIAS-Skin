@@ -17295,7 +17295,7 @@ table.mceToolbar td {
   margin-top: 16px;
   font-size: 1.1em;
 }
-#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection div {
+#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection #logout-div {
   color: #676767;
   font-size: 1.3em;
   max-width: 500px;
@@ -17316,7 +17316,7 @@ table.mceToolbar td {
   align-self: flex-end;
 }
 #mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal,
-#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal #form .form-horizontal {
+#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal #form_ .form-horizontal {
   font-size: 14px;
   max-width: 100%;
   flex: 0 0 100%;
