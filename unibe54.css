@@ -17316,9 +17316,8 @@ table.mceToolbar td {
   align-self: flex-end;
 }
 #mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal {
-  color: inherit;
-  font-size: inherit;
-  max-width: inherit;
+  font-size: 14px;
+  max-width: 100%;
   flex: 0 0 100%;
 }
 .taxUserAgreement {
