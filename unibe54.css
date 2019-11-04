@@ -17315,7 +17315,8 @@ table.mceToolbar td {
 .LogoutImg + p + p {
   align-self: flex-end;
 }
-#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal {
+#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal,
+#mainspacekeeper .row #fixed_content #mainscrolldiv .ilStartupSection .taxcdLoginLocal #form .form-horizontal {
   font-size: 14px;
   max-width: 100%;
   flex: 0 0 100%;
