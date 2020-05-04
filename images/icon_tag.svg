@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-<rect fill="none" width="32" height="32"/>
+	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<polygon fill="#52658A" points="5.8,0.7 0.7,5.8 2.5,15.2 18.8,31.6 18.8,31.6 31.6,18.8 31.6,18.8 15.2,2.5 "/>
 <g>
-	<polygon fill="#64788D" points="7.914,3.93 3.93,7.914 5.336,15.257 18.07,28.07 18.07,28.07 28.07,18.07 28.07,18.07 
-		15.258,5.336 	"/>
-	<g>
-		<g>
-			<g>
-				<g>
-					<defs>
-						<rect id="SVGID_1_" x="3.93" y="3.93" width="24.062" height="24.062"/>
-					</defs>
-					<clipPath id="SVGID_2_">
-						<use xlink:href="#SVGID_1_"  overflow="visible"/>
-					</clipPath>
-					<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M9.711,9.711c0.469-0.47,0.469-1.172,0-1.642
-						c-0.469-0.469-1.172-0.469-1.641,0c-0.469,0.47-0.469,1.172,0,1.642C8.461,10.102,9.242,10.102,9.711,9.711"/>
-				</g>
-			</g>
-		</g>
-	</g>
-	
-		<rect x="10.375" y="12.284" transform="matrix(0.7071 0.7071 -0.7071 0.7071 16.5925 -6.8993)" fill="#FFFFFF" width="12.499" height="8.593"/>
+	<defs>
+		<rect id="SVGID_1_" x="0.7" y="0.7" width="30.8" height="30.8"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M8.1,8.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0c-0.6,0.6-0.6,1.5,0,2.1
+		C6.5,8.6,7.5,8.6,8.1,8.1"/>
 </g>
+<rect x="9" y="11.5" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 16.9541 40.9332)" fill="#FFFFFF" width="16" height="11"/>
 </svg>
