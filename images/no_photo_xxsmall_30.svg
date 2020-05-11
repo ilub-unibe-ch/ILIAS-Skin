@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<g>
+	<g>
+		
+			<rect x="-0.409" y="421" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="399.938" height="399.94"/>
+		
+			<rect x="399.529" y="421" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="248.739" height="399.94"/>
+		
+			<rect x="399.529" y="421" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="248.739" height="248.737"/>
+		
+			<rect x="497.066" y="669.737" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="151.202" height="151.203"/>
+		
+			<rect x="399.529" y="723.402" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="97.537" height="97.538"/>
+		
+			<rect x="399.529" y="669.737" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="53.667" height="53.665"/>
+		
+			<rect x="453.196" y="669.737" fill="none" stroke="#1D1D1B" stroke-width="1.1109" stroke-miterlimit="10" width="43.87" height="43.873"/>
+		<path fill="none" stroke="#F6AA00" stroke-width="1.1109" stroke-miterlimit="10" d="M-0.409,820.94
+			c0-221.06,178.877-399.94,399.938-399.94"/>
+		<path fill="none" stroke="#BD1622" stroke-width="1.1109" stroke-miterlimit="10" d="M648.268,669.737
+			C648.268,532.253,537.014,421,399.529,421"/>
+		<path fill="none" stroke="#E5332A" stroke-width="1.1109" stroke-miterlimit="10" d="M648.269,669.737
+			c0,83.575-67.629,151.203-151.202,151.203"/>
+		<path fill="none" stroke="#BD1622" stroke-width="1.1109" stroke-miterlimit="10" d="M399.529,723.402
+			c0,53.913,43.626,97.538,97.537,97.538"/>
+		<path fill="none" stroke="#BD1622" stroke-width="1.1109" stroke-miterlimit="10" d="M399.529,723.402
+			c0-29.661,24.003-53.665,53.667-53.665"/>
+		<path fill="none" stroke="#BD1622" stroke-width="1.1109" stroke-miterlimit="10" d="M497.066,713.61
+			c0-24.248-19.624-43.873-43.87-43.873"/>
+		<path fill="none" stroke="#009EE2" stroke-width="1.1109" stroke-miterlimit="10" d="M399.157,620.971
+			c0,110.234-89.36,199.599-199.596,199.599c-110.238,0-199.6-89.364-199.6-199.599c0-110.236,89.362-199.599,199.6-199.599
+			C309.797,421.372,399.157,510.734,399.157,620.971z"/>
+		<circle fill="none" stroke="#009EE2" stroke-width="1.1109" stroke-miterlimit="10" cx="523.898" cy="545.367" r="124.369"/>
+		<circle fill="none" stroke="#009EE2" stroke-width="1.1109" stroke-miterlimit="10" cx="572.667" cy="745.34" r="75.601"/>
+		<circle fill="none" stroke="#009EE2" stroke-width="1.1109" stroke-miterlimit="10" cx="448.298" cy="772.172" r="48.769"/>
+		<circle fill="none" stroke="#009EE2" stroke-width="1.1109" stroke-miterlimit="10" cx="426.363" cy="696.57" r="26.833"/>
+		<circle fill="none" stroke="#009EE2" stroke-width="1.1109" stroke-miterlimit="10" cx="475.131" cy="691.673" r="21.935"/>
+		
+			<line fill="none" stroke="#99C33A" stroke-width="1.1109" stroke-miterlimit="10" x1="-0.409" y1="821.417" x2="400.009" y2="420.999"/>
+		
+			<line fill="none" stroke="#99C33A" stroke-width="1.1109" stroke-miterlimit="10" x1="400.009" y1="420.999" x2="647.267" y2="668.258"/>
+		
+			<line fill="none" stroke="#99C33A" stroke-width="1.1109" stroke-miterlimit="10" x1="648.269" y1="669.737" x2="499.354" y2="818.653"/>
+		
+			<line fill="none" stroke="#99C33A" stroke-width="1.1109" stroke-miterlimit="10" x1="497.066" y1="820.94" x2="400.728" y2="724.6"/>
+		
+			<line fill="none" stroke="#99C33A" stroke-width="1.1109" stroke-miterlimit="10" x1="399.529" y1="723.402" x2="453.869" y2="669.062"/>
+		
+			<line fill="none" stroke="#99C33A" stroke-width="1.1109" stroke-miterlimit="10" x1="453.869" y1="669.062" x2="497.741" y2="712.936"/>
+	</g>
+	
+		<line fill="none" stroke="#99C33A" stroke-width="1.626" stroke-miterlimit="10" x1="399.529" y1="669.737" x2="646.055" y2="423.211"/>
+</g>
+<ellipse fill="#64788D" cx="200" cy="150.75" rx="94.02" ry="106.25"/>
+<path fill="#64788D" d="M280.299,281.991C267.345,289.917,236.275,295.5,200,295.5c-36.441,0-67.629-5.635-80.476-13.617
+	c-72.103,6.874-92.247,21.571-92.247,21.571S26.291,346,28.604,392H368.57c3.893-46,4.361-87.541,4.361-87.541
+	S352.667,289.129,280.299,281.991z"/>
+</svg>
