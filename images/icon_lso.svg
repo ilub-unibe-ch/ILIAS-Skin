@@ -1,44 +1,61 @@
-<svg id="Layer_1" width="32px" height="32px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-	<defs>
-		<style>
-			.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:url(#linear-gradient);}.cls-4{clip-path:url(#clip-path-2);}.cls-5{fill:url(#linear-gradient-2);}.cls-6{clip-path:url(#clip-path-3);}.cls-7{fill:url(#linear-gradient-3);}
-		</style>
-		<clipPath id="clip-path" transform="translate(-6 -4)">
-			<polygon class="cls-1" points="6 17 16 28 26 17 6 17"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FD9AAE;}
+	.st2{fill:#64788D;}
+	.st3{clip-path:url(#SVGID_6_);}
+	.st4{fill:#D6002B;}
+	.st5{clip-path:url(#SVGID_8_);}
+	.st6{fill:none;}
+</style>
+<title>icon_lrnng-sqnce-bjct_v3</title>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="2.7,16.3 16,31 29.3,16.3 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 		</clipPath>
-		<linearGradient id="linear-gradient" x1="-185.9" y1="239.27" x2="-184.9" y2="239.27"
-						gradientTransform="matrix(20, 0, 0, -20, 3718, 4804)" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#e66e1e"/>
-			<stop offset="1" stop-color="#ff8e2c"/>
-			<stop offset="1" stop-color="#ff8e2c"/>
-		</linearGradient>
-		<clipPath id="clip-path-2" transform="translate(-6 -4)">
-			<polygon class="cls-1" points="6 10.5 16 21.5 26 10.5 6 10.5"/>
+		<g class="st0">
+			<rect x="2.7" y="16.3" class="st1" width="26.7" height="14.7"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon id="SVGID_3_" class="st2" points="2.7,8.7 16,23.3 29.3,8.7 		"/>
+	</g>
+	<g>
+		<defs>
+			<polygon id="SVGID_4_" points="2.7,8.7 16,23.3 29.3,8.7 			"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
 		</clipPath>
-		<linearGradient id="linear-gradient-2" x1="-185.9" y1="239.27" x2="-184.9" y2="239.27"
-						gradientTransform="matrix(20, 0, 0, -20, 3718, 4797.5)" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#4c6586"/>
-			<stop offset="0.02" stop-color="#4c6586"/>
-			<stop offset="1" stop-color="#5a78a0"/>
-		</linearGradient>
-		<clipPath id="clip-path-3" transform="translate(-6 -4)">
-			<polygon class="cls-1" points="6 4 16 15 26 4 6 4"/>
+		<g class="st3">
+			<rect x="2.7" y="8.7" class="st2" width="26.7" height="14.7"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon id="SVGID_5_" class="st4" points="2.7,1 16,15.7 29.3,1 		"/>
+	</g>
+	<g>
+		<defs>
+			<polygon id="SVGID_7_" points="2.7,1 16,15.7 29.3,1 			"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
 		</clipPath>
-		<linearGradient id="linear-gradient-3" x1="-185.9" y1="239.27" x2="-184.9" y2="239.27"
-						gradientTransform="matrix(20, 0, 0, -20, 3718, 4791)" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#2f5a28"/>
-			<stop offset="0.02" stop-color="#2f5a28"/>
-			<stop offset="1" stop-color="#6ea03c"/>
-		</linearGradient>
-	</defs>
-	<title>icon_lrnng-sqnce-bjct_v3</title>
-	<g class="cls-2">
-		<rect class="cls-3" y="13" width="20" height="11"/>
+		<g class="st5">
+			<rect x="2.7" y="1" class="st4" width="26.7" height="14.7"/>
+		</g>
 	</g>
-	<g class="cls-4">
-		<rect class="cls-5" y="6.5" width="20" height="11"/>
-	</g>
-	<g class="cls-6">
-		<rect class="cls-7" width="20" height="11"/>
-	</g>
+</g>
+<rect class="st6" width="32" height="32"/>
 </svg>
