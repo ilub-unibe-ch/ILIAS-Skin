@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<template xmlns="http://www.w3.org" version="0.1" name="Universität Bern 6.0">
+<template xmlns="http://www.w3.org" version="0.3" name="Universität Bern 6.0">
   <style id="unibe60" name="ILIAS 6.0" image_directory="images" css_file="unibe60" sound_directory="sound" font_directory="fonts"/>
 </template>

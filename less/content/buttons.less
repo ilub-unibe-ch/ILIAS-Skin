@@ -1,0 +1,44 @@
+//overwrite buttons styles + add new one
+//@color @background @border
+.btn-default {
+  .button-variant(@tax-button-default-color; @tax-button-default-bg-color; @tax-button-default-border-color);
+}
+.btn-primary {
+  .button-variant(@tax-button-primary-color; @tax-button-primary-bg-color; @tax-button-primary-border-color);
+}
+.btn-info {
+  .button-variant(@tax-button-info-color; @tax-button-info-bg-color; @tax-button-info-border-color);
+}
+
+.hidden-xs > .btn-default:first-child{
+    .button-variant(@tax-button-primary-color; @tax-button-primary-bg-color; @tax-button-primary-border-color);
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn,
+input.ilSubmitInactive, input.ilSubmitInactive:hover, input.ilSubmitInactive:active,
+a.ilSubmitInactive, a.ilSubmitInactive:hover , a.ilSubmitInactive:active {
+  color: @tax-button-disabled-color;
+  background-color: @tax-button-disabled-bg-color;
+  border-color: @tax-button-disabled-border-color;
+  cursor: not-allowed;
+}
+
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus {
+  background-color: @tax-button-default-color;
+  color: @tax-button-month-text-color;
+  border-color: @tax-button-default-color;
+}
+
+.btn-group.il-btn-month.open span.il-current-month {
+  color: @tax-button-month-text-color;
+}
+
+input.btn.btn-default {
+  vertical-align: unset;
+}
+
+span.ilNewsRssIcon {
+  background-color: @tax-button-rss-ical-bg-color;
+}
