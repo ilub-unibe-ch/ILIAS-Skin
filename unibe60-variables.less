@@ -12,8 +12,8 @@
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
 
-@brand-primary:		#4c6586;
-@brand-secondary:		#6ea03c;
+@brand-primary:		#4e7aa9;
+@brand-secondary:		#d6002b;
 @brand-success:		#6ea03c;
 @brand-info:		#dcb496;
 @brand-warning:		#fa8228;
@@ -94,7 +94,7 @@
 @body-bg:		#f0f0f0;
 @text-color:		@gray-dark;
 @il-light-text-color:		lighten(@mid-gray, 30%);
-@link-color:		lighten(@brand-primary, 5%);
+@link-color:		@brand-primary;
 @link-hover-color:		darken(@link-color, 15%);
 
 @component-active-color:		white;
@@ -259,7 +259,7 @@
 //## Variables to control the footer section of ILIAS.
 
 //** controls background color of the footer.
-@il-footer-bg-color:		@brand-primary;
+@il-footer-bg-color:		#000;
 //** controls the color of the text in the footer.
 @il-footer-color:		white;
 @il-footer-height:		70px;
@@ -553,7 +553,7 @@
 //** Border color for table and cell borders.
 @table-border-color:		#ddd;
 
-@il-table-head-bg:		lighten(@il-secondary-container-bg, 1%);
+@il-table-head-bg:		lighten(@brand-primary, 45%);
 @il-data-table-bg:		@il-secondary-container-bg;
 @il-table-cmd-bg:		@il-secondary-container-bg;
 
@@ -815,7 +815,7 @@
 //** border-radius for image avatar
 @avatar-border-radius:		50%;
 //** border size for letter avatars
-@avatar-border-size:		2px;
+@avatar-border-size:		0px;
 @avatar-small-border-size:		0px;
 //** border style for letter avatars
 @avatar-border-style:		solid;
@@ -825,7 +825,7 @@
 @avatar-letter-border-color-contrast-lighten:		40%;
 @avatar-letter-border-color-contrast-darken:		20%;
 //** change the abbreviations font weight
-@avatar-letter-abbreviation-font-weight:		lighter;
+@avatar-letter-abbreviation-font-weight:		normal;
 //** change the abbreviations font transform
 @avatar-letter-abbreviation-font-transform:		inherit;
 //** all variants of letter avatar background colors (MUST be 26)
@@ -909,8 +909,8 @@
 @il-mainbar-btn-height:		80px;
 @il-mainbar-btn-width:		80px;
 @il-mainbar-btn-color:		#fff;
-@il-mainbar-btn-bg-color:		#4a4a4a;
-@il-mainbar-btn-color-engaged:		#4a4a4a;
+@il-mainbar-btn-bg-color:		#121212;
+@il-mainbar-btn-color-engaged:		#121212;
 @il-mainbar-btn-bg-color-engaged:		#fff;
 @il-mainbar-btn-border:		1px solid @il-standard-page-border-light-color;
 @il-mainbar-btn-label-size:		.9rem;
@@ -993,9 +993,9 @@
 @tax-il-repository-list-row-border:		1px, #eeeff2;
 @tax-il-container-block-bg-color:		@il-primary-container-bg;
 @tax-il-container-block-border:		0px solid #dcdcdc;
-@tax-il-container-block-header-bg-color:		#f0f0f0;
+@tax-il-container-block-header-bg-color:		#f9f9f9;
 @tax-il-container-block-header-border-bottom:		1.5px solid #dcdcdc;
-@tax-il-container-block-header-padding-left:		42px;
+@tax-il-container-block-header-padding-left:		0px;
 @tax-il-container-list-row-bg-color:		#edf3fa;
 @tax-il-tab-color:		#ffffff;
 @tax-il-tab-bg-color:		@brand-primary;
