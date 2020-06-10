@@ -91,8 +91,8 @@
 //== Scaffolding
 //
 //##
-@body-bg:		#fff;
-@text-color:		@gray-dark;
+@body-bg:		#f8f8f8;
+@text-color:		#1e1e1e;
 @il-light-text-color:		lighten(@mid-gray, 30%);
 @link-color:		#4e7aa9;
 @link-hover-color:		darken(@link-color, 15%);
@@ -214,11 +214,11 @@
 @il-top-bar-dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
 @il-top-bar-dropdown-link-hover-color:		lighten(@mid-gray, 42%);
 //** controls the height of the "logo" (that [ILIAS] thingy on top the page in the standard).
-@il-logo-height:		50px;
+@il-logo-height:		40px;
 //** controls the width of the "logo" (that [ILIAS] thingy on top the page in the standard).
-@il-logo-width:		50px;
+@il-logo-width:		40px;
 //** controls margin around the logo
-@il-logo-margin:		15px 15px 0;
+@il-logo-margin:		15px 25px 0;
 @il-logo-resp-margin:		10px;
 //** controls the height of the "logo" for small screens.
 @il-logo-resp-height:		40px;
@@ -431,7 +431,7 @@
 //** Textcolor used in the labels (identifiers) of the input fields of a form
 @il-standard-form-label-color:		darken(@il-standard-form-color, 20%);
 //** Background color used in the
-@il-standard-form-bg:		#f5f5f5;
+@il-standard-form-bg:		#efefef;
 //** Textsize used in the forms body
 @il-standard-form-font-size:		@font-size-small;
 //** Textsize used in the bylines (descriptions) of the input fields of a form
@@ -999,20 +999,20 @@
 @tax-il-container-list-row-bg-color:		#edf3fa;
 @tax-il-container-block-box-shadow:		3px 3px 9px rgb(163,177,198,0.6), -3px -3px 9px rgba(255,255,255, 0.5);
 @tax-il-secondary-panel-box-shadow:		3px 3px 9px rgb(163,177,198,0.6), -3px -3px 9px rgba(255,255,255, 0.5);
-@tax-il-tab-color:		@panel-heading-color;
+@tax-il-tab-color:		 #808080;
 @tax-il-tab-bg-color:		#ffffff;
-@tax-il-tab-hover-color:		#000000;
+@tax-il-tab-hover-color:		@brand-secondary;
 @tax-il-tab-hover-bg-color:		@tax-il-tab-bg-color;
 @tax-il-tab-active-color:		#ffffff;
-@tax-il-tab-active-bg-color:		@brand-primary;
+@tax-il-tab-active-bg-color:	@brand-secondary;;
 @tax-il-tab-border-bottom:		none;
 @tax-il-tab-margin-bottom:		20px;
 @tax-il-tab-margin-borders:		15px;
 @tax-il-tab-margin-background-color:		#fafafa;
-@tax-il-tab-height: 45px;
-@tax-il-tab-padding-top: 12.5px;
+@tax-il-tab-height: 40px;
+@tax-il-tab-padding-top: 10px;
 @tax-il-subtab-color:		@tax-il-tab-color;
-@tax-il-subtab-active-color:		@brand-primary;
+@tax-il-subtab-active-color:		@brand-secondary;
 @tax-il-subtab-active-textdecoration:		none;
 @tax-il-subtab-hover-bg-color:		@tax-il-tab-hover-color;
 @tax-il-subtab-hover-color:		@tax-il-subtab-color;
@@ -1048,18 +1048,18 @@
 //== Unibe specific buttons
 //
 //##
-@tax-button-primary-bg-color:		rgb(214,0,43);
+@tax-button-primary-bg-color:		@brand-secondary;
 @tax-button-primary-color:		rgb(255, 255, 255);
-@tax-button-primary-border-color:		rgb(214,0,43);
+@tax-button-primary-border-color:		@brand-secondary;
 @tax-button-default-bg-color:		#fff;
-@tax-button-default-color:		#333;
-@tax-button-default-border-color:		transparent;
+@tax-button-default-color:		#1e1e1e;
+@tax-button-default-border-color:		@tax-button-default-bg-color;
 @tax-button-info-bg-color:		@brand-primary;
 @tax-button-info-color:		@tax-button-default-color;
 @tax-button-info-border-color:		@brand-primary;
-@tax-button-disabled-bg-color:		@mid-gray;;
-@tax-button-disabled-color:		rgb(255, 255, 255);
-@tax-button-disabled-border-color:		@mid-gray;
+@tax-button-disabled-bg-color:		#bdbdbd;
+@tax-button-disabled-color:		white;
+@tax-button-disabled-border-color:		#bdbdbd;
 @tax-button-month-text-color:		@brand-primary;
 @tax-button-test-submit-background:		@brand-secondary;
 @tax-button-test-submit-text:		rgb(255, 255, 255);
