@@ -19659,6 +19659,9 @@ a#il_mhead_t_focus {
 .ilTableFilterSec {
   background-color: #efefef !important;
 }
+.il-layout-page-content:focus {
+  outline: none;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #abc466;
