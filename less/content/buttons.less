@@ -42,3 +42,28 @@ input.btn.btn-default {
 span.ilNewsRssIcon {
   background-color: @tax-button-rss-ical-bg-color;
 }
+
+button .caret{
+  background-color: transparent;
+  vertical-align: unset;
+  margin: unset;
+  border: none;
+  width: unset;
+  height: unset;
+  margin-left: auto;
+  margin-right: auto;
+  &:extend(.glyphicon);
+  &:extend(.glyphicon-triangle-bottom);
+  &:before{
+    font-family: il-icons;
+    content: "\e604";
+  }
+  &:hover{
+    font-weight:bold;
+  }
+}
+
+.dropdown button, .dropdown-toggle.btn-default{
+  background-color: transparent;
+  border-color: transparent;
+}
