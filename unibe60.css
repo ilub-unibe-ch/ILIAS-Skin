@@ -19561,6 +19561,9 @@ div.ilTopBar {
 .breadcrumb {
   margin-top: 0px;
 }
+div.ilAdminRow {
+  margin-top: 0;
+}
 .cal_modal_infoscreen .il_InfoScreenPropertyValue .btn-link {
   text-align: left;
   vertical-align: top;
@@ -19655,10 +19658,6 @@ a#il_mhead_t_focus {
 .ilHeadAction .hidden-xs {
   display: none;
 }
-.ilTableFilter,
-.ilTableFilterSec {
-  background-color: #e9e9e9 !important;
-}
 .il-layout-page-content:focus {
   outline: none;
 }
@@ -19667,6 +19666,23 @@ a#il_mhead_t_focus {
 }
 .jstree.jstree-default .jstree-open > i {
   background-position: -10px 0 !important;
+}
+.ilTableFilter,
+.ilTableFilterSec {
+  background-color: white !important;
+}
+.ilTableFilterSec {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+legend.ilTableFilter > .ilTableFilterDeactivator {
+  margin-right: 0px;
+  margin-top: 0px;
+}
+div.ilTableFilterLabel {
+  background-color: transparent;
+}
+.ilTableNav .btn-group {
+  margin-left: 6px;
 }
 .alert-success {
   background-color: #c4e074;
@@ -19989,7 +20005,8 @@ button .caret:hover {
   color: #262626;
   padding-top: 10px;
 }
-#ilTab > li.active > a {
+#ilTab > li.active > a,
+#ilTab > li.active:hover > a {
   color: #ffffff;
   background-color: #d6002b;
   height: 40px;
@@ -20018,9 +20035,10 @@ button .caret:hover {
   background-color: unset;
 }
 ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   margin-left: 15px;
   margin-right: 15px;
+  background-color: #fae5e9;
 }
 .qtip-default {
   background-color: #e0ebf6;
