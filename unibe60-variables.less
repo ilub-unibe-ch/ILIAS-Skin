@@ -16,8 +16,8 @@
 @brand-secondary:		#d6002b;
 @brand-success:		#6ea03c;
 @brand-info:		#dcb496;
-@brand-warning:		#fa8228;
-@brand-danger:		#fa8228;
+@brand-warning:		@brand-secondary;
+@brand-danger:		@brand-secondary;
 
 /** if left unchanged, you have to copy all the background images to your skin/images folder.
 * To use the delos background images in your skin,
@@ -31,9 +31,9 @@
 */
 @web-font-path:		"fonts/";
 
-@mid-gray:		#434343;
+@mid-gray:		#4B4B4B;
 @il-primary-container-bg:		white;
-@il-secondary-container-bg:		#f9f9f9;
+@il-secondary-container-bg:		#f8f8f8;
 
 @il-highlight-bg:		#dfe3e6;
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
@@ -91,11 +91,11 @@
 //== Scaffolding
 //
 //##
-@body-bg:		#f6f6f6;
+@body-bg:		#f4f4f4;
 @text-color:		#1e1e1e;
-@il-light-text-color:		lighten(@mid-gray, 30%);
-@link-color:		#4e7aa9;
-@link-hover-color:		darken(@link-color, 15%);
+@il-light-text-color:		lighten(@mid-gray, 50%);
+@link-color:		@brand-primary;
+@link-hover-color:		@brand-secondary;
 
 @component-active-color:		white;
 @btn-primary-color:		white;
@@ -207,7 +207,7 @@
 @il-top-bar-link-hover-bg:		lighten(@mid-gray, 42%);
 @il-top-bar-link-hover-color:		white;
 //** controls colors and bg colors of the "topbar" dropdowns
-@il-top-bar-dropdown-bg:		lighten(@mid-gray, 42%);
+@il-top-bar-dropdown-bg:		lighten(@mid-gray, 40%);
 @il-top-bar-dropdown-color:		lighten(@mid-gray, 70%);
 @il-top-bar-dropdown-link-bg:		transparent;
 @il-top-bar-dropdown-link-color:		lighten(@mid-gray, 70%);
@@ -241,9 +241,9 @@
 @il-main-menu-margin:		@il-main-menu-top 0 0 @il-main-menu-left;
 //** controls colors of the main menu.
 @il-main-menu-bg:		@il-main-header-bg;
-@il-main-menu-link-color:		#808080;
-@il-main-menu-link-hover-color:		#808080;
-@il-main-menu-link-active-color:		#808080;
+@il-main-menu-link-color:		#787878;
+@il-main-menu-link-hover-color:		#787878;
+@il-main-menu-link-active-color:		#787878;
 @il-main-menu-link-bg:		transparent;
 @il-main-menu-link-hover-bg:		transparent;
 @il-main-menu-link-active-bg:		#fafafa;
@@ -252,7 +252,7 @@
 @il-main-menu-dropdown-link-hover-color:		darken(@gray-dark, 5%);
 @il-main-menu-dropdown-link-bg:		transparent;
 @il-main-menu-dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
-@il-main-menu-dropdown-header-bg:		#f3f3f3;
+@il-main-menu-dropdown-header-bg:		il-secondary-container-bg;
 
 //== Footer
 //
@@ -425,13 +425,13 @@
 //## Variables used to style the ILIAS standard form used e.g. in the "Settings"-Tab
 
 //** Textcolor used in the forms sections bodies
-@il-standard-form-color:		#808080;
+@il-standard-form-color:		#787878;
 //** Textcolor used in the bylines (descriptions) of the input fields of a form
 @il-standard-form-byline-color:		lighten(@il-standard-form-color, 10%);
 //** Textcolor used in the labels (identifiers) of the input fields of a form
 @il-standard-form-label-color:		darken(@il-standard-form-color, 20%);
 //** Background color used in the
-@il-standard-form-bg:		#efefef;
+@il-standard-form-bg:		lighten(@mid-gray, 62%);
 //** Textsize used in the forms body
 @il-standard-form-font-size:		@font-size-small;
 //** Textsize used in the bylines (descriptions) of the input fields of a form
@@ -488,17 +488,17 @@
 //
 //## Variables used to style the ILIAS input fields (e.g. Text Inputs etc.)
 @input-border-radius:		0;
-@input-border:		#CCCCCC;
-@input-border-focus:		lighten(@brand-primary, 20%);
+@input-border:		#bbbbbb;
+@input-border-focus:		lighten(@brand-secondary, 20%);
 @ilFormInputFontSize:		@font-size-small;
 @input-height-base:		(floor((@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2);
-@ilFormColor:		#808080;
+@ilFormColor:		#787878;
 @ilFormBgColor:		#FDFDFD;
 @input-color-placeholder:		lighten(@gray-light, 30%);
 @il-textarea-height:		(floor(4 * (@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2);
 
 //** Tag Input
-@input-tag-color-disabled:		#EEEEEE;
+@input-tag-color-disabled:		#e8e8e8;
 
 //== Panels
 //
@@ -506,7 +506,7 @@
 
 @panel-bg:		@il-secondary-container-bg;
 @panel-body-padding:		15px;
-@panel-heading-color:		#121212;
+@panel-heading-color:		@brand-primary;
 @panel-heading-padding:		1.5*@padding-large-vertical @padding-large-horizontal;
 @panel-footer-padding:		@panel-heading-padding;
 @panel-border-radius:		@border-radius-base;
@@ -551,14 +551,14 @@
 @table-bg-accent:		white;
 
 //** Border color for table and cell borders.
-@table-border-color:		#ddd;
+@table-border-color:		lighten(@il-table-head-bg, 10%);
 
-@il-table-head-bg:		lighten(@link-color, 45%);
-@il-data-table-bg:		@il-secondary-container-bg;
-@il-table-cmd-bg:		@il-secondary-container-bg;
+@il-table-head-bg:		#c9d7e5;
+@il-data-table-bg:		#edf1f6;
+@il-table-cmd-bg:		white;
 
 //** Presentation Table borders
-@il-table-presentation-rowborder-top:		1px solid @table-border-color; ;
+@il-table-presentation-rowborder-top:		1px solid @table-border-color;
 
 //** Presentation Table colum widths
 @il-table-presentation-rowcontrol-colwidth:		5%;
@@ -573,7 +573,7 @@
 //##
 @navbar-height:		40px;
 @il-toolbar-margin:		15px;
-@il-toolbar-bg:		    white;
+@il-toolbar-bg:		white;
 @il-toolbar-height:		@navbar-height;
 @il-toolbar-border:		1px solid #e7e7e7;
 
@@ -931,7 +931,7 @@
 //** slates
 @il-slate-bulky-bg-color:		#f2f2f2;
 @il-slate-bulky-level2-bg-color:		#f9f9f9;
-@il-slate-bulky-bg-color-engaged:		fade(@link-color, 30%);
+@il-slate-bulky-bg-color-engaged:		fade(@brand-secondary, 10%);
 @il-slate-content-padding:		10px;
 @il-slate-tree-padding:		4px 0;
 @il-slate-bulky-padding:		10px 40px 15px 10px;
@@ -988,8 +988,8 @@
 @tax-il-main-header-bg-color:		#ffffff;
 @tax-il-main-header-height:		80px;
 @tax-il-main-header-border-bottom-color:		#c6cdd5;
-@tax-il-course-header-font-weight: 300;
-@tax-il-course-header-color:@brand-primary;
+@tax-il-course-header-font-weight:		300;
+@tax-il-course-header-color:		@brand-primary;
 @tax-il-footer-bg-color:		#242424;
 @tax-il-footer-height:		110px;
 @tax-il-repository-list-row-border:		1px, #eeeff2;
@@ -997,20 +997,20 @@
 @tax-il-container-block-border:		0px solid #dcdcdc;
 @tax-il-container-block-header-border-bottom:		1.5px solid #dcdcdc;
 @tax-il-container-list-row-bg-color:		#edf3fa;
-@tax-il-container-block-box-shadow:		3px 3px 9px rgb(163,177,198,0.6), -3px -3px 9px rgba(255,255,255, 0.5);
-@tax-il-secondary-panel-box-shadow:		3px 3px 9px rgb(163,177,198,0.6), -3px -3px 9px rgba(255,255,255, 0.5);
+@tax-il-container-block-box-shadow:		0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+@tax-il-secondary-panel-box-shadow:		0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
 @tax-il-tab-color:		#262626;
 @tax-il-tab-bg-color:		#ffffff;
 @tax-il-tab-hover-color:		@brand-secondary;
 @tax-il-tab-hover-bg-color:		@tax-il-tab-bg-color;
 @tax-il-tab-active-color:		#ffffff;
-@tax-il-tab-active-bg-color:	@brand-secondary;;
+@tax-il-tab-active-bg-color:		@brand-secondary;;
 @tax-il-tab-border-bottom:		none;
 @tax-il-tab-margin-bottom:		20px;
 @tax-il-tab-margin-borders:		15px;
 @tax-il-tab-margin-background-color:		#fafafa;
-@tax-il-tab-height: 40px;
-@tax-il-tab-padding-top: 10px;
+@tax-il-tab-height:		40px;
+@tax-il-tab-padding-top:		10px;
 @tax-il-subtab-color:		@tax-il-tab-color;
 @tax-il-subtab-active-color:		@brand-secondary;
 @tax-il-subtab-active-textdecoration:		none;
@@ -1030,19 +1030,19 @@
 //##
 @tax-alert-success-bg-color:		#c4e074;
 @tax-alert-success-color:		#6e8236;
-@tax-alert-success-border-color:		#abc466;
+@tax-alert-success-border-color:		@tax-alert-success-bg-color;
 @tax-alert-success-link-color:		rgb(75, 99, 25);
 @tax-alert-info-bg-color:		#c7e0fc;
 @tax-alert-info-color:		#5d7ead;
-@tax-alert-info-border-color:		#a7c9ef;
+@tax-alert-info-border-color:		@tax-alert-info-bg-color;
 @tax-alert-info-link-color:		rgb(32, 93, 134);
 @tax-alert-warning-bg-color:		#ffd263;
 @tax-alert-warning-color:		#556477;
-@tax-alert-warning-border-color:		#ffb500;
+@tax-alert-warning-border-color:		@tax-alert-warning-bg-color;
 @tax-alert-warning-link-color:		rgb(187, 103, 28);
 @tax-alert-danger-bg-color:		#f2bab3;
 @tax-alert-danger-color:		#96190a;
-@tax-alert-danger-border-color:		#e0857b;
+@tax-alert-danger-border-color:		@tax-alert-danger-bg-color;
 @tax-alert-danger-link-color:		rgb(135, 12, 37);
 
 //== Unibe specific buttons
