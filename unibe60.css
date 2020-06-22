@@ -2377,11 +2377,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ebf1f6;
+  border-top: 1px solid #fefeff;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ebf1f6;
+  border-bottom: 2px solid #fefeff;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2392,7 +2392,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #ebf1f6;
+  border-top: 2px solid #fefeff;
 }
 .table .table {
   background-color: #f4f4f4;
@@ -2406,7 +2406,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ebf1f6;
+  border: 1px solid #fefeff;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2414,7 +2414,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ebf1f6;
+  border: 1px solid #fefeff;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2552,7 +2552,7 @@ table th[class*="col-"] {
     margin-bottom: 15px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ebf1f6;
+    border: 1px solid #fefeff;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -5689,7 +5689,7 @@ button.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #ebf1f6;
+  border-top: 1px solid #fefeff;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -7227,7 +7227,7 @@ button.close {
   font-size: 12px;
 }
 .btn:focus {
-  outline: 1px dotted #dfe3e6;
+  outline: 1px dotted rgba(214, 0, 43, 0.1);
   outline-offset: -1px;
 }
 .btn:active,
@@ -8005,7 +8005,7 @@ ul.dropdown-menu > li > .btn:focus {
   stroke: transparent;
 }
 .il-standard-form {
-  background-color: #e9e9e9;
+  background-color: white;
   margin-top: 6px;
 }
 .il-standard-form .il-standard-form-cmd {
@@ -8046,7 +8046,7 @@ ul.dropdown-menu > li > .btn:focus {
   padding-top: 0;
 }
 .il-standard-form .il-dependant-group {
-  background-color: #e4e4e4;
+  background-color: #f2f2f2;
   padding: 3px 0;
 }
 .il-standard-form .il-dependant-group .form-group {
@@ -8423,7 +8423,7 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default:not(.disable
 }
 .il-table-presentation-row {
   background-color: white;
-  border-top: 1px solid #ebf1f6;
+  border-top: 1px solid #fefeff;
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -8769,7 +8769,7 @@ div.alert ul > li:before {
   width: 100%;
 }
 .il-tree li.il-tree-node.highlighted > .node-line {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
 }
 .il-tree li.il-tree-node.expandable > .node-line:before {
   color: #777777;
@@ -9289,7 +9289,7 @@ footer {
   word-break: normal;
 }
 .il-maincontrols-slate .il-maincontrols-slate .btn-bulky {
-  background-color: #f9f9f9;
+  background-color: rgba(214, 0, 43, 0.05);
 }
 .il-maincontrols-slate.il-maincontrols-slate-notification .il-maincontrols-slate-notification-title {
   text-transform: uppercase;
@@ -9313,15 +9313,15 @@ footer {
 }
 .il-maincontrols-slate.engaged[data-depth-level="2"] .btn-bulky:not(:hover),
 .il-maincontrols-slate.engaged[data-depth-level="2"] .link-bulky:not(:hover) {
-  background-color: #f9f9f9;
+  background-color: rgba(214, 0, 43, 0.05);
 }
 .il-maincontrols-slate.engaged[data-depth-level="3"] .btn-bulky:not(:hover),
 .il-maincontrols-slate.engaged[data-depth-level="3"] .link-bulky:not(:hover) {
-  background-color: rgba(249, 249, 249, 0.15);
+  background-color: rgba(214, 0, 43, 0.15);
 }
 .il-maincontrols-slate.engaged[data-depth-level="4"] .btn-bulky:not(:hover),
 .il-maincontrols-slate.engaged[data-depth-level="4"] .link-bulky:not(:hover) {
-  background-color: rgba(249, 249, 249, 0.1);
+  background-color: rgba(214, 0, 43, 0.1);
 }
 .il-maincontrols-slate-content p,
 .il-maincontrols-slate-content h1,
@@ -11202,7 +11202,7 @@ footer {
   }
 }
 .il-link:focus {
-  outline: 1px dotted #dfe3e6;
+  outline: 1px dotted rgba(214, 0, 43, 0.1);
   outline-offset: -1px;
 }
 .il-link:active,
@@ -13424,12 +13424,12 @@ span.ilIcalIcon {
 }
 .il_HAccordionHead:hover,
 .il_VAccordionHead:hover {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
 }
 .il_HAccordionHeadActive,
 .il_VAccordionHeadActive {
   background-image: url("images/tree_exp.svg");
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
 }
 .ilAccHideContent {
   width: 0px;
@@ -13473,7 +13473,7 @@ select {
 }
 .form-horizontal {
   margin-bottom: 20px;
-  background: #e9e9e9;
+  background: white;
 }
 form.form-inline {
   margin-bottom: 20px;
@@ -13587,7 +13587,7 @@ input[type="file"].form-control {
   background-color: #f4f4f4;
 }
 .ilSubForm {
-  background-color: #e4e4e4;
+  background-color: #f2f2f2;
   padding: 3px 0;
 }
 .ilSubForm .form-group {
@@ -13773,13 +13773,13 @@ li.il_Explorer {
 }
 a.il_HighlightedNode,
 .ilHighlighted {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
   padding: 0 5px;
 }
 li.ilExplSecHighlight {
   background-color: white !important;
-  border-top: solid 2px #62727d;
-  border-bottom: solid 2px #62727d;
+  border-top: solid 2px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
 }
 div.il_ExplorerItemDescription {
   margin-left: 40px;
@@ -14653,7 +14653,7 @@ a.nostyle:hover {
   cursor: pointer;
 }
 .ilCOPgEditStyleSelectionItem:hover {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
 }
 ul#ilAdvSelListTable_style_selection {
   overflow: auto;
@@ -14871,7 +14871,7 @@ tr.calstdtime:first-of-type td {
   border-spacing: 0px;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #ebf1f6;
+  border-right-color: #fefeff;
 }
 td.calempty,
 th.calempty {
@@ -14882,7 +14882,7 @@ td.calempty_border {
   border-spacing: 0px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ebf1f6;
+  border-bottom-color: #fefeff;
 }
 tr.calstd {
   /*background-color: inherit;*/
@@ -14896,7 +14896,7 @@ table.il-cal-week tr.calstd + tr.calstdtime td.calempty {
 table.il-cal-day tr.calstd,
 table.il-cal-week tr.calstd {
   border-collapse: collapse;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-top-width: 2px;
@@ -14915,7 +14915,7 @@ tr.calstdtime {
   background-color: inherit;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #ebf1f6;
+  border-right-color: #fefeff;
 }
 td.calstd {
   vertical-align: top;
@@ -14924,7 +14924,7 @@ td.calstd {
   border-collapse: collapse;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   padding: 2px 0px;
 }
 td.caltoday {
@@ -14934,7 +14934,7 @@ td.caltoday {
   border-collapse: collapse;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
 }
 td.calnow {
   vertical-align: top;
@@ -14943,7 +14943,7 @@ td.calnow {
   border-collapse: collapse;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
 }
 td.calnext {
   vertical-align: top;
@@ -14952,7 +14952,7 @@ td.calnext {
   border-collapse: collapse;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
 }
 td.calprev {
   vertical-align: top;
@@ -14961,7 +14961,7 @@ td.calprev {
   border-collapse: collapse;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
 }
 p.il_calevent {
   color: white;
@@ -14982,7 +14982,7 @@ td.calevent {
   border-collapse: collapse;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   font-size: 90%;
   /*background-color:white;*/
 }
@@ -15032,7 +15032,7 @@ td.calministd {
   border-spacing: 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   font-size: 90%;
   text-align: center;
   vertical-align: middle;
@@ -15042,7 +15042,7 @@ td.calminitoday {
   background-color: #FFE79C;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   font-size: 90%;
   text-align: center;
   vertical-align: middle;
@@ -15052,7 +15052,7 @@ td.calmininow {
   background-color: #FFF0C4;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   font-size: 90%;
   text-align: center;
   vertical-align: middle;
@@ -15062,7 +15062,7 @@ td.calmininext {
   background-color: #F9F9F9;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   font-size: 90%;
   text-align: center;
   vertical-align: middle;
@@ -15072,7 +15072,7 @@ td.calminiprev {
   background-color: #F9F9F9;
   border-width: 1px;
   border-style: solid;
-  border-color: #ebf1f6;
+  border-color: #fefeff;
   font-size: 90%;
   text-align: center;
   vertical-align: middle;
@@ -15842,7 +15842,7 @@ tr.tblheader {
 }
 .table > thead > tr > th {
   border-bottom: 1px solid #a0a0a0;
-  background-color: #c9d7e5;
+  background-color: #dce4ee;
 }
 .ilTableOuter .table {
   background-color: #edf1f6;
@@ -17160,10 +17160,10 @@ div.ilCreationFormSection .form-horizontal {
   background-color: white;
 }
 .table-striped > tbody > tr.ilObjListRow:hover > td {
-  background-color: #edf0f1;
+  background-color: rgba(240, 0, 48, 0.1);
 }
 .table-striped > tbody > tr.ilObjListRow:hover:nth-child(2n+1) > td {
-  background-color: #edf0f1;
+  background-color: rgba(240, 0, 48, 0.1);
 }
 /* Services/Navigation */
 form.ilNavHistoryForm {
@@ -17922,7 +17922,7 @@ div.ilChecklist ul a:hover {
   color: #1e1e1e;
 }
 div.ilChecklist ul li a:hover {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
 }
 div.ilChecklist ul li p,
 div.ilChecklist ul li p:hover {
@@ -18159,7 +18159,7 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
   height: 10px;
 }
 #awareness-content .ilHighlighted {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
   color: #606060;
 }
 .ilAwrnBadgeHidden {
@@ -19956,11 +19956,11 @@ div.ilNewObjectSelector {
 a.ilTag,
 .ilTag,
 .ilTagRelVeryLow {
-  background-color: #dfe3e6;
+  background-color: rgba(214, 0, 43, 0.1);
   color: #1e1e1e !important;
 }
 a.ilTag:hover {
-  background-color: #c2cad0;
+  background-color: rgba(163, 0, 33, 0.1);
   color: #1e1e1e;
 }
 div.row.ilContainerBlockHeader.ilContainerBlockHeaderCollapsed {
