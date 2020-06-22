@@ -35,7 +35,7 @@
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f8f8f8;
 
-@il-highlight-bg:		#dfe3e6;
+@il-highlight-bg:		@il-slate-bulky-bg-color-engaged;
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
@@ -431,14 +431,14 @@
 //** Textcolor used in the labels (identifiers) of the input fields of a form
 @il-standard-form-label-color:		darken(@il-standard-form-color, 20%);
 //** Background color used in the
-@il-standard-form-bg:		lighten(@mid-gray, 62%);
+@il-standard-form-bg:		white;
 //** Textsize used in the forms body
 @il-standard-form-font-size:		@font-size-small;
 //** Textsize used in the bylines (descriptions) of the input fields of a form
 @il-standard-form-byline-font-size:		90%;
 
 //** Textcolor used in the forms header, the sections header and the footer
-@il-standard-form-header-color:		lighten(@il-standard-form-color, 10%);
+@il-standard-form-header-color:		lighten(@il-standard-form-color, 10%) ;
 //** Background color used in the forms header, the sections header and the footer
 @il-standard-form-header-bg:		@body-bg;
 //** Textsize color used in the forms header and the sections header
@@ -446,7 +446,7 @@
 //** Textsize color used in the form headers the section headers byline (description)
 @il-standard-form-header-byline-font-size:		@font-size-small;
 //** Background color used for dependant groups (sub forms) in standard forms
-@il-standard-form-dependant-group-bg:		darken(@il-standard-form-bg, 2%);
+@il-standard-form-dependant-group-bg:		darken(@il-standard-form-bg, 5%);
 
 //** Minimal size of non-empty buttons inside forms
 @il-button-min-width-forms:		60px;
@@ -553,7 +553,7 @@
 //** Border color for table and cell borders.
 @table-border-color:		lighten(@il-table-head-bg, 10%);
 
-@il-table-head-bg:		#c9d7e5;
+@il-table-head-bg:		#dce4ee;
 @il-data-table-bg:		#edf1f6;
 @il-table-cmd-bg:		white;
 
@@ -930,7 +930,7 @@
 
 //** slates
 @il-slate-bulky-bg-color:		#f2f2f2;
-@il-slate-bulky-level2-bg-color:		#f9f9f9;
+@il-slate-bulky-level2-bg-color:		fade(@brand-secondary, 5%);
 @il-slate-bulky-bg-color-engaged:		fade(@brand-secondary, 10%);
 @il-slate-content-padding:		10px;
 @il-slate-tree-padding:		4px 0;
@@ -1009,7 +1009,7 @@
 @tax-il-tab-margin-bottom:		20px;
 @tax-il-tab-margin-borders:		15px;
 @tax-il-tab-margin-background-color:		#fafafa;
-@tax-il-sub-tab-bg-color: #fae5e9;
+@tax-il-sub-tab-bg-color:		#fae5e9;
 @tax-il-tab-height:		40px;
 @tax-il-tab-padding-top:		10px;
 @tax-il-subtab-color:		@tax-il-tab-color;
@@ -1017,9 +1017,9 @@
 @tax-il-subtab-active-textdecoration:		none;
 @tax-il-subtab-hover-bg-color:		@tax-il-tab-hover-color;
 @tax-il-subtab-hover-color:		@tax-il-subtab-color;
-@tax-il-sub-tab-margin-bottom: 2*@padding-large-vertical;
-@tax-il-sub-tab-margin-borders: @tax-il-tab-margin-borders;
-@tax-il-sub-tab-margin-borders: @tax-il-tab-margin-borders;
+@tax-il-sub-tab-margin-bottom:		2*@padding-large-vertical;
+@tax-il-sub-tab-margin-borders:		@tax-il-tab-margin-borders;
+@tax-il-sub-tab-margin-borders:		@tax-il-tab-margin-borders;
 @tax-il-tab-padding-subtab:		8px 6px;
 @tax-il-logo-size:		40px;
 @tax-il-logo-top:		15px;
@@ -1086,15 +1086,15 @@
 //== Unibe specific legacy Filter
 //
 //##
-@tax-legacy-filter-bg-color: white;
-@tax-legacy-filter-box-shadow: @tax-il-secondary-panel-box-shadow;
-@tax-legacy-deactivator-margin-right: 0px;
-@tax-legacy-deactivator-margin-top: 0px;
+@tax-legacy-filter-bg-color:		white;
+@tax-legacy-filter-box-shadow:		@tax-il-secondary-panel-box-shadow;
+@tax-legacy-deactivator-margin-right:		0px;
+@tax-legacy-deactivator-margin-top:		0px;
 
 //== Unibe specific legacy table
 //
 //##
-@il-table-nav-btn-group-margin-left: @padding-small-horizontal;
+@il-table-nav-btn-group-margin-left:		@padding-small-horizontal;
 
 //== Unibe specific Main Bar
 //
