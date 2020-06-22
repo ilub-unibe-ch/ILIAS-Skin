@@ -19564,6 +19564,12 @@ div.ilTopBar {
 .taxUserAgreement {
   flex: 0 0 100%;
 }
+.il-mainbar-tools-button .btn-bulky {
+  background-color: #d6002b;
+}
+.il-mainbar-tools-button .btn-bulky.engaged {
+  background-color: #fae5e9;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #c4e074;
