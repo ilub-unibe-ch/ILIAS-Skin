@@ -19847,6 +19847,19 @@ a.ilSubmitInactive:active {
   border-color: #bdbdbd;
   cursor: not-allowed;
 }
+.btn.disabled:hover,
+.btn[disabled]:hover,
+fieldset[disabled] .btn:hover,
+input.ilSubmitInactive:hover,
+input.ilSubmitInactive:hover:hover,
+input.ilSubmitInactive:active:hover,
+a.ilSubmitInactive:hover,
+a.ilSubmitInactive:hover:hover,
+a.ilSubmitInactive:active:hover {
+  color: white;
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
 .il-btn-month > button.btn.btn-default.dropdown-toggle:focus {
   background-color: #1e1e1e;
   color: #1e1e1e;
