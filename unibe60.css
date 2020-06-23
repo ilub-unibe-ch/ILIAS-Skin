@@ -20118,9 +20118,6 @@ div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBloc
 ul.dropdown-menu > li > #mm_pd_lp {
   display: none;
 }
-input.form-control {
-  height: unset;
-}
 .ilFrmPostContentContainer img {
   width: auto;
   height: auto !important;
@@ -20236,6 +20233,12 @@ ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
   border-color: #9cbdde;
   color: #666666;
   border-radius: 0px;
+}
+input.form-control {
+  height: unset;
+}
+.form-horizontal .help-block.alert img {
+  width: 20px;
 }
 /*		Color scheme
 		Dark BLue: #0f2152;
