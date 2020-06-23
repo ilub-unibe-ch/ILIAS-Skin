@@ -7843,7 +7843,7 @@ ul.dropdown-menu > li > .btn:focus {
   margin: 0;
   font-weight: 600;
   font-size: 12px;
-  padding-left: 95px;
+  padding-left: 100px;
 }
 .breadcrumbs .breadcrumb span.crumb {
   color: #1e1e1e;
@@ -8843,7 +8843,7 @@ grid-based layout
   grid-template-columns: auto 1fr;
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar {
-  width: 404px;
+  width: 409px;
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar .il-mainbar-slates {
   display: -ms-flexbox;
@@ -8911,11 +8911,11 @@ nav.il-maincontrols {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  -ms-grid-colums: 75px 329px;
-  grid-template-columns: 75px 329px;
+  -ms-grid-colums: 80px 329px;
+  grid-template-columns: 80px 329px;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  width: 75px;
+  width: 80px;
 }
 .il-mainbar {
   background-color: #333;
@@ -8933,12 +8933,12 @@ nav.il-maincontrols {
   flex-direction: row;
 }
 .il-mainbar-tools-button button {
-  height: 75px;
-  width: 75px;
+  height: 80px;
+  width: 80px;
 }
 .il-mainbar-tools-entries button {
-  height: 75px;
-  width: 75px;
+  height: 80px;
+  width: 80px;
 }
 .il-mainbar-tools-entries.engaged {
   display: -ms-flexbox;
@@ -9556,8 +9556,8 @@ footer {
 .il-maincontrols-metabar .btn-bulky,
 .il-maincontrols-mainbar .link-bulky,
 .il-maincontrols-metabar .link-bulky {
-  font-size: 1rem;
-  line-height: 1.33rem;
+  font-size: 0.95rem;
+  line-height: 1.2635rem;
 }
 .il-maincontrols-mainbar .btn-bulky:focus,
 .il-maincontrols-metabar .btn-bulky:focus,
@@ -9588,7 +9588,7 @@ footer {
   background: #333;
   display: flex;
   position: relative;
-  width: 75px;
+  width: 80px;
   z-index: 1;
 }
 .il-mainbar-triggers .btn-bulky,
@@ -9600,11 +9600,11 @@ footer {
   color: #fff;
   display: inline-flex;
   flex-flow: column wrap;
-  height: 75px;
+  height: 80px;
   justify-content: center;
   margin-bottom: 0;
   padding: 0;
-  width: 75px;
+  width: 80px;
   width: 100%;
 }
 .il-mainbar-triggers .btn-bulky .icon,
@@ -9720,7 +9720,7 @@ footer {
 }
 .il-mainbar-tools-entries.engaged {
   display: flex;
-  height: 75px;
+  height: 80px;
   flex-shrink: 0;
 }
 .il-mainbar-tools-entries .btn-bulky,
@@ -9763,7 +9763,7 @@ footer {
 .il-mainbar-tools-entries-bg {
   background: #f4f4f4;
   display: flex;
-  height: 75px;
+  height: 80px;
   width: 100%;
 }
 .il-mainbar-remove-tool {
@@ -9779,7 +9779,7 @@ footer {
   color: #1e1e1e;
   font-size: 4.5rem;
   font-weight: 300;
-  height: 75px;
+  height: 80px;
   padding: 0 20px;
   width: auto;
 }
