@@ -19570,6 +19570,12 @@ div.ilTopBar {
 .il-mainbar-tools-button .btn-bulky.engaged {
   background-color: #fae5e9;
 }
+.il-mainbar-tool-trigger-item .btn-bulky {
+  background-color: #ea7f95;
+}
+.il-mainbar-tool-trigger-item .btn-bulky.engaged {
+  background-color: white;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #c4e074;
