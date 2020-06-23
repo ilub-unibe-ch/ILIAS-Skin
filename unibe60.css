@@ -7051,11 +7051,12 @@ button.close {
 }
 .il-card .caption {
   padding-top: 6px;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 .il-card .caption h5 {
   margin: 6px 0 0 0;
+}
+.il-card .caption .card-title {
+  overflow-wrap: break-word;
 }
 .il-card .caption dl dt {
   font-weight: normal;
@@ -8523,20 +8524,6 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default:not(.disable
 }
 .il-table-presentation-row .il-table-presentation-row-expanded .il-table-presentation-details .il-table-presentation-fields .il-item-property-name {
   color: #cbcbcb;
-}
-.il-table-data {
-  display: table;
-}
-.il-table-data .row {
-  display: table-row;
-}
-.il-table-data .row .cell {
-  display: table-cell;
-  border: thin solid black;
-  padding: 5px;
-}
-.il-table-data .header.cell {
-  font-weight: bold;
 }
 .il-workflow-header .il-workflow-title {
   background-color: #f2f2f2;
@@ -12756,7 +12743,7 @@ div.il_info {
 }
 /* ---------------- headlines ------------------ */
 a#il_mhead_t_focus {
-  color: #a30021;
+  color: #700017;
   vertical-align: middle;
   font-size: 26px;
   cursor: default;
@@ -14492,17 +14479,6 @@ li.ilc_page_toc_PageTOCItem {
   padding: 0;
   white-space: nowrap;
 }
-a.ilc_page_toc_PageTOCLink {
-  color: #03a;
-  font-weight: normal;
-  text-decoration: none;
-}
-a.ilc_page_toc_PageTOCLink:hover {
-  color: black;
-}
-a.ilc_page_toc_PageTOCLink:visited {
-  color: blue;
-}
 /* --- content styles (will move to content.css) --- */
 td.ilc_PageDisabled {
   padding: 20px;
@@ -15854,11 +15830,6 @@ td > img[src$="icon_custom.svg"] {
   .table-responsive {
     overflow-x: auto;
     max-width: 94vw;
-  }
-}
-@media (min-width: 769px) {
-  .table-responsive {
-    overflow: visible;
   }
 }
 /* Services/Notes */
@@ -19359,19 +19330,6 @@ table.mceToolbar td {
   border: 1px solid #ddd;
   border-radius: 0.25em;
 }
-footer.ilFooter {
-  height: 110px;
-  background-color: #242424;
-}
-div.ilTopBar {
-  background-color: #191919;
-  color: #ffffff;
-}
-.ilMainHeader {
-  background-color: #ffffff;
-  height: 80px;
-  border-bottom-color: #c6cdd5;
-}
 .ilMainHeader > header > .row > a.navbar-brand {
   margin: 15px 15px 0;
 }
@@ -19390,46 +19348,10 @@ div.ilTopBar {
   .ilMainHeader > header > .row > a.navbar-brand > img {
     background-image: url("./images/HeaderIconMobile.svg");
   }
-  #ilTopNav button.navbar-toggle {
-    background-color: #000000;
-  }
-  #ilTopNav button.navbar-toggle:hover {
-    background-color: #000000;
-  }
 }
 #ilTopBarNav .ilAwarenessItem .dropdown-menu,
 #ilTopBarNav .ilAwarenessItem .dropdown-menu > li {
   background-color: #f4f4f4;
-}
-#ilTopBarNav .dropdown-menu {
-  background-color: #000000;
-  color: #cbcbcb;
-}
-#ilTopBarNav .dropdown-menu > a {
-  color: #cbcbcb;
-}
-#ilTopBarNav .dropdown-menu > a:hover,
-#ilTopBarNav .dropdown-menu > a:active,
-#ilTopBarNav .dropdown-menu > a:focus {
-  color: #000000;
-}
-#ilTopBarNav > li > a {
-  background-color: #000000;
-  color: #cbcbcb;
-}
-#ilTopBarNav > li > a:hover,
-#ilTopBarNav > li > a:active,
-#ilTopBarNav > li > a:focus {
-  background-color: #000000;
-}
-#ilTopBarNav > li.dropdown.open > a:hover,
-#ilTopBarNav > li.dropdown.open > a:active,
-#ilTopBarNav > li.dropdown.open > a:focus {
-  background-color: #000000;
-}
-#ilTopBarNav > .active > a,
-#ilTopBarNav > .open > a {
-  background-color: #000000;
 }
 .il-layout-page-content:focus {
   outline: none;
@@ -19454,11 +19376,6 @@ div.ilTopBar {
   overflow: hidden;
   padding: 0px !important;
   text-align: center;
-}
-@media only screen and (min-width: 480px) {
-  #wayf_div {
-    width: 350px !important;
-  }
 }
 #wayf_remember_checkbox_div {
   display: none;
@@ -20130,10 +20047,10 @@ a#il_mhead_t_focus {
   display: none;
 }
 .jstree.jstree-default .jstree-closed > i {
-  background-position: 9px 1px !important;
+  background-position: 9px 2px !important;
 }
 .jstree.jstree-default .jstree-open > i {
-  background-position: -10px 0 !important;
+  background-position: -8px 0 !important;
 }
 .ilTableFilter,
 .ilTableFilterSec {
