@@ -20157,6 +20157,9 @@ input.form-control {
 .form-horizontal .help-block.alert img {
   width: 20px;
 }
+.ilFormHeader > .ilHeader {
+  color: #1e1e1e;
+}
 /*		Color scheme
 		Dark BLue: #0f2152;
 		Mid Blue: #4c6586;
