@@ -19666,6 +19666,60 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #1e1e1e;
 }
+.btn-default,
+.open > .dropdown-toggle.btn-default {
+  border: none;
+}
+.btn-default:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default.focus,
+.open > .dropdown-toggle.btn-default.focus,
+.btn-default:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default.active,
+.btn-default:active:focus,
+.open > .dropdown-toggle.btn-default:active:focus,
+.dropdown-toggle.btn-default .btn-default:focus,
+.dropdown-toggle.btn-default .open > .dropdown-toggle.btn-default:focus,
+.dropdown-toggle.btn-default .btn-default:focus,
+.dropdown-toggle.btn-default .open > .dropdown-toggle.btn-default:focus {
+  color: #d6002b;
+  background-color: white;
+  border-color: white;
+  border: none ;
+  box-shadow: none;
+  outline: none;
+}
+.btn-default:active,
+.open > .dropdown-toggle.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default.active,
+.btn-default:active:focus,
+.open > .dropdown-toggle.btn-default:active:focus {
+  color: #a30021;
+}
+.open > .dropdown-toggle.btn-default {
+  color: #d6002b;
+  background-color: transparent;
+  border-color: white;
+  border: none ;
+  box-shadow: none;
+  outline: none;
+}
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default.active,
+.open > .dropdown-toggle.btn-default:active,
+.open > .dropdown-toggle.btn-default:active:focus {
+  background-color: transparent;
+}
+.btn-default.dropdown-toggle.btn-default:focus,
+.btn-default.dropdown-toggle.btn-default:focus {
+  background-color: transparent;
+}
 .btn-primary,
 #wayf_submit_button {
   color: #ffffff;
@@ -19840,7 +19894,9 @@ fieldset[disabled] .hidden-xs > .btn-default:first-child.focus {
   background-color: #ffffff;
 }
 .btn.disabled,
+.btn.btn-default.disabled,
 .btn[disabled],
+.btn.btn-default[disabled],
 fieldset[disabled] .btn,
 input.ilSubmitInactive,
 input.ilSubmitInactive:hover,
@@ -19853,26 +19909,104 @@ a.ilSubmitInactive:active {
   border-color: #bdbdbd;
   cursor: not-allowed;
 }
+.btn.disabled:focus,
+.btn.btn-default.disabled:focus,
+.btn[disabled]:focus,
+.btn.btn-default[disabled]:focus,
+fieldset[disabled] .btn:focus,
+input.ilSubmitInactive:focus,
+input.ilSubmitInactive:hover:focus,
+input.ilSubmitInactive:active:focus,
+a.ilSubmitInactive:focus,
+a.ilSubmitInactive:hover:focus,
+a.ilSubmitInactive:active:focus,
+.btn.disabled.focus,
+.btn.btn-default.disabled.focus,
+.btn[disabled].focus,
+.btn.btn-default[disabled].focus,
+fieldset[disabled] .btn.focus,
+input.ilSubmitInactive.focus,
+input.ilSubmitInactive:hover.focus,
+input.ilSubmitInactive:active.focus,
+a.ilSubmitInactive.focus,
+a.ilSubmitInactive:hover.focus,
+a.ilSubmitInactive:active.focus,
 .btn.disabled:hover,
+.btn.btn-default.disabled:hover,
 .btn[disabled]:hover,
+.btn.btn-default[disabled]:hover,
 fieldset[disabled] .btn:hover,
 input.ilSubmitInactive:hover,
 input.ilSubmitInactive:hover:hover,
 input.ilSubmitInactive:active:hover,
 a.ilSubmitInactive:hover,
 a.ilSubmitInactive:hover:hover,
-a.ilSubmitInactive:active:hover {
+a.ilSubmitInactive:active:hover,
+.btn.disabled:active,
+.btn.btn-default.disabled:active,
+.btn[disabled]:active,
+.btn.btn-default[disabled]:active,
+fieldset[disabled] .btn:active,
+input.ilSubmitInactive:active,
+input.ilSubmitInactive:hover:active,
+input.ilSubmitInactive:active:active,
+a.ilSubmitInactive:active,
+a.ilSubmitInactive:hover:active,
+a.ilSubmitInactive:active:active,
+.btn.disabled.active,
+.btn.btn-default.disabled.active,
+.btn[disabled].active,
+.btn.btn-default[disabled].active,
+fieldset[disabled] .btn.active,
+input.ilSubmitInactive.active,
+input.ilSubmitInactive:hover.active,
+input.ilSubmitInactive:active.active,
+a.ilSubmitInactive.active,
+a.ilSubmitInactive:hover.active,
+a.ilSubmitInactive:active.active {
   color: white;
   background-color: #bdbdbd;
   border-color: #bdbdbd;
 }
+.il-viewcontrol-section .btn-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.il-viewcontrol-section .btn-default:focus,
+.il-viewcontrol-section .btn-default.focus,
+.il-viewcontrol-section .btn-default:hover,
+.il-viewcontrol-section .btn-default:active,
+.il-viewcontrol-section .btn-default.active,
+.il-viewcontrol-section .btn-default:active:focus {
+  color: #d6002b;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
 .il-btn-month > button.btn.btn-default.dropdown-toggle:focus {
-  background-color: #1e1e1e;
   color: #1e1e1e;
-  border-color: #1e1e1e;
+}
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus:focus,
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus.focus,
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus:hover,
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus:active,
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus.active,
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus:active:focus {
+  color: #d6002b;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
 }
 .btn-group.il-btn-month.open span.il-current-month {
-  color: #1e1e1e;
+  color: inherit;
+}
+.btn-group.il-btn-month.open span.il-current-month:focus,
+.btn-group.il-btn-month.open span.il-current-month.focus,
+.btn-group.il-btn-month.open span.il-current-month:hover,
+.btn-group.il-btn-month.open span.il-current-month:active,
+.btn-group.il-btn-month.open span.il-current-month.active,
+.btn-group.il-btn-month.open span.il-current-month:active:focus {
+  color: inherit;
 }
 input.btn.btn-default {
   vertical-align: unset;
@@ -19901,6 +20035,10 @@ button .caret:hover {
 .dropdown-toggle.btn-default {
   background-color: transparent;
   border-color: transparent;
+}
+.panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle :hover,
+.panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle :hover {
+  color: #d6002b;
 }
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;

@@ -3,6 +3,38 @@
 .btn-default {
   .button-variant(@tax-button-default-color; @tax-button-default-bg-color; @tax-button-default-border-color);
 }
+.btn-default, .open > .dropdown-toggle.btn-default{
+  border: none;
+  &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus,
+  .dropdown-toggle.btn-default &:focus, .dropdown-toggle.btn-default &:focus{
+    color: @tax-button-default-hover-color;
+    background-color: white;
+    border-color: white;
+    border: none ;
+    box-shadow: none;
+    outline: none;
+  }
+  &:active,&.active,&:active:focus{
+    color: darken(@tax-button-default-hover-color,10%);
+  }
+}
+.open > .dropdown-toggle.btn-default{
+  color: @tax-button-default-hover-color;
+  background-color: transparent;
+  border-color: white;
+  border: none ;
+  box-shadow: none;
+  outline: none;
+  &:focus, &:focus, &.active,&:active,&:active:focus{
+    background-color: transparent;
+  }
+}
+.btn-default.dropdown-toggle.btn-default{
+  &:focus,&:focus{
+    background-color: transparent;
+  }
+}
+
 .btn-primary {
   .button-variant(@tax-button-primary-color; @tax-button-primary-bg-color; @tax-button-primary-border-color);
 }
@@ -14,8 +46,9 @@
     .button-variant(@tax-button-primary-color; @tax-button-primary-bg-color; @tax-button-primary-border-color);
 }
 
-.btn.disabled,
-.btn[disabled],
+
+.btn.disabled,.btn.btn-default.disabled,
+.btn[disabled],.btn.btn-default[disabled],
 fieldset[disabled] .btn,
 input.ilSubmitInactive, input.ilSubmitInactive:hover, input.ilSubmitInactive:active,
 a.ilSubmitInactive, a.ilSubmitInactive:hover , a.ilSubmitInactive:active {
@@ -24,21 +57,43 @@ a.ilSubmitInactive, a.ilSubmitInactive:hover , a.ilSubmitInactive:active {
   border-color: @tax-button-disabled-border-color;
   cursor: not-allowed;
 
-  &:hover{
+  &:focus,
+  &.focus,  &:hover,&:active,&.active{
     color: @tax-button-disabled-color;
     background-color: @tax-button-disabled-bg-color;
     border-color: @tax-button-disabled-border-color;
   }
 }
 
+.il-viewcontrol-section{
+  .btn-default{
+    background-color: transparent;
+    border-color: transparent;
+
+    &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus {
+      color: @tax-button-default-hover-color;
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
 .il-btn-month > button.btn.btn-default.dropdown-toggle:focus {
-  background-color: @tax-button-default-color;
   color: @tax-button-month-text-color;
-  border-color: @tax-button-default-color;
+  &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus {
+    color: @tax-button-default-hover-color;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .btn-group.il-btn-month.open span.il-current-month {
-  color: @tax-button-month-text-color;
+  color: inherit;
+
+  &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus {
+    color: inherit;
+  }
 }
 
 input.btn.btn-default {
@@ -72,4 +127,10 @@ button .caret{
 .dropdown button, .dropdown-toggle.btn-default{
   background-color: transparent;
   border-color: transparent;
+}
+
+.panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle, .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
+  :hover{
+    color: @tax-button-default-hover-color;
+  }
 }
