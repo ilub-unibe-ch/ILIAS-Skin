@@ -39,7 +39,7 @@
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
-@il-brand-3rd:		#21c5d8;
+@il-brand-3rd:		#4e7aa9;
 
 
 //== Extended Colors
@@ -517,7 +517,7 @@
 
 @panel-default-text:		@gray-dark;
 @panel-default-border:		none;
-@panel-default-heading-bg:		@il-secondary-container-bg;
+@panel-default-heading-bg:		#f8f8f8;
 
 @panel-primary-text:		@gray-dark;
 @panel-primary-border:		none;
@@ -581,8 +581,8 @@
 //== Postings
 //
 //##
-@il-posting-by-moderator-bg:		#ff9;
-@il-posting-needs-moderation-bg:		#ffe4e4;
+@il-posting-by-moderator-bg:		@il-data-table-bg;
+@il-posting-needs-moderation-bg:		lighten(@brand-secondary, 55%);
 
 //== bootstrap date time picker (/Services/Calendar/)
 //
@@ -621,7 +621,7 @@
 //== Status Counter
 //
 //##
-@il-counter-status-bg:		lighten(@mid-gray, 40%);
+@il-counter-status-bg:		lighten(@mid-gray, 30%);
 @il-counter-status-margin-top:		10px;
 
 
@@ -640,9 +640,9 @@
 @il-dropzone-bg:		white;
 @il-dropzone-bg-inactive:		#F4F4F4;
 //** Background color used when a dropzone is highlighted (not when hovered).
-@il-dropzone-highlight-bg:		#FFFFD6;
+@il-dropzone-highlight-bg:		#ff0000;
 //** Background color used when a dropzone is hovered.
-@il-dropzone-hover-bg:		#FFF9BC;
+@il-dropzone-hover-bg:		#00ff00;
 @il-dropzone-border-radius:		0px;
 @il-dropzone-border-style:		dashed;
 @il-dropzone-border-width:		1px;
@@ -712,7 +712,7 @@
 //##
 @il-item-divider-padding:		10px 0 0 0;
 @il-item-divider-margin:		0 0 10px 0;
-@il-item-divider-border-bottom:		dashed 0.5px #E0E0E0;
+@il-item-divider-border-bottom:		dashed 0.5px #dedede;
 @il-item-description-padding:		10px 0 0 0;
 @il-item-padding:		@padding-large-horizontal;
 @il-item-marker-border-left:		5px solid;
@@ -837,7 +837,7 @@
 //##
 @il-vc-glyph-padding-vertical:		@padding-base-vertical+2;
 @il-vc-glyph-padding-horizontal:		@padding-base-horizontal;
-@il-vc-glyph-hover-bg:		lighten(@brand-primary, 5%);
+@il-vc-glyph-hover-bg:		lighten(@brand-secondary, 5%);
 @il-vc-mode-btn-active:		@il-vc-glyph-hover-bg;
 
 
@@ -896,7 +896,7 @@
 @il-metabar-entry-height:		60px;
 @il-metabar-entry-width:		60px;
 @il-metabar-glyph-size:		2.3rem;
-@il-metabar-glyph-color:		#aaa;
+@il-metabar-glyph-color:		@link-color;
 @il-metabar-slates-width:		500px;
 
 //** breadcrumbs
@@ -906,14 +906,14 @@
 
 //** mainbar
 @il-maincontrols-mainbar-bg-color:		#fff;
-@il-mainbar-btn-height:		80px;
-@il-mainbar-btn-width:		80px;
+@il-mainbar-btn-height:		75px;
+@il-mainbar-btn-width:		75px;
 @il-mainbar-btn-color:		#fff;
 @il-mainbar-btn-bg-color:		#333;
 @il-mainbar-btn-color-engaged:		#333;
 @il-mainbar-btn-bg-color-engaged:		#fff;
 @il-mainbar-btn-border:		1px solid @il-standard-page-border-light-color;
-@il-mainbar-btn-label-size:		.9rem;
+@il-mainbar-btn-label-size:		1rem;
 @il-mainbar-bulky-label-margin-top:		5px;
 @il-mainbar-tools-bg:		@body-bg;
 @il-mainbar-tools-item-gap:		3px;
@@ -942,7 +942,7 @@
 @il-slate-content-spacing:		2px;
 @il-standard-page-slate-width:		329px;
 @il-mainbar-slates-bg-color:		#fff;
-@il-metabar-slates-bg-color:		#fafafa;
+@il-metabar-slates-bg-color:		#f4f4f4;
 @il-mainbar-close-slate-btn-height:		45px;
 @il-metabar-close-slate-btn-height:		30px;
 
@@ -1054,7 +1054,7 @@
 //##
 @tax-button-primary-bg-color:		@brand-secondary;
 @tax-button-primary-color:		rgb(255, 255, 255);
-@tax-button-primary-border-color:		@brand-secondary;
+@tax-button-primary-border-color:		@tax-button-primary-bg-color;
 @tax-button-default-bg-color:		#fff;
 @tax-button-default-color:		#1e1e1e;
 @tax-button-default-hover-color:		@brand-secondary;
@@ -1089,8 +1089,8 @@
 //##
 @tax-legacy-filter-bg-color:		white;
 @tax-legacy-filter-box-shadow:		@tax-il-secondary-panel-box-shadow;
-@tax-legacy-deactivator-margin-right:		0px;
-@tax-legacy-deactivator-margin-top:		0px;
+@tax-legacy-deactivator-margin-right:		-3px;
+@tax-legacy-deactivator-margin-top:		6px;
 
 //== Unibe specific legacy table
 //

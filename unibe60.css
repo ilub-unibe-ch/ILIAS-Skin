@@ -6859,7 +6859,7 @@ button.close {
 .il-counter-status {
   padding: 2px 4px;
   margin-top: 10px;
-  background-color: #b1b1b1;
+  background-color: #989898;
 }
 .panel {
   border: none;
@@ -7206,21 +7206,21 @@ button.close {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #FFFFD6;
+  background: #ff0000;
 }
 .il-dropzone.default-highlight {
   border: 1px dashed #9C9C9C;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #FFFFD6;
+  background: #ff0000;
 }
 .il-dropzone.drag-hover {
   border: 1px dashed #606060;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background-color: #FFF9BC;
+  background-color: #00ff00;
 }
 .btn,
 #wayf_submit_button {
@@ -7632,7 +7632,7 @@ ul.dropdown-menu > li > .btn:focus {
   margin: 0 0 10px 0;
   border: 0 none;
   background: none;
-  border-bottom: dashed 0.5px #E0E0E0;
+  border-bottom: dashed 0.5px #dedede;
 }
 .il-item .dropdown {
   float: right;
@@ -7790,7 +7790,7 @@ ul.dropdown-menu > li > .btn:focus {
 }
 .il-viewcontrol-mode .ilSubmitInactive,
 .il-viewcontrol-mode .ilSubmitInactive:hover {
-  background-color: #2b2b2b;
+  background-color: #f00030;
   color: #1e1e1e;
   border-color: transparent;
 }
@@ -7843,7 +7843,7 @@ ul.dropdown-menu > li > .btn:focus {
   margin: 0;
   font-weight: 600;
   font-size: 12px;
-  padding-left: 100px;
+  padding-left: 95px;
 }
 .breadcrumbs .breadcrumb span.crumb {
   color: #1e1e1e;
@@ -8285,7 +8285,7 @@ ul.dropdown-menu > li > .btn:focus {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background-color: #FFF9BC;
+  background-color: #00ff00;
 }
 .il-input-file .il-input-file-fileinfo {
   padding: 6px 12px;
@@ -8843,7 +8843,7 @@ grid-based layout
   grid-template-columns: auto 1fr;
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar {
-  width: 409px;
+  width: 404px;
 }
 .il-layout-page.with-mainbar-slates-engaged .il-maincontrols-mainbar .il-mainbar-slates {
   display: -ms-flexbox;
@@ -8911,11 +8911,11 @@ nav.il-maincontrols {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  -ms-grid-colums: 80px 329px;
-  grid-template-columns: 80px 329px;
+  -ms-grid-colums: 75px 329px;
+  grid-template-columns: 75px 329px;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  width: 80px;
+  width: 75px;
 }
 .il-mainbar {
   background-color: #333;
@@ -8933,12 +8933,12 @@ nav.il-maincontrols {
   flex-direction: row;
 }
 .il-mainbar-tools-button button {
-  height: 80px;
-  width: 80px;
+  height: 75px;
+  width: 75px;
 }
 .il-mainbar-tools-entries button {
-  height: 80px;
-  width: 80px;
+  height: 75px;
+  width: 75px;
 }
 .il-mainbar-tools-entries.engaged {
   display: -ms-flexbox;
@@ -9457,13 +9457,13 @@ footer {
 }
 .il-metabar-entries .btn-bulky.engaged {
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   border: none;
   color: initial;
   outline-color: transparent;
 }
 .il-metabar-entries .btn-bulky .glyphicon {
-  color: #aaa;
+  color: #1e1e1e;
   font-size: 2.3rem;
 }
 @media only screen and (max-width: 768px) {
@@ -9489,7 +9489,7 @@ footer {
 }
 .il-metabar-slates {
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   position: absolute;
   max-width: 500px;
   max-height: 90vh;
@@ -9528,7 +9528,7 @@ footer {
     top: 22px;
   }
   .il-metabar-slates .glyphicon {
-    color: #aaa;
+    color: #1e1e1e;
     font-size: 2rem;
   }
   .il-metabar-slates .il-counter-status,
@@ -9556,8 +9556,8 @@ footer {
 .il-maincontrols-metabar .btn-bulky,
 .il-maincontrols-mainbar .link-bulky,
 .il-maincontrols-metabar .link-bulky {
-  font-size: 0.9rem;
-  line-height: 1.197rem;
+  font-size: 1rem;
+  line-height: 1.33rem;
 }
 .il-maincontrols-mainbar .btn-bulky:focus,
 .il-maincontrols-metabar .btn-bulky:focus,
@@ -9588,7 +9588,7 @@ footer {
   background: #333;
   display: flex;
   position: relative;
-  width: 80px;
+  width: 75px;
   z-index: 1;
 }
 .il-mainbar-triggers .btn-bulky,
@@ -9600,11 +9600,11 @@ footer {
   color: #fff;
   display: inline-flex;
   flex-flow: column wrap;
-  height: 80px;
+  height: 75px;
   justify-content: center;
   margin-bottom: 0;
   padding: 0;
-  width: 80px;
+  width: 75px;
   width: 100%;
 }
 .il-mainbar-triggers .btn-bulky .icon,
@@ -9720,7 +9720,7 @@ footer {
 }
 .il-mainbar-tools-entries.engaged {
   display: flex;
-  height: 80px;
+  height: 75px;
   flex-shrink: 0;
 }
 .il-mainbar-tools-entries .btn-bulky,
@@ -9763,7 +9763,7 @@ footer {
 .il-mainbar-tools-entries-bg {
   background: #f4f4f4;
   display: flex;
-  height: 80px;
+  height: 75px;
   width: 100%;
 }
 .il-mainbar-remove-tool {
@@ -9779,7 +9779,7 @@ footer {
   color: #1e1e1e;
   font-size: 4.5rem;
   font-weight: 300;
-  height: 80px;
+  height: 75px;
   padding: 0 20px;
   width: auto;
 }
@@ -14173,11 +14173,11 @@ div.ilFrmPostHeader span.small {
   margin: 0 0 3px;
 }
 .ilModeratorPosting {
-  background-color: #ff9;
+  background-color: #edf1f6;
   padding: 0 5px;
 }
 .ilPostingNeedsActivation {
-  background-color: #ffe4e4;
+  background-color: #fff0f3;
   padding: 0 5px;
 }
 .ilFrmBottomToolbar {
@@ -16091,7 +16091,7 @@ th.ilSkillEntryHead {
   border-color: #dcb496;
 }
 .ilSkillEvalItem.ilSkillEvalType2 {
-  border-color: #21c5d8;
+  border-color: #4e7aa9;
 }
 .ilSkillLevelDescription,
 .ilSkillMaterial,
@@ -16121,7 +16121,7 @@ th.ilSkillEntryHead {
   color: #dcb496;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType2 {
-  color: #21c5d8;
+  color: #4e7aa9;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType3 {
   color: #d6002b;
@@ -17868,7 +17868,7 @@ div.ilSurveyPageEditActionMenu {
   padding: 6px 12px;
 }
 .ilTag {
-  background-color: #75deea;
+  background-color: #91aecc;
   /* background-color: lighten(@brand-primary, 10%); */
   color: white;
   display: inline-block;
@@ -17881,19 +17881,19 @@ a.ilTag:hover,
 a.ilTag:active {
   text-decoration: none;
   color: white;
-  background-color: #60eeff;
+  background-color: #71acec;
 }
 .ilTagRelHigh {
-  background-color: #85d1da;
+  background-color: #a1aebc;
 }
 .ilTagRelMiddle {
-  background-color: #95c5ca;
+  background-color: #afafaf;
 }
 .ilTagRelLow {
-  background-color: #a5b8ba;
+  background-color: #afafaf;
 }
 .ilTagRelVeryLow {
-  background-color: #b0b0b0;
+  background-color: #afafaf;
 }
 .ilTag.ilHighlighted {
   background-color: #a30021;
@@ -19907,7 +19907,6 @@ a.ilSubmitInactive:active {
   color: white;
   background-color: #bdbdbd;
   border-color: #bdbdbd;
-  cursor: not-allowed;
 }
 .btn.disabled:focus,
 .btn.btn-default.disabled:focus,
@@ -20147,8 +20146,8 @@ a#il_mhead_t_focus {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 legend.ilTableFilter > .ilTableFilterDeactivator {
-  margin-right: 0px;
-  margin-top: 0px;
+  margin-right: -3px;
+  margin-top: 6px;
 }
 div.ilTableFilterLabel {
   background-color: transparent;
