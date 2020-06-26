@@ -19961,6 +19961,32 @@ button .caret:hover {
   background-color: transparent;
   border-color: transparent;
 }
+.dropdown-menu li > a {
+  color: #1e1e1e;
+}
+ul.dropdown-menu > li > .btn:hover,
+ul.dropdown-menu > li > .btn:focus {
+  text-decoration: none;
+  /* color: #262626; */
+  /* background-color: #a5a5a5; */
+}
+ul.dropdown-menu > li > .btn:focus,
+ul.dropdown-menu > li > a:focus,
+ul.dropdown-menu > li > .btn:active,
+ul.dropdown-menu > li > a:active,
+ul.dropdown-menu > li > .btn:hover,
+ul.dropdown-menu > li > a:hover {
+  color: #d6002b;
+  background-color: transparent;
+}
+ul.dropdown-menu > li > .btn:active,
+ul.dropdown-menu > li > a:active,
+ul.dropdown-menu > li > .btn.active,
+ul.dropdown-menu > li > a.active,
+ul.dropdown-menu > li > .btn:active:focus,
+ul.dropdown-menu > li > a:active:focus {
+  color: #a30021;
+}
 .panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle :hover,
 .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle :hover {
   color: #d6002b;
@@ -20072,9 +20098,6 @@ p.warning {
 }
 .il-item .il-item-property-name,
 div.ilBlockPropertyCaption.small {
-  color: #1e1e1e;
-}
-.dropdown-menu li > a {
   color: #1e1e1e;
 }
 .input-group .form-control:first-child {

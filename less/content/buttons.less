@@ -128,6 +128,27 @@ button .caret{
   border-color: transparent;
 }
 
+.dropdown-menu li > a{
+  color:@brand-primary;
+}
+
+ul.dropdown-menu > li > .btn:hover, ul.dropdown-menu > li > .btn:focus {
+  text-decoration: none;
+  /* color: #262626; */
+  /* background-color: #a5a5a5; */
+}
+
+ul.dropdown-menu > li > .btn, ul.dropdown-menu > li > a{
+
+  &:focus,&:active,&:hover{
+    color: @tax-button-default-hover-color;
+    background-color: transparent;
+  }
+  &:active,&.active,&:active:focus{
+    color: darken(@tax-button-default-hover-color,10%);
+  }
+}
+
 .panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle, .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
   :hover{
     color: @tax-button-default-hover-color;
