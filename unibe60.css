@@ -20109,7 +20109,8 @@ ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
 input.form-control {
   height: unset;
 }
-.form-horizontal .help-block.alert img {
+.form-horizontal .help-block.alert img,
+.ilFormInfo img {
   width: 20px;
 }
 .ilFormHeader > .ilHeader {
