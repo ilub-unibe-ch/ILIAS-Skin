@@ -1100,7 +1100,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #1e1e1e;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
 }
 input,
 button,
@@ -1144,7 +1144,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   border: 1px solid #dddddd;
   border-radius: 0px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2304,7 +2304,7 @@ th {
   border-top: 2px solid #ebf1f6;
 }
 .table .table {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4048,7 +4048,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   border: 1px solid #e0e0e0;
   border-bottom-color: transparent;
   cursor: default;
@@ -4094,7 +4094,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f4f4f4;
+    border-bottom-color: #f5f5f5;
   }
 }
 .nav-pills > li {
@@ -4162,7 +4162,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f4f4f4;
+    border-bottom-color: #f5f5f5;
   }
 }
 .tab-content > .tab-pane {
@@ -5013,7 +5013,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   border: 1px solid #dddddd;
   border-radius: 0px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -6888,7 +6888,7 @@ button.close {
   margin: 0;
 }
 .panel-secondary .il-std-item-container:not(:last-child) {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f5f5f5;
 }
 .panel-sub {
   margin: -6px -12px;
@@ -7502,7 +7502,7 @@ ul.dropdown-menu > li > .btn:focus {
   left: inherit;
 }
 .il-std-item-container:not(:last-child) {
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f5f5f5;
 }
 .il-item {
   background-color: #ffffff;
@@ -7914,7 +7914,7 @@ ul.dropdown-menu > li > .btn:focus {
   stroke: transparent;
 }
 .il-standard-form {
-  background-color: #ececec;
+  background-color: #ededed;
   margin-top: 6px;
 }
 .il-standard-form .il-standard-form-cmd {
@@ -7933,7 +7933,7 @@ ul.dropdown-menu > li > .btn:focus {
 .il-standard-form .il-standard-form-header,
 .il-standard-form .il-standard-form-footer,
 .il-standard-form .il-section-input-header {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   color: #383838;
 }
 .il-standard-form .il-standard-form-header h3,
@@ -7955,7 +7955,7 @@ ul.dropdown-menu > li > .btn:focus {
   padding-top: 0;
 }
 .il-standard-form .il-dependant-group {
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   padding: 3px 0;
 }
 .il-standard-form .il-dependant-group .form-group {
@@ -8718,7 +8718,7 @@ grid-based layout
   }
 }
 .il-layout-page {
-  background: #f4f4f4;
+  background: #f5f5f5;
   display: -ms-grid;
   display: grid;
   grid-gap: 0px;
@@ -8896,7 +8896,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .il-layout-page {
-    background: #f4f4f4;
+    background: #f5f5f5;
     display: -ms-grid;
     display: grid;
     grid-gap: 0px;
@@ -9352,7 +9352,7 @@ footer {
 }
 .il-metabar-entries .btn-bulky.engaged {
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
   border: none;
   color: initial;
   outline-color: transparent;
@@ -9384,7 +9384,7 @@ footer {
 }
 .il-metabar-slates {
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
   position: absolute;
   max-width: 500px;
   max-height: 90vh;
@@ -9656,7 +9656,7 @@ footer {
   display: none;
 }
 .il-mainbar-tools-entries-bg {
-  background: #f4f4f4;
+  background: #f5f5f5;
   display: flex;
   height: 80px;
   width: 100%;
@@ -12979,7 +12979,7 @@ div#bot_center_area {
   height: 300px;
   position: fixed;
   padding: 5px;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   border-top: 3px solid #e9e9e9;
   -webkit-overflow-scrolling: touch;
   /* Bug 11209 */
@@ -13360,7 +13360,7 @@ select {
 }
 .form-horizontal {
   margin-bottom: 20px;
-  background: #ececec;
+  background: #ededed;
 }
 form.form-inline {
   margin-bottom: 20px;
@@ -13471,10 +13471,10 @@ input[type="file"].form-control {
 .ilFormHeader,
 .ilFormFooter {
   color: #383838;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
 }
 .ilSubForm {
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   padding: 3px 0;
 }
 .ilSubForm .form-group {
@@ -13525,7 +13525,7 @@ div[id^="ilFormField"] {
 div.ilHFormHeader,
 div.ilHFormFooter {
   color: #383838;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   padding: 4px 0 4px 22px;
 }
 [dir="rtl"] div.ilHFormHeader,
@@ -14730,13 +14730,13 @@ table.calstd {
 th.calstd {
   text-align: center;
   border-spacing: 0px;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   font-weight: normal;
 }
 td.calheadertime {
   width: 6em;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   font-size: 90%;
   padding: 3px;
 }
@@ -15347,7 +15347,7 @@ input.ilOpenIDBox {
 .ilMainHeader {
   background-color: #ffffff;
   height: 70px;
-  border-bottom: 3px solid #f4f4f4;
+  border-bottom: 3px solid #f5f5f5;
 }
 @media only screen and (max-width: 768px) {
   .ilMainHeader {
@@ -15597,7 +15597,7 @@ div.ilTableSelectAll label {
 }
 div.ilTableCommandRow,
 div.ilTableCommandRowTop {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   padding: 5px 8px;
   font-size: 90%;
 }
@@ -15633,7 +15633,7 @@ fieldset.ilTableFilter {
 }
 div.ilTableFilterLabel {
   font-style: italic;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   padding: 3px 5px;
 }
 div.ilTableFilterLabel label {
@@ -17026,7 +17026,7 @@ div.ilCreationFormSection .form-horizontal {
   padding-top: 1px;
 }
 .ilObjListRow {
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f5f5f5;
   background-color: #ffffff;
 }
 .table-striped {
@@ -17359,7 +17359,7 @@ div#il_startup_logo img {
   }
 }
 /* Services/UIComponent/Tooltip */
-.qtip-default {
+div.qtip.qtip-default {
   font-size: 12px;
   line-height: 1.5;
   background-color: #383838;
@@ -18098,7 +18098,7 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
   padding-right: 5px;
   width: 278px;
   height: 377px;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
 }
 #onscreenchat-container .chat-window-wrapper:last-child {
   padding-left: 0;
@@ -18934,7 +18934,7 @@ span.ilProfileBadge .modal .img-responsive {
   text-align: center;
 }
 .ilPCLearnHist {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   padding: 3px 8px;
 }
 .noMargin {
@@ -19256,7 +19256,7 @@ table.mceToolbar td {
 }
 #ilTopBarNav .ilAwarenessItem .dropdown-menu,
 #ilTopBarNav .ilAwarenessItem .dropdown-menu > li {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
 }
 .il-layout-page-content:focus {
   outline: none;
@@ -19731,9 +19731,9 @@ input.ilSubmitInactive:active,
 a.ilSubmitInactive,
 a.ilSubmitInactive:hover,
 a.ilSubmitInactive:active {
-  color: #ffffff;
-  background-color: #bdbdbd;
-  border-color: #bdbdbd;
+  color: #787878;
+  background-color: #d2d2d2;
+  border-color: #d2d2d2;
 }
 .btn.disabled:focus,
 .btn.btn-default.disabled:focus,
@@ -19790,9 +19790,9 @@ input.ilSubmitInactive:active.active,
 a.ilSubmitInactive.active,
 a.ilSubmitInactive:hover.active,
 a.ilSubmitInactive:active.active {
-  color: #ffffff;
-  background-color: #bdbdbd;
-  border-color: #bdbdbd;
+  color: #787878;
+  background-color: #d2d2d2;
+  border-color: #d2d2d2;
 }
 .il-viewcontrol-section .btn-default {
   background-color: transparent;
