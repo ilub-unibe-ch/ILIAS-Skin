@@ -19627,7 +19627,16 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-default:active:focus {
   color: #a30021;
 }
-.open > .dropdown-toggle.btn-default {
+div.btn-group-vertical button.btn-default {
+  background-color: #fff;
+  border: #fff;
+}
+div.btn-group-vertical button.btn-default:hover {
+  color: #d6002b;
+  background-color: #fff;
+}
+.open > .dropdown-toggle.btn-default,
+div.btn-group-vertical .open > .dropdown-toggle.btn-default {
   color: #d6002b;
   background-color: transparent;
   border-color: white;
@@ -19636,10 +19645,15 @@ fieldset[disabled] .btn-default.focus {
   outline: none;
 }
 .open > .dropdown-toggle.btn-default:focus,
+div.btn-group-vertical .open > .dropdown-toggle.btn-default:focus,
 .open > .dropdown-toggle.btn-default:focus,
+div.btn-group-vertical .open > .dropdown-toggle.btn-default:focus,
 .open > .dropdown-toggle.btn-default.active,
+div.btn-group-vertical .open > .dropdown-toggle.btn-default.active,
 .open > .dropdown-toggle.btn-default:active,
-.open > .dropdown-toggle.btn-default:active:focus {
+div.btn-group-vertical .open > .dropdown-toggle.btn-default:active,
+.open > .dropdown-toggle.btn-default:active:focus,
+div.btn-group-vertical .open > .dropdown-toggle.btn-default:active:focus {
   background-color: transparent;
 }
 .btn-default.dropdown-toggle.btn-default:focus,
@@ -19961,6 +19975,10 @@ button .caret:hover {
   background-color: transparent;
   border-color: transparent;
 }
+.dropdown-toggle.btn-default.btn-split {
+  background-color: #d6002b;
+  border-color: #d6002b;
+}
 .dropdown-menu li > a {
   color: #1e1e1e;
 }
@@ -20113,12 +20131,11 @@ div.ilBlockPropertyCaption.small {
 .ilTableFilterSec {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-legend.ilTableFilter > .ilTableFilterDeactivator {
-  margin-right: -3px;
-  margin-top: 6px;
-}
 div.ilTableFilterLabel {
   background-color: transparent;
+}
+legend.ilTableFilter {
+  margin: 12px 0  0;
 }
 div.il_Admin {
   background-color: #cad0df;
@@ -20147,6 +20164,11 @@ div.il_Member {
 td div .glyph .glyphicon-plus-sign:before {
   display: none;
 }
+.il-maincontrols-slate .btn-bulky .icon,
+.il-maincontrols-slate .link-bulky .icon {
+  margin-right: 12px;
+  filter: none;
+}
 .ilTableNav .btn-group {
   margin-left: 6px;
 }
@@ -20155,6 +20177,9 @@ td div .glyph .glyphicon-plus-sign:before {
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
+}
+table tbody tr td span a {
+  color: #4e7aa9;
 }
 #ilTab {
   background-color: #ffffff;
