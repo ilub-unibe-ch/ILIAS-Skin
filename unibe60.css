@@ -20039,6 +20039,11 @@ td .btn-group-vertical .dropdown .dropdown-toggle {
   border-color: transparent;
   color: #1e1e1e;
 }
+td .btn-group-vertical .btn-info:hover,
+td .btn-group-vertical .dropdown .dropdown-toggle:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;
 }
