@@ -20009,19 +20009,19 @@ ul.dropdown-menu > li > a:active:focus {
 .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle :hover {
   color: #d6002b;
 }
-.panel-secondary .panel-body div div .btn-default,
+.panel-secondary .panel-body div form div .btn-default,
 td .btn-group-vertical > .btn:first-child:not(:last-child),
-.il_InfoScreenProperty .btn-default {
-  color: #fffff;
+.il_InfoScreenPropertyValue .btn-default {
+  color: #ffffff;
   background-color: #333333;
-  border-color: #3333333;
+  border-color: #333333;
 }
-.panel-secondary .panel-body div div .btn-default:hover,
+.panel-secondary .panel-body div form div .btn-default:hover,
 td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
-.il_InfoScreenProperty .btn-default:hover {
-  color: #fffff;
+.il_InfoScreenPropertyValue .btn-default:hover {
+  color: #ffffff;
   background-color: #333333;
-  border-color: #3333333;
+  border-color: #333333;
 }
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;
