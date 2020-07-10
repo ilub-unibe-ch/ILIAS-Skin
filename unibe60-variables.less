@@ -15,7 +15,7 @@
 @brand-primary:		#1e1e1e;
 @brand-secondary:		#d6002b;
 @brand-success:		#6ea03c;
-@brand-info:		#dcb496;
+@brand-info:		#95afcb;
 @brand-warning:		@brand-secondary;
 @brand-danger:		@brand-secondary;
 
@@ -35,7 +35,7 @@
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f8f8f8;
 
-@il-highlight-bg:		@il-slate-bulky-bg-color-engaged;
+@il-highlight-bg:		#fae5e9;
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
@@ -241,9 +241,9 @@
 @il-main-menu-margin:		@il-main-menu-top 0 0 @il-main-menu-left;
 //** controls colors of the main menu.
 @il-main-menu-bg:		@il-main-header-bg;
-@il-main-menu-link-color:		#787878;
-@il-main-menu-link-hover-color:		#787878;
-@il-main-menu-link-active-color:		#787878;
+@il-main-menu-link-color:		@brand-primary;
+@il-main-menu-link-hover-color:		@brand-secondary;
+@il-main-menu-link-active-color:		@brand-primary;
 @il-main-menu-link-bg:		transparent;
 @il-main-menu-link-hover-bg:		transparent;
 @il-main-menu-link-active-bg:		#fafafa;
@@ -393,9 +393,9 @@
 //** Breadcrumb text color
 @breadcrumb-color:		@link-color;
 //** Text color of current page in the breadcrumb
-@breadcrumb-active-color:		@link-hover-color;
+@breadcrumb-active-color:		@link-color;
 //** font-weight of breadcrumbs
-@breadcrumb-font-weight:		600;
+@breadcrumb-font-weight:		500;
 //** Textual separator for between breadcrumb elements
 @breadcrumb-separator:		"»";
 
@@ -527,10 +527,10 @@
 //
 //##
 @dropdown-bg:		white;
-@dropdown-link-color:		lighten(@mid-gray, 10%);
-@dropdown-link-hover-color:		darken(@gray-dark, 5%);
+@dropdown-link-color:		@brand-primary;
+@dropdown-link-hover-color:		@brand-secondary;
 @dropdown-link-bg:		transparent;
-@dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
+@dropdown-link-hover-bg:		@il-slate-bulky-bg-color-engaged;
 @dropdown-header-bg:		#f3f3f3;
 
 //** determines display of icons in dropdowns, 'none' for no display and 'inline' for display
@@ -573,7 +573,7 @@
 //##
 @navbar-height:		40px;
 @il-toolbar-margin:		15px;
-@il-toolbar-bg:		white;
+@il-toolbar-bg:		@body-bg;
 @il-toolbar-height:		@navbar-height;
 @il-toolbar-border:		1px solid #e7e7e7;
 
@@ -851,7 +851,7 @@
 @il-card-list-key-color:		@il-light-text-color;
 @il-card-repository-head-color:		rgba(0,0,0,0.5);
 @il-card-repository-dropdown-border:		#e0e0e0 1px solid;
-@il-card-repository-outlined-icon-filter:		invert(1);
+@il-card-repository-outlined-icon-filter:		invert(0);
 @il-card-repository-outlined-disabled-icon-filter:		@il-card-repository-outlined-icon-filter;
 //** Sets the maximum width of cards in small screens
 @il-card-max-width-xs:		350px;
@@ -902,7 +902,7 @@
 //** breadcrumbs
 @il-standard-page-breadcrumbs-height:		33px;
 @il-standard-page-breadcrumbs-bg-color:		#fff;
-@il-standard-page-breadcrumbs-divider-color:		#bbb;
+@il-standard-page-breadcrumbs-divider-color:		#a5a5a5;
 
 //** mainbar
 @il-maincontrols-mainbar-bg-color:		#fff;
@@ -930,15 +930,15 @@
 
 //** slates
 @il-slate-bulky-bg-color:		#f2f2f2;
-@il-slate-bulky-level2-bg-color:		fade(@brand-secondary, 5%);
-@il-slate-bulky-bg-color-engaged:		fade(@brand-secondary, 10%);
+@il-slate-bulky-level2-bg-color:		fade(@brand-primary, 12%);
+@il-slate-bulky-bg-color-engaged:		fade(@brand-primary, 16%);
 @il-slate-content-padding:		10px;
 @il-slate-tree-padding:		4px 0;
 @il-slate-bulky-padding:		10px 40px 15px 10px;
 @il-slate-bulky-link-padding:		10px 10px 15px 10px;
 @il-slate-bulky-glyph-size:		2rem;
 @il-slate-bulky-glyph-margin-right:		5px;
-@il-slate-bulky-label-size:		1.5rem;
+@il-slate-bulky-label-size:		@font-size-base;
 @il-slate-content-spacing:		2px;
 @il-standard-page-slate-width:		329px;
 @il-mainbar-slates-bg-color:		#fff;
@@ -947,7 +947,7 @@
 @il-metabar-close-slate-btn-height:		30px;
 
 //** shadows
-@il-standard-page-shadow-color:		rgba(0,0,0,.1);
+@il-standard-page-shadow-color:		rgba(0,0,0,.2);
 @il-mainbar-shadow-right:		1px 3px 4px @il-standard-page-shadow-color;
 @il-mainbar-shadow-top:		0 0 4px @il-standard-page-shadow-color;
 @il-standard-page-header-shadow-bottom:		0 1px 2px @il-standard-page-shadow-color;
@@ -1006,7 +1006,7 @@
 @tax-il-sub-tab-margin-bottom:		2*@padding-large-vertical;
 @tax-il-sub-tab-margin-borders:		@tax-il-tab-margin-borders;
 @tax-il-sub-tab-margin-borders:		@tax-il-tab-margin-borders;
-@tax-il-tab-padding-subtab:		8px 6px;
+@tax-il-tab-padding-subtab:		6px 6px;
 @tax-il-logo-size:		40px;
 @tax-il-logo-top:		15px;
 @tax-il-btn-month-color:		#d6002b;
@@ -1039,18 +1039,18 @@
 //== Unibe specific buttons
 //
 //##
-@tax-button-primary-bg-color:		@brand-secondary;
-@tax-button-primary-color:		rgb(255, 255, 255);
+@tax-button-primary-bg-color:		#333;
+@tax-button-primary-color:		white;
 @tax-button-primary-border-color:		@tax-button-primary-bg-color;
 @tax-button-default-bg-color:		#fff;
 @tax-button-default-color:		#1e1e1e;
 @tax-button-default-hover-color:		@brand-secondary;
-@tax-button-default-border-color:		@tax-button-default-bg-color;
-@tax-button-info-bg-color:		@brand-primary;
+@tax-button-default-border-color:		@body-bg;
+@tax-button-info-bg-color:		#fff;
 @tax-button-info-color:		@tax-button-default-color;
-@tax-button-info-border-color:		@brand-primary;
+@tax-button-info-border-color:		@tax-button-info-bg-color ;
 @tax-button-disabled-bg-color:		#d2d2d2;
-@tax-button-disabled-color:		#787878;
+@tax-button-disabled-color:		#4b4b4b;
 @tax-button-disabled-border-color:		#d2d2d2;
 @tax-button-month-text-color:		@brand-primary;
 @tax-button-test-submit-background:		@brand-secondary;
