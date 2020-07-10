@@ -20030,6 +20030,7 @@ td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
 .btn-primary:hover,
 #wayf_submit_button:hover {
   background-color: #fff;
+  border-color: #fff;
   color: #d6002b;
 }
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
