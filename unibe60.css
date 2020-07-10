@@ -20033,6 +20033,12 @@ td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
   border-color: #fff;
   color: #d6002b;
 }
+td .btn-group-vertical .btn-info,
+td .btn-group-vertical .dropdown .dropdown-toggle {
+  background-color: transparent;
+  border-color: transparent;
+  color: #1e1e1e;
+}
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;
 }
