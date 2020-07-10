@@ -19392,10 +19392,14 @@ table.mceToolbar td {
 #wayf_submit_button {
   width: 100% !important;
   border: none !important;
+  background-color: #d6002b !important;
+  color: #ffffff !important;
 }
 #wayf_submit_button:hover {
   width: 100% !important;
   border: none !important;
+  background-color: #ffffff !important;
+  color: #d6002b !important;
 }
 #user_idp {
   background-color: #FFFFFF;
@@ -20009,19 +20013,19 @@ ul.dropdown-menu > li > a:active:focus {
 .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle :hover {
   color: #d6002b;
 }
-.panel-secondary .panel-body div form div .btn-default,
+.panel-secondary .panel-body div form .btn-default,
 td .btn-group-vertical > .btn:first-child:not(:last-child),
 .il_InfoScreenPropertyValue .btn-default {
   color: #ffffff;
   background-color: #333333;
   border-color: #333333;
 }
-.panel-secondary .panel-body div form div .btn-default:hover,
+.panel-secondary .panel-body div form .btn-default:hover,
 td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
 .il_InfoScreenPropertyValue .btn-default:hover {
-  color: #ffffff;
-  background-color: #333333;
-  border-color: #333333;
+  color: #d6002b;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;
