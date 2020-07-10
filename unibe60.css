@@ -20142,6 +20142,15 @@ p.warning {
 div.ilBlockPropertyCaption.small {
   color: #1e1e1e;
 }
+div.il_Description,
+td.il_Description {
+  font-size: 87%;
+  color: #1e1e1e;
+}
+div.il_ItemProperties {
+  font-size: 87%;
+  color: #787878;
+}
 .input-group .form-control:first-child {
   z-index: 3;
 }
