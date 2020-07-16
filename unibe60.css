@@ -19357,6 +19357,14 @@ table.mceToolbar td {
 #ilTopBarNav .ilAwarenessItem .dropdown-menu > li {
   background-color: #f5f5f5;
 }
+.breadcrumbs .breadcrumb {
+  font-size: 11px;
+  padding-left: 92px;
+}
+.breadcrumbs .breadcrumb > span + span:before {
+  padding: 8px 6px;
+  font-size: 9px;
+}
 .il-layout-page-content:focus {
   outline: none;
 }
