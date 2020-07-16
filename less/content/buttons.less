@@ -192,16 +192,19 @@ ul.dropdown-menu > li > .btn, ul.dropdown-menu > li > a{
 }
 
 td .btn-group-vertical .btn-info, td .btn-group-vertical .dropdown .dropdown-toggle{
-  background-color: transparent;
-  border-color: transparent;
-  color: #1e1e1e;
+  background-color: @tax-button-info-table-bg-color;
+  border-color: @tax-button-info-table-border-color;
+  color: @tax-button-info-table-color;
 }
 
 td .btn-group-vertical .dropdown .dropdown-toggle:hover {
-  background-color: transparent;
-  border-color: transparent;
+  background-color: @tax-button-info-table-hover-bg-color;
+  border-color: @tax-button-info-table-hover-border-color;
 }
 
 td .btn-group-vertical .btn-info:hover{
-  color: @brand-secondary;
+  color: @tax-button-info-table-hover-color;
+  border-color:@tax-button-info-table-hover-border-color;
+  background-color:@tax-button-info-table-hover-bg-color;
+
 }
