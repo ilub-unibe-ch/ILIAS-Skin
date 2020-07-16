@@ -20102,6 +20102,9 @@ div.ilAdminRow {
 .panel-secondary {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+.panel-secondary .panel-body h4 {
+  font-weight: 600;
+}
 a:hover,
 a:focus {
   color: #d6002b;
@@ -20114,16 +20117,6 @@ table.calmini td.calminitoday {
 }
 div.ilNewObjectSelector {
   padding-right: 0;
-}
-a.ilTag,
-.ilTag,
-.ilTagRelVeryLow {
-  background-color: #fae5e9;
-  color: #000 !important;
-}
-a.ilTag:hover {
-  background-color: #f2bac5;
-  color: #000;
 }
 div.row.ilContainerBlockHeader.ilContainerBlockHeaderCollapsed {
   padding-left: 10px;
@@ -20181,6 +20174,9 @@ div.il_ItemProperties {
 }
 .il-std-item-container .il-multi-line-cap-3:after {
   margin-right: 5px;
+}
+.ilToolbar .ilToolbarStickyItems {
+  margin-left: 0px;
 }
 .ilTableFilter,
 .ilTableFilterSec {
