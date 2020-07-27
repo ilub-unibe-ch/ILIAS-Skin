@@ -20027,6 +20027,7 @@ ul.dropdown-menu > li > a:active:focus {
 .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle :hover {
   color: #d6002b;
 }
+.il-modal-roundtrip .il-dropzone-base > .btn-default:enabled,
 .panel-secondary .panel-body div form .btn-default,
 td .btn-group-vertical > .btn:first-child:not(:last-child),
 .il_InfoScreenPropertyValue .btn-default {
@@ -20034,6 +20035,7 @@ td .btn-group-vertical > .btn:first-child:not(:last-child),
   background-color: #333333;
   border-color: #333333;
 }
+.il-modal-roundtrip .il-dropzone-base > .btn-default:hover:enabled,
 .panel-secondary .panel-body div form .btn-default:hover,
 td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
 .il_InfoScreenPropertyValue .btn-default:hover {
