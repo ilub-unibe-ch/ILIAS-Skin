@@ -7072,10 +7072,10 @@ button.close {
   padding: 0 6px;
 }
 .il-card .il-card-repository-head .icon.outlined {
-  filter: invert(0);
+  filter: invert(0.9);
 }
 .il-card .il-card-repository-head .icon.outlined.disabled {
-  filter: invert(0);
+  filter: invert(0.9);
 }
 .il-card .il-card-repository-head > div {
   padding: 6px 6px;
@@ -20065,6 +20065,13 @@ td .btn-group-vertical .btn-info:hover {
   color: #d6002b;
   border-color: transparent;
   background-color: #ffffff;
+}
+.il-card .il-card-repository-head > div.il-card-repository-dropdown .dropdown .dropdown-toggle {
+  color: white;
+  border: none;
+}
+.il-card .il-card-repository-head > div.il-card-repository-dropdown .dropdown .dropdown-toggle:hover {
+  color: #d6002b;
 }
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;
