@@ -19517,7 +19517,8 @@ table.mceToolbar td {
 .il-mainbar-tool-trigger-item .btn-bulky.engaged {
   background-color: white;
 }
-.il-link.link-bulky .bulky-label {
+.il-maincontrols-slate .il-link.link-bulky .bulky-label,
+.il-maincontrols-slate .btn-bulky .bulky-label {
   color: #1e1e1e;
 }
 .il-maincontrols-slate-content .il-divider {
