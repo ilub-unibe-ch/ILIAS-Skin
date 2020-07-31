@@ -19544,6 +19544,9 @@ table.mceToolbar td {
 .il-maincontrols-slate-content .il-divider {
   background-color: transparent;
 }
+.il-logo {
+  margin: 10px;
+}
 .alert-success {
   background-color: #c4e074;
   border-color: #c4e074;
