@@ -46,7 +46,7 @@ div.btn-group-vertical button.btn-default:hover{
   }
 }
 
-.btn-primary {
+.btn-primary,  .btn-primary.dropdown-toggle.btn-default.btn-split{
   .button-variant(@tax-button-primary-color; @tax-button-primary-bg-color; @tax-button-primary-border-color);
 }
 .btn-info {
@@ -185,7 +185,9 @@ ul.dropdown-menu > li > .btn, ul.dropdown-menu > li > a{
 
 
 
-.btn-primary:hover, .open > .dropdown-toggle.btn-primary:active, .open > .dropdown-toggle.btn-primary:focus{
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:active,
+.open > .dropdown-toggle.btn-primary:focus {
   background-color:@tax-button-primary-hover-bg-color;
   border-color: @tax-button-primary-hover-bg-color;
   color:@tax-button-primary-hover-color;
@@ -207,4 +209,9 @@ td .btn-group-vertical .btn-info:hover{
   border-color:@tax-button-info-table-hover-border-color;
   background-color:@tax-button-info-table-hover-bg-color;
 
+}
+
+.dropdown-toggle.btn-default.btn-split{
+  background-color: transparent;
+  border-color: transparent;
 }
