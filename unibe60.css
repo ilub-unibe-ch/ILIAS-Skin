@@ -20370,6 +20370,10 @@ input.form-control {
 .ilFormHeader > .ilHeader {
   color: #1e1e1e;
 }
+input::selection,
+textarea::selection {
+  background: rgba(214, 0, 43, 0.1);
+}
 /*		Color scheme
 		Dark BLue: #0f2152;
 		Mid Blue: #4c6586;
