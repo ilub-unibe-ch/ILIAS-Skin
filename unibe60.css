@@ -20158,28 +20158,6 @@ div.ilAdminRow {
 #tab_achieve_3 {
   display: none;
 }
-.ilContainerBlock,
-.il-panel-listing-std-container,
-.calstd {
-  background-color: transparent;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.ilContainerBlock .ilContainerBlockHeader {
-  background-color: transparent;
-}
-.ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
-  font-size: 18px;
-  border-bottom: none;
-  background-color: transparent;
-  font-weight: 500;
-  text-transform: none;
-}
-.panel-secondary {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.panel-secondary .panel-body h4 {
-  font-weight: 600;
-}
 a:hover,
 a:focus {
   color: #d6002b;
@@ -20192,12 +20170,6 @@ table.calmini td.calminitoday {
 }
 div.ilNewObjectSelector {
   padding-right: 0;
-}
-div.row.ilContainerBlockHeader.ilContainerBlockHeaderCollapsed {
-  padding-left: 10px;
-}
-div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBlockHeader {
-  padding-left: 2px;
 }
 #etherpad-liteFrame {
   height: 700px;
@@ -20301,6 +20273,40 @@ td div .glyph .glyphicon-plus-sign:before {
 div.ilCalSelAct img,
 .ilTableOuter .form-inline .ilFloatLeft img {
   display: none;
+}
+.panel-secondary {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.panel-secondary .panel-body h4 {
+  font-weight: 600;
+}
+.ilContainerBlock,
+.il-panel-listing-std-container,
+.calstd {
+  background-color: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.ilContainerBlock .ilContainerBlockHeader {
+  background-color: transparent;
+}
+.ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
+  font-size: 18px;
+  border-bottom: none;
+  background-color: transparent;
+  font-weight: 500;
+  text-transform: none;
+}
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderCollapsed {
+  padding-left: 10px;
+}
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBlockHeader {
+  padding-left: 2px;
+}
+.il-item .row .il-item-property-name {
+  color: #8e8e8e;
+}
+.il-item .row .il-item-property-value {
+  color: #8e8e8e;
 }
 .ilTableNav .btn-group {
   margin-left: 6px;
