@@ -20129,6 +20129,9 @@ td .btn-group-vertical .btn-info:hover {
   background-color: transparent;
   border-color: transparent;
 }
+span.ilNewsRssIcon {
+  background-color: red;
+}
 .il-card .il-card-repository-head > div.il-card-repository-dropdown .dropdown .dropdown-toggle {
   color: white;
   border: none;
