@@ -19391,6 +19391,9 @@ table.mceToolbar td {
 .il-layout-page-content:focus {
   outline: none;
 }
+::selection {
+  background-color: #fae5e9;
+}
 .taxLoginLocal {
   display: block;
 }
@@ -20382,7 +20385,7 @@ input.form-control {
 }
 input::selection,
 textarea::selection {
-  background: rgba(214, 0, 43, 0.1);
+  background: #fae5e9;
 }
 /*		Color scheme
 		Dark BLue: #0f2152;
