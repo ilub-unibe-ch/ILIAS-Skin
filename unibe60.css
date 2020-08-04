@@ -8961,7 +8961,6 @@ footer {
   min-height: auto;
   padding: 20px 0 15px 5px;
   text-align: center;
-  z-index: 2;
 }
 /*
 **************************************************************
@@ -9203,13 +9202,14 @@ footer {
   html body {
     overflow: visible;
   }
-  html body section.il-layout-page {
+  html body .il-layout-page {
     display: block;
     overflow: visible;
   }
-  html body section.il-layout-page header,
-  html body section.il-layout-page nav,
-  html body section.il-layout-page footer {
+  html body .il-layout-page header,
+  html body .il-layout-page .il-maincontrols,
+  html body .il-layout-page .breadcrumbs,
+  html body .il-layout-page footer {
     display: none;
   }
 }
@@ -9299,6 +9299,20 @@ footer {
   font-family: "il-icons";
   font-size: 1.7rem;
   margin-right: 10px;
+}
+.il-maincontrols-slate #il-tag-slate-container .btn-bulky {
+  padding: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.il-maincontrols-slate #il-tag-slate-container .btn-bulky .glyph :before {
+  content: " \e605";
+  font-family: "il-icons";
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+.il-maincontrols-slate #il-tag-slate-container .btn-bulky .bulky-label {
+  margin-top: 3px;
 }
 .il-maincontrols-slate.engaged[data-depth-level="2"] .btn-bulky:not(:hover),
 .il-maincontrols-slate.engaged[data-depth-level="2"] .link-bulky:not(:hover) {
@@ -13391,7 +13405,6 @@ img.ilSmallIcon {
 }
 span.ilIcalIcon {
   text-align: initial;
-  font-size: 133%;
 }
 /* Component Imports */
 /* Services/Accordion */
@@ -15668,7 +15681,6 @@ div.ilTableHeaderTitleBlock {
   padding: 3px;
   font-size: 90%;
   color: #404040;
-  background: url("images/block_top.png") repeat-x #f8f8f8;
   border-bottom: 1px solid #e9e9e9;
 }
 div.ilTableHeaderTitle {
