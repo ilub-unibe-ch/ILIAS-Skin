@@ -20132,6 +20132,9 @@ td .btn-group-vertical .btn-info:hover {
 span.ilNewsRssIcon {
   background-color: red;
 }
+.split-btn-default .btn-primary {
+  border: none;
+}
 .il-card .il-card-repository-head > div.il-card-repository-dropdown .dropdown .dropdown-toggle {
   color: white;
   border: none;
