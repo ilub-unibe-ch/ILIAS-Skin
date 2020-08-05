@@ -20218,6 +20218,9 @@ a#il_mhead_t_focus {
 .jstree-hovered .ilExp2NodeContent {
   color: #d6002b;
 }
+.jstree-hovered.disabled .ilExp2NodeContent {
+  color: #616161;
+}
 a:hover {
   text-decoration: none;
 }
