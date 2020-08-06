@@ -7157,7 +7157,7 @@ button.close {
 }
 .il-upload-file-item.standard {
   background: white;
-  border: 1px solid #9C9C9C;
+  border: 1px solid #9c9c9c;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -7181,7 +7181,7 @@ button.close {
 }
 .il-dropzone.standard {
   background: white;
-  border: 1px dashed #9C9C9C;
+  border: 1px dashed #9c9c9c;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -7193,7 +7193,7 @@ button.close {
   border-radius: 0;
   font-size: 12px;
   border: 1px solid transparent;
-  color: #9C9C9C;
+  color: #9c9c9c;
   display: inline-block;
 }
 .il-dropzone.wrapper {
@@ -7202,25 +7202,25 @@ button.close {
 .il-dropzone.darkened-highlight {
   z-index: 1100;
   position: relative;
-  border: 1px dashed #9C9C9C;
+  border: 1px dashed #9c9c9c;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #ff0000;
+  background: #fae5e9;
 }
 .il-dropzone.default-highlight {
-  border: 1px dashed #9C9C9C;
+  border: 1px dashed #9c9c9c;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #ff0000;
+  background: #fae5e9;
 }
 .il-dropzone.drag-hover {
-  border: 1px dashed #606060;
+  border: 1px dashed #d6002b;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background-color: #00ff00;
+  background-color: #f7ccd5;
 }
 .btn,
 #wayf_submit_button {
@@ -8264,7 +8264,7 @@ ul.dropdown-menu > li > .btn:focus {
 }
 .il-input-file .il-input-file-dropzone {
   background: white;
-  border: 1px dashed #9C9C9C;
+  border: 1px dashed #9c9c9c;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -8281,11 +8281,11 @@ ul.dropdown-menu > li > .btn:focus {
   color: #757575;
 }
 .il-input-file .il-input-file-dropzone.dz-drag-hover {
-  border: 1px dashed #606060;
+  border: 1px dashed #d6002b;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background-color: #00ff00;
+  background-color: #f7ccd5;
 }
 .il-input-file .il-input-file-fileinfo,
 .il-input-file .il-input-file-error {
@@ -16090,7 +16090,7 @@ th.ilSkillEntryHead {
   border-color: #95afcb;
 }
 .ilSkillEvalItem.ilSkillEvalType2 {
-  border-color: #4e7aa9;
+  border-color: #e24a6a;
 }
 .ilSkillLevelDescription,
 .ilSkillMaterial,
@@ -16120,7 +16120,7 @@ th.ilSkillEntryHead {
   color: #95afcb;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType2 {
-  color: #4e7aa9;
+  color: #e24a6a;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType3 {
   color: #d6002b;
@@ -17875,7 +17875,7 @@ div.ilSurveyPageEditActionMenu {
   padding: 6px 12px;
 }
 .ilTag {
-  background-color: #91aecc;
+  background-color: #f0a2b2;
   /* background-color: lighten(@brand-primary, 10%); */
   color: white;
   display: inline-block;
@@ -17888,19 +17888,19 @@ a.ilTag:hover,
 a.ilTag:active {
   text-decoration: none;
   color: white;
-  background-color: #71acec;
+  background-color: #ff93aa;
 }
 .ilTagRelHigh {
-  background-color: #a1aebc;
+  background-color: #e5adb9;
 }
 .ilTagRelMiddle {
-  background-color: #afafaf;
+  background-color: #dab8bf;
 }
 .ilTagRelLow {
-  background-color: #afafaf;
+  background-color: #d0c2c5;
 }
 .ilTagRelVeryLow {
-  background-color: #afafaf;
+  background-color: #c9c9c9;
 }
 .ilTag.ilHighlighted {
   background-color: #1e1e1e;
@@ -19568,7 +19568,7 @@ table.mceToolbar td {
   color: #6e8236;
 }
 .alert-success .alert-link {
-  color: #4b6319;
+  color: #000;
 }
 .alert-info {
   background-color: #c7e0fc;
@@ -19576,47 +19576,47 @@ table.mceToolbar td {
   color: #5d7ead;
 }
 .alert-info .alert-link {
-  color: #205d86;
+  color: #000;
 }
 .alert-warning {
-  background-color: #ffd263;
-  border-color: #ffd263;
-  color: #556477;
+  background-color: #f7ccd5;
+  border-color: #f7ccd5;
+  color: #d6002b;
 }
 .alert-warning .alert-link {
-  color: #bb671c;
+  color: #000;
 }
 .alert-danger,
 .form-horizontal .alert-danger.help-block {
-  background-color: #f2bab3;
-  border-color: #f2bab3;
-  color: #96190a;
+  background-color: #de3355;
+  border-color: #de3355;
+  color: #fff;
 }
 .alert-danger .alert-link {
-  color: #870c25;
+  color: #000;
 }
 .btn-default {
   color: #333;
   background-color: #fff;
-  border-color: #f5f5f5;
+  border-color: #e8e8e8;
 }
 .btn-default:focus,
 .btn-default.focus {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #b5b5b5;
+  border-color: #a8a8a8;
 }
 .btn-default:hover {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #d6d6d6;
+  border-color: #c9c9c9;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #d6d6d6;
+  border-color: #c9c9c9;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -19629,7 +19629,7 @@ table.mceToolbar td {
 .open > .dropdown-toggle.btn-default.focus {
   color: #333;
   background-color: #d4d4d4;
-  border-color: #b5b5b5;
+  border-color: #a8a8a8;
 }
 .btn-default:active,
 .btn-default.active,
@@ -19646,7 +19646,7 @@ fieldset[disabled] .btn-default:focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
   background-color: #fff;
-  border-color: #f5f5f5;
+  border-color: #e8e8e8;
 }
 .btn-default .badge {
   color: #fff;
@@ -20142,7 +20142,7 @@ td .btn-group-vertical .btn-info:hover {
   border-color: transparent;
 }
 span.ilNewsRssIcon {
-  background-color: red;
+  background-color: #d6002b;
 }
 .split-btn-default .btn-primary {
   border: none;
@@ -20330,7 +20330,7 @@ div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBloc
   color: #8e8e8e;
 }
 .il-item .row .il-item-property-value {
-  color: #8e8e8e;
+  color: #616161;
 }
 .ilTableNav .btn-group {
   margin-left: 6px;
