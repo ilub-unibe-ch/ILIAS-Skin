@@ -4,7 +4,7 @@
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <rect class="st0" width="32" height="32"/>
 <polygon class="st1" points="11.3,5.7 1.1,15.9 11.4,26.2 11.3,21.4 5.9,15.9 11.3,10.5 "/>
