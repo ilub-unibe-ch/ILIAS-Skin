@@ -19652,10 +19652,6 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #333;
 }
-.btn-default,
-.open > .dropdown-toggle.btn-default {
-  border: none;
-}
 .btn-default:focus,
 .open > .dropdown-toggle.btn-default:focus,
 .btn-default.focus,
@@ -19674,8 +19670,6 @@ fieldset[disabled] .btn-default.focus {
 .dropdown-toggle.btn-default .open > .dropdown-toggle.btn-default:focus {
   color: #d6002b;
   background-color: white;
-  border-color: white;
-  border: none ;
   box-shadow: none;
   outline: none;
 }
@@ -19686,6 +19680,20 @@ fieldset[disabled] .btn-default.focus {
 .btn-default:active:focus,
 .open > .dropdown-toggle.btn-default:active:focus {
   color: #a30021;
+}
+.open > .dropdown-toggle.btn-default {
+  border: none;
+}
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:active,
+.open > .dropdown-toggle.btn-default.active,
+.open > .dropdown-toggle.btn-default:active:focus,
+.dropdown-toggle.btn-default .open > .dropdown-toggle.btn-default:focus,
+.dropdown-toggle.btn-default .open > .dropdown-toggle.btn-default:focus {
+  border: none ;
+  border-color: white;
 }
 div.btn-group-vertical button.btn-default {
   background-color: #fff;

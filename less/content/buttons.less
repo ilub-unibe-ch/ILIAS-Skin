@@ -3,19 +3,24 @@
 .btn-default {
   .button-variant(@tax-button-default-color; @tax-button-default-bg-color; @tax-button-default-border-color);
 }
-.btn-default, .open > .dropdown-toggle.btn-default{
-  border: none;
+.btn-default,.open > .dropdown-toggle.btn-default{
   &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus,
   .dropdown-toggle.btn-default &:focus, .dropdown-toggle.btn-default &:focus{
     color: @tax-button-default-hover-color;
     background-color: white;
-    border-color: white;
-    border: none ;
     box-shadow: none;
     outline: none;
   }
   &:active,&.active,&:active:focus{
     color: darken(@tax-button-default-hover-color,10%);
+  }
+}
+.open > .dropdown-toggle.btn-default{
+  border: none;
+  &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus,
+  .dropdown-toggle.btn-default &:focus, .dropdown-toggle.btn-default &:focus {
+    border: none ;
+    border-color: white;
   }
 }
 
