@@ -7852,7 +7852,7 @@ ul.dropdown-menu > li > .btn:focus {
   color: #000;
 }
 .breadcrumbs .breadcrumb > span + span:before {
-  content: " \e606";
+  content: "»";
   color: #a5a5a5;
   padding: 8px 10px;
   font-family: "il-icons";
@@ -8957,7 +8957,7 @@ main {
 }
 /* Footer */
 footer {
-  background-color: #1e1e1e;
+  background-color: #000;
   min-height: auto;
   padding: 20px 0 15px 5px;
   text-align: center;
@@ -9300,18 +9300,21 @@ footer {
   font-size: 1.7rem;
   margin-right: 10px;
 }
-.il-maincontrols-slate #il-tag-slate-container .btn-bulky {
+.il-maincontrols-slate #il-tag-slate-container .btn-bulky,
+.il-maincontrols-slate #ilHelpPanel .btn-bulky {
   padding: 6px;
   text-align: center;
   text-transform: uppercase;
 }
-.il-maincontrols-slate #il-tag-slate-container .btn-bulky .glyph :before {
+.il-maincontrols-slate #il-tag-slate-container .btn-bulky .glyph :before,
+.il-maincontrols-slate #ilHelpPanel .btn-bulky .glyph :before {
   content: " \e605";
   font-family: "il-icons";
   font-size: 1.7rem;
   margin-right: 10px;
 }
-.il-maincontrols-slate #il-tag-slate-container .btn-bulky .bulky-label {
+.il-maincontrols-slate #il-tag-slate-container .btn-bulky .bulky-label,
+.il-maincontrols-slate #ilHelpPanel .btn-bulky .bulky-label {
   margin-top: 3px;
 }
 .il-maincontrols-slate.engaged[data-depth-level="2"] .btn-bulky:not(:hover),
@@ -20152,9 +20155,6 @@ td .btn-group-vertical .btn-info:hover {
 span.ilNewsRssIcon {
   background-color: #d6002b;
 }
-.split-btn-default .btn-primary {
-  border: none;
-}
 .il-card .il-card-repository-head > div.il-card-repository-dropdown .dropdown .dropdown-toggle {
   color: white;
   border: none;
@@ -20357,12 +20357,12 @@ legend.ilTableFilter a.ilTableFilterDeactivator {
 #ilTab > li > a {
   color: #262626;
   padding-top: 10px;
+  height: 40px;
 }
 #ilTab > li.active > a,
 #ilTab > li.active:hover > a {
   color: #ffffff;
   background-color: #d6002b;
-  height: 40px;
 }
 #ilTab > li:hover > a {
   color: #d6002b;
