@@ -19409,6 +19409,12 @@ table.mceToolbar td {
 ::selection {
   background-color: #fae5e9;
 }
+@media print {
+  html body .il-layout-page-content,
+  html body .il-layout-page-content div {
+    display: block;
+  }
+}
 .taxLoginLocal {
   display: block;
 }

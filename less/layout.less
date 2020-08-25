@@ -4,3 +4,12 @@
 ::selection{
   background-color: @tax-selection-background-color;
 }
+
+@media print {
+  html body {
+    .il-layout-page-content,
+    .il-layout-page-content div	{
+      display: block;
+    }
+  }
+}
