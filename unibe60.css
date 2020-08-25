@@ -19414,6 +19414,15 @@ table.mceToolbar td {
   html body .il-layout-page-content div {
     display: block;
   }
+  html body .ilFileDropTargetOverlay {
+    display: none !important;
+  }
+  html body #il_right_col {
+    display: none !important;
+  }
+  html body #il_center_col {
+    width: 100%;
+  }
 }
 .taxLoginLocal {
   display: block;
