@@ -1,1 +1,25 @@
-<svg id="cat-pg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:1.45px;}</style></defs><polygon class="cls-1" points="16 2.7 21.4 10 30 12.9 24.8 20.2 24.7 29.3 16 26.6 7.3 29.3 7.2 20.2 2 12.9 10.6 10 16 2.7"/></svg>
+<svg id="cat-pg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.45px;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="16 2.7 21.4 10 30 12.9 24.8 20.2 24.7 29.3 16 26.6 7.3 29.3 7.2 20.2 2 12.9 10.6 10 16 2.7"/>
+  <line class="cls-2" x1="6.11" y1="11.95" x2="6.11" y2="18.58"/>
+  <line class="cls-2" x1="10.6" y1="10" x2="10.6" y2="27.98"/>
+  <line class="cls-2" x1="16" y1="2.7" x2="16" y2="26.63"/>
+  <line class="cls-2" x1="21.4" y1="10" x2="21.4" y2="28.35"/>
+  <line class="cls-2" x1="25.67" y1="11.7" x2="25.65" y2="19.14"/>
+</svg>
