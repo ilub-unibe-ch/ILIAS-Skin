@@ -6873,6 +6873,14 @@ button.close {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.panel .panel-heading.ilHeader h2,
+.panel .panel-heading.ilBlockHeader h2,
+.panel .panel-heading.ilHeader h2.ilHeader,
+.panel .panel-heading.ilBlockHeader h2.ilHeader {
+  margin: 0;
+  color: #1e1e1e;
+  font-size: 19px;
+}
 .panel .panel-heading.ilHeader h3,
 .panel .panel-heading.ilBlockHeader h3,
 .panel .panel-heading.ilHeader h3.ilHeader,
@@ -6949,6 +6957,9 @@ button.close {
 .panel-secondary .panel-heading.ilHeader {
   padding: 6px 12px;
 }
+.panel-secondary .panel-heading.ilHeader h2.ilHeader {
+  font-size: 17px;
+}
 .panel-secondary .panel-heading.ilHeader h3.ilHeader {
   font-size: 17px;
 }
@@ -6957,6 +6968,9 @@ button.close {
 }
 .panel-secondary .panel-body .il-item-group {
   margin: 0 -12px;
+}
+.panel-secondary .panel-body .il-item-group h3 {
+  padding: 6px 12px;
 }
 .panel-secondary .panel-body .il-item-group h4 {
   padding: 6px 12px;
@@ -6970,7 +6984,7 @@ button.close {
 .panel-secondary .panel-body .il-item-group .il-item .media-right {
   vertical-align: middle;
 }
-.panel-secondary .il-panel-listing-std-container > h3,
+.panel-secondary .il-panel-listing-std-container > h2,
 .panel-secondary .panel-body h4 {
   display: block;
   padding: 6px 0;
@@ -7003,7 +7017,7 @@ button.close {
   background-color: #f8f8f8;
   margin-bottom: 20px;
 }
-.il-panel-listing-std-container > h3 {
+.il-panel-listing-std-container > h2 {
   color: #1e1e1e;
   font-size: 19px;
   font-weight: 600;
@@ -7535,7 +7549,7 @@ a fieldset[disabled] .active {
   background: #989898;
   border: 1px solid #bfbfbf;
 }
-h6.il-divider {
+h4.il-divider {
   padding: 3px 6px;
   background-color: #ebebeb;
   display: block;
@@ -7557,7 +7571,7 @@ hr.il-divider-with-label {
 .dropdown hr {
   margin: 6px 0;
 }
-.dropdown h6 {
+.dropdown h4 {
   margin: 3px 0;
 }
 ul.dropdown-menu {
@@ -7616,13 +7630,14 @@ ul.dropdown-menu > li > .btn:focus {
 .il-item:after {
   clear: both;
 }
-.il-item h5 {
+.il-item h4 {
+  padding-top: 0;
   margin: 0;
   font-size: 14px;
   float: left;
 }
-.il-item h5 .btn-link,
-.il-item h5 a {
+.il-item h4 .btn-link,
+.il-item h4 a {
   font-size: inherit;
   line-height: 1.42857143;
 }
@@ -7664,7 +7679,7 @@ ul.dropdown-menu > li > .btn:focus {
   clear: both;
   background-color: #f8f8f8;
 }
-.il-item-group > h4 {
+.il-item-group > h3 {
   float: left;
   color: #1e1e1e;
   font-size: 17px;
@@ -9209,8 +9224,13 @@ footer {
   html body .il-layout-page header,
   html body .il-layout-page .il-maincontrols,
   html body .il-layout-page .breadcrumbs,
-  html body .il-layout-page footer {
-    display: none;
+  html body .il-layout-page footer,
+  html body .il-layout-page .ilFileDropTargetOverlay {
+    display: none !important;
+  }
+  html body .il-layout-page-content,
+  html body .il-layout-page-content div {
+    display: block;
   }
 }
 .il-maincontrols-slate.disengaged {
@@ -9333,7 +9353,6 @@ footer {
 .il-maincontrols-slate-content h1,
 .il-maincontrols-slate-content h2,
 .il-maincontrols-slate-content h3,
-.il-maincontrols-slate-content h4,
 .il-maincontrols-slate-content li {
   padding: 10px 20px;
 }
@@ -12685,7 +12704,7 @@ div.il_ContainerItemCommands2 {
 div.il_ContainerItemCommands {
   padding: 2px 0;
 }
-h4.il_ContainerItemTitle {
+h3.il_ContainerItemTitle {
   padding: 0;
   margin: 0;
   font-weight: normal;
@@ -12783,7 +12802,7 @@ h1.ilHeader {
     padding-top: 5px;
   }
 }
-h3.ilHeader {
+h2.ilHeader {
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -17231,6 +17250,13 @@ div.ilBlockHeaderBig,
 td.ilBlockHeaderBig {
   font-size: 100%;
 }
+h2.ilBlockHeader {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  display: inline;
+}
 h3.ilBlockHeader {
   font-weight: 600;
   margin: 0;
@@ -17311,7 +17337,7 @@ div.ilInfoScreenSec {
   padding: 0;
   margin-bottom: 20px;
 }
-div.ilInfoScreenSec h3.ilHeader {
+div.ilInfoScreenSec h2.ilHeader {
   margin-bottom: 5px;
   display: block;
   /* margin: 10px 0;
@@ -19031,6 +19057,9 @@ span.ilProfileBadge .modal .img-responsive {
   margin-bottom: 10px;
   background-color: #dfdfdf;
 }
+.ilLSOKioskModeNavigation .navbar-form {
+  line-height: 25px;
+}
 .ilLSOKioskTopBarControls {
   float: left;
   display: block;
@@ -19379,6 +19408,11 @@ table.mceToolbar td {
 .il-logo > a > img {
   width: 40px;
   height: 40px;
+}
+li.dropdown-header h2 {
+  font-size: 12px;
+  color: #777777;
+  margin: 3px 10px;
 }
 @media only screen and (max-width: 768px) {
   #ilTopNav.navbar-default {
@@ -20177,6 +20211,9 @@ span.ilNewsRssIcon {
 .il-card .il-card-repository-head > div.il-card-repository-dropdown .dropdown .dropdown-toggle:hover {
   color: #d6002b;
 }
+.card-title {
+  font-size: 110%;
+}
 #onscreenchatmenu-content .dropdown-header ~ .dropdown-header {
   display: none;
 }
@@ -20271,6 +20308,25 @@ div.il_ItemProperties {
 }
 .ilToolbar .ilToolbarStickyItems {
   margin-left: 0px;
+}
+.ilExcAssignmentHead h2 {
+  padding: 0;
+  margin: 4px 0 0 25px;
+  font-size: 16px;
+}
+h2.ilc_page_title_PageTitle {
+  border-bottom-width: 2px;
+  color: #121212;
+  padding-bottom: 3px;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+a.ilTstNavElem h3 {
+  font-size: 14px;
+  margin: 0px;
+  color: #0033AA;
 }
 .ilTableFilter,
 .ilTableFilterSec {
