@@ -19412,7 +19412,7 @@ table.mceToolbar td {
 li.dropdown-header h2 {
   font-size: 12px;
   color: #777777;
-  margin: 3px 10px;
+  margin: 3px 0px;
 }
 @media only screen and (max-width: 768px) {
   #ilTopNav.navbar-default {
@@ -20327,6 +20327,15 @@ a.ilTstNavElem h3 {
   font-size: 14px;
   margin: 0px;
   color: #0033AA;
+}
+h2.ilHeader {
+  color: #1e1e1e;
+}
+.panel .panel-heading.ilHeader h4,
+.panel .panel-heading.ilBlockHeader h4,
+.panel .panel-heading.ilHeader h4.ilBlockHeader,
+.panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
+  margin-top: 2px;
 }
 .ilTableFilter,
 .ilTableFilterSec {
