@@ -142,7 +142,7 @@ var wayf_unhide_idps = new Array();
 // Example of how to hide certain Identity Provider
 // var wayf_hide_idps = new Array("https://idp.unige.ch/idp/shibboleth", "https://lewotolo.switch.ch/idp/shibboleth");
 // [Optional, commented out by default]
-var wayf_hide_idps = new Array();
+var wayf_hide_idps = new Array("https://eduid.ch/idp/shibboleth");
 
 
 //////////////////// ADVANCED SETTINGS ////////////////////
