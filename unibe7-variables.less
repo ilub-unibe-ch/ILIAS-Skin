@@ -1,33 +1,33 @@
 //== Colors
 //
 //##
-/*		Color scheme
-		Dark BLue: #0f2152;
-		Mid Blue: #4c6586;
-		Green: #6ea03c;
-		Light Brown: #dcb496;
-		Dark Brown: #523228;
-		Orange: #fa8228;
-		External Blue: #21c5d8;
-		ILIAS 4 MainMenu Color: #c8e6ff;
+/*             Color scheme
+               Dark BLue: #0f2152;
+               Mid Blue: #4c6586;
+               Green: #6ea03c;
+               Light Brown: #dcb496;
+               Dark Brown: #523228;
+               Orange: #fa8228;
+               External Blue: #21c5d8;
+               ILIAS 4 MainMenu Color: #c8e6ff;
 */
 
 @brand-primary:		#1e1e1e;
-@brand-secondary:		#d6002b;
-@brand-success:		#6ea03c;
-@brand-info:		#95afcb;
+@brand-secondary:		rgb(230,0,46);
+@brand-success:		rgba(54,181,182,0.8);
+@brand-info:		rgba(71,103,175,0.8);
 @brand-warning:		@brand-secondary;
 @brand-danger:		@brand-secondary;
 
 /** if left unchanged, you have to copy all the background images to your skin/images folder.
-* To use the delos background images in your skin,
-* please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
+ To use the delos background images in your skin,
+ please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
 */
 @background-images-path:		"images/";
 
 /** if left unchanged, you have to copy delos fonts folder to your skin folder.
-* To use the delos fonts in your skin,
-* please change this value (in custom less data or variables.less of your custom skin) to "../../../../templates/default/fonts/"
+ To use the delos fonts in your skin,
+ please change this value (in custom less data or variables.less of your custom skin) to "../../../../templates/default/fonts/"
 */
 @web-font-path:		"fonts/";
 
@@ -35,11 +35,11 @@
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f8f8f8;
 
-@il-highlight-bg:		#fae5e9;
+@il-highlight-bg:		lighten(@brand-secondary, 50%);
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
-@il-brand-3rd:		#e24a6a;
+@il-brand-3rd:		lighten(@brand-secondary, 50%);
 
 
 //== Extended Colors
@@ -47,23 +47,23 @@
 //## Extended Colors of ILIAS to be used to generate coloring for components like charts.
 
 //** Variant 1 of the extended color set in ILIAS
-@il-extended-color-1:		#f3de2c;
+@il-extended-color-1:		rgb(194,182,0);
 //** Variant 2 of the extended color set in ILIAS
-@il-extended-color-2:		#cddc39;
+@il-extended-color-2:		rgb(238,116,2);
 //** Variant 3 of the extended color set in ILIAS
-@il-extended-color-3:		#59a0a5;
+@il-extended-color-3:		rgb(54,181,182);
 //** Variant 4 of the extended color set in ILIAS
-@il-extended-color-4:		#86cb92;
+@il-extended-color-4:		rgb(242,102,127);
 //** Variant 5 of the extended color set in ILIAS
-@il-extended-color-5:		#ce73a8;
+@il-extended-color-5:		rgb(242,102,127);
 //** Variant 6 of the extended color set in ILIAS
-@il-extended-color-6:		#82639e;
+@il-extended-color-6:		rgb(0,128,164);
 //** Variant 7 of the extended color set in ILIAS
-@il-extended-color-7:		#9e7c7d;
+@il-extended-color-7:		rgb(32,58,93);
 //** Variant 8 of the extended color set in ILIAS
-@il-extended-color-8:		#f75e82;
+@il-extended-color-8:		rgb(70,101,83);
 //** Variant 9 of the extended color set in ILIAS
-@il-extended-color-9:		#ea4d54;
+@il-extended-color-9:		rgb(130,9,36);
 
 //** Factor by witch a specific color variant is darkened in the standard coloring
 @il-extended-color-factor-standard:		0%;
@@ -270,13 +270,13 @@
 //##
 @nav-link-padding:		5px 10px;
 @nav-tabs-border-color:		#e0e0e0;
-/* @nav-tabs-link-hover-border-color: @brand-primary; */
+// @nav-tabs-link-hover-border-color: @brand-primary; 
 @nav-tabs-active-link-hover-border-color:		#e0e0e0;
 
 
 //== Buttons
 //
-//## For each of ILIAS's buttons, define text, background and border color.
+//## For each of ILIASs buttons, define text, background and border color.
 
 //** Size of the font displayed inside a button
 @il-button-font-size:		@font-size-small;
@@ -491,11 +491,11 @@
 @input-border:		#bbbbbb;
 @input-border-focus:		lighten(@brand-secondary, 20%);
 @ilFormInputFontSize:		@font-size-small;
-@input-height-base:		(floor((@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2);
+@input-height-base:		floor((@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2;
 @ilFormColor:		#787878;
 @ilFormBgColor:		#FDFDFD;
 @input-color-placeholder:		lighten(@gray-light, 30%);
-@il-textarea-height:		(floor(4 * (@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2);
+@il-textarea-height:		floor(4 * (@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2;
 
 //** Tag Input
 @input-tag-color-disabled:		#e8e8e8;
@@ -640,7 +640,7 @@
 @il-dropzone-bg:		white;
 @il-dropzone-bg-inactive:		#F4F4F4;
 //** Background color used when a dropzone is highlighted (not when hovered).
-@il-dropzone-highlight-bg:		#fae5e9;
+@il-dropzone-highlight-bg:		lighten(@brand-secondary, 50%);
 //** Background color used when a dropzone is hovered.
 @il-dropzone-hover-bg:		#f7ccd5;
 @il-dropzone-border-radius:		0px;
@@ -820,12 +820,12 @@
 //** border style for letter avatars
 @avatar-border-style:		solid;
 //** border color for picture avatars
-@avatar-picture-border-color:		#dddddd;
+@avatar-picture-border-color:		#fff;
 //** there are 26 colors for letter avatar backgrounds, this is for the abbreviation ant the border color
 @avatar-letter-border-color-contrast-lighten:		40%;
 @avatar-letter-border-color-contrast-darken:		20%;
 //** change the abbreviations font weight
-@avatar-letter-abbreviation-font-weight:		normal;
+@avatar-letter-abbreviation-font-weight:		bold;
 //** change the abbreviations font transform
 @avatar-letter-abbreviation-font-transform:		inherit;
 //** all variants of letter avatar background colors (MUST be 26)
@@ -995,21 +995,21 @@
 @tax-il-tab-margin-bottom:		20px;
 @tax-il-tab-margin-borders:		15px;
 @tax-il-tab-margin-background-color:		#fafafa;
-@tax-il-sub-tab-bg-color:		#fae5e9;
+@tax-il-sub-tab-bg-color:		@tax-il-tab-bg-color;
 @tax-il-tab-height:		40px;
 @tax-il-tab-padding-top:		10px;
 @tax-il-subtab-color:		@tax-il-tab-color;
 @tax-il-subtab-active-color:		@brand-secondary;
 @tax-il-subtab-active-textdecoration:		none;
 @tax-il-subtab-hover-bg-color:		@tax-il-tab-hover-color;
-@tax-il-subtab-hover-color:		@tax-il-subtab-color;
+@tax-il-subtab-hover-color:		@tax-il-tab-hover-color;
 @tax-il-sub-tab-margin-bottom:		2*@padding-large-vertical;
 @tax-il-sub-tab-margin-borders:		@tax-il-tab-margin-borders;
 @tax-il-sub-tab-margin-borders:		@tax-il-tab-margin-borders;
 @tax-il-tab-padding-subtab:		6px 6px;
 @tax-il-logo-size:		40px;
 @tax-il-logo-top:		15px;
-@tax-il-btn-month-color:		#d6002b;
+@tax-il-btn-month-color:		@brand-secondary;
 @tax-il-chat-header-fontweight:		600;
 @tax-il-chat-header-padding:		6px 10px;
 @tax-il-etherpad-height:		700px;
@@ -1025,20 +1025,20 @@
 //== Unibe specific alerts
 //
 //##
-@tax-alert-success-bg-color:		#c4e074;
-@tax-alert-success-color:		#6e8236;
+@tax-alert-success-bg-color:		#C5E3E3;
+@tax-alert-success-color:		#278282;
 @tax-alert-success-border-color:		@tax-alert-success-bg-color;
 @tax-alert-success-link-color:		@link-color;
-@tax-alert-info-bg-color:		#c7e0fc;
-@tax-alert-info-color:		#5d7ead;
+@tax-alert-info-bg-color:		#DAE1EF;
+@tax-alert-info-color:		#4461A6;
 @tax-alert-info-border-color:		@tax-alert-info-bg-color;
 @tax-alert-info-link-color:		@link-color;
-@tax-alert-warning-bg-color:		#f7ccd5;
-@tax-alert-warning-color:		#d6002b;
+@tax-alert-warning-bg-color:		#FCE3CC;
+@tax-alert-warning-color:		#A35002;
 @tax-alert-warning-border-color:		@tax-alert-warning-bg-color;
 @tax-alert-warning-link-color:		@link-color;
-@tax-alert-danger-bg-color:		#de3355;
-@tax-alert-danger-color:		#fff;
+@tax-alert-danger-bg-color:		#FCE0E5;
+@tax-alert-danger-color:		#D10026;
 @tax-alert-danger-border-color:		@tax-alert-danger-bg-color;
 @tax-alert-danger-link-color:		@link-color;
 
