@@ -19169,6 +19169,9 @@ div.il_HeaderInner {
 .il-maincontrols-slate-content .il-divider {
   background-color: transparent;
 }
+.il-mainbar-tools-entries-bg {
+  background: #87d3d3;
+}
 .il-logo {
   margin: 10px;
 }
