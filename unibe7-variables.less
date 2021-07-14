@@ -31,15 +31,15 @@
 */
 @web-font-path:		"fonts/";
 
-@mid-gray:		#4B4B4B;
+@mid-gray:		#666666;
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f8f8f8;
 
-@il-highlight-bg:		lighten(@brand-secondary, 50%);
+@il-highlight-bg:		#DAE1EF;
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
-@il-brand-3rd:		lighten(@brand-secondary, 50%);
+@il-brand-3rd:		#D7F0F0;
 
 
 //== Extended Colors
@@ -92,7 +92,7 @@
 //
 //##
 @body-bg:		#f3f3f3;
-@text-color:		#616161;
+@text-color:		#666666;
 @il-light-text-color:		lighten(@mid-gray, 50%);
 @link-color:		#000;
 @link-hover-color:		@brand-secondary;
@@ -346,13 +346,13 @@
 @il-btn-toggle-switch-size:		25px;
 @il-btn-toggle-switch-border-color:		rgba(0,0,0,0.2);
 @il-btn-toggle-switch-transition:		all 0.25s ease-in-out;
-@il-enabled-btn-toggle-switch-color:		@brand-primary;
+@il-enabled-btn-toggle-switch-color:		@brand-secondary;
 @il-enabled-btn-toggle-switch-position-left:		53%;
 @il-disabled-btn-toggle-switch-color:		#808080;
 @il-disabled-btn-toggle-switch-position-left:		-6%;
 
 //** on
-@il-btn-toggle-bg-color-on:		@brand-secondary;
+@il-btn-toggle-bg-color-on:		@brand-primary;
 @il-btn-toggle-border-color-on:		#bfbfbf;
 @il-btn-toggle-switch-bg-color-on:		@il-primary-container-bg;
 @il-btn-toggle-switch-border-color-on:		#bfbfbf;
@@ -431,7 +431,7 @@
 //** Textcolor used in the labels (identifiers) of the input fields of a form
 @il-standard-form-label-color:		lighten(@il-standard-form-color, 20%);
 //** Background color used in the
-@il-standard-form-bg:		darken(@body-bg, 3%);
+@il-standard-form-bg:		darken(@body-bg,4%);
 //** Textsize used in the forms body
 @il-standard-form-font-size:		@font-size-small;
 //** Textsize used in the bylines (descriptions) of the input fields of a form
@@ -489,11 +489,11 @@
 //## Variables used to style the ILIAS input fields (e.g. Text Inputs etc.)
 @input-border-radius:		0;
 @input-border:		#bbbbbb;
-@input-border-focus:		lighten(@brand-secondary, 20%);
+@input-border-focus:		#fff;
 @ilFormInputFontSize:		@font-size-small;
 @input-height-base:		floor((@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2;
 @ilFormColor:		#787878;
-@ilFormBgColor:		#FDFDFD;
+@ilFormBgColor:		#fdfdfd;
 @input-color-placeholder:		lighten(@gray-light, 30%);
 @il-textarea-height:		floor(4 * (@il-standard-form-font-size * @line-height-base)) + (@padding-base-vertical * 2) + 2;
 
@@ -553,8 +553,8 @@
 //** Border color for table and cell borders.
 @table-border-color:		lighten(@il-table-head-bg, 10%);
 
-@il-table-head-bg:		#c9d7e5;
-@il-data-table-bg:		#edf1f6;
+@il-table-head-bg:		#DAE1EF;
+@il-data-table-bg:		darken(@body-bg,1%);
 @il-table-cmd-bg:		@body-bg;
 
 //** Presentation Table borders
@@ -642,7 +642,7 @@
 //** Background color used when a dropzone is highlighted (not when hovered).
 @il-dropzone-highlight-bg:		lighten(@brand-secondary, 50%);
 //** Background color used when a dropzone is hovered.
-@il-dropzone-hover-bg:		#f7ccd5;
+@il-dropzone-hover-bg:		#FCE0E5;
 @il-dropzone-border-radius:		0px;
 @il-dropzone-border-style:		dashed;
 @il-dropzone-border-width:		1px;
@@ -1024,8 +1024,8 @@
 @tax-il-pagetitle-color:		#1e1e1e;
 @tax-il-pagetitle-padding-left:		42px;
 @tax-il-bulky-label-color:		#1e1e1e;
-@tax-dropdown-header-bg-color:		 transparent;
-@tax-dropdown-header-padding: 		12px 10px;
+@tax-dropdown-header-bg-color:		transparent;
+@tax-dropdown-header-padding:		12px 10px;
 
 //== Unibe specific alerts
 //
@@ -1065,8 +1065,8 @@
 @tax-button-disabled-bg-color:		#d2d2d2;
 @tax-button-disabled-color:		#4b4b4b;
 @tax-button-disabled-border-color:		@tax-button-disabled-bg-color;
-@tax-button-engaged-bg-color:		 #7A7C81;
-@tax-button-engaged-color:		 #ffffff;
+@tax-button-engaged-bg-color:		#7A7C81;
+@tax-button-engaged-color:		#ffffff;
 @tax-button-month-text-color:		@brand-primary;
 @tax-button-test-submit-background:		@brand-secondary;
 @tax-button-test-submit-text:		rgb(255, 255, 255);
@@ -1117,13 +1117,13 @@
 //
 //##
 //** Tools verfügbar
-@tax-mainbar-tool-engaged:		@brand-secondary;
+@tax-mainbar-tool-engaged:		#37B6B6;
 //** Tools angezeigt
-@tax-mainbar-tool-disengaged:		#f3f3f3;
+@tax-mainbar-tool-disengaged:		#87D3D3;
 //** Tools Tab angezeigt
 @tax-mainbar-tool-slate-engaged:		white;
 //** Tools Tab verfügbar
-@tax-mainbar-tool-slate-disengaged:		#ea7f95;
+@tax-mainbar-tool-slate-disengaged:		#37B6B6;
 
 @breadcrumb-font-size:		11px;
 @tax-breadcrumb-padding-left:		108px;
@@ -1143,4 +1143,4 @@
 //== Unibe specific color for selected text
 //
 //##
-@tax-selection-background-color:		#fae5e9;
+@tax-selection-background-color:		#E7E299;
