@@ -548,14 +548,14 @@
 //** Default background color used for all tables.
 @table-bg:		transparent;
 //** Background color used for `.table-striped`.
-@table-bg-accent:		white;
+@table-bg-accent:		darken(@body-bg,0.5%);
 
 //** Border color for table and cell borders.
 @table-border-color:		lighten(@il-table-head-bg, 10%);
 
-@il-table-head-bg:		#DAE1EF;
-@il-data-table-bg:		darken(@body-bg,1%);
-@il-table-cmd-bg:		@body-bg;
+@il-table-head-bg:		#fff;
+@il-data-table-bg:		white;
+@il-table-cmd-bg:		#fff;
 
 //** Presentation Table borders
 @il-table-presentation-rowborder-top:		1px solid @table-border-color;
@@ -1058,7 +1058,7 @@
 @tax-button-default-bg-color:		#fff;
 @tax-button-default-color:		#333;
 @tax-button-default-hover-color:		@brand-secondary;
-@tax-button-default-border-color:		#e8e8e8;
+@tax-button-default-border-color:		#d2d2d2;
 @tax-button-info-bg-color:		#fff;
 @tax-button-info-color:		@tax-button-default-color;
 @tax-button-info-border-color:		@tax-button-info-bg-color;
@@ -1143,4 +1143,4 @@
 //== Unibe specific color for selected text
 //
 //##
-@tax-selection-background-color:		#E7E299;
+@tax-selection-background-color:		#FCE0E5;
