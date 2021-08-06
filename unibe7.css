@@ -20212,7 +20212,7 @@ div.ilCalSelAct img,
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .ilContainerBlock .ilContainerBlockHeader {
-  background-color: transparent;
+  background-color: #f9f9f9;
 }
 .ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
   font-size: 18px;
