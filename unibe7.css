@@ -19881,7 +19881,7 @@ ul.dropdown-menu > li > a:active:focus {
 .il-modal-roundtrip .il-dropzone-base > .btn-default:enabled,
 .panel-secondary .panel-body div form .btn-default,
 td .btn-group-vertical > .btn:first-child:not(:last-child),
-.il_InfoScreenPropertyValue .btn-default {
+.il_InfoScreenPropertyValue .btn-default:not(.dropdown-toggle) {
   color: #ffffff;
   background-color: #333333;
   border-color: #333333;
@@ -19889,7 +19889,7 @@ td .btn-group-vertical > .btn:first-child:not(:last-child),
 .il-modal-roundtrip .il-dropzone-base > .btn-default:hover:enabled,
 .panel-secondary .panel-body div form .btn-default:hover,
 td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
-.il_InfoScreenPropertyValue .btn-default:hover {
+.il_InfoScreenPropertyValue .btn-default:hover:not(.dropdown-toggle) {
   color: #e6002e;
   background-color: #ffffff;
   border-color: #ffffff;
