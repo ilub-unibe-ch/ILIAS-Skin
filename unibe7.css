@@ -19390,12 +19390,21 @@ div.il_HeaderInner {
   background-color: #FCE0E5;
   color: #E6002E;
 }
+.il-system-info.il-system-info-breaking a.glyph {
+  color: #E6002E;
+}
 .il-system-info.il-system-info-important {
   background-color: #FCE3CC;
   color: #EE7402;
 }
+.il-system-info.il-system-info-important a.glyph {
+  color: #EE7402;
+}
 .il-system-info.il-system-info-neutral {
   background-color: #DAE1EF;
+  color: #4767AF;
+}
+.il-system-info.il-system-info-neutral a.glyph {
   color: #4767AF;
 }
 .btn-default {
