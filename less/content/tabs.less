@@ -1,0 +1,51 @@
+#ilTab {
+  background-color: @tax-il-tab-bg-color;
+  border-bottom:@tax-il-tab-border-bottom;
+}
+#ilTab > li > a{
+  color: @tax-il-tab-color;
+  padding-top:@tax-il-tab-padding-top ;
+  height: @tax-il-tab-height;
+}
+
+#ilTab > li.active > a, #ilTab > li.active:hover > a {
+  color: @tax-il-tab-active-color;
+  background-color: @tax-il-tab-active-bg-color;
+}
+
+#ilTab > li:hover > a {
+  color: @tax-il-tab-hover-color;
+  background-color: @tax-il-tab-hover-bg-color;
+}
+
+#ilSubTab {
+  padding: @tax-il-tab-padding-subtab;
+  color: @tax-il-subtab-color;
+}
+
+#ilSubTab > li > a{
+  color: @tax-il-subtab-color;
+}
+
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover{
+  text-decoration: @tax-il-subtab-active-textdecoration;
+  color: @tax-il-subtab-active-color;
+}
+
+#ilSubTab > li:hover > a, 
+#ilSubTab > li > a:hover{
+  color: @tax-il-subtab-hover-color;
+  background-color: @tax-il-subtab-hover-bg-color;
+}
+
+#ilSubTab.ilSubTab.nav.nav-pills > li > a:hover {
+  background-color: unset;
+}
+
+ul#ilSubTab.ilSubTab.nav.nav-pills.hidden-print {
+  margin-bottom: @tax-il-sub-tab-margin-bottom;
+  margin-left: @tax-il-sub-tab-margin-borders;
+  margin-right: @tax-il-sub-tab-margin-borders;
+  background-color: @tax-il-sub-tab-bg-color;
+  border-top: @tax-il-subtab-bordertop;
+}
