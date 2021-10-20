@@ -1,0 +1,19 @@
+<svg id="cat-pg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1.45px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M16.06,9.92c-3.56,0-6.54,3.33-6.54,3.33s3,3.32,6.54,3.32,6.53-3.32,6.53-3.32S19.61,9.92,16.06,9.92Zm0,6.31a2.87,2.87,0,1,1,2.86-2.87A2.84,2.84,0,0,1,16.06,16.23Z"/>
+    <circle class="cls-1" cx="16.06" cy="13.02" r="10.2"/>
+    <path class="cls-1" d="M5.85,13H3.67S4.13,25.4,16.06,25.4,28.33,13,28.33,13H26.26"/>
+    <line class="cls-1" x1="8.95" y1="29.19" x2="23.17" y2="29.19"/>
+    <circle class="cls-1" cx="16.06" cy="27.24" r="1.83"/>
+  </g>
+</svg>

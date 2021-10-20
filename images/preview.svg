@@ -1,0 +1,19 @@
+<svg id="cat-pg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1.45px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-1" points="27.66 4.64 30.18 4.64 30.18 22.58 1.82 22.58 1.82 4.64 4.43 4.64 27.66 4.64"/>
+    <g>
+      <polyline class="cls-1" points="9.32 27.36 16 27.36 22.68 27.36"/>
+      <line class="cls-1" x1="16" y1="22.58" x2="16" y2="27.36"/>
+    </g>
+  </g>
+</svg>

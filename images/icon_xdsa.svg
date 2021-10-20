@@ -1,0 +1,34 @@
+<svg id="cat-pg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.45px;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <polyline class="cls-1" points="24.5 23.5 24.5 2.5 12.5 2.5 7.5 7.5 7.5 23.5"/>
+      <polyline class="cls-1" points="12.5 2.5 12.5 7.5 7.5 7.5"/>
+    </g>
+    <g>
+      <polyline class="cls-2" points="17.95 20.12 16.46 19.6 15.54 18.08 13.79 18.54 13.69 20.33 12.49 21.36"/>
+      <polyline class="cls-2" points="13.69 20.33 12.49 21.36 10.72 21.4 10.24 23.14 11.74 24.12 12.03 25.68"/>
+      <polyline class="cls-2" points="11.74 24.12 12.03 25.68 11.18 27.24 12.45 28.52 14.05 27.71 15.54 28.23"/>
+      <polyline class="cls-2" points="14.05 27.71 15.54 28.23 16.46 29.75 18.21 29.29 18.31 27.51 19.51 26.47"/>
+      <polyline class="cls-2" points="18.31 27.51 19.51 26.47 21.28 26.43 21.76 24.69 20.26 23.71 19.97 22.16"/>
+      <polyline class="cls-2" points="20.26 23.71 19.97 22.16 20.82 20.6 19.55 19.32 17.95 20.12 16.46 19.6"/>
+      <circle class="cls-2" cx="16" cy="23.92" r="1.82"/>
+    </g>
+  </g>
+</svg>
