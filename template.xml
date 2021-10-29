@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<template xmlns="http://www.w3.org" version="0.1" name="exam7">
+<template xmlns="http://www.w3.org" version="0.215" name="exam7">
   <style id="exam7" name="exam7" image_directory="images" css_file="exam7" sound_directory="sound" font_directory="fonts"/>
 </template>

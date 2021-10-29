@@ -9,17 +9,17 @@ with the il- variable set here.
 //
 //## The Main Colors used in ILIAS along with their semantics
 //** For Standard Buttons, Main color used in various places, used to be @brand-primary
-@il-main-color:		#4c6586;
+@il-main-color:		#333;
 //** For Primary Buttons, used to point to interactions with a special importance, used to be @brand-secondary
-@il-secondary-color:		#6ea03c;
+@il-secondary-color:		#E6002E;
 //** Used to indicate some success, used to be @brand-success
-@il-success-color:		#6ea03c;
+@il-success-color:		#37B6B6;
 //** Used to indicate some success, used to be @brand-info
-@il-info-color:		#dcb496;
+@il-info-color:		#4767AF;
 //** Used to indicate some warning or to draw special focus to some element, used to be @brand-warning
-@il-warning-color:		#B54F00;
+@il-warning-color:		#EE7402;
 //** Used to indicate some warning or to draw special focus to some element, used to be @brand-danger
-@il-danger-color:		#d00;
+@il-danger-color:		@il-secondary-color;
 
 //** Neutral Color for various Backgrounds, used to be @gray-dark and @il-neutral-color
 @il-neutral-color:		#434343;
@@ -36,7 +36,7 @@ with the il- variable set here.
 //** Title area of various components such as Panels. Used as e.g. in containers as bg. Used to be @il-secondary-bg
 @il-main-dark-bg:		#f9f9f9;
 //** Background of everything in the Content Area, which is the area bellow the Meta Bar and Breadcrumbs next to the Main Bar. Used to be @body-bg
-@il-content-bg:		#f0f0f0;
+@il-content-bg:		#F6F5F5;
 
 //** Currently used for several highlighting effects, such as hovering
 @il-highlight-bg:		lighten(@il-main-color, 50%);
@@ -49,9 +49,9 @@ with the il- variable set here.
 @il-text-light-color:		@il-neutral-light-color;
 
 //** Used to be @link-color
-@il-link-color:		@il-main-color;
+@il-link-color:		darken(@il-main-color,10%);
 //** Used to be @link-hover-color
-@il-link-hover-color:		darken(@il-link-color, 10%);
+@il-link-hover-color:		@il-secondary-color;
 
 //** Used to set focus on interactive elements for keyboard navigation. 
 @il-focus-color:		#0078D7;
@@ -61,9 +61,9 @@ with the il- variable set here.
 //## Extended Colors of ILIAS to be used to generate coloring for components like charts.
 
 //** Variant 1 of the extended color set in ILIAS
-@il-extended-color-1:		#f3de2c;
+@il-extended-color-1:		#B5C2DF;
 //** Variant 2 of the extended color set in ILIAS
-@il-extended-color-2:		#d38000;
+@il-extended-color-2:		#4767AF;
 //** Variant 3 of the extended color set in ILIAS
 @il-extended-color-3:		#307C88;
 //** Variant 4 of the extended color set in ILIAS
@@ -146,10 +146,10 @@ with the il- variable set here.
 //** header, footer and logo
 @il-grid-float-breakpoint-max:		768px;
 
-@il-standard-page-logo-height:		45px;
-@il-standard-page-logo-width:		45px;
+@il-standard-page-logo-height:		40px;
+@il-standard-page-logo-width:		40px;
 @il-standard-page-header-height:		60px;
-@il-standard-page-header-bg-color:		@il-main-bg;
+@il-standard-page-header-bg-color:		@il-extended-color-1;
 @il-standard-page-border-light-color:		@il-main-border-color;
 @il-standard-page-content-padding:		20px;
 
@@ -157,7 +157,7 @@ with the il- variable set here.
 @il-metabar-entry-height:		60px;
 @il-metabar-entry-width:		60px;
 @il-metabar-glyph-size:		2.3rem;
-@il-metabar-glyph-color:		@il-neutral-light-color;
+@il-metabar-glyph-color:		@il-neutral-color;
 @il-metabar-slates-width:		500px;
 
 //** breadcrumbs
@@ -165,23 +165,23 @@ with the il- variable set here.
 @il-standard-page-breadcrumbs-bg-color:		@il-main-bg;
 @il-standard-page-breadcrumbs-color:		@il-link-color;
 @il-standard-page-breadcrumbs-active-color:		@il-link-hover-color;
-@il-standard-page-breadcrumbs-divider-color:		@il-neutral-light-color;
+@il-standard-page-breadcrumbs-divider-color:		@il-secondary-color;
 @il-standard-page-breadcrumbs-font-weight:		600;
 @il-standard-page-breadcrumbs-seperator:		" \e606";
 
 //** mainbar
-@il-maincontrols-mainbar-bg-color:		@il-main-bg;
+@il-maincontrols-mainbar-bg-color:		@il-main-color;
 @il-mainbar-btn-height:		80px;
 @il-mainbar-btn-width:		80px;
-@il-mainbar-btn-color:		white;
-@il-mainbar-btn-bg-color:		@il-neutral-color;
-@il-mainbar-btn-color-engaged:		@il-neutral-color;
-@il-mainbar-btn-bg-color-engaged:		@il-main-bg;
+@il-mainbar-btn-color:		@il-neutral-color;
+@il-mainbar-btn-bg-color:		@il-main-bg;
+@il-mainbar-btn-color-engaged:		#ffffff;
+@il-mainbar-btn-bg-color-engaged:		#1F386F;
 @il-mainbar-btn-border:		1px solid @il-standard-page-border-light-color;
 @il-mainbar-btn-label-size:		.9rem;
 @il-mainbar-bulky-label-margin-top:		5px;
-@il-mainbar-tools-btn-bg:		@il-warning-color;
-@il-mainbar-tools-bg:		@il-content-bg;
+@il-mainbar-tools-btn-bg:		#37B6B6;
+@il-mainbar-tools-bg:		#37B6B6;
 @il-mainbar-tools-item-gap:		3px;
 
 //** tools
@@ -210,7 +210,7 @@ with the il- variable set here.
 @il-slate-content-spacing:		2px;
 @il-standard-page-slate-width:		329px;
 @il-mainbar-slates-bg-color:		@il-main-bg;
-@il-metabar-slates-bg-color:		#fafafa;
+@il-metabar-slates-bg-color:		#fff;
 @il-mainbar-close-slate-btn-height:		45px;
 @il-metabar-close-slate-btn-height:		30px;
 
@@ -252,9 +252,9 @@ with the il- variable set here.
 @il-top-bar-dropdown-link-hover-bg:		@il-highlight-bg;
 @il-top-bar-dropdown-link-hover-color:		lighten(@il-neutral-color, 42%);
 //** controls the height of the "logo" (that [ILIAS] thingy on top the page in the standard).
-@il-logo-height:		50px;
+@il-logo-height:		40px;
 //** controls the width of the "logo" (that [ILIAS] thingy on top the page in the standard).
-@il-logo-width:		50px;
+@il-logo-width:		40px;
 //** controls margin around the logo
 @il-logo-margin:		15px 15px 0;
 @il-logo-resp-margin:		10px;
@@ -297,7 +297,7 @@ with the il- variable set here.
 //## Variables to control the footer section of ILIAS.
 
 //** controls background color of the footer.
-@il-footer-bg-color:		@il-main-color;
+@il-footer-bg-color:		darken(@il-main-color,10%);
 //** controls the color of the text in the footer.
 @il-footer-color:		white;
 @il-footer-height:		70px;
@@ -313,28 +313,28 @@ with the il- variable set here.
 //** Text color of the standard button (most button instances)
 @il-btn-standard-color:		white;
 //** Background color of the standard button (most button instances)
-@il-btn-standard-bg:		@il-main-color;
+@il-btn-standard-bg:		@il-extended-color-2;
 //** Border color of the standard button (most button instances)
-@il-btn-standard-border:		@il-main-color;
+@il-btn-standard-border:		@il-extended-color-2;
 
 //** Text color of the primary button (most important button on the screen)
 @il-btn-primary-color:		white;
 //** Background color of the primary button (most important button on the screen)
-@il-btn-primary-bg:		darken(@il-secondary-color, 10%);
+@il-btn-primary-bg:		#2B8F8F;
 //** Border color of the primary button (most important button on the screen)
-@il-btn-primary-border:		darken(@il-secondary-color, 10%);
+@il-btn-primary-border:		#2B8F8F;
 
 //** Text color of inactive buttons
-@il-disabled-btn-color:		white;
+@il-disabled-btn-color:		darken(@il-text-color, 20%);
 //** Background color of inactive buttons
 @il-disabled-btn-bg:		#b0b0b0;
 //** Border color of inactive buttons
-@il-disabled-btn-border:		#e0e0e0;
+@il-disabled-btn-border:		#b0b0b0;
 
 //** Text color of inactive buttons
-@il-engaged-btn-color:		@il-text-color;
+@il-engaged-btn-color:		#fff;
 //** Background color of inactive buttons
-@il-engaged-btn-bg:		white;
+@il-engaged-btn-bg:		#1F386F;
 
 @il-disabled-btn-bg:		#b0b0b0;
 @il-disabled-btn-border:		#b0b0b0;
@@ -558,11 +558,11 @@ with the il- variable set here.
 
 //** Default background color used for dropzones.
 @il-dropzone-bg:		@il-main-bg;
-@il-dropzone-bg-inactive:		#F4F4F4;
+@il-dropzone-bg-inactive:		@il-content-bg;
 //** Background color used when a dropzone is highlighted (not when hovered).
-@il-dropzone-highlight-bg:		#FFFFD6;
+@il-dropzone-highlight-bg:		#F3F0CC;
 //** Background color used when a dropzone is hovered.
-@il-dropzone-hover-bg:		#FFF9BC;
+@il-dropzone-hover-bg:		#E7E299;
 @il-dropzone-border-radius:		0px;
 @il-dropzone-border-style:		dashed;
 @il-dropzone-border-width:		1px;
@@ -707,7 +707,7 @@ with the il- variable set here.
 //## Icons are used to represent (and quickly identify) objects.
 
 //** Path to the font of the glyphicons. Note that the path must be put in "" for less to compile.
-@il-icon-font-path:		"../../node_modules/bootstrap/fonts/";
+@il-icon-font-path:		"../../../../libs/bower/bower_components/bootstrap/fonts/";
 //** if left unchanged, you have to copy all the background images to your skin/images folder. To use the delos background images in your skin, please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
 @il-background-images-path:		"images/";
 
@@ -848,10 +848,10 @@ with the il- variable set here.
 //##
 @tax-il-tab-color:		#262626;
 @tax-il-tab-bg-color:		#ffffff;
-@tax-il-tab-hover-color:		@brand-secondary;
+@tax-il-tab-hover-color:		@il-secondary-color;
 @tax-il-tab-hover-bg-color:		@tax-il-tab-bg-color;
-@tax-il-tab-active-color:		#ffffff;
-@tax-il-tab-active-bg-color:		@brand-secondary;;
+@tax-il-tab-active-color:		#fff;
+@tax-il-tab-active-bg-color:		#7A7C81;
 @tax-il-tab-border-bottom:		none;
 @tax-il-tab-margin-bottom:		20px;
 @tax-il-tab-margin-borders:		15px;
@@ -860,7 +860,7 @@ with the il- variable set here.
 @tax-il-tab-height:		40px;
 @tax-il-tab-padding-top:		10px;
 @tax-il-subtab-color:		@tax-il-tab-color;
-@tax-il-subtab-active-color:		@brand-secondary;
+@tax-il-subtab-active-color:		@il-secondary-color;
 @tax-il-subtab-active-textdecoration:		none;
 @tax-il-subtab-hover-bg-color:		@tax-il-tab-hover-color;
 @tax-il-subtab-hover-color:		@tax-il-tab-hover-color;
@@ -874,21 +874,22 @@ with the il- variable set here.
 //
 //##
 @tax-il-course-header-font-weight:		600;
-@tax-il-course-header-color:		@brand-primary;
+@tax-il-course-header-color:		@il-main-color;
 @tax-il-course-header-padding:		24px;
 
 //== Unibe specific mainbar
 //
 //##
-@tax-il-mainbar-btn-icon-filter:   invert(100%);
+@tax-il-mainbar-btn-icon-filter:		invert(40%);
 
 //== Unibe specific button
 //
 //##
-@tax-il-viewcontrol-button-engaged-border: 1px solid #e5e5e5;
+@tax-il-viewcontrol-button-engaged-border:		1px solid #1F386F;
 
 //== Unibe specific kiosk
 //
 //##
-@tax-il-kioskOptions-font-weight: 600;
-@tax-il-kioskOptions-font-size: 180%;
+@tax-il-kioskOptions-font-weight:		600;
+@tax-il-kioskOptions-font-size:		160%;
+
