@@ -1,3 +1,22 @@
 .il-mainbar-triggers .btn-bulky .icon, .il-mainbar-triggers .il-link.link-bulky .icon {
   filter: @tax-il-mainbar-btn-icon-filter;
 }
+
+.il-mainbar-triggers .btn-bulky.engaged .icon, .il-mainbar-triggers .il-link.link-bulky.engaged .icon,
+.il-mainbar-triggers .btn-bulky.hover .icon, .il-mainbar-triggers .il-link.link-bulky.hover .icon{
+  filter: @tax-il-mainbar-btn-icon-filter-hover;
+}
+
+.il-mainbar-tools-button .btn-bulky{
+  background-color: @tax-mainbar-tool-engaged;
+  &.engaged{
+    background-color: @tax-mainbar-tool-disengaged;
+  }
+}
+
+.il-mainbar-tool-trigger-item  .btn-bulky{
+  background-color: @tax-mainbar-tool-slate-disengaged;
+  &.engaged{
+    background-color: @tax-mainbar-tool-slate-engaged;
+  }
+}
