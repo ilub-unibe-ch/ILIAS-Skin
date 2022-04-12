@@ -19220,7 +19220,7 @@ div.il_HeaderInner {
   padding-left: 72px;
 }
 .ilContainerBlock {
-  box-shadow: 0 1px 3px rgb(0 0 0%), 0 1px 2px rgb(0 0 0%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .il-footer-links ul li:last-child {
   display: none;
