@@ -20100,6 +20100,9 @@ li.dropdown-header {
   padding: 8px 6px;
   font-size: 9px;
 }
+.breadcrumb_wrapper .breadcrumb span.crumb a {
+  color: #000;
+}
 .il-pagetitle {
   color: #1e1e1e;
   padding-left: 42px;
