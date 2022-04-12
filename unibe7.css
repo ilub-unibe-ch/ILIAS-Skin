@@ -21116,7 +21116,8 @@ div.ilCalSelAct img,
 .ilTinyMenuSection .btn[disabled] svg {
   fill: #161616;
 }
-button.copg-add.dropdown-toggle.btn .il-copg-add-text {
+button.copg-add.dropdown-toggle.btn .il-copg-add-text,
+button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text {
   color: #333;
 }
 .panel-secondary {
