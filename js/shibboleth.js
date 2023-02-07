@@ -36,7 +36,11 @@ function getUrlVars() {
     });
     return vars;
 }
-var wayf_return_url = window.location.origin+"/shib_login.php?target=" + getUrlVars()["target"];
+if(typeof (getUrlVars()["target"]) === 'undefined'){
+    var wayf_return_url = window.location.origin+"/shib_login.php";
+}else {
+    var wayf_return_url = window.location.origin + "/shib_login.php?target=" + getUrlVars()["target"];
+}
 
 //////////////////// RECOMMENDED SETTINGS ////////////////////
 
