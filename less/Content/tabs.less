@@ -1,0 +1,45 @@
+// Tabs Nav
+#ilTab {
+  margin: @tax-il-tab-margin;
+  padding: @tax-il-tab-padding;
+  background-color: @tax-il-page-content-header-bg-color;
+  border-bottom: none;
+  border-radius: @tax-il-tab-border-radius;
+  box-shadow: @tax-il-tab-box-shadow;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: @tax-il-tab-active-background-color;
+  border-bottom: @tax-il-tab-active-border-bottom;
+  color: @tax-il-tab-active-color;
+  border-radius: @tax-il-tab-active-border-radius;
+}
+
+.nav-tabs > li > a {
+  color: @tax-il-tab-color;
+  padding-bottom: @tax-il-nav-tab-padding-bottom;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: @tax-il-tab-active-background-color;
+  border-bottom: @tax-il-tab-active-border-bottom;
+  color: @tax-il-tab-active-color;
+  border-radius: @tax-il-tab-border-radius-hover;
+}
+
+// Subtabs
+
+#ilSubTab > li > a {
+  font-size: @tax-il-subtab-font-size;
+}
+
+#ilSubTab > li > a:hover {
+  text-decoration: none;
+  border-bottom: @tax-il-subtab-border-bottom;
+  color: @tax-il-subtab-color;
+}
+
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+  text-decoration: none;
+  color: @tax-il-subtab-color;
+}
