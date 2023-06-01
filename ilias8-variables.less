@@ -9,17 +9,17 @@ with the il- variable set here.
 //
 //## The Main Colors used in ILIAS along with their semantics
 //** For Standard Buttons, Main color used in various places, used to be @brand-primary
-@il-main-color:		#4c6586;
+@il-main-color:		#5e5888;
 //** For Primary Buttons, used to point to interactions with a special importance, used to be @brand-secondary
-@il-secondary-color:		#6ea03c;
+@il-secondary-color:		#9AD0B0; /*#5DE092 ;*/
 //** Used to indicate some success, used to be @brand-success
-@il-success-color:		#6ea03c;
+@il-success-color:		#7bc0c4;
 //** Used to indicate some success, used to be @brand-info
-@il-info-color:		#dcb496;
+@il-info-color:		#6f86bc;
 //** Used to indicate some warning or to draw special focus to some element, used to be @brand-warning
-@il-warning-color:		#B54F00;
+@il-warning-color:		#F79540;
 //** Used to indicate some warning or to draw special focus to some element, used to be @brand-danger
-@il-danger-color:		#d00;
+@il-danger-color:		#FF4A59;
 
 //** Neutral Color for various Backgrounds, used to be @gray-dark and @il-neutral-color
 @il-neutral-color:		#2c2c2c;
@@ -34,24 +34,24 @@ with the il- variable set here.
 //** Base Background Color, e.g. applied to Meta Bar and Breadcrumbs in Default, but also to panels in main content area.
 @il-main-bg:		white;
 //** Title area of various components such as Panels. Used as e.g. in containers as bg. Used to be @il-secondary-bg
-@il-main-dark-bg:		#f9f9f9;
+@il-main-dark-bg:		#f6f4f6;
 //** Background of subelements like subforms. Used mainly on the main-dark-bg.
 @il-main-darker-bg:		#f0f0f0;
 
 //** Currently used for several highlighting effects, such as hovering
-@il-highlight-bg:		lighten(@il-main-color, 50%);
+@il-highlight-bg:		lighten(@il-secondary-color, 10%);
 
 //** Used to be @text-color. Can be used on all background colors.
-@il-text-color:		#161616;
+@il-text-color:		#000000;
 //** Used if text is hovered in components such a Dropdowns
 @il-text-hover-color:		darken(@il-text-color, 10%);
 //** Used e.g. for Bylines in Forms. Used to be @il-light-text-color. For accessibility reasons, the @il-text-color should only be used on the @il-main-bg.
 @il-text-light-color:		lighten(@il-text-color, 35%);
 
 //** Used to be @link-color
-@il-link-color:		@il-main-color;
+@il-link-color:		@il-text-color;
 //** Used to be @link-hover-color
-@il-link-hover-color:		darken(@il-link-color, 10%);
+@il-link-hover-color:		#5d589b;
 
 //** Used to set focus on interactive elements for keyboard navigation.
 @il-focus-color:		#0078D7;
@@ -188,9 +188,9 @@ with the il- variable set here.
 @il-margin-xs-vertical:		@il-padding-xs-vertical;
 @il-margin-xs-horizontal:		@il-padding-xs-horizontal;
 
-@il-border-radius-base:		0px;
-@il-border-radius-large:		0px;
-@il-border-radius-small:		0px;
+@il-border-radius-base:		3px;
+@il-border-radius-large:		6px;
+@il-border-radius-small:		1px;
 
 @il-focus-outline-inner:		@il-focus-outline-inner-width solid @il-focus-color;
 @il-focus-outline-outer:		@il-focus-outline-outer-width solid @il-focus-protection-color;
@@ -204,10 +204,10 @@ with the il- variable set here.
 //** header, footer and logo
 @il-grid-float-breakpoint-max:		768px;
 
-@il-standard-page-logo-height:		45px;
-@il-standard-page-logo-width:		45px;
+@il-standard-page-logo-height:		40px;
+@il-standard-page-logo-width:		40px;
 @il-standard-page-header-height:		60px;
-@il-standard-page-header-bg-color:		@il-main-bg;
+@il-standard-page-header-bg-color:		@il-main-dark-bg;
 @il-standard-page-header-page-title-color:		@il-text-color;
 @il-standard-page-border-light-color:		@il-main-border-color;
 @il-standard-page-content-padding:		20px;
@@ -221,7 +221,7 @@ with the il- variable set here.
 
 //** breadcrumbs
 @il-standard-page-breadcrumbs-height:		33px;
-@il-standard-page-breadcrumbs-bg-color:		@il-main-bg;
+@il-standard-page-breadcrumbs-bg-color:		@il-main-dark-bg;
 @il-standard-page-breadcrumbs-color:		@il-link-color;
 @il-standard-page-breadcrumbs-active-color:		@il-link-hover-color;
 @il-standard-page-breadcrumbs-divider-color:		@il-neutral-light-color;
@@ -229,14 +229,14 @@ with the il- variable set here.
 @il-standard-page-breadcrumbs-seperator:		" \e606";
 
 //** mainbar
-@il-maincontrols-mainbar-bg-color:		@il-main-bg;
+@il-maincontrols-mainbar-bg-color:		@il-main-dark-bg;
 @il-mainbar-btn-height:		80px;
 @il-mainbar-btn-width:		80px;
-@il-mainbar-btn-color:		white;
-@il-mainbar-btn-bg-color:		@il-neutral-color;
-@il-mainbar-btn-color-engaged:		@il-neutral-color;
-@il-mainbar-btn-bg-color-engaged:		@il-main-bg;
-@il-mainbar-btn-border:		1px solid @il-standard-page-border-light-color;
+@il-mainbar-btn-color:		@il-text-color;
+@il-mainbar-btn-bg-color:		@il-maincontrols-mainbar-bg-color;
+@il-mainbar-btn-color-engaged:		yellow;
+@il-mainbar-btn-bg-color-engaged:	darken(@il-main-dark-bg,10%);
+@il-mainbar-btn-border:		none;
 @il-mainbar-btn-label-size:		@il-font-size-xsmall;
 @il-mainbar-tools-btn-bg:		@il-warning-color;
 @il-mainbar-tools-btn-bg-engaged:		lighten(@il-main-color, 50%);
@@ -244,8 +244,9 @@ with the il- variable set here.
 @il-mainbar-tools-tab-btn-bg-disengaged:		@il-main-color;
 @il-mainbar-tools-bg:		@il-main-dark-bg;
 @il-mainbar-tools-item-gap:		3px;
-@il-mainbar-icon-filter:		invert(50%);
-@il-mainbar-trigger-icon-filter:		brightness(5);
+//** filter disengaged on hover
+@il-mainbar-icon-filter:		none;
+@il-mainbar-trigger-icon-filter:		none;
 @il-mainbar-trigger-icon-size:		25px;
 //** tools
 @il-mainbar-remove-tools-btn-height:		45px;
@@ -262,7 +263,7 @@ with the il- variable set here.
 //** slates
 @il-slate-bulky-bg-color:		@il-main-darker-bg;
 @il-slate-bulky-level2-bg-color:		@il-main-dark-bg;
-@il-slate-bulky-bg-color-engaged:		fade(@il-main-color, 30%);
+@il-slate-bulky-bg-color-engaged:		@il-mainbar-btn-bg-color-engaged; /*fade(@il-main-color, 20%);*/
 @il-slate-content-padding:		@il-padding-base-horizontal;
 @il-slate-tree-padding:		@il-padding-small-vertical 0;
 @il-slate-bulky-padding-vertical:		@il-padding-xxxlarge-vertical;
@@ -275,15 +276,15 @@ with the il- variable set here.
 @il-slate-content-spacing:		2px;
 @il-standard-page-slate-width:		329px;
 @il-mainbar-slates-bg-color:		@il-main-bg;
-@il-metabar-slates-bg-color:		#fafafa;
+@il-metabar-slates-bg-color:		@il-mainbar-btn-bg-color-engaged;
 @il-mainbar-close-slate-btn-height:		45px;
 @il-metabar-close-slate-btn-height:		30px;
 
 //** shadows
 @il-standard-page-shadow-color:		rgba(0, 0, 0, .1);
-@il-mainbar-shadow-right:		1px 3px 4px @il-standard-page-shadow-color;
+@il-mainbar-shadow-right:		none;
 @il-mainbar-shadow-top:		0 0 4px @il-standard-page-shadow-color;
-@il-standard-page-header-shadow-bottom:		0 1px 2px @il-standard-page-shadow-color;
+@il-standard-page-header-shadow-bottom:		none;
 
 //** for mobile (small devices)
 @il-standard-page-small-header-height:		45px;
@@ -317,21 +318,21 @@ with the il- variable set here.
 //## For each of ILIAS's buttons, define text, background and border color.
 
 //** Size of the font displayed inside a button
-@il-button-font-size:		@il-font-size-small;
+@il-button-font-size:		@il-font-size-base;
 
 //** Text color of the standard button (most button instances)
-@il-btn-standard-color:		white;
+@il-btn-standard-color:		@il-text-color;
 //** Background color of the standard button (most button instances)
-@il-btn-standard-bg:		@il-main-color;
+@il-btn-standard-bg:		@il-main-dark-bg;
 //** Border color of the standard button (most button instances)
-@il-btn-standard-border:		@il-main-color;
+@il-btn-standard-border:		transparent;
 
 //** Text color of the primary button (most important button on the screen)
-@il-btn-primary-color:		white;
+@il-btn-primary-color:		@il-text-color;
 //** Background color of the primary button (most important button on the screen)
-@il-btn-primary-bg:		darken(@il-secondary-color, 10%);
+@il-btn-primary-bg:		@il-secondary-color;
 //** Border color of the primary button (most important button on the screen)
-@il-btn-primary-border:		darken(@il-secondary-color, 10%);
+@il-btn-primary-border:		@il-btn-primary-bg;
 
 //** Text color of inactive buttons
 @il-disabled-btn-color:		white;
@@ -364,7 +365,7 @@ with the il- variable set here.
 @il-btn-tag-fg-relevance-veryhigh:		contrast(@il-btn-tag-bg);
 @il-btn-tag-fg-highlighted:		white;
 //** Border radius of tags
-@il-btn-tag-border-radius:		3px;
+@il-btn-tag-border-radius:		@il-border-radius-base;
 //** margin of tags
 @il-btn-tag-margin:		2px 4px 2px 0;
 
@@ -544,7 +545,7 @@ with the il- variable set here.
 //
 //##
 @il-toolbar-margin:		@il-margin-xlarge-horizontal;
-@il-toolbar-bg:		@il-main-dark-bg;
+@il-toolbar-bg:		transparent;
 @il-toolbar-height:		40px;
 @il-toolbar-border:		1px solid @il-main-border-color;
 
@@ -922,6 +923,79 @@ with the il- variable set here.
 
 //== Unibe Specific
 //
-//##
-@tax-il-course-header-font-weight:		300;
-@tax-il-course-header-color:		#0000ff;
+//
+//## Colors
+@tax-il-page-content-header-bg-color: @il-main-color; /* #3981A7; */
+
+//## Borders
+@tax-il-layout-border: 1px solid darken(@il-main-dark-bg, 5%);
+
+//## Link
+@tax-il-link-text-decoration: none;
+
+//## Header
+@tax-il-logo-margin-left: 15px;
+@tax-il-header-border-bottom: @tax-il-layout-border;
+
+//## Breadcrumb
+@tax-il-breadcrumb-border-bottom: @tax-il-layout-border;
+
+//## Header Content Page
+@tax-il-header-image-filter: invert(1);
+@tax-il-pagetitle-padding-left: 39px;
+@tax-il-page-content-header-margin: 6px 6px 0px 6px;
+@tax-il-page-content-header-border-radius: 6px 6px 0 0;
+@tax-il-page-content-header-color: white;
+@tax-il-header-desc-color: white;
+@tax-il-header-desc-font-size: @il-font-size-large;
+@tax-il-header-desc-padding: @il-padding-base 0;
+
+/* Alert */
+@tax-il-header-alert-color: #5efd81;
+@tax-il-header-alert-font-size: @il-font-size-base;
+
+//## Tabs
+@tax-il-tab-color: white;
+@tax-il-tab-active-border-bottom: 0px solid @il-warning-color;
+@tax-il-tab-active-background-color: white;
+@tax-il-tab-active-color: @il-link-hover-color;
+@tax-il-tab-active-border-radius: 3px 3px 0 0;
+@tax-il-tab-margin: 0px 6px;
+@tax-il-tab-padding: 0px @il-padding-xlarge-horizontal 0px @il-padding-xlarge-horizontal;
+@tax-il-nav-tab-padding-bottom: 6px;
+@tax-il-tab-border-radius: 0px 0px 3px 3px;
+@tax-il-tab-border-radius-hover: @tax-il-tab-active-border-radius;
+@tax-il-tab-box-shadow: @tax-il-box-shadow;
+
+//## Subtab
+@tax-il-subtab-color: @il-link-hover-color;
+@tax-il-subtab-font-size: @il-font-size-base;
+@tax-il-subtab-border-bottom: none;
+
+//## Mainbar
+@tax-il-mainbar-btn-engaged-border-left: 4px solid @il-danger-color;
+@tax-il-maincontrols-mainbar-width: 81px;
+@tax-il-maincontrols-mainbar-border-right: @tax-il-layout-border;
+@tax-il-mainbar-btn-engaged-width: 72px;
+@tax-il-mainbar-btn-engaged-height: 72px;
+@tax-il-mainbar-btn-engaged-margin: 0px 4px;
+
+//## Slates
+@tax-il-mainbar-slates-box-shadow: @tax-il-box-shadow;
+@tax-il-jstree-bg-position: @il-padding-small-horizontal 0 !important;
+
+//##Buttons
+@tax-il-btn-standard-bg-hover: darken(@il-btn-standard-bg, 10%);
+@tax-il-btn-standard-color-hover: @il-text-color;
+@tax-button-glyph-color: darken(@il-secondary-color, 30%);
+
+//## ContainerBlock
+@tax-il-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+@tax-il-container-block-box-shadow:		@tax-il-box-shadow;
+@tax-il-secondary-panel-box-shadow:		@tax-il-box-shadow;
+
+//## MiniCalendar
+@tax-il-calmini-bg-color: @il-danger-color;
+@tax-il-calmini-border-radius: 16px;
+@tax-il-calmini-table-background-color: white;
+@tax-il-calmini-font-size: @il-font-size-base;
