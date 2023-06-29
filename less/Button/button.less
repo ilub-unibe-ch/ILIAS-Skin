@@ -27,9 +27,17 @@ button .caret{
 }
 
 .dropdown button, .dropdown-toggle.btn-default {
-  background-color: transparent;
+  background-color: @tax-il-dropdown-button-bg-color;
+  color: @tax-il-dropdown-button-color;
   &:hover{
     background-color: darken(@il-main-dark-bg, 10%);
   }
+}
+
+// ViewControl
+.il-viewcontrol-mode {
+  background-color: @tax-il-btn-group-vertical-bg-color;
+  padding: @tax-il-btn-group-vertical-padding;
+  border-radius: @tax-il-btn-group-vertical-border-radius;
 }
 
