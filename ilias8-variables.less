@@ -62,23 +62,23 @@ with the il- variable set here.
 //## Extended Colors of ILIAS to be used to generate coloring for components like charts.
 
 //** Variant 1 of the extended color set in ILIAS
-@il-extended-color-1:		#f3de2c;
+@il-extended-color-1:		#F9FFC4; //#f3de2c;
 //** Variant 2 of the extended color set in ILIAS
-@il-extended-color-2:		#d38000;
+@il-extended-color-2:		#FFA583; //#d38000;
 //** Variant 3 of the extended color set in ILIAS
-@il-extended-color-3:		#307C88;
+@il-extended-color-3:		#59A0A6; //#307C88;
 //** Variant 4 of the extended color set in ILIAS
-@il-extended-color-4:		#86cb92;
+@il-extended-color-4:		#81B3AE; //#86cb92;
 //** Variant 5 of the extended color set in ILIAS
-@il-extended-color-5:		#ce73a8;
+@il-extended-color-5:		#92D09C; //#ce73a8;
 //** Variant 6 of the extended color set in ILIAS
-@il-extended-color-6:		#82639e;
+@il-extended-color-6:		#A69FB3; //#82639e;
 //** Variant 7 of the extended color set in ILIAS
-@il-extended-color-7:		#9e7c7d;
+@il-extended-color-7:		#718BC3; //#9e7c7d;
 //** Variant 8 of the extended color set in ILIAS
-@il-extended-color-8:		#f75e82;
+@il-extended-color-8:		#D81E5B; //#f75e82;
 //** Variant 9 of the extended color set in ILIAS
-@il-extended-color-9:		#ea4d54;
+@il-extended-color-9:		#FF4A59; //#ea4d54;
 
 //** Factor by witch a specific color variant is darkened in the standard coloring
 @il-extended-color-factor-standard:		0%;
@@ -204,8 +204,8 @@ with the il- variable set here.
 //** header, footer and logo
 @il-grid-float-breakpoint-max:		768px;
 
-@il-standard-page-logo-height:		40px;
-@il-standard-page-logo-width:		40px;
+@il-standard-page-logo-height:		35px;
+@il-standard-page-logo-width:		35px;
 @il-standard-page-header-height:		60px;
 @il-standard-page-header-bg-color:		@il-main-dark-bg;
 @il-standard-page-header-page-title-color:		@il-text-color;
@@ -216,16 +216,16 @@ with the il- variable set here.
 @il-metabar-entry-height:		60px;
 @il-metabar-entry-width:		60px;
 @il-metabar-glyph-size:		1.4375rem;
-@il-metabar-glyph-color:		@il-neutral-light-color;
+@il-metabar-glyph-color:		@il-warning-color;
 @il-metabar-slates-width:		500px;
 
 //** breadcrumbs
 @il-standard-page-breadcrumbs-height:		33px;
-@il-standard-page-breadcrumbs-bg-color:		@il-main-dark-bg;
+@il-standard-page-breadcrumbs-bg-color:		@il-main-bg;
 @il-standard-page-breadcrumbs-color:		@il-link-color;
 @il-standard-page-breadcrumbs-active-color:		@il-link-hover-color;
 @il-standard-page-breadcrumbs-divider-color:		@il-warning-color;
-@il-standard-page-breadcrumbs-font-weight:		@il-font-weight-bold;
+@il-standard-page-breadcrumbs-font-weight:		@il-font-weight-base;
 @il-standard-page-breadcrumbs-seperator:		" \e606";
 
 //** mainbar
@@ -236,7 +236,7 @@ with the il- variable set here.
 @il-mainbar-btn-bg-color:		@il-maincontrols-mainbar-bg-color;
 @il-mainbar-btn-color-engaged:		@il-text-color; /* Tools engaged */
 @il-mainbar-btn-bg-color-engaged:	darken(@il-main-dark-bg,10%);
-@il-mainbar-btn-border:		none;
+@il-mainbar-btn-border:		@tax-il-layout-border;
 @il-mainbar-btn-label-size:		@il-font-size-xsmall;
 @il-mainbar-tools-btn-bg:		@il-warning-color;
 @il-mainbar-tools-btn-bg-engaged:		lighten(@il-main-color, 40%);
@@ -261,8 +261,8 @@ with the il- variable set here.
 
 
 //** slates
-@il-slate-bulky-bg-color:		@il-main-darker-bg;
-@il-slate-bulky-level2-bg-color:		@il-main-dark-bg;
+@il-slate-bulky-bg-color:		@il-main-dark-bg;
+@il-slate-bulky-level2-bg-color:		@il-main-darker-bg;
 @il-slate-bulky-bg-color-engaged:		@il-mainbar-btn-bg-color-engaged; /*fade(@il-main-color, 20%);*/
 @il-slate-content-padding:		@il-padding-base-horizontal;
 @il-slate-tree-padding:		@il-padding-small-vertical 0;
@@ -276,7 +276,7 @@ with the il- variable set here.
 @il-slate-content-spacing:		2px;
 @il-standard-page-slate-width:		329px;
 @il-mainbar-slates-bg-color:		@il-main-bg;
-@il-metabar-slates-bg-color:		@il-mainbar-btn-bg-color-engaged;
+@il-metabar-slates-bg-color:		@il-main-bg;
 @il-mainbar-close-slate-btn-height:		45px;
 @il-metabar-close-slate-btn-height:		30px;
 
@@ -289,7 +289,7 @@ with the il- variable set here.
 //** for mobile (small devices)
 @il-standard-page-small-header-height:		45px;
 @il-standard-page-small-mainbar-height:		60px;
-@il-standard-page-small-logo-width:		40px;
+@il-standard-page-small-logo-width:		35px;
 
 @il-standard-page-small-mainbar-height-w-bottom-safe-area:		calc(@il-standard-page-small-mainbar-height + 1.2 * env(safe-area-inset-bottom));
 @il-mainbar-small-btn-height:		@il-standard-page-small-mainbar-height;
@@ -323,9 +323,9 @@ with the il- variable set here.
 //** Text color of the standard button (most button instances)
 @il-btn-standard-color:		@il-text-color;
 //** Background color of the standard button (most button instances)
-@il-btn-standard-bg:		@il-main-dark-bg;
+@il-btn-standard-bg:		white;
 //** Border color of the standard button (most button instances)
-@il-btn-standard-border:		transparent;
+@il-btn-standard-border:		darken(@il-main-dark-bg, 10%);
 
 //** Text color of the primary button (most important button on the screen)
 @il-btn-primary-color:		@il-text-color;
@@ -401,8 +401,8 @@ with the il- variable set here.
 @il-btn-toggle-label-on-color:		@il-main-bg;
 
 //** on
-@il-btn-toggle-bg-color-on:		@il-secondary-color;
-@il-btn-toggle-border-color-on:		@il-secondary-color;
+@il-btn-toggle-bg-color-on:		darken(@il-secondary-color,40%);
+@il-btn-toggle-border-color-on:		@il-btn-toggle-bg-color-on;
 @il-btn-toggle-switch-bg-color-on:		@il-main-bg;
 @il-btn-toggle-switch-border-color-on:		@il-main-bg;
 
@@ -820,11 +820,11 @@ with the il- variable set here.
 //== Panel
 //
 //##
-@il-panel-heading-padding:		@il-padding-large-vertical @il-padding-xlarge-horizontal @il-padding-base-vertical @il-padding-xlarge-horizontal;
+@il-panel-heading-padding:		@il-padding-large-vertical @il-padding-xlarge-horizontal @il-padding-large-vertical @il-padding-xlarge-horizontal;
 @il-panel-heading-color:		@il-text-color;
 @il-panel-shadow:		none;
-@il-panel-border:		1px solid @il-main-border-color;
-@il-panel-border-radius:		@il-border-radius-base;
+@il-panel-border:		none;
+@il-panel-border-radius:		none;
 
 //== Card
 //
@@ -930,23 +930,30 @@ with the il- variable set here.
 //## Borders
 @tax-il-layout-border: 1px solid darken(@il-main-dark-bg, 5%);
 
+//## Box-Shadows
+@tax-il-box-shadow-darken: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+//## Transitions
+@tax-il-transition-base: all .25s ease-in-out;
+
 //## Link
 @tax-il-link-text-decoration: none;
 
 //## Header
-@tax-il-logo-margin-left: 15px;
+@tax-il-logo-margin-left: @il-margin-base;
 @tax-il-header-border-bottom: @tax-il-layout-border;
 
 //## Breadcrumb
 @tax-il-breadcrumb-border-bottom: @tax-il-layout-border;
 @tax-il-breadcrumb-glyph-font-size: @il-font-size-xsmall;
 @tax-il-breadcrumb-glyph-padding: @il-padding-xlarge-vertical @il-padding-small-horizontal;
+@tax-il-breadcrumb-padding: @il-padding-large-vertical (@il-padding-xxxlarge-horizontal+@il-padding-base);
 
 //## Header Content Page
 @tax-il-header-image-filter: invert(1);
-@tax-il-pagetitle-padding-left: 39px;
-@tax-il-page-content-header-margin: 12px 12px 0px 12px;
-@tax-il-page-content-header-border-radius: @il-border-radius-large @il-border-radius-large 0 0;
+@tax-il-pagetitle-padding-left: 44px;
+@tax-il-page-content-header-margin: @il-margin-xxxlarge-vertical @il-padding-xxxlarge-vertical 0 @il-padding-xxxlarge-vertical;
+@tax-il-page-content-header-border-radius: @il-border-radius-base @il-border-radius-base 0 0;
 @tax-il-page-content-header-color: @tax-il-header-color;
 @tax-il-header-desc-color: @tax-il-header-color;
 @tax-il-header-desc-font-size: @il-font-size-large;
@@ -956,6 +963,18 @@ with the il- variable set here.
 @tax-il-header-color: #7CFD98;
 @tax-il-header-alert-color: white;
 @tax-il-header-alert-font-size: @il-font-size-base;
+@tax-il-header-alert-border-left: 20px dotted @il-warning-color;
+
+/* Alert Warnings */
+@tax-il-alert-warning-bg-color: lighten(@il-warning-color, 25%);
+@tax-il-alert-warning-border-color: @tax-il-alert-warning-bg-color;
+@tax-il-alert-warning-color: darken(@il-warning-color, 40%);
+@tax-il-alert-info-bg-color: lighten(@il-info-color, 25%);
+@tax-il-alert-info-border-color: @tax-il-alert-info-bg-color;
+@tax-il-alert-info-color: darken(@il-info-color, 40%);
+@tax-il-alert-success-bg-color: lighten(@il-success-color, 5%);
+@tax-il-alert-success-border-color: @tax-il-alert-success-bg-color;
+@tax-il-alert-success-color: darken(@il-success-color, 60%);
 
 //## Tabs
 @tax-il-tab-color: white;
@@ -963,7 +982,7 @@ with the il- variable set here.
 @tax-il-tab-active-background-color: white;
 @tax-il-tab-active-color: @il-link-hover-color;
 @tax-il-tab-active-border-radius: @il-border-radius-base @il-border-radius-base 0 0;
-@tax-il-tab-margin: 0px 12px;
+@tax-il-tab-margin: 0px @il-margin-xlarge-horizontal;
 @tax-il-tab-padding: 0px @il-padding-xlarge-horizontal 0px @il-padding-xlarge-horizontal;
 @tax-il-nav-tab-padding-bottom: 6px;
 @tax-il-tab-border-radius: 0px 0px @il-border-radius-base @il-border-radius-base;
@@ -974,6 +993,7 @@ with the il- variable set here.
 @tax-il-subtab-color: @il-link-hover-color;
 @tax-il-subtab-font-size: @il-font-size-base;
 @tax-il-subtab-border-bottom: none;
+@tax-il-subtab-margin: 0 2*(@il-padding-xxlarge-horizontal);
 
 //## Mainbar
 @tax-il-mainbar-btn-engaged-border-left: 4px solid @il-warning-color;
@@ -981,38 +1001,63 @@ with the il- variable set here.
 @tax-il-mainbar-triggers-engaged-color: @il-text-color;
 @tax-il-mainbar-triggers-engaged-hover-color: @il-text-color;
 @tax-il-mainbar-triggers-disengaged-color: @il-text-color;
-@tax-il-mainbar-triggers-margin: @il-margin-small-vertical 0 0 0;
 
 //## Slates
 @tax-il-mainbar-slates-box-shadow: @tax-il-box-shadow;
 @tax-il-jstree-bg-position: @il-padding-small-horizontal 0 !important;
+@tax-il-mainbar-slates-border-right: 1px solid @il-main-border-color;
+
+//## Drilldown
+@tax-il-drilldown-bg-color-hover: rgba(223,216,223,0.6);
 
 //## Tools
 @il-mainbar-tools-button-color: @il-text-color;
 
 //##Buttons
-@tax-il-btn-standard-bg-hover: darken(@il-btn-standard-bg, 10%);
+@tax-il-btn-standard-bg-hover: darken(@il-main-dark-bg, 10%);//darken(@il-btn-standard-bg, 10%);
 @tax-il-btn-standard-color-hover: @il-text-color;
+@tax-il-btn-standard-border-hover: 1px solid transparent;
 @tax-button-glyph-color: @il-text-color;
 @tax-il-dropdown-button-bg-color: transparent;
 @tax-il-dropdown-button-color: @il-main-color;
+@tax-il-dropdown-button-bg-color-hover: darken(@il-main-dark-bg, 10%);
+@tax-il-dropdown-button-border: none;
+@tax-il-input-btn-border-radius: @il-border-radius-base;
 /* ViewControls */
-@tax-il-btn-group-vertical-bg-color: @il-btn-standard-bg;
+@tax-il-btn-group-vertical-bg-color: lighten(@il-main-color, 40%);//@il-btn-standard-bg;
 @tax-il-btn-group-vertical-padding: @il-padding-base-vertical;
-@tax-il-btn-group-vertical-border-radius: @il-border-radius-large;
+@tax-il-btn-group-vertical-border-radius: @il-border-radius-base;
+@tax-il-viewcontrol-btn-default-bg-color: @tax-il-btn-group-vertical-bg-color;
+@tax-il-viewcontrol-btn-default-border: none;
+@tax-il-viewcontrol-btn-default-bg-color-hover: darken(@tax-il-btn-group-vertical-bg-color, 15%);
+@tax-il-viewcontrol-btn-engaged-bg-color: @il-main-bg;
+@tax-il-viewcontrol-btn-engaged-border: none;
 
 //## Pageeditor
 @tax-il-copg-button-color: @il-link-color;
 @tax-il-copg-button-bg-color-hover: @tax-il-header-alert-color;
 
 //## ContainerBlock
-@tax-il-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-@tax-il-container-block-box-shadow:		@tax-il-box-shadow;
-@tax-il-secondary-panel-box-shadow:		@tax-il-box-shadow;
+@tax-il-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; //rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+@tax-il-container-block-header-padding: @il-padding-large-vertical @il-padding-xs-horizontal @il-padding-large-vertical @il-padding-xs-horizontal;
+@tax-il-container-block-header-bg-color: transparent;
+@tax-il-container-block-border-top: 1px solid darken(@il-main-dark-bg, 5%);
+/* List View */
+@tax-ilObjListRow-bg-color-hover: @il-main-dark-bg;
+@tax-ilObjListRow-transition-hover: @tax-il-transition-base;
+@tax-ilObjListRow-border-radius-hover: @il-border-radius-base;
+@tax-il-container-ListItemOuter-padding: @il-padding-xlarge-vertical @il-padding-xs-horizontal;
+@tax-ilObjListRow-border-bottom: none;
+
+//## Panels
+@tax-il-panel-secondary-box-shadow:	@tax-il-box-shadow;
+@tax-il-panel-secondary-border: none;
+@tax-il-panel-listing-bg-color: transparent;
+@tax-il-panel-listing-border-top: 1px solid @il-main-dark-bg;
+@tax-il-item-container-border-bottom: none;
 
 //## Card
-@tax-il-card-container-tile-rows-bg-color: transparent;
-@tax-il-container-tile-rows-padding: @il-padding-xxxlarge-vertical @il-padding-xxlarge-horizontal;
+@tax-il-container-tile-rows-padding: @il-padding-large-vertical 0;
 @tax-il-card-repository-head-dropdown-bg-color: @il-main-bg;
 @tax-il-card-repository-head-dropdown-bg-color-hover: @tax-il-btn-standard-bg-hover;
 @tax-il-card-repository-head-dropdown-height: 24px;
@@ -1020,6 +1065,7 @@ with the il- variable set here.
 @tax-il-card-repository-head-dropdown-glyph-margin-top: @tax-il-card-repository-head-dropdown-glyph-margin-left;
 @tax-il-card-repository-icon-height: 24px;
 @tax-il-card-repository-icon-margin: 2px 0 0 0;
+@tax-il-card-box-shadow: @tax-il-box-shadow;
 
 //## MiniCalendar
 @tax-il-calmini-bg-color: @il-warning-color;
@@ -1029,3 +1075,18 @@ with the il- variable set here.
 
 //## Tables
 @tax-il-table-outer-box-shadow: @tax-il-box-shadow;
+@tax-il-table-footlight-font-size: @il-font-size-small;
+@tax-il-table-btn-link-font-size: @il-font-size-small;
+@tax-il-table-th-bg-color: @il-main-dark-bg;
+@tax-il-table-th-border-bottom: 1px solid @il-main-border-color;
+
+//## Footer
+@tax-il-footer-permanent-url-border-bottom: 1px solid @il-warning-color;
+@tax-il-footer-permanent-url-margin-right: @il-margin-base;
+
+//## Filter
+@tax-il-filter-input-group-bg-color: @il-main-bg;
+@tax-il-filter-button-border: 1px solid @il-btn-standard-border;
+@tax-il-filter-button-bg-color: @il-btn-standard-bg;
+@tax-il-filter-button-bg-hover: @tax-il-btn-standard-bg-hover;
+

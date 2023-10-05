@@ -1,11 +1,45 @@
-.ilContainerBlock, .panel-secondary {
-  box-shadow: @tax-il-container-block-box-shadow;
-  border: none;
-}
+
 
 a:hover {
   text-decoration: @tax-il-link-text-decoration;
 }
+
+// Images
+
+img {
+  border-radius: 3px;
+}
+
+// Container
+
+#ilContentContainer {
+  margin: 36px 12px;
+}
+
+.ilContainerBlock {
+  border: none;
+  border-top: @tax-il-container-block-border-top;
+  border-radius: 0px;
+}
+
+.ilContainerBlockHeader {
+  padding: @tax-il-container-block-header-padding;
+  background-color: @tax-il-container-block-header-bg-color;
+}
+
+.ilObjListRow {
+  border-bottom: @tax-ilObjListRow-border-bottom;
+  &:hover {
+    background-color: @tax-ilObjListRow-bg-color-hover;
+    transition: @tax-ilObjListRow-transition-hover;
+    border-radius: @tax-ilObjListRow-border-radius-hover;
+  }
+}
+
+div.ilContainerListItemOuter {
+  padding: @tax-il-container-ListItemOuter-padding;
+}
+
 
 // Mini Calendar
 
@@ -19,8 +53,33 @@ table.calmini td.calminitoday {
   border-radius: @tax-il-calmini-border-radius;
 }
 
-img {
-  border-radius: 5px;
+td.calministd:hover {
+  background-color: #dfd8df;
+  border-radius: 3px;
 }
 
+// Page Container
 
+div.ilc_page_cont_PageContainer {
+  border: 1px solid #dddddd;
+}
+
+// Alert Warnings
+
+.alert-warning {
+  background-color: @tax-il-alert-warning-bg-color;
+  border-color: @tax-il-alert-warning-border-color;
+  color: @tax-il-alert-warning-color;
+}
+
+.alert-info {
+  background-color: @tax-il-alert-info-bg-color;
+  border-color: @tax-il-alert-info-border-color;
+  color: @tax-il-alert-info-color;
+}
+
+.alert-success {
+  background-color: @tax-il-alert-success-bg-color;
+  border-color: @tax-il-alert-success-border-color;
+  color: @tax-il-alert-success-color;
+}

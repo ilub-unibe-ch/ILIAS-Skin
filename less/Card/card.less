@@ -6,7 +6,6 @@
 }
 
 .ilContainerTileRows {
-  background-color: @tax-il-card-container-tile-rows-bg-color;
   padding: @tax-il-container-tile-rows-padding;
 }
 
@@ -22,4 +21,12 @@
 
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button:hover {
   background-color: @tax-il-card-repository-head-dropdown-bg-color-hover;
+}
+
+.il-deck .il-card {
+  box-shadow: @tax-il-card-box-shadow;
+  &:hover{
+    box-shadow: @tax-il-box-shadow-darken;
+    transition: @tax-il-transition-base;
+  }
 }

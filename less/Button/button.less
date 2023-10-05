@@ -3,6 +3,7 @@
 .btn-default:hover {
   color: @tax-il-btn-standard-color-hover;
   background-color: @tax-il-btn-standard-bg-hover;
+  border: @tax-il-btn-standard-border-hover;
 }
 
 button .caret{
@@ -30,8 +31,9 @@ button .caret{
   background-color: @tax-il-dropdown-button-bg-color;
   color: @tax-il-dropdown-button-color;
   &:hover{
-    background-color: darken(@il-main-dark-bg, 10%);
+    background-color: @tax-il-dropdown-button-bg-color-hover;
   }
+  border: @tax-il-dropdown-button-border;
 }
 
 // ViewControl
@@ -41,3 +43,20 @@ button .caret{
   border-radius: @tax-il-btn-group-vertical-border-radius;
 }
 
+.il-viewcontrol-mode .btn-default {
+  background-color: @tax-il-viewcontrol-btn-default-bg-color;
+  border: @tax-il-viewcontrol-btn-default-border;
+  &:hover {
+    background-color: @tax-il-viewcontrol-btn-default-bg-color-hover;
+  }
+}
+
+.il-viewcontrol-mode .engaged {
+  background-color: @tax-il-viewcontrol-btn-engaged-bg-color;
+  border: @tax-il-viewcontrol-btn-engaged-border;
+}
+
+// Forms
+input.btn {
+  border-radius: @tax-il-input-btn-border-radius;
+}
