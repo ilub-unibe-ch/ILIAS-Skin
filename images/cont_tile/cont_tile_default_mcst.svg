@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
-	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-<rect fill="#cddc39" width="32" height="32"/>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#595A7A;}
+	.st1{fill:#5A5C7C;}
+	.st2{fill:#585A7A;}
+	.st3{fill:#585979;}
+	.st4{fill:#545675;}
+	.st5{fill:#565877;}
+	.st6{fill:#474963;}
+	.st7{fill:#4C4E6A;}
+	.st8{fill:#515370;}
+	.st9{fill:#535573;}
+	.st10{fill:#505270;}
+	.st11{fill:#4F506E;}
+	.st12{fill:#525371;}
+	.st13{fill:#515270;}
+	.st14{fill:#44455E;}
+	.st15{fill:#464862;}
+	.st16{fill:#4E4F6C;}
+	.st17{fill:#4D4F6C;}
+	.st18{fill:#4D4F6B;}
+	.st19{fill:#494A65;}
+	.st20{fill:#4E506D;}
+	.st21{fill:#40425A;}
+	.st22{fill:#45465F;}
+	.st23{fill:#4C4D69;}
+	.st24{fill:#484A65;}
+	.st25{fill:#4F506D;}
+	.st26{fill:#4A4C68;}
+	.st27{fill:#474863;}
+</style>
+<polyline class="st0" points="0,8 8,8 8,0 "/>
+<polyline class="st1" points="8,0 0,0 0,8 "/>
+<polyline class="st2" points="8,8 16,8 16,0 "/>
+<polyline class="st3" points="16,0 8,0 8,8 "/>
+<polyline class="st4" points="16,0 16,8 24,8 "/>
+<polyline class="st4" points="24,8 24,0 16,0 "/>
+<polyline class="st5" points="0,16 8,16 8,8 "/>
+<polyline class="st2" points="8,8 0,8 0,16 "/>
+<polyline class="st6" points="24,16 32,16 32,8 "/>
+<polyline class="st7" points="32,8 24,8 24,16 "/>
+<polyline class="st8" points="8,8 16,8 16,16 "/>
+<polyline class="st9" points="16,16 8,16 8,8 "/>
+<polyline class="st10" points="16,8 24,8 24,16 "/>
+<polyline class="st11" points="24,16 16,16 16,8 "/>
+<polyline class="st12" points="0,16 8,16 8,24 "/>
+<polyline class="st13" points="8,24 0,24 0,16 "/>
+<polyline class="st14" points="24,24 32,24 32,16 "/>
+<polyline class="st15" points="32,16 24,16 24,24 "/>
+<polyline class="st16" points="8,24 8,16 16,16 "/>
+<polyline class="st17" points="16,16 16,24 8,24 "/>
+<polyline class="st18" points="16,24 16,16 24,16 "/>
+<polyline class="st19" points="24,16 24,24 16,24 "/>
+<polyline class="st20" points="0,24 8,24 8,32 "/>
+<polyline class="st11" points="8,32 0,32 0,24 "/>
+<polyline class="st21" points="32,24 32,32 24,32 "/>
+<polyline class="st22" points="24,32 24,24 32,24 "/>
+<polyline class="st23" points="8,24 16,24 16,32 "/>
+<polyline class="st24" points="16,32 8,32 8,24 "/>
+<polyline class="st25" points="32,8 32,0 24,0 "/>
+<polyline class="st16" points="24,0 24,8 32,8 "/>
+<polyline class="st26" points="16,32 16,24 24,24 "/>
+<polyline class="st27" points="24,24 24,32 16,32 "/>
 </svg>

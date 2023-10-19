@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
-	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-<rect fill="#f75e82" width="32" height="32"/>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9A94A7;}
+	.st1{fill:#9D97A9;}
+	.st2{fill:#9A94A6;}
+	.st3{fill:#9992A5;}
+	.st4{fill:#918B9E;}
+	.st5{fill:#928C9F;}
+	.st6{fill:#9690A3;}
+	.st7{fill:#797287;}
+	.st8{fill:#827B90;}
+	.st9{fill:#8D869A;}
+	.st10{fill:#90899D;}
+	.st11{fill:#8A8497;}
+	.st12{fill:#888195;}
+	.st13{fill:#8D879A;}
+	.st14{fill:#8B8599;}
+	.st15{fill:#726B80;}
+	.st16{fill:#777085;}
+	.st17{fill:#857F93;}
+	.st18{fill:#857E92;}
+	.st19{fill:#847D91;}
+	.st20{fill:#7C758A;}
+	.st21{fill:#868094;}
+	.st22{fill:#878195;}
+	.st23{fill:#6B657A;}
+	.st24{fill:#736D82;}
+	.st25{fill:#817B8F;}
+	.st26{fill:#7B7489;}
+	.st27{fill:#878194;}
+	.st28{fill:#7F788D;}
+	.st29{fill:#787286;}
+</style>
+<polyline class="st0" points="0,8 8,8 8,0 "/>
+<polyline class="st1" points="8,0 0,0 0,8 "/>
+<polyline class="st2" points="8,8 16,8 16,0 "/>
+<polyline class="st3" points="16,0 8,0 8,8 "/>
+<polyline class="st4" points="16,0 16,8 24,8 "/>
+<polyline class="st5" points="24,8 24,0 16,0 "/>
+<polyline class="st6" points="0,16 8,16 8,8 "/>
+<polyline class="st0" points="8,8 0,8 0,16 "/>
+<polyline class="st7" points="24,16 32,16 32,8 "/>
+<polyline class="st8" points="32,8 24,8 24,16 "/>
+<polyline class="st9" points="8,8 16,8 16,16 "/>
+<polyline class="st10" points="16,16 8,16 8,8 "/>
+<polyline class="st11" points="16,8 24,8 24,16 "/>
+<polyline class="st12" points="24,16 16,16 16,8 "/>
+<polyline class="st13" points="0,16 8,16 8,24 "/>
+<polyline class="st14" points="8,24 0,24 0,16 "/>
+<polyline class="st15" points="24,24 32,24 32,16 "/>
+<polyline class="st16" points="32,16 24,16 24,24 "/>
+<polyline class="st17" points="8,24 8,16 16,16 "/>
+<polyline class="st18" points="16,16 16,24 8,24 "/>
+<polyline class="st19" points="16,24 16,16 24,16 "/>
+<polyline class="st20" points="24,16 24,24 16,24 "/>
+<polyline class="st21" points="0,24 8,24 8,32 "/>
+<polyline class="st22" points="8,32 0,32 0,24 "/>
+<polyline class="st23" points="32,24 32,32 24,32 "/>
+<polyline class="st24" points="24,32 24,24 32,24 "/>
+<polyline class="st25" points="8,24 16,24 16,32 "/>
+<polyline class="st26" points="16,32 8,32 8,24 "/>
+<polyline class="st27" points="32,8 32,0 24,0 "/>
+<polyline class="st17" points="24,0 24,8 32,8 "/>
+<polyline class="st28" points="16,32 16,24 24,24 "/>
+<polyline class="st29" points="24,24 24,32 16,32 "/>
+<image style="overflow:visible;" width="400" height="389" xlink:href="../../trianglify/f4_blau1_trianglify_A69FB3_RoseQuartz.png"  transform="matrix(8.226220e-02 0 0 8.226220e-02 33.9094 0)">
+</image>
 </svg>
