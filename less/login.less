@@ -1,0 +1,38 @@
+#wayf_div{
+  margin-top: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-width: 0 !important;
+  overflow: hidden;
+  padding: 0px !important;
+  text-align: center;
+
+}
+
+@media only screen and (min-width: @screen-xs-min){
+  #wayf_div{
+    width: @tax-aai-login-width !important;
+
+  }
+}
+
+#wayf_submit_button {
+  width: 100% !important;
+  border: none !important;
+  background-color: @il-extended-color-2 !important;
+  color: #ffffff !important;
+  &:extend(.btn,.btn-primary, .btn-lg);
+}
+#wayf_submit_button:hover {
+  width: 100% !important;
+  border: none !important;
+  background-color: #ffffff !important;
+  color: @il-extended-color-2!important;
+  &:extend(.btn:hover,.btn-primary:hover);
+}
+
+#wayf_remember_checkbox_div {
+  display: none;
+}
