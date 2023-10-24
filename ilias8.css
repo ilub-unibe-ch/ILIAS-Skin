@@ -1798,7 +1798,8 @@ th {
     border-bottom: 0;
   }
 }
-.btn {
+.btn,
+#wayf_submit_button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1855,7 +1856,8 @@ th {
 }
 .btn:hover,
 .btn:focus,
-.btn.focus {
+.btn.focus,
+#wayf_submit_button:hover {
   color: #000000;
   text-decoration: none;
 }
@@ -1932,7 +1934,8 @@ fieldset[disabled] .btn-default.focus {
   color: #fefefe;
   background-color: #000000;
 }
-.btn-primary {
+.btn-primary,
+#wayf_submit_button {
   color: #fff;
   background-color: #5D6089;
   border-color: #53557a;
@@ -1943,7 +1946,8 @@ fieldset[disabled] .btn-default.focus {
   background-color: #484b6b;
   border-color: #1f202e;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+#wayf_submit_button:hover {
   color: #fff;
   background-color: #484b6b;
   border-color: #3a3c55;
@@ -2231,7 +2235,8 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 .btn-lg,
-.btn-group-lg > .btn {
+.btn-group-lg > .btn,
+#wayf_submit_button {
   padding: 6px 12px;
   font-size: 1rem;
   line-height: 1.33;
@@ -7287,7 +7292,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .ui-dropzone .form-group textarea {
   width: 100%;
 }
-.btn {
+.btn,
+#wayf_submit_button {
   font-size: 0.875rem;
 }
 .btn:focus-visible {
@@ -7380,7 +7386,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-default:focus-visible {
   position: relative;
 }
-.btn-primary {
+.btn-primary,
+#wayf_submit_button {
   color: #000000;
   background-color: #9AD0B0;
   border-color: #9AD0B0;
@@ -7391,7 +7398,8 @@ fieldset[disabled] .btn-default.focus {
   background-color: #77c095;
   border-color: #4aa06d;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+#wayf_submit_button:hover {
   color: #000000;
   background-color: #77c095;
   border-color: #70bd8f;
@@ -19969,7 +19977,8 @@ table.mceToolbar td {
   #ilTab,
   #ilSubTab,
   #minheight,
-  #ilFooter {
+  #ilFooter,
+  #wayf_submit_button {
     display: none;
   }
   #mainspacekeeper {
@@ -20156,6 +20165,37 @@ input.btn {
 .il-maincontrols-footer .il-footer-permanent-url {
   border-bottom: 1px solid #FF4A59;
   margin-right: 9px;
+}
+#wayf_div {
+  margin-top: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-width: 0 !important;
+  overflow: hidden;
+  padding: 0px !important;
+  text-align: center;
+}
+@media only screen and (min-width: 480px) {
+  #wayf_div {
+    width: 350px !important;
+  }
+}
+#wayf_submit_button {
+  width: 100% !important;
+  border: none !important;
+  background-color: #FFA583 !important;
+  color: #ffffff !important;
+}
+#wayf_submit_button:hover {
+  width: 100% !important;
+  border: none !important;
+  background-color: #ffffff !important;
+  color: #FFA583 !important;
+}
+#wayf_remember_checkbox_div {
+  display: none;
 }
 div.il_HeaderInner {
   background-color: #5D6089;
