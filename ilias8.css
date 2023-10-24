@@ -20178,7 +20178,8 @@ div.ilHeaderDesc {
 div.ilHeaderAlert {
   color: white;
   font-size: 0.875rem;
-  border-left: 20px dotted #FF4A59;
+  border-left: 3px solid #FF4A59;
+  padding-left: 6px;
 }
 .ui-dropzone {
   margin-bottom: 0;
@@ -20345,4 +20346,7 @@ div.copg-current-edit,
 }
 .il-item .il-item-divider {
   padding: 0;
+}
+.form-control {
+  height: 1.75rem;
 }
