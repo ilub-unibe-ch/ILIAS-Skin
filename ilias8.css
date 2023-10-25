@@ -20185,14 +20185,14 @@ input.btn {
 #wayf_submit_button {
   width: 100% !important;
   border: none !important;
-  background-color: #FFA583 !important;
+  background-color: #FF4A59 !important;
   color: #ffffff !important;
 }
 #wayf_submit_button:hover {
   width: 100% !important;
   border: none !important;
-  background-color: #ffffff !important;
-  color: #FFA583 !important;
+  background-color: #ca0011 !important;
+  color: white !important;
 }
 #wayf_remember_checkbox_div {
   display: none;
