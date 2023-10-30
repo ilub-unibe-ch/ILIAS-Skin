@@ -20218,8 +20218,6 @@ div.ilHeaderDesc {
 div.ilHeaderAlert {
   color: white;
   font-size: 0.875rem;
-  border-left: 3px solid #FF4A59;
-  padding-left: 6px;
 }
 .ui-dropzone {
   margin-bottom: 0;
