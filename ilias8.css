@@ -20330,6 +20330,10 @@ div.ilc_page_cont_PageContainer {
   border-color: #d6ebeb;
   color: #265050;
 }
+.table > tbody > tr > td,
+.table > tfoot > tr > td > a {
+  color: #595964;
+}
 div.ilTableOuter {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
@@ -20370,6 +20374,9 @@ div.copg-current-edit,
   border-style: solid;
   border-width: 2px;
   border-color: #9AD0B0;
+}
+div.ilc_page_cont_PageContainer {
+  border: none;
 }
 .panel-secondary {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
