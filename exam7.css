@@ -8726,6 +8726,12 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default.engaged.focu
 .il-table-presentation-row .il-table-presentation-actions {
   margin: 5px 0;
 }
+.il-table-presentation-row .il-table-presentation-actions:not(:empty) + .il-table-presentation-row-header {
+  max-width: calc(100% - 11rem);
+}
+.il-table-presentation-row .il-table-presentation-row-header {
+  min-height: 34px;
+}
 .il-table-presentation-row .il-table-presentation-row-header h4 {
   font-size: 17px;
   font-weight: normal;
@@ -8805,6 +8811,9 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default.engaged.focu
 }
 .il-table-data .header.cell {
   font-weight: bold;
+}
+.il-workflow {
+  word-break: break-word;
 }
 .il-workflow-header .il-workflow-title {
   background-color: #F6F5F5;
@@ -9076,27 +9085,6 @@ nav,
 section {
   display: block;
 }
-/*
-*********************
-grid-based layout
-*********************
-*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  body {
-    background-image: url("../../templates/default/images/HeaderIcon.svg");
-    background-position: center 43%;
-    background-repeat: no-repeat;
-    display: -ms-flexbox;
-    align-items: center;
-    justify-content: center;
-  }
-  body:after {
-    content: "Microsoft Internet Explorer is no longer supported!";
-  }
-  body .il-layout-page {
-    display: none;
-  }
-}
 .il-layout-page {
   background: #F6F5F5;
   display: -ms-grid;
@@ -9179,7 +9167,7 @@ div.il-system-infos {
 .header-inner {
   -ms-flex-align: center;
   align-items: center;
-  background: #B5C2DF;
+  background: #86cb92;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -9443,8 +9431,8 @@ footer {
   .il-header-locator .open > .dropdown-toggle.btn-default:hover .open > .dropdown-toggle.btn-default:active,
   .il-header-locator .open > .dropdown-toggle.btn-default:active:hover,
   .il-header-locator .open > .dropdown-toggle.btn-default:active:focus {
-    background: #B5C2DF;
-    border-color: #B5C2DF;
+    background: #86cb92;
+    border-color: #86cb92;
     color: #434343;
     outline: none;
   }
@@ -13034,6 +13022,7 @@ div.ilSideBarContent {
   background-color: white;
   border: 1px solid #dddddd;
   font-size: 90%;
+  z-index: 5;
   -webkit-box-shadow: 2px 2px 4px #c0c0c0;
   box-shadow: 2px 2px 4px #c0c0c0;
 }
@@ -14295,7 +14284,6 @@ html.ilc_Fullscreen td > div,
 body.ilc_Fullscreen td > div,
 html.ilc_Fullscreen td > div > figure > div > iframe,
 body.ilc_Fullscreen td > div > figure > div > iframe {
-  height: 100%;
   width: 100%;
 }
 div.ilLMMenu {
@@ -18428,38 +18416,16 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+#onscreenchat-container .chat-window-wrapper .panel-footer-for-shadow {
+  height: 0;
+  width: 0;
+}
 #onscreenchat-container .chat-window-wrapper .iosOnScreenChatMessageContainer {
-  background-color: transparent;
-}
-#onscreenchat-container .chat-window-wrapper .iosOnScreenChatMessageContainer .iosOnScreenChatMessagePlaceholder {
-  position: absolute;
-  z-index: 0;
-  border: 0 none !important;
-  background-color: transparent;
-  opacity: 0.5;
-}
-#onscreenchat-container .chat-window-wrapper .iosOnScreenChatMessageContainer .iosOnScreenChatMessage {
-  background-color: transparent;
-  position: relative;
-  z-index: 1;
-  white-space: pre-wrap;
-  user-select: text;
-  outline: none;
-  overflow-x: hidden;
-  height: auto;
-  min-height: 26px;
-  max-height: 75px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  cursor: text;
-  padding-right: 26px;
+  resize: none;
+  width: 100%;
+  border: 1px solid;
+  background: white;
+  height: 25px;
 }
 #onscreenchat-container .chat-window-wrapper .osc_truncate_username {
   width: 150px;
@@ -19493,6 +19459,11 @@ div.ilc_Question {
   border: 1px solid #C0C0C0;
   padding: 0.25em;
   margin-top: 1em;
+  padding: 15px;
+}
+.questionPrintview .row.ilc_qanswer_Answer {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .solutionbox {
   color: black;
@@ -19939,6 +19910,13 @@ div.ilc_Page.readonly textarea[disabled] {
 }
 #tst_output #tst_right h1.ilc_page_title_PageTitle {
   margin-bottom: 6px;
+}
+.dd-item {
+  font-size: 14px;
+}
+li.dd-item.ilc_qordli_OrderListItem > ul li.dd-item.ilc_qordli_OrderListItem {
+  border: 1px #4c6586 solid;
+  border-left: 9px #4c6586 solid;
 }
 .noMargin {
   margin: 0;
