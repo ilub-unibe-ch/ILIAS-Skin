@@ -20197,6 +20197,12 @@ input.btn {
 #wayf_remember_checkbox_div {
   display: none;
 }
+.il-layout-page-content:focus {
+  outline: none;
+}
+::selection {
+  background-color: #c9d2e6;
+}
 div.il_HeaderInner {
   background-color: #5D6089;
   padding-bottom: 15px;
