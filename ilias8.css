@@ -20401,3 +20401,6 @@ div.ilc_page_cont_PageContainer {
 .form-control {
   height: 1.75rem;
 }
+form .ilHeaderDesc {
+  color: #737373;
+}
