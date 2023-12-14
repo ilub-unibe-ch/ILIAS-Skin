@@ -40,6 +40,20 @@ div.ilContainerListItemOuter {
   padding: @tax-il-container-ListItemOuter-padding;
 }
 
+.il_ContainerItemTitle a {
+  color: @tax-il-container-ItemTitle-link-color;
+}
+
+.il_ContainerItemTitle a:hover {
+  color: @tax-il-container-ItemTitle-link-color-hover;
+}
+
+// Info Page
+
+.il_InfoScreenPropertyValue {
+  padding-top: @tax-il-InfoScreenPropertyValue-padding-top;
+}
+
 
 // Mini Calendar
 
@@ -88,4 +102,19 @@ div.ilc_page_cont_PageContainer {
 
 .table > tbody > tr > td, .table > tfoot > tr > td > a {
   color: @tax-il-table-text-color;
+}
+
+
+// Test
+
+#tst_output .ilTstNavigation {
+  background-color: @tax-il-testnavigation-bg-color;
+}
+
+#ilAdvSelListAnchorText_QuestionActions {
+  color: @tax-il-test-question-actions-dropdown-color;
+
+  &:hover {
+    color: @tax-il-test-question-actions-dropdown-color-hover;
+  }
 }

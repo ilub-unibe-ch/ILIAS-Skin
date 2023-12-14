@@ -3,6 +3,10 @@
   border: @tax-il-panel-secondary-border;
 }
 
+.panel-secondary a {
+  color: @panel-secondary-link-color;
+}
+
 .il-panel-listing-std-container {
   background-color: @tax-il-panel-listing-bg-color;
   border-top: @tax-il-panel-listing-border-top;
@@ -13,5 +17,11 @@
 }
 
 .il-item .il-item-divider {
-  padding: 0;
+  padding: @tax-il-item-divider-padding;
+}
+
+// ViewControl
+
+.panel-secondary .il-viewcontrol-section .btn-default, .panel-secondary .il-viewcontrol-section .btn-default:active {
+  color: @tax-il-secondary-panel-viewcontrol-btn-active-color;
 }
