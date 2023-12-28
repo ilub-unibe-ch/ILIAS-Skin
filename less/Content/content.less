@@ -98,11 +98,12 @@ div.ilc_page_cont_PageContainer {
   color: @tax-il-alert-success-color;
 }
 
-// Tables
-
-.table > tbody > tr > td, .table > tfoot > tr > td > a {
-  color: @tax-il-table-text-color;
+.alert-danger {
+  background-color: @tax-il-alert-danger-bg-color;
+  border-color: @tax-il-alert-danger-border-color;
+  color: @tax-il-alert-danger-color;
 }
+
 
 
 // Test
@@ -117,4 +118,16 @@ div.ilc_page_cont_PageContainer {
   &:hover {
     color: @tax-il-test-question-actions-dropdown-color-hover;
   }
+}
+
+.table, hr {
+  border-top: @tax-il-table-hr-border-top;
+}
+
+.assFileUpload > div.ilc_qanswer_Answer {
+  padding-bottom: @tax-il-qanswer-file-padding-bottom;
+}
+
+.ilAssKprimChoiceTable > div.ilc_qanswer_Answer {
+  padding-bottom: @tax-il-ganswer-kprim-padding-bottom;
 }

@@ -10,7 +10,15 @@ span.ilTableFootLight {
   font-size: @tax-il-table-btn-link-font-size;
 }
 
+.table > tbody > tr > td, .table > tfoot > tr > td > a {
+  color: @tax-il-table-text-color;
+}
+
 .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
   background-color: @tax-il-table-th-bg-color;
   border-bottom: @tax-il-table-th-border-bottom;
+}
+
+.ilTableCommandRowTop .ilFloatLeft img, .ilTableCommandRow .ilFloatLeft img {
+  width: @tax-il-table-command-img-width;
 }

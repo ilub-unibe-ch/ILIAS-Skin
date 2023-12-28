@@ -49,9 +49,9 @@ with the il- variable set here.
 @il-text-light-color:		lighten(@il-text-color, 35%);
 
 //** Used to be @link-color
-@il-link-color:		#5d589b; //@il-text-color;
+@il-link-color:		@il-text-color;
 //** Used to be @link-hover-color
-@il-link-hover-color:		darken(#5d589b, 20%);
+@il-link-hover-color:		@il-main-color;
 
 //** Used to set focus on interactive elements for keyboard navigation.
 @il-focus-color:		#0078D7;
@@ -350,7 +350,7 @@ with the il- variable set here.
 @il-disabled-btn-border:		#b0b0b0;
 @il-disabled-btn-color:		darken(@il-text-color, 20%);
 //** Background color for tags with relevance 5; by default, color is desaturated in steps of 20%.
-@il-btn-tag-bg:		#75deea;
+@il-btn-tag-bg:		@il-extended-color-7;//#75deea;
 @il-btn-tag-bg-relevance-verylow:		desaturate(@il-btn-tag-bg, 80%);
 @il-btn-tag-bg-relevance-low:		desaturate(@il-btn-tag-bg, 60%);
 @il-btn-tag-bg-relevance-middle:		desaturate(@il-btn-tag-bg, 40%);
@@ -940,6 +940,8 @@ with the il- variable set here.
 //## Header
 @tax-il-logo-margin-left: 92px;
 @tax-il-header-border-bottom: @tax-il-layout-border;
+@tax-il-logo-small-display: block;
+@tax-il-logo-small-margin: 0px @il-margin-xlarge-horizontal @il-margin-xlarge-vertical;
 
 //## Login
 @tax-aai-login-width:		350px;
@@ -952,8 +954,8 @@ with the il- variable set here.
 
 //## Header Content Page
 @tax-il-header-image-filter: invert(1);
-@tax-il-pagetitle-padding-left: (@il-padding-xxxlarge-horizontal+@il-padding-small-horizontal); //21px;
-@tax-il-pagetitle-margin-top: @il-margin-large-horizontal;
+@tax-il-pagetitle-padding-left: @il-padding-xxxlarge-horizontal;
+@tax-il-pagetitle-margin-top: @il-padding-xxlarge-vertical+@il-padding-small-vertical;
 @tax-il-page-content-header-bg-color: @il-main-color; /* #3981A7; */
 @tax-il-page-content-header-margin: @il-margin-xxxlarge-vertical @il-padding-xxxlarge-vertical 0 @il-padding-xxxlarge-vertical;
 @tax-il-page-content-header-border-radius: @il-border-radius-base @il-border-radius-base 0 0;
@@ -966,10 +968,13 @@ with the il- variable set here.
 
 /* Alert */
 @tax-il-header-color: #7CFD98;
-@tax-il-header-alert-color: white;
+@tax-il-header-alert-color: @tax-il-header-color;
 @tax-il-header-alert-font-size: @il-font-size-base;
 
 /* Alert Warnings */
+@tax-il-alert-danger-bg-color: @tax-il-alert-warning-bg-color;
+@tax-il-alert-danger-border-color: @tax-il-alert-warning-border-color;
+@tax-il-alert-danger-color: @tax-il-alert-warning-color;
 @tax-il-alert-warning-bg-color: lighten(@il-warning-color, 25%);
 @tax-il-alert-warning-border-color: @tax-il-alert-warning-bg-color;
 @tax-il-alert-warning-color: darken(@il-warning-color, 40%);
@@ -994,7 +999,7 @@ with the il- variable set here.
 @tax-il-tab-box-shadow: @tax-il-box-shadow;
 
 //## Subtab
-@tax-il-subtab-color: @il-text-color; //@il-link-hover-color;
+@tax-il-subtab-color: @il-link-hover-color;
 @tax-il-subtab-font-size: @il-font-size-base;
 @tax-il-subtab-border-bottom: none;
 @tax-il-subtab-margin: 0 2*(@il-padding-xxlarge-horizontal);
@@ -1011,7 +1016,7 @@ with the il- variable set here.
 @tax-il-mainbar-slates-border-right: 1px solid @il-main-border-color;
 @tax-il-jstree-bg-position: @il-padding-small-horizontal 0 !important;
 @tax-il-jstree-link-color: @il-text-color !important;
-@tax-il-jstree-link-color-hover: @il-link-color !important;
+@tax-il-jstree-link-color-hover: @il-link-hover-color !important;
 
 //## Drilldown
 @tax-il-drilldown-bg-color-hover: rgba(223,216,223,0.6);
@@ -1096,17 +1101,21 @@ with the il- variable set here.
 @tax-il-table-btn-link-font-size: @il-font-size-small;
 @tax-il-table-th-bg-color: @il-main-dark-bg;
 @tax-il-table-th-border-bottom: 1px solid @il-main-border-color;
-@tax-il-table-text-color: #595964;
+@tax-il-table-text-color: @il-neutral-light-color;
+@tax-il-table-command-img-width: 18px;
+@tax-il-table-hr-border-top: none;
 
 //## Test
 @tax-il-testnavigation-bg-color: @il-main-bg;
 @tax-il-test-question-actions-dropdown-color: @il-text-color;
 @tax-il-test-question-actions-dropdown-color-hover: @il-link-color;
-
+@tax-il-qanswer-file-padding-bottom: 3*@il-padding-xxxlarge-vertical;
+@tax-il-ganswer-kprim-padding-bottom: @il-padding-xxxlarge-vertical;
 
 //## Footer
 @tax-il-footer-permanent-url-border-bottom: 1px solid @il-warning-color;
 @tax-il-footer-permanent-url-margin-right: @il-margin-base;
+@tax-il-footer-text-color: @il-neutral-light-color;
 
 //## Filter
 @tax-il-filter-input-group-bg-color: @il-main-bg;
@@ -1118,6 +1127,12 @@ with the il- variable set here.
 @tax-il-form-height: 1.75rem;
 @tax-il-form-Header-Desc: @il-neutral-light-color;
 @tax-il-form-control-label-padding-top: 0px;
+@tax-il-form-help-block-link-color: @il-main-color;
+@tax-il-form-help-block-link-color-hover: @il-link-color;
+@tax-il-form-help-block-link-text-decoration: underline;
+@tax-il-form-group-link-color: @il-main-color;
+@tax-il-form-group-link-color-hover: @il-link-color;
+
 
 //** Login
 @tax-il-login-submit-bg-color: @il-warning-color;
