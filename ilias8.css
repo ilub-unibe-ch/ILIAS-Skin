@@ -20481,12 +20481,6 @@ form .ilHeaderDesc {
   color: #000000;
   text-decoration: underline;
 }
-.form-group a {
-  color: #5D6089;
-}
-.form-group a:hover {
-  color: #000000;
-}
 .form-horizontal .help-block.alert-danger {
   background-color: #ffcace;
   border-color: #ffcace;
