@@ -20,11 +20,22 @@ img {
   border: none;
   border-top: @tax-il-container-block-border-top;
   border-radius: 0px;
+  margin-bottom: @tax-il-container-block-margin-bottom;
 }
 
 .ilContainerBlockHeader {
   padding: @tax-il-container-block-header-padding;
   background-color: @tax-il-container-block-header-bg-color;
+}
+
+h2.ilHeader.ilContainerBlockHeader {
+  font-weight: @tax-il-container-block-header-font-weight;
+  color: @tax-il-container-block-header-color;
+}
+
+.ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
+  background-position: @tax-il-container-block-header-expcoll-bg-position; //15px 10px;
+  padding-left: @tax-il-container-block-header-expcoll-padding-left;
 }
 
 .ilObjListRow {
@@ -40,12 +51,22 @@ div.ilContainerListItemOuter {
   padding: @tax-il-container-ListItemOuter-padding;
 }
 
+// Item
+
 .il_ContainerItemTitle a {
   color: @tax-il-container-ItemTitle-link-color;
 }
 
 .il_ContainerItemTitle a:hover {
   color: @tax-il-container-ItemTitle-link-color-hover;
+}
+
+div.ilListItemSection {
+  color: @tax-il-container-ItemSection-color;
+}
+
+div.il_Description, td.il_Description, div.il_ItemProperties {
+  margin: 0;
 }
 
 // Info Page

@@ -431,7 +431,7 @@ with the il- variable set here.
 //** Background color used in the
 @il-standard-form-bg:		@il-main-bg;
 //** Textsize used in the forms body
-@il-standard-form-font-size:		@il-font-size-small;
+@il-standard-form-font-size:		@il-font-size-base;
 //** Textsize used in the bylines (descriptions) of the input fields of a form
 @il-standard-form-byline-font-size:		@il-font-size-small;
 
@@ -502,7 +502,7 @@ with the il- variable set here.
 
 @il-FormColor:		@il-text-light-color;
 @il-FormBgColor:		@il-main-bg;
-@il-FormInputFontSize:		@il-font-size-small;
+@il-FormInputFontSize:		@il-font-size-base;
 @il-textarea-height:		(floor(4 * (@il-standard-form-font-size * @il-line-height-base))) + 0.56;
 
 //** File Input
@@ -932,7 +932,7 @@ with the il- variable set here.
 @tax-il-box-shadow-darken: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 //## Transitions
-@tax-il-transition-base: all .25s ease-in-out;
+@tax-il-transition-base: all .2s ease-in-out;
 
 //## Link
 @tax-il-link-text-decoration: none;
@@ -953,7 +953,7 @@ with the il- variable set here.
 @tax-il-breadcrumb-padding: @il-padding-large-vertical (@il-padding-xxlarge-horizontal+@il-padding-xlarge-horizontal);
 
 //## Header Content Page
-@tax-il-header-image-filter: invert(1);
+@tax-il-header-image-filter: invert(82%) sepia(13%) saturate(1303%) hue-rotate(78deg) brightness(98%) contrast(112%);// weiss: invert(1);
 @tax-il-pagetitle-padding-left: @il-padding-xxxlarge-horizontal;
 @tax-il-pagetitle-margin-top: @il-padding-xxlarge-vertical+@il-padding-small-vertical;
 @tax-il-page-content-header-bg-color: @il-main-color; /* #3981A7; */
@@ -968,7 +968,7 @@ with the il- variable set here.
 
 /* Alert */
 @tax-il-header-color: #7CFD98;
-@tax-il-header-alert-color: @tax-il-header-color;
+@tax-il-header-alert-color: white;
 @tax-il-header-alert-font-size: @il-font-size-base;
 
 /* Alert Warnings */
@@ -1048,7 +1048,7 @@ with the il- variable set here.
 
 //## Pageeditor
 @tax-il-copg-button-color: @il-link-color;
-@tax-il-copg-button-bg-color-hover: @tax-il-header-alert-color;
+@tax-il-copg-button-bg-color-hover: @il-highlight-bg;
 @tax-il-pagecontainer-border: none;
 
 //## ContainerBlock
@@ -1057,13 +1057,19 @@ with the il- variable set here.
 @tax-il-container-block-header-bg-color: transparent;
 @tax-il-container-block-border-top: 1px solid darken(@il-main-dark-bg, 5%);
 @tax-il-container-ItemTitle-link-color: @il-text-color;
-@tax-il-container-ItemTitle-link-color-hover: @il-link-color;
+@tax-il-container-ItemTitle-link-color-hover: @il-link-hover-color;
+@tax-il-container-ItemSection-color: lighten(@il-neutral-color,17%);
+@tax-il-container-block-margin-bottom: 30px;
+@tax-il-container-block-header-expcoll-bg-position: 9px 7px;
+@tax-il-container-block-header-expcoll-padding-left: 45px;
+@tax-il-container-block-header-font-weight: @il-font-weight-base;
+@tax-il-container-block-header-color: @il-text-color;
 
 /* List View */
 @tax-ilObjListRow-bg-color-hover: @il-main-dark-bg;
 @tax-ilObjListRow-transition-hover: @tax-il-transition-base;
 @tax-ilObjListRow-border-radius-hover: @il-border-radius-base;
-@tax-il-container-ListItemOuter-padding: @il-padding-xlarge-vertical @il-padding-xs-horizontal;
+@tax-il-container-ListItemOuter-padding: @il-padding-xxlarge-vertical @il-padding-xs-horizontal;
 @tax-ilObjListRow-border-bottom: none;
 
 /* Info Screen */
@@ -1074,9 +1080,13 @@ with the il- variable set here.
 @tax-il-panel-secondary-border: none;
 @tax-il-panel-listing-bg-color: transparent;
 @tax-il-panel-listing-border-top: 1px solid @il-main-dark-bg;
-@tax-il-item-container-border-bottom: none;
 @panel-secondary-link-color: @il-text-color;
 @tax-il-secondary-panel-viewcontrol-btn-active-color: @il-text-color;
+
+//** Item
+@tax-il-item-divider-padding: 0;
+@tax-il-item-container-border-bottom: none;
+@tax-il-item-title-link-hover: @il-link-hover-color;
 
 //## Card
 @tax-il-container-tile-rows-padding: @il-padding-large-vertical 0;
@@ -1101,7 +1111,7 @@ with the il- variable set here.
 @tax-il-table-btn-link-font-size: @il-font-size-small;
 @tax-il-table-th-bg-color: @il-main-dark-bg;
 @tax-il-table-th-border-bottom: 1px solid @il-main-border-color;
-@tax-il-table-text-color: @il-neutral-light-color;
+@tax-il-table-text-color: @tax-il-container-ItemSection-color;
 @tax-il-table-command-img-width: 18px;
 @tax-il-table-hr-border-top: none;
 
@@ -1115,7 +1125,7 @@ with the il- variable set here.
 //## Footer
 @tax-il-footer-permanent-url-border-bottom: 1px solid @il-warning-color;
 @tax-il-footer-permanent-url-margin-right: @il-margin-base;
-@tax-il-footer-text-color: @il-neutral-light-color;
+@tax-il-footer-text-color: @tax-il-container-ItemSection-color;
 
 //## Filter
 @tax-il-filter-input-group-bg-color: @il-main-bg;
@@ -1140,6 +1150,3 @@ with the il- variable set here.
 
 //** Selected Text
 @tax-selection-background-color: lighten(@il-info-color,26%);
-
-//** Item
-@tax-il-item-divider-padding: 0;
