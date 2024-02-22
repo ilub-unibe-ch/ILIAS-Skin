@@ -964,12 +964,16 @@ with the il- variable set here.
 @tax-il-header-desc-font-size: @il-font-size-large;
 @tax-il-header-desc-padding: @il-padding-base 0;
 
-
-
 /* Alert */
 @tax-il-header-color: #7CFD98;
-@tax-il-header-alert-color: white;
+@tax-il-header-alert-color: @il-main-color;
 @tax-il-header-alert-font-size: @il-font-size-base;
+@tax-il-header-alert-bg-color: @tax-il-header-color;
+@tax-il-header-alert-padding: @il-padding-base-vertical @il-padding-base @il-padding-base-vertical @il-padding-small-horizontal;
+@tax-il-header-alert-width: 10%;
+@tax-il-header-alert-text-align: center;
+@tax-il-header-alert-min-width: 100px;
+@tax-il-header-alert-border-radius: @il-border-radius-base;
 
 /* Alert Warnings */
 @tax-il-alert-danger-bg-color: @tax-il-alert-warning-bg-color;
@@ -985,13 +989,14 @@ with the il- variable set here.
 @tax-il-alert-success-border-color: @tax-il-alert-success-bg-color;
 @tax-il-alert-success-color: darken(@il-success-color, 60%);
 
+
 //## Tabs
 @tax-il-tab-color: white;
 @tax-il-tab-active-border-bottom: 0px solid @il-warning-color;
 @tax-il-tab-active-background-color: white;
 @tax-il-tab-active-color: @il-text-color;
 @tax-il-tab-active-border-radius: @il-border-radius-base @il-border-radius-base 0 0;
-@tax-il-tab-margin: 0px @il-margin-xlarge-horizontal;
+@tax-il-tab-margin: -5px @il-margin-xlarge-horizontal 0px @il-margin-xlarge-horizontal;
 @tax-il-tab-padding: 0px @il-padding-xlarge-horizontal 0px @il-padding-xlarge-horizontal;
 @tax-il-nav-tab-padding-bottom: 6px;
 @tax-il-tab-border-radius: 0px 0px @il-border-radius-base @il-border-radius-base;

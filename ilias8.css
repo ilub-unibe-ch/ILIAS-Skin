@@ -20227,7 +20227,7 @@ input.btn {
   background-color: #c9d2e6;
 }
 div.il_HeaderInner {
-  background-color: #5D6089;
+  /*background-color: @tax-il-page-content-header-bg-color;*/
   padding-bottom: 15px;
 }
 h1.il-page-content-header {
@@ -20245,8 +20245,14 @@ div.ilHeaderDesc {
   font-size: 1rem;
 }
 div.ilHeaderAlert {
-  color: white;
+  color: #5D6089;
   font-size: 0.875rem;
+  background-color: #7CFD98;
+  padding: 3px 9px 3px 6px;
+  width: 10%;
+  text-align: center;
+  min-width: 100px;
+  border-radius: 3px;
 }
 .ui-dropzone {
   margin-bottom: 0;
@@ -20257,7 +20263,7 @@ div.il_HeaderInner.media {
   border-radius: 3px 3px 0 0;
 }
 #ilTab {
-  margin: 0px 15px;
+  margin: -5px 15px 0px 15px;
   padding: 0px 15px 0px 15px;
   background-color: #5D6089;
   border-bottom: none;
