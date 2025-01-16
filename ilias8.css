@@ -5031,6 +5031,7 @@ pre {
   color: #000000;
   background-color: #f6f4f6;
   border: 1px solid #dddddd;
+  font-family: monospace;
 }
 pre code {
   padding: 0;
@@ -20912,6 +20913,13 @@ hr {
 }
 .ilAssKprimChoiceTable > div.ilc_qanswer_Answer {
   padding-bottom: 15px;
+}
+.ilFrmPostContent a {
+  color: #5D6089;
+}
+.ilFrmPostContent a:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 div.ilTableOuter {
   box-shadow: none;
