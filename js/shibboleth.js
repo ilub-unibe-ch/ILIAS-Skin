@@ -36,7 +36,10 @@ function getUrlVars() {
     });
     return vars;
 }
-if(typeof (getUrlVars()["target"]) === 'undefined'){
+if(getUrlVars()['tos_withdrawal_type'] ==='0'){
+    var wayf_return_url = window.location.origin;
+}
+else if(typeof (getUrlVars()["target"]) === 'undefined'){
     var wayf_return_url = window.location.origin+"/shib_login.php";
 }else {
     var wayf_return_url = window.location.origin + "/shib_login.php?target=" + getUrlVars()["target"];
