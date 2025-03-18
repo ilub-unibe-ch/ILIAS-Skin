@@ -20498,6 +20498,9 @@ button .caret:hover {
 .il-item .il-item-title a:hover {
   color: #5D6089;
 }
+.caption .card-title {
+  font-size: 0.825rem;
+}
 .il-viewcontrol-mode {
   background-color: #d2d3e0;
   padding: 3px;
@@ -20575,6 +20578,7 @@ span.il-footer-text {
 }
 .il-maincontrols-footer .il-footer-content > div:first-child {
   margin-left: 0px;
+  padding-left: 0px;
 }
 .il-maincontrols-footer .il-footer-content .il-footer-links {
   color: #575757;
@@ -20719,10 +20723,11 @@ div.ilHeaderAlert {
   color: white;
   font-size: 0.875rem;
   background-color: #D81E5B;
-  padding: 3px 3px 3px 3px;
+  padding: 3px 6px 3px 6px;
+  margin-bottom: 6px;
   width: 3%;
   text-align: center;
-  min-width: 80px;
+  min-width: max-content;
   border-radius: 3px;
 }
 .media.il_HeaderInner:before {
@@ -20837,6 +20842,9 @@ h2.ilHeader.ilContainerBlockHeader {
 div.ilContainerListItemOuter {
   padding: 12px 3px;
 }
+div.ilContainerListItemOuter .subitem {
+  margin-right: -3px;
+}
 h3.il_ContainerItemTitle {
   color: #737373;
 }
@@ -20927,7 +20935,7 @@ div.ilTableOuter {
 span.ilTableFootLight {
   font-size: 0.75rem;
 }
-.btn.btn-link {
+.table .btn.btn-link {
   font-size: 0.75rem;
 }
 .table > tbody > tr > td,
@@ -21017,4 +21025,7 @@ a.nav-link.iv_tab:hover {
 #il_prop_cont_comment_text > .control-label {
   font-size: 1rem;
   text-transform: uppercase;
+}
+.progress-bar-success {
+  background-color: #59A0A6;
 }

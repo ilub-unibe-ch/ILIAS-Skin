@@ -984,10 +984,11 @@ with the il- variable set here.
 @tax-il-header-alert-color: @il-main-bg;
 @tax-il-header-alert-font-size: @il-font-size-base;
 @tax-il-header-alert-bg-color: @il-danger-color;
-@tax-il-header-alert-padding: @il-padding-base-vertical @il-padding-xs-horizontal @il-padding-base-vertical @il-padding-xs-horizontal;
-@tax-il-header-alert-width: 3%;
+@tax-il-header-alert-padding: @il-padding-base-vertical @il-padding-small-horizontal @il-padding-base-vertical @il-padding-small-horizontal;
+@tax-il-header-alert-margin-bottom: @il-padding-large-vertical;
 @tax-il-header-alert-text-align: center;
-@tax-il-header-alert-min-width: 80px;
+@tax-il-header-alert-min-width: max-content;
+@tax-il-header-alert-width: 3%;
 @tax-il-header-alert-border-radius: @il-border-radius-base;
 
 /* Alert Warnings */
@@ -1102,6 +1103,7 @@ with the il- variable set here.
 @tax-ilObjListRow-transition-hover: @tax-il-transition-base;
 @tax-ilObjListRow-border-radius-hover: @il-border-radius-base;
 @tax-il-container-ListItemOuter-padding: @il-padding-xxlarge-vertical @il-padding-xs-horizontal;
+@tax-il-container-ListItemOuter-subitem-margin-right: -3px;
 @tax-ilObjListRow-border: 1px solid transparent;
 @tax-ilObjListRow-border-hover: 1px solid darken(@il-main-dark-bg, 3%); /*@il-main-darker-bg;*/
 @tax-ilObjListRow-bg-color: transparent;
@@ -1172,6 +1174,8 @@ with the il- variable set here.
 @tax-il-footer-text-align: left;
 @tax-il-footer-display: flex;
 @tax-il-footer-flex-direction: column-reverse;
+@tax-il-footer-firstchild-margin-left: 0px;
+@tax-il-footer-firstchild-padding-left: @tax-il-footer-firstchild-margin-left;
 
 //## Filter
 @tax-il-filter-input-group-bg-color: @il-main-bg;
@@ -1187,6 +1191,9 @@ with the il- variable set here.
 @tax-il-form-help-block-link-color: @il-main-color;
 @tax-il-form-help-block-link-color-hover: @il-link-color;
 @tax-il-form-help-block-link-text-decoration: underline;
+
+//## Progress Bar
+@tax-il-progress-bar-success: @il-extended-color-3;
 
 //## Modal
 @tax-il-modal-InfoScreenPropertyValue-link-color: @il-link-hover-color;
