@@ -1,0 +1,22 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+// Dropdown Button
+
+.btn .caret {
+  border-top: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  &:before {
+    font-family: il-icons;
+    content: "\e603";
+    }
+  }
+
+.dropdown button, .dropdown-toggle.btn-default {
+  background-color: $unibe-il-dropdown-button-bg-color;
+  color: $unibe-il-dropdown-button-color;
+  border: $unibe-il-dropdown-button-border;
+  &:hover {
+    background-color: $unibe-il-dropdown-button-bg-color-hover;
+  }
+}

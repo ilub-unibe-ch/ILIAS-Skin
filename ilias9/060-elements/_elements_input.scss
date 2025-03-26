@@ -1,0 +1,26 @@
+@use "../010-settings/" as *;
+@use "../010-settings/legacy-settings/legacy-settings_form" as *;
+@use "../030-tools/tool_focus-outline" as focus;
+
+button {
+	cursor: pointer;
+	@include focus.il-focus-outline-only();
+}
+
+textarea {
+	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
+		max-width: 100%;
+	}
+}
+
+input, select {
+	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
+		max-width: 100%;
+	}
+}
+
+input[type="text"],
+input[type="submit"],
+select {
+	min-height: $il-input-min-height;
+}

@@ -11,6 +11,7 @@ $il-font-family-sans-serif: 'Open Sans', Verdana, Arial, Helvetica, sans-serif !
 $il-headings-font-family: $il-font-family-sans-serif !default;
 
 //** Should only be used to indicate mainbar entries. Equivalent to 10px => 10*1/16=0.625rem.
+
 $il-font-size-xsmall:		0.625rem !default;
 //** Used to indicate subordinate text, such as bylines in forms, subtabs, etc. Equivalent to 12px.
 $il-font-size-small:		0.75rem !default;
@@ -24,6 +25,7 @@ $il-font-size-xlarge:    1.115rem !default;
 $il-font-size-xxlarge:    1.5rem !default;
 //** Used to indicate h1. Should only used one time per screen. Equivalent to 28px.
 $il-font-size-h1:    1.75rem !default;
+
 
 //** Unit-less `line-height` for use in components like buttons.
 $il-line-height-base:		1.428571429 !default;

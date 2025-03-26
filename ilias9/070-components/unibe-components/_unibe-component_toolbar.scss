@@ -1,0 +1,5 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.c-toolbar {
+  background-color: $unibe-il-c-toolbar-bg-color;
+}

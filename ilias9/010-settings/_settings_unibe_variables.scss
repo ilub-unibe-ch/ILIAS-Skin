@@ -1,0 +1,126 @@
+@use "./settings_color-palette" as *;
+@use "./settings_borders" as *;
+@use "../050-layout/basics/layout_spacing-variables" as *;
+@use "./settings_typography" as *;
+
+
+//== UniBE Specific Variables
+//
+//
+
+// Colors
+$unibe-il-accent-color: #7CFD98;
+
+// Layout Breadcrumb
+$unibe-breadcrumb-box-shadow: none;
+
+// Stage Header
+$unibe-il-header-image-border-radius: 12px;
+$unibe-il-header-image-box-shadow: 4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e;
+$unibe-il-header-image-padding: $il-padding-large-vertical; //Innenabstand zu Icon
+$unibe-il-h1-header-padding: 0px; // Bündigkeit Icon zu Titel
+$unibe-il-pagetitle-padding-left: $il-padding-xxxlarge-horizontal;
+$unibe-il-pagetitle-margin-top: $il-padding-xxlarge-vertical+$il-padding-small-vertical;
+$unibe-il-page-content-header-bg-color: $il-main-color;
+$unibe-il-page-content-header-padding: $il-padding-xxxlarge-vertical;
+$unibe-il-page-content-header-margin: 0px;
+$unibe-il-page-content-header-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
+$unibe-il-page-content-header-color: $unibe-il-accent-color;
+$unibe-il-header-desc-color: $unibe-il-accent-color;
+$unibe-il-header-desc-font-size: $il-font-size-large;
+$unibe-il-header-desc-padding: $il-padding-base 0;
+$unibe-il-media-HeaderInner-before-content: "\00a0";
+$unibe-il-Head-Action-display: none; // entfernt "Aktionen" Label bei Top Actions
+// Small screen
+$unibe-il-media-body-small-padding-left: 0px;
+$unibe-il-header-image-small-width: 56px;
+$unibe-il-header-image-small-height: 56px;
+$unibe-il-header-image-small-margin-bottom: 10px;
+
+/* Alert Header */
+$unibe-il-header-color: $unibe-il-accent-color;
+$unibe-il-header-alert-color: $il-main-bg;
+$unibe-il-header-alert-font-size: $il-font-size-base;
+$unibe-il-header-alert-bg-color: $il-danger-color;
+$unibe-il-header-alert-padding: $il-padding-base-vertical $il-padding-small-horizontal $il-padding-base-vertical $il-padding-small-horizontal;
+$unibe-il-header-alert-margin-bottom: $il-padding-large-vertical;
+$unibe-il-header-alert-text-align: center;
+$unibe-il-header-alert-min-width: max-content;
+$unibe-il-header-alert-width: 3%;
+$unibe-il-header-alert-border-radius: $il-border-radius-base;
+
+/* Alert Warnings */
+$unibe-il-alert-danger-bg-color: lighten($il-danger-color, 32%);
+$unibe-il-alert-danger-border-color: $unibe-il-alert-danger-bg-color;
+$unibe-il-alert-danger-color: darken($il-danger-color, 40%);
+$unibe-il-alert-warning-bg-color: lighten($il-warning-color, 19%);
+$unibe-il-alert-warning-border-color: $unibe-il-alert-warning-bg-color;
+$unibe-il-alert-warning-color: darken($il-warning-color, 40%);
+$unibe-il-alert-info-bg-color: lighten($il-info-color, 20%);
+$unibe-il-alert-info-border-color: $unibe-il-alert-info-bg-color;
+$unibe-il-alert-info-color: darken($il-info-color, 40%);
+$unibe-il-alert-success-bg-color: lighten($il-success-color, 5%);
+$unibe-il-alert-success-border-color: $unibe-il-alert-success-bg-color;
+$unibe-il-alert-success-color: darken($il-success-color, 60%);
+
+//## Box-Shadows
+$unibe-il-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+$unibe-il-box-shadow-darken: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+//## Transitions
+$unibe-il-transition-base: all .15s ease-in-out;
+
+//## Tabs
+$unibe-il-tab-color: white;
+$unibe-il-tab-border-bottom: none;
+$unibe-il-tab-active-border-bottom: 0px solid $il-extended-color-9;
+$unibe-il-tab-active-background-color: white;
+$unibe-il-tab-active-color: $il-text-color;
+$unibe-il-tab-active-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
+$unibe-il-tab-margin: 0px;
+$unibe-il-tab-padding: 0px $il-padding-xlarge-horizontal 0px $il-padding-xlarge-horizontal;
+$unibe-il-nav-tab-padding-bottom: 6px;
+$unibe-il-tab-border-radius: 0px 0px $il-border-radius-base $il-border-radius-base;
+$unibe-il-tab-border-radius-hover: $unibe-il-tab-active-border-radius;
+$unibe-il-tab-box-shadow: $unibe-il-box-shadow;
+$unibe-tab-text-decoration: none;
+
+//## Subtab
+$unibe-il-subtab-color: $il-link-hover-color;
+$unibe-il-subtab-font-size: $il-font-size-base;
+$unibe-il-subtab-border-bottom: none;
+$unibe-il-subtab-margin: 0 $il-padding-xxlarge-horizontal;
+
+//## Toolbar
+$unibe-il-c-toolbar-bg-color: transparent;
+
+//## Dropdown
+$unibe-button-glyph-color: $il-text-color;
+$unibe-il-dropdown-button-bg-color: transparent;
+$unibe-il-dropdown-button-color: $il-text-color;
+$unibe-il-dropdown-button-bg-color-hover: darken($il-main-dark-bg, 10%);
+$unibe-il-dropdown-button-border: none;
+
+//## Panels
+$unibe-il-panel-secondary-box-shadow: $unibe-il-box-shadow;
+$unibe-il-panel-secondary-border: none;
+$unibe-il-panel-listing-bg-color: transparent;
+$unibe-il-panel-listing-border-top: 1px solid $il-main-dark-bg;
+
+//## Card
+$unibe-il-card-box-shadow: $unibe-il-box-shadow;
+$unibe-il-card-border: none;
+$unibe-il-card-repository-icon-height: 24px;
+$unibe-il-card-repository-icon-margin: 2px 0 0 0;
+$unibe-il-card-head-icon-filter: contrast(0) opacity(0.5);
+$unibe-il-card-dropdown-border: $unibe-il-dropdown-button-border;
+$unibe-il-card-dropdown-color: $unibe-il-dropdown-button-color;
+$unibe-il-deck-card-box-shadow-hover: $unibe-il-box-shadow-darken;
+$unibe-il-card-image-container-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
+$unibe-il-card-caption-color: $il-text-color;
+$unibe-il-card-caption-btn-link-a-hover: $il-main-color;
+$unibe-il-card-title-text-decoration: none;
+$unibe-il-card-repository-head-icon-padding: 10px 3px;
+
+//## ViewControls
+$unibe-il-viewcontrol-bg-color: transparent;

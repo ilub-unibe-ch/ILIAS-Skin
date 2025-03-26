@@ -1,15 +1,18 @@
+@use "./_settings_color-palette.scss" as s-color;
+@use 'sass:color';
+
 //== Borders
 //
 
 //** Base Border Color, e.g. applied to Meta Bar and Breadcrumbs in Default.
-$il-main-border-color: #dddddd !default;
+$il-main-border-color: color.scale(s-color.$il-main-dark-bg, $lightness: -10%) !default;
 //** Darker version of Base Border Color. Used as e.g. Text Inputs.
-$il-main-border-dark-color: #757575 !default;
+$il-main-border-dark-color: color.scale(s-color.$il-main-dark-bg, $lightness: -30%) !default;
 $il-main-border: 1px solid $il-main-border-color !default;
 //** Border Radius for giving the whole skin a rounded look
-$il-border-radius-base: 0px !default;
-$il-border-radius-large: 0px !default;
-$il-border-radius-small: 0px !default;
+$il-border-radius-base: 3px !default;
+$il-border-radius-large: 6px !default;
+$il-border-radius-small: 1px !default;
 //** Border Radius for sub-elements that are rounded to stand out from the default (like tags).
 $il-border-radius-secondary-base: 4px !default;
 $il-border-radius-secondary-large: 10px !default;
