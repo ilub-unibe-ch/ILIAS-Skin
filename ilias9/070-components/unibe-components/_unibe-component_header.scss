@@ -1,0 +1,35 @@
+@use "../../010-settings/settings_header" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+
+// Header Logo
+.il-logo > .hidden-xs > a > img.img-standard {
+  width: $il-standard-page-logo-width;
+  height:$il-standard-page-logo-height;
+  margin-left: $unibe-il-logo-margin-left;
+}
+
+.il-pagetitle {
+  margin-top: $unibe-il-pagetitle-margin-top;
+  padding-left: $unibe-il-pagetitle-padding-left;
+}
+
+// Breadcrumb
+.breadcrumb_wrapper .breadcrumb {
+  padding-left: $unibe-il-breadcrumb-padding-left;
+  span.crumb a {
+    color: $unibe-il-breadcrumb-color;
+    &:hover {
+      color: $unibe-il-breadcrumb-hover-color;
+      text-decoration: $unibe-il-breadcrumb-hover-text-decoration;
+    }
+  }
+}
+
+.breadcrumb_wrapper .breadcrumb {
+  font-weight: $unibe-il-breadcrumb-font-weight;
+  > span + span:before {
+    font-size: $unibe-il-breadcrumb-glyph-font-size;
+    color: $unibe-il-breadcrumb-glyph-color;
+    padding: $unibe-il-breadcrumb-glyph-padding;
+}
+}

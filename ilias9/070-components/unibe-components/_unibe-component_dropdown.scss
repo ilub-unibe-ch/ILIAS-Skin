@@ -8,7 +8,7 @@
   border-left: none;
   &:before {
     font-family: il-icons;
-    content: "\e603";
+    content: $unibe-il-btn-caret-content-glyph;
     }
   }
 
@@ -19,4 +19,13 @@
   &:hover {
     background-color: $unibe-il-dropdown-button-bg-color-hover;
   }
+}
+
+button.btn.btn-ctrl.dropdown-toggle {
+  background-color: $unibe-il-dropdown-btn-ctrl-bg-color;
+}
+
+// Seiteneditor Textabsatz Abstand btn Label zu Caret-Symbol
+.ilTinyMenuSection .btn .caret {
+  padding-left: $unibe-il-btn-caret-padding-left;
 }

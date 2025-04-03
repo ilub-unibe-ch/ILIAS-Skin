@@ -1,0 +1,23 @@
+@use "../../010-settings/" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.il-mainbar-triggers .btn-bulky.engaged {
+  border-left: $unibe-il-btn-bulky-engaged-border-left;
+}
+
+.il-mainbar-tools-button .btn-bulky.engaged {
+  border-left: $unibe-il-mainbar-btn-engaged-border-left;
+}
+
+.il-mainbar-tools-button .btn-bulky, .il-mainbar-tools-button .btn-bulky.engaged {
+  color: $unibe-il-mainbar-tools-button-color;
+}
+
+.il-mainbar-tools-entries .btn-bulky.disengaged {
+  .icon {
+    filter: $unibe-il-mainbar-tools-tab-btn-disengaged-icon-filter;
+  }
+  .bulky-label {
+    color: $unibe-il-mainbar-tools-tab-btn-disengaged-color;
+  }
+}

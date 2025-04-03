@@ -59,19 +59,19 @@ $il-focus-color: #0078D7 !default;
 $il-focus-protection-color: #FFFFFF !default;
 
 //== Alert
-$il-alert-success-bg: color.scale($il-success-color, $lightness: 86%) !default;
+$il-alert-success-bg: color.scale($il-success-color, $lightness: 46%) !default;
 $il-alert-success-border: $il-alert-success-bg !default;
 $il-alert-success-text: $il-text-color !default;
 
-$il-alert-info-bg: color.scale($il-info-color, $lightness: 86%) !default;
+$il-alert-info-bg: color.scale($il-info-color, $lightness: 66%) !default;
 $il-alert-info-border: $il-alert-info-bg !default;
 $il-alert-info-text: $il-text-color !default;
 
-$il-alert-warning-bg: color.scale($il-warning-color, $lightness: 86%) !default;
+$il-alert-warning-bg: color.scale($il-warning-color, $lightness: 66%) !default;
 $il-alert-warning-border: $il-alert-warning-bg !default;
 $il-alert-warning-text: $il-text-color !default;
 
-$il-alert-danger-bg: color.scale($il-danger-color, $lightness: 86%) !default;
+$il-alert-danger-bg: color.scale($il-danger-color, $lightness: 66%) !default;
 $il-alert-danger-border: $il-alert-danger-bg !default;
 $il-alert-danger-text: $il-text-color !default;
 

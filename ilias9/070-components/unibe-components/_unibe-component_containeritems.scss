@@ -1,0 +1,49 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+// Listen
+
+.ilObjListRow {
+  // zusätzliche Anpassung ilias9/070-components/legacy/Services/_component_object.scss notwendig um Springen beim letzten Child zu verhindern
+  background-color: $unibe-il-ObjListRow-bg-color;
+  border-bottom: $unibe-il-ObjListRow-border;
+  border-top: $unibe-il-ObjListRow-border;
+  &:hover {
+    border-top: $unibe-il-ObjListRow-border-hover;
+    border-bottom: $unibe-il-ObjListRow-border-hover;
+    background-color: $unibe-il-ObjListRow-bg-color-hover;
+  }
+}
+
+.il_ContainerItemTitle a {
+  color: $unibe-il-container-ItemTitle-link-color;
+  text-decoration: $unibe-il-container-ItemTitle-text-decoration;
+
+  &:hover {
+    color: $unibe-il-container-ItemTitle-link-color-hover;
+  }
+}
+
+.ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
+  padding-left: $unibe-il-container-block-header-expcoll-padding-left;
+  &:hover {
+    background-color: $unibe-il-ObjListRow-bg-color-hover;
+  }
+}
+
+span.il_ItemAlertProperty {
+  color: $unibe-il-container-ItemAlert-property;
+}
+
+// Accordion
+
+.il_VAccordionHead, .il_HAccordionHead {
+  color: $unibe-il-AccordionHead-color;
+  h2 {
+    font-weight: $unibe-il-AccordionHead-h2-font-weight;
+  }
+}
+
+// Test
+#tst_output .ilTstNavigation {
+  background-color: $unibe-il-testnavigation-bg-color;
+}

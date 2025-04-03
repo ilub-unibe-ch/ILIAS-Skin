@@ -1,5 +1,9 @@
 @use "../../010-settings/settings_unibe_variables" as *;
 
+.panel {
+  border: $unibe-il-panel-border;
+  border-radius: $unibe-il-panel-border-radius;
+}
 .panel-secondary {
   box-shadow: $unibe-il-panel-secondary-box-shadow;
   border: $unibe-il-panel-secondary-border;
@@ -9,7 +13,6 @@
   background-color: $unibe-il-panel-listing-bg-color;
   border: none;
   border-radius: none;
-  //border-top: $unibe-il-panel-listing-border-top;
 }
 
 .ilContainerBlockHeader {

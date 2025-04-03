@@ -7,6 +7,7 @@
 
 div.il_HeaderInner {
   padding-bottom: $il-padding-xxxlarge-vertical;
+  min-height: $unibe-il-headerinner-min-height;
 
   & div.ilHeaderDesc {
     color: $unibe-il-header-desc-color;
@@ -28,8 +29,8 @@ h1.il-page-content-header {
   border-radius: $unibe-il-header-image-border-radius;
   padding: $unibe-il-header-image-padding;
   box-shadow: $unibe-il-header-image-box-shadow;
-  width: 80px;
-  height: 80px;
+  width: $unibe-il-header-image-width;
+  height: $unibe-il-header-image-height;
   margin-right: 24px;
 }
 
@@ -41,6 +42,10 @@ h1.il-page-content-header {
 @media only screen and (max-width: 768px) {
   .media-body {
     padding-left: $unibe-il-media-body-small-padding-left;
+  }
+
+  .il_HeaderInner.media {
+    min-height: $unibe-il-headerinner-small-min-height;
   }
 
   #headerimage {
@@ -112,7 +117,7 @@ div.il_HeaderInner.media {
 #ilTab > li > a:hover, .nav > li > a:focus {
   background-color: $unibe-il-tab-active-background-color;
   border-bottom: $unibe-il-tab-active-border-bottom;
-  color: $unibe-il-tab-active-color;
+  color: $unibe-il-tab-hover-color;
   border-radius: $unibe-il-tab-border-radius-hover;
 }
 
@@ -120,21 +125,21 @@ div.il_HeaderInner.media {
 // Subtabs
 
 #ilSubTab {
-  margin: $unibe-il-subtab-margin;
+  padding: $unibe-il-subtab-padding;
 }
 
 #ilSubTab > li > a {
   font-size: $unibe-il-subtab-font-size;
-
+  color: $unibe-il-subtab-color;
 }
 
 #ilSubTab > li > a:hover {
-  text-decoration: $unibe-tab-text-decoration;
   border-bottom: $unibe-il-subtab-border-bottom;
-  color: $unibe-il-subtab-color;
+  color: $unibe-il-subtab-hover-color;
+  text-decoration: $unibe-il-subtab-hover-text-decoration;
 }
 
 #ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
   text-decoration: $unibe-tab-text-decoration;
-  color: $il-text-color;
+  color: $unibe-il-subtab-active-color;
 }

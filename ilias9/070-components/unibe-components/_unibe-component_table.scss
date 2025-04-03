@@ -1,0 +1,49 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.c-table-data__table-wrapper {
+  box-shadow: $unibe-il-table-box-shadow;
+  background-color: $unibe-il-table-bg-color;
+}
+
+.c-table-data__cell {
+  background-color: $unibe-il-table-cell-bg-color;
+}
+
+// Kopfzeile
+.c-table-data__header {
+  .btn-link {
+    color: $unibe-il-table-header-color;
+    font-weight: $unibe-il-table-header-font-weight;
+    &:hover {
+      color: $unibe-il-table-header-hover-color;
+      text-decoration: $unibe-il-table-header-hover-text-decoration;
+    }
+  }
+
+  .glyphicon-plus-sign:before {
+    content: $unibe-il-table-header-multicolumn-glyph;
+  }
+}
+
+  .c-table-data__multiaction-triggerer {
+    .btn-default {
+      border: $unibe-il-table-multiaction-btn-default-border;
+    }
+  }
+
+  //## Legacy Table
+
+  // Multiactions Pfeile
+  .ilTableCommandRowTop .ilFloatLeft img, .ilTableCommandRow .ilFloatLeft img {
+    width: $unibe-il-table-command-img-width;
+  }
+
+  div.ilTableOuter, div.ilTableCommandRow, div.ilTableCommandRowTop {
+    background-color: transparent;
+  }
+
+  .tblheader {
+    color: #000000;
+    font-weight: 600;
+  }
+
