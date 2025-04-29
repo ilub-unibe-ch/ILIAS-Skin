@@ -36,9 +36,9 @@ div.ilCreationFormSection .form-horizontal {
 .ilObjListRow {
 	border-bottom: $il-main-border;
 	background-color: $il-main-bg;
-    /* &:last-child {                    // verhindert "springen" bei Mouseover $unibe-il-ObjListRow-border-hover
+    &:last-child {
         border-bottom: none;
-    } */
+    }
 }
 
 //mantis #0017866

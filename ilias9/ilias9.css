@@ -2074,7 +2074,7 @@ ul, ol, p {
 }
 
 ol, ul {
-  padding-left: 40px;
+  padding-left: 15px;
   list-style-image: none;
 }
 
@@ -4347,6 +4347,11 @@ hr.il-divider-with-label {
   font-family: Monospace, Courier;
 }
 
+.il-input-radiooption.form-has-collapsible-form > input:not(:checked) ~ .form-group,
+input[type=checkbox].form-has-collapsible-form:not(:checked) ~ .form-group {
+  display: none;
+}
+
 .il-standard-form {
   background-color: white;
   margin-top: 6px;
@@ -4787,7 +4792,7 @@ header {
   display: flex;
   flex-direction: row;
   z-index: 995;
-  box-shadow: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 div.il-system-infos {
@@ -6069,7 +6074,7 @@ footer {
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
-  background-color: #FF4A59;
+  background-color: #FB8F67;
   color: white;
 }
 .il-mainbar-tools-button .btn-bulky .icon,
@@ -6083,7 +6088,7 @@ footer {
   }
 }
 .il-mainbar-tools-button .btn-bulky.engaged {
-  background-color: #d2d3e0;
+  background-color: #f0f0f5;
   color: #000000;
 }
 .il-mainbar-tools-button .btn-bulky.engaged .icon {
@@ -6140,7 +6145,7 @@ footer {
 }
 
 .il-mainbar-tools-entries-bg {
-  background-color: #d2d3e0;
+  background-color: #f0f0f5;
   display: flex;
   height: 80px;
   width: 100%;
@@ -6282,7 +6287,7 @@ footer {
   font-size: 0.75rem;
   padding: 3px 12px;
 }
-.il-maincontrols-footer .il-footer-content div {
+.il-maincontrols-footer .il-footer-content div:not(.c-tooltip) {
   display: inline-block;
 }
 .il-maincontrols-footer .il-footer-links ul {
@@ -6735,8 +6740,15 @@ div.alert ul > li:before {
 .modal.il-modal-lightbox-dark .modal-content .modal-header {
   border-bottom-color: white;
 }
+.modal.il-modal-lightbox-dark .modal-content .modal-title {
+  padding: 0px;
+}
+.modal.il-modal-lightbox-dark .modal-content .carousel-inner {
+  padding: 0px;
+}
 .modal.il-modal-lightbox-dark .modal-content .carousel-control {
   color: white;
+  width: 15%;
 }
 .modal.il-modal-lightbox-dark .close {
   color: white;
@@ -6801,6 +6813,7 @@ div.alert ul > li:before {
   font-size: 1rem;
   margin: 0;
   line-height: 1.428571429;
+  padding: 0px 39px;
 }
 
 .modal-body {
@@ -7043,7 +7056,7 @@ div.alert ul > li:before {
   vertical-align: middle;
 }
 .panel-secondary .il-panel-listing-std-container > h2, .panel-secondary .panel-body h4 {
-  display: block;
+  display: inline-block;
   padding: 3px 0;
   font-size: 0.875rem;
   color: #000000;
@@ -9661,7 +9674,7 @@ h1.il-page-content-header {
   color: #2c2c2c;
   vertical-align: middle;
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media only screen and (max-width: 991px) {
   h1.il-page-content-header {
@@ -10437,6 +10450,7 @@ tbody.collapse.in {
 .img-responsive {
   display: block;
   max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
@@ -10449,6 +10463,7 @@ tbody.collapse.in {
   overflow: hidden;
   width: 100%;
   min-height: 400px;
+  padding: 0px 24px;
 }
 .carousel-inner .item:not(.text-only) .item-content {
   display: flex;
@@ -10470,6 +10485,7 @@ tbody.collapse.in {
 .carousel-inner > .item .item-content > a > img {
   display: block;
   max-width: 100%;
+  max-height: 100%;
   height: auto;
   line-height: 1;
 }
@@ -10500,6 +10516,9 @@ tbody.collapse.in {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     left: 0;
+  }
+  .carousel-inner > .item.next.left.text-only, .carousel-inner > .item.prev.right.text-only, .carousel-inner > .item.active.text-only {
+    padding: 0 15px;
   }
 }
 .carousel-inner > .active,
@@ -10538,7 +10557,7 @@ tbody.collapse.in {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 15%;
+  width: 20px;
   filter: alpha(opacity=50);
   opacity: 0.5;
   font-size: 20px;
@@ -15007,6 +15026,10 @@ p#copg-auto-save {
   color: #737373;
   padding: 20px;
 }
+.copg-new-content-placeholder .icon,
+.copg-content-placeholder-lso-curriculum .icon {
+  filter: invert(50%);
+}
 
 .il-copg-drag {
   width: 40px;
@@ -16491,9 +16514,9 @@ div.ilCreationFormSection .form-horizontal {
 .ilObjListRow {
   border-bottom: 1px solid #e0d9e0;
   background-color: white;
-  /* &:last-child {                    // verhindert "springen" bei Mouseover $unibe-il-ObjListRow-border-hover
-      border-bottom: none;
-  } */
+}
+.ilObjListRow:last-child {
+  border-bottom: none;
 }
 
 .table-striped {

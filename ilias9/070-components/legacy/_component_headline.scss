@@ -6,7 +6,7 @@ h1.il-page-content-header {
 	color: $il-neutral-color;
 	vertical-align: middle;
 	font-size: $il-font-size-h1;
-	font-weight: $il-headings-font-weight;
+	font-weight: $il-font-weight-bold;
 	@media only screen and (max-width: $il-grid-float-breakpoint-max) {
         font-size: $il-font-size-xxlarge;
     }

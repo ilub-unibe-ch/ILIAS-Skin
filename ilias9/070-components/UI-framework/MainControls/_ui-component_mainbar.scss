@@ -22,10 +22,10 @@ $il-mainbar-remove-tools-btn-height: 45px;
 
 $il-mainbar-tools-item-gap: 3px;
 
-$il-mainbar-tools-btn-bg: $il-extended-color-9; //$il-warning-color;
+$il-mainbar-tools-btn-bg: $il-warning-color;
 $il-mainbar-tools-bg: $il-main-dark-bg;
 
-$il-mainbar-tools-btn-bg-engaged: lighten($il-main-color, 40%); //lighten($il-main-color, 50%);
+$il-mainbar-tools-btn-bg-engaged: lighten($il-main-color, 50%);
 $il-mainbar-tools-tab-btn-bg-engaged: white;
 $il-mainbar-tools-tab-btn-bg-disengaged: $il-main-color;
 
