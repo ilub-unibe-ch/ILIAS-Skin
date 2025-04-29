@@ -20539,6 +20539,7 @@ ul.dropdown-menu#ilAdvSelListTable_characteristic > li:hover {
 }
 .ilContainerTileRows {
   padding: 6px 0;
+  background-color: transparent;
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
   background-color: white;
