@@ -20,12 +20,12 @@ var wayf_URL = "https://wayf.switch.ch/SWITCHaai/WAYF";
 // is displayed is called with a GET argument 'entityID' as automatically set by Shibboleth
 // Examples: "https://econf.switch.ch/shibboleth", "https://dokeos.unige.ch/shibboleth"
 // [Mandatory]
-var wayf_sp_entityID = "window.location.origin/shibboleth";
+var wayf_sp_entityID = window.location.origin+"/shibboleth";
 
 // Shibboleth Service Provider handler URL
 // Examples: "https://point.switch.ch/Shibboleth.sso", "https://rr.aai.switch.ch/aaitest/Shibboleth.sso"
 // [Mandatory, if wayf_use_discovery_service = false]
-var wayf_sp_handlerURL = "window.location.origin/Shibboleth.sso";
+var wayf_sp_handlerURL = window.location.origin+"/Shibboleth.sso";
 
 // URL on this resource that the user should be returned to after authentication
 // Examples: "https://econf.switch.ch/aai/home", "https://olat.uzh.ch/my/courses"
