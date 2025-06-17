@@ -18364,7 +18364,7 @@ div.il_HeaderInner.media {
   background-color: #5D6089;
   padding: 15px;
   border-radius: 3px 3px 0 0;
-  margin: 0px;
+  margin: 12px 0px 0px 0px;
 }
 
 .ui-dropzone {
@@ -18441,6 +18441,14 @@ div.il_HeaderInner.media {
 
 button.btn.btn-ctrl.dropdown-toggle {
   background-color: #ebeff7;
+}
+
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  background-color: #aac6b5;
+}
+
+.btn-group-vertical .dropdown-toggle {
+  background-color: 1px solid #e0d9e0;
 }
 
 .ilTinyMenuSection .btn .caret {
@@ -18641,6 +18649,11 @@ td.calministd:hover {
   color: #5D6089;
 }
 
+.ilContainerBlockHeader h2.ilHeader {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
   padding-left: 45px;
 }
@@ -18773,6 +18786,14 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   color: #3e5c4a;
   font-size: 1.5rem;
   padding-right: 3px;
+}
+
+.btn-link {
+  color: #000000;
+}
+
+.il-footer-permanent-url > .btn-link {
+  color: #5D6089;
 }
 
 /*

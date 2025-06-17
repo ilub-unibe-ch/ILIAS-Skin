@@ -23,6 +23,11 @@
   }
 }
 
+.ilContainerBlockHeader h2.ilHeader {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
   padding-left: $unibe-il-container-block-header-expcoll-padding-left;
   &:hover {

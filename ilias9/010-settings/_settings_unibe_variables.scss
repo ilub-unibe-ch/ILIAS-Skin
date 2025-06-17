@@ -60,7 +60,7 @@ $unibe-il-header-image-padding: $il-padding-large-vertical; //Innenabstand zu Ic
 $unibe-il-h1-header-padding: 0px; // Bündigkeit Icon zu Titel
 $unibe-il-page-content-header-bg-color: $il-main-color;
 $unibe-il-page-content-header-padding: $il-padding-xxxlarge-vertical;
-$unibe-il-page-content-header-margin: 0px;
+$unibe-il-page-content-header-margin: $il-margin-xxlarge-vertical 0px 0px 0px;
 $unibe-il-page-content-header-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
 $unibe-il-page-content-header-color: $unibe-il-accent-color;
 $unibe-il-header-desc-color: $unibe-il-accent-color;
@@ -129,6 +129,11 @@ $unibe-il-subtab-padding: $il-padding-large-horizontal $il-padding-xxlarge-horiz
 $unibe-il-c-toolbar-bg-color: transparent;
 
 //## Buttons
+$unibe-il-btn-link-color: $unibe-il-link-nav-color;
+
+//## Footer
+$unibe-il-footer-btn-link-color: $il-link-color;
+
 // Dropdown
 $unibe-button-glyph-color: $unibe-il-link-nav-color;
 $unibe-il-dropdown-button-bg-color: transparent;
@@ -138,6 +143,10 @@ $unibe-il-dropdown-button-border: none;
 $unibe-il-dropdown-btn-ctrl-bg-color: $il-btn-ctrl-bg;
 $unibe-il-btn-caret-content-glyph: "\e603";
 $unibe-il-btn-caret-padding-left: $il-padding-small-horizontal;
+//Opencast
+$unibe-il-btn-group-vertical-first-child-bg-color: $il-btn-primary-bg;
+$unibe-il-btn-group-vertical-dropdown-border: $il-main-border;
+
 
 // Toggle
 $unibe-il-filter-bar-toggle-padding-top: 4px;

@@ -25,6 +25,17 @@ button.btn.btn-ctrl.dropdown-toggle {
   background-color: $unibe-il-dropdown-btn-ctrl-bg-color;
 }
 
+// Opencast Dreier-Dropdown mit Button Info und 2 Dropdown
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  background-color: $unibe-il-btn-group-vertical-first-child-bg-color;
+}
+
+.btn-group-vertical .dropdown-toggle {
+  background-color: $unibe-il-btn-group-vertical-dropdown-border;
+}
+
+
+
 // Seiteneditor Textabsatz Abstand btn Label zu Caret-Symbol
 .ilTinyMenuSection .btn .caret {
   padding-left: $unibe-il-btn-caret-padding-left;
