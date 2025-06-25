@@ -22,3 +22,8 @@
   color: $unibe-il-secondary-panel-viewcontrol-btn-active-color;
   border-radius: 3px;
 }
+
+/* Aktuelles Semester ViewControl Mode Abstand zu Panel */
+.il-viewcontrol-mode.l-bar__element {
+  margin-bottom: $unibe-il-viewcontrol-bar-element-margin-bottom;
+}

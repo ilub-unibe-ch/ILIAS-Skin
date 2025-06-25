@@ -18553,6 +18553,11 @@ button.btn.btn-ctrl.dropdown-toggle {
   border-radius: 3px;
 }
 
+/* Aktuelles Semester ViewControl Mode Abstand zu Panel */
+.il-viewcontrol-mode.l-bar__element {
+  margin-bottom: 12px;
+}
+
 table.calmini {
   font-size: 0.875rem;
   background-color: white;
@@ -18794,6 +18799,11 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 
 .il-footer-permanent-url > .btn-link {
   color: #5D6089;
+}
+
+/* rendered by */
+span.il-footer-text {
+  font-size: 0.75rem;
 }
 
 /*
