@@ -129,11 +129,12 @@ $unibe-il-subtab-padding: $il-padding-large-horizontal $il-padding-xxlarge-horiz
 $unibe-il-c-toolbar-bg-color: transparent;
 
 //## Buttons
-$unibe-il-btn-link-color: $unibe-il-link-nav-color;
+$unibe-il-btn-link-color: $il-link-color; //$unibe-il-link-nav-color;
 
 //## Footer
 $unibe-il-footer-btn-link-color: $il-link-color;
 $unibe-il-footer-text-font-size: $il-font-size-small;
+$unibe-il-footer-text-padding-left: $il-padding-large-horizontal;
 
 // Dropdown
 $unibe-button-glyph-color: $unibe-il-link-nav-color;
@@ -147,7 +148,6 @@ $unibe-il-btn-caret-padding-left: $il-padding-small-horizontal;
 //Opencast
 $unibe-il-btn-group-vertical-first-child-bg-color: $il-btn-primary-bg;
 $unibe-il-btn-group-vertical-dropdown-border: $il-main-border;
-
 
 // Toggle
 $unibe-il-filter-bar-toggle-padding-top: 4px;
@@ -175,6 +175,9 @@ $unibe-il-card-caption-color: $il-text-color;
 $unibe-il-card-caption-btn-link-a-hover: $il-main-color;
 $unibe-il-card-title-text-decoration: $unibe-il-link-nav-text-decoration;
 $unibe-il-card-repository-head-icon-padding: 10px 3px;
+
+//## Modal
+$unibe-il-modal-title-padding: 0px $il-padding-xxlarge-horizontal;
 
 //## ViewControls
 $unibe-il-viewcontrol-bg-color: transparent;
@@ -216,6 +219,9 @@ $unibe-il-calmini-day-hover-border-radius: $il-border-radius-base;
 $unibe-calendar-link-color: $unibe-il-link-nav-color;
 $unibe-calendar-link-hover-color: $unibe-il-link-nav-color-hover;
 $unibe-calendar-link-hover-text-decoration: $unibe-il-link-nav-text-decoration;
+
+// Calendar List
+$unibe-il-dropzone-btn-margin-left: 0px;
 
 //## Container Items
 $unibe-il-ObjListRow-bg-color: transparent;

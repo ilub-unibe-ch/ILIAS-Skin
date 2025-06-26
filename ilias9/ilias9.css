@@ -18554,7 +18554,7 @@ button.btn.btn-ctrl.dropdown-toggle {
 }
 
 /* Aktuelles Semester ViewControl Mode Abstand zu Panel */
-.il-viewcontrol-mode.l-bar__element {
+#il_center_col .il-viewcontrol-mode.l-bar__element {
   margin-bottom: 12px;
 }
 
@@ -18583,6 +18583,10 @@ td.calministd:hover {
 .ilCalSelTitle label a:hover {
   color: #5D6089;
   text-decoration: none;
+}
+
+.ui-dropzone .btn {
+  margin-left: 0px;
 }
 
 .il-logo > .hidden-xs > a > img.img-standard {
@@ -18794,7 +18798,7 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 }
 
 .btn-link {
-  color: #000000;
+  color: #5D6089;
 }
 
 .il-footer-permanent-url > .btn-link {
@@ -18804,6 +18808,7 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 /* rendered by */
 span.il-footer-text {
   font-size: 0.75rem;
+  padding-left: 12px;
 }
 
 /*

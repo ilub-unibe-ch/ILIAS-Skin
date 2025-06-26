@@ -31,3 +31,8 @@ td.calministd:hover {
     text-decoration: $unibe-calendar-link-hover-text-decoration;
   }
 }
+
+// Calendar Liste
+.ui-dropzone .btn {
+  margin-left: $unibe-il-dropzone-btn-margin-left;
+}
