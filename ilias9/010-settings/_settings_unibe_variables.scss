@@ -257,3 +257,13 @@ $unibe-il-copg-editarea-selected-label-color: $il-text-color;
 $unibe-il-ilc-bulletedlist-padding: 0px $il-padding-base 0px $il-padding-base;
 $unibe-il-copg-btn-default-glyph-color: $il-text-color;
 $unibe-il-copg-btn-default-hover-bg-color: $unibe-il-dropdown-button-bg-color-hover;
+
+
+// Login
+$tax-il-login-submit-bg-color: $il-extended-color-9;
+$tax-il-login-submit-bg-color-hover: darken($il-extended-color-9,25%);
+$tax-il-login-submit-text-color-hover: white;
+$tax-il-login-submit-border-hover: none;
+$tax-aai-login-width: 350px;
+$tax-il-taxUserAgreement-text-align: center;
+$tax-il-taxUserAgreement-margin-top: 2*$il-margin-xxlarge-vertical;

@@ -19344,4 +19344,44 @@ div.Access {
   color: #737373;
 }
 
+#wayf_div {
+  margin-top: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-width: 0 !important;
+  overflow: hidden;
+  padding: 0px !important;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  #wayf_div {
+    width: 350px !important;
+  }
+}
+#wayf_submit_button {
+  width: 100% !important;
+  border: none !important;
+  background-color: #FF4A59 !important;
+  color: #ffffff !important;
+}
+
+#wayf_submit_button:hover {
+  width: 100% !important;
+  border: none !important;
+  background-color: #ca0011 !important;
+  color: white !important;
+}
+
+#wayf_remember_checkbox_div {
+  display: none;
+}
+
+.taxUserAgreement {
+  text-align: center;
+  margin-top: 24px;
+}
+
 /*# sourceMappingURL=ilias9.css.map */
