@@ -47,3 +47,13 @@
     font-weight: 600;
   }
 
+//## Opencast Status Hinweis in Tabelle
+
+.xoct_event_state {
+  padding: $unibe-il-xoct-event-state-padding;
+  margin: $unibe-il-xoct-event-state-margin;
+}
+
+.label-info {
+  background-color: $unibe-il-xoct-label-info-bg-color;
+}

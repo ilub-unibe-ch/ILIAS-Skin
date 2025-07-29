@@ -18727,6 +18727,15 @@ div.ilTableOuter, div.ilTableCommandRow, div.ilTableCommandRowTop {
   font-weight: 600;
 }
 
+.xoct_event_state {
+  padding: 6px;
+  margin: 3px 0 0 0;
+}
+
+.label-info {
+  background-color: #718BC3;
+}
+
 .progress-bar {
   color: #f6f4f6;
 }
