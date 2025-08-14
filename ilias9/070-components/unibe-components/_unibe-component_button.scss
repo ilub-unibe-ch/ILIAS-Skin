@@ -10,3 +10,8 @@
   color: $unibe-il-footer-btn-link-color;
 }
 
+// Dropdown INhaltsverzeichnis in Lernmodul
+
+.navbar-form > .dropdown {
+  max-width: fit-content;
+}

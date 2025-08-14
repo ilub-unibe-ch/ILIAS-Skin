@@ -46,6 +46,12 @@ $unibe-il-breadcrumb-glyph-padding: $il-padding-base $il-padding-small-horizonta
 //## Mainbar
 $unibe-il-btn-bulky-engaged-border-left: 4px solid $il-extended-color-9;
 
+//## Slate
+$unibe-il-item-title-link-color: $unibe-il-link-nav-color;
+$unibe-il-item-title-link-hover-color: $unibe-il-link-nav-color-hover;
+$unibe-il-std-item-container-bg-hover: $il-main-dark-bg;
+$unibe-il-std-item-container-text-decoration-hover: $unibe-il-link-nav-text-decoration;
+
 // Tools
 /* In 070-components > UI-framework > _ui-component_mainbar.scss sind weitere Anpassungen direkt zu Tools-Buttons vorgenommen worden */
 $unibe-il-mainbar-btn-engaged-border-left: $unibe-il-btn-bulky-engaged-border-left;
@@ -114,13 +120,13 @@ $unibe-il-nav-tab-padding-bottom: 6px;
 $unibe-il-tab-border-radius: 0px 0px $il-border-radius-base $il-border-radius-base;
 $unibe-il-tab-border-radius-hover: $unibe-il-tab-active-border-radius;
 $unibe-il-tab-box-shadow: $unibe-il-box-shadow;
-$unibe-tab-text-decoration: $unibe-il-link-nav-text-decoration;
+$unibe-tab-text-decoration: underline; //$unibe-il-link-nav-text-decoration;
 
 //## Subtab
 $unibe-il-subtab-color: $unibe-il-link-nav-color;
 $unibe-il-subtab-hover-color: $unibe-il-link-nav-color-hover;
 $unibe-il-subtab-hover-text-decoration: $unibe-il-link-nav-text-decoration;
-$unibe-il-subtab-active-color: $unibe-il-link-nav-color-hover;
+$unibe-il-subtab-active-color: $unibe-il-link-nav-color;
 $unibe-il-subtab-font-size: $il-font-size-base;
 $unibe-il-subtab-border-bottom: none;
 $unibe-il-subtab-padding: $il-padding-large-horizontal $il-padding-xxlarge-horizontal;
@@ -189,13 +195,14 @@ $unibe-il-viewcontrol-bar-element-margin-bottom: $il-margin-xxlarge-vertical;
 $unibe-il-table-command-img-width: 18px;
 $unibe-il-table-box-shadow: none;
 $unibe-il-table-bg-color: transparent;
-$unibe-il-table-cell-bg-color: transparent;
+$unibe-il-table-cell-bg-color: $il-main-bg;
 $unibe-il-table-header-color: $il-text-color;
 $unibe-il-table-header-font-weight: $il-font-weight-bold;
 $unibe-il-table-header-hover-color: $unibe-il-link-nav-color-hover;
 $unibe-il-table-header-hover-text-decoration: $unibe-il-link-nav-text-decoration;
 $unibe-il-table-header-multicolumn-glyph: "\e038";
 $unibe-il-table-multiaction-btn-default-border: 1px solid $il-btn-standard-border;
+$unibe-il-table-head-border-bottom: 3px solid #000000;
 
 // OpenCast Status
 $unibe-il-xoct-event-state-padding: $il-padding-large-vertical;
@@ -203,7 +210,9 @@ $unibe-il-xoct-event-state-margin: $il-padding-base-vertical 0 0 0;
 $unibe-il-xoct-label-info-bg-color: $il-info-color;
 
 //## Progressbar
-$unibe-progress-color: $il-main-dark-bg;
+$unibe-progress-color: $il-text-color;
+$il-unibe-progress-bg-color: $il-extended-color-5;
+$unibe-progress-border-right: 2px solid color.scale($il-extended-color-5, $lightness: 80%);
 
 //## Launcher
 $unibe-il-launcher-glyph-color: darken($il-secondary-color, 50%);

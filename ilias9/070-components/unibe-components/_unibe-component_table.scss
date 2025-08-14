@@ -11,6 +11,8 @@
 
 // Kopfzeile
 .c-table-data__header {
+  border-bottom: $unibe-il-table-head-border-bottom;
+
   .btn-link {
     color: $unibe-il-table-header-color;
     font-weight: $unibe-il-table-header-font-weight;
@@ -42,9 +44,14 @@
     background-color: transparent;
   }
 
+.table > thead > tr > th {
+  border-bottom: $unibe-il-table-head-border-bottom;
+}
+
   .tblheader {
     color: #000000;
     font-weight: 600;
+
   }
 
 //## Opencast Status Hinweis in Tabelle

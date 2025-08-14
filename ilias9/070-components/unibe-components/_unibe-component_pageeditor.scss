@@ -39,3 +39,10 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 .ilc_list_u_BulletedList {
   padding: $unibe-il-ilc-bulletedlist-padding;
 }
+
+// Ausrichten von Seiteneditor-Inhalten auf Content-Tab
+#il_center_col > .ilCOPageSection,
+.ilc_Paragraph,
+.ilc_media_cont_MediaContainer > .ilc_Mob {
+margin: 0 14px;
+}

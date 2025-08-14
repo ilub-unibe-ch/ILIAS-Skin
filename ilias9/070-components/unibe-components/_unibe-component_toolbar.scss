@@ -3,3 +3,21 @@
 .c-toolbar {
   background-color: $unibe-il-c-toolbar-bg-color;
 }
+
+// Lernmodul Navigation mit Seiten/Kapitel-Titel
+
+.navbar-form .dropdown .dropdown-toggle span {
+  max-width: 600px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-form .dropdown .dropdown-toggle span {
+    max-width: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .navbar-form .dropdown .dropdown-toggle span {
+    max-width: 350px !important;
+  }
+}
