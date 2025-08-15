@@ -126,10 +126,11 @@ $unibe-tab-text-decoration: underline; //$unibe-il-link-nav-text-decoration;
 $unibe-il-subtab-color: $unibe-il-link-nav-color;
 $unibe-il-subtab-hover-color: $unibe-il-link-nav-color-hover;
 $unibe-il-subtab-hover-text-decoration: $unibe-il-link-nav-text-decoration;
-$unibe-il-subtab-active-color: $unibe-il-link-nav-color;
+$unibe-il-subtab-active-color: $il-link-color;
+$unibe-subtab-active-text-decoration: $unibe-il-link-nav-text-decoration;
 $unibe-il-subtab-font-size: $il-font-size-base;
 $unibe-il-subtab-border-bottom: none;
-$unibe-il-subtab-padding: $il-padding-large-horizontal $il-padding-xxlarge-horizontal;
+$unibe-il-subtab-padding: $il-padding-base-horizontal $il-padding-xxlarge-horizontal 0px $il-padding-xxlarge-horizontal;
 
 //## Toolbar
 $unibe-il-c-toolbar-bg-color: transparent;

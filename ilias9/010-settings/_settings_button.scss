@@ -40,9 +40,9 @@ $il-btn-ctrl-outer-height: 2.2rem !default;
 $il-btn-ctrl-inner-btn-height: 1.7rem !default;
 
 //** Colors of inactive buttons
-$il-disabled-btn-color: color.scale(s-color.$il-text-color, $lightness: 40%) !default;
-$il-disabled-btn-bg: #b0b0b0 !default;
-$il-disabled-btn-border: #b0b0b0 !default;
+$il-disabled-btn-color: s-border.$il-main-border-color !default; //color.scale(s-color.$il-text-color, $lightness: 40%) !default;
+$il-disabled-btn-bg: white; //#b0b0b0 !default;
+$il-disabled-btn-border: s-border.$il-main-border-color !default; //#e6e6e6 !default;
 
 //** Tag Colors
 $il-btn-tag-bg: color.scale(s-color.$il-extended-color-7, $lightness: 40%) !default;
