@@ -18725,7 +18725,7 @@ div.ilTableOuter, div.ilTableCommandRow, div.ilTableCommandRowTop {
   background-color: transparent;
 }
 
-.table > thead > tr > th {
+.table > thead > tr > th, .table > thead > tr > td {
   border-bottom: 3px solid #000000;
 }
 
