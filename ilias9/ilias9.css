@@ -6074,7 +6074,7 @@ footer {
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
-  background-color: #D81E5B;
+  background-color: #FF4A59;
   color: white;
 }
 .il-mainbar-tools-button .btn-bulky .icon,
@@ -11015,11 +11015,11 @@ ul.il-book-obj-selection li {
 }
 
 .il-book-border-mark-8 {
-  border-left: 3px solid #FF4A59;
+  border-left: 3px solid #D81E5B;
 }
 
 .il-book-border-mark-9 {
-  border-left: 3px solid #D81E5B;
+  border-left: 3px solid #FF4A59;
 }
 
 .il-book-slot-1 {
@@ -11075,14 +11075,14 @@ ul.il-book-obj-selection li {
   height: 100%;
   width: 100%;
   padding: 3px;
-  border-left: 3px solid #FF4A59;
+  border-left: 3px solid #D81E5B;
 }
 
 .il-book-slot-9 {
   height: 100%;
   width: 100%;
   padding: 3px;
-  border-left: 3px solid #D81E5B;
+  border-left: 3px solid #FF4A59;
 }
 
 /* Modules/Chatroom */
@@ -18382,7 +18382,7 @@ div.il_HeaderInner.media {
 
 #ilTab > li.active > a, #ilTab > li.active > a:hover, #ilTab > li.active > a:focus {
   background-color: white;
-  border-bottom: 0px solid #D81E5B;
+  border-bottom: 0px solid #FF4A59;
   color: #5D6089;
   border-radius: 3px 3px 0 0;
 }
@@ -18394,7 +18394,7 @@ div.il_HeaderInner.media {
 
 #ilTab > li > a:hover, .nav > li > a:focus {
   background-color: white;
-  border-bottom: 0px solid #D81E5B;
+  border-bottom: 0px solid #FF4A59;
   color: #000000;
   border-radius: 3px 3px 0 0;
 }
@@ -18568,7 +18568,7 @@ table.calmini a {
 }
 
 table.calmini td.calminitoday {
-  background-color: #D81E5B;
+  background-color: #FF4A59;
   border-radius: 16px;
 }
 
@@ -18616,16 +18616,16 @@ td.calministd:hover {
 }
 .breadcrumb_wrapper .breadcrumb > span + span:before {
   font-size: 0.625rem;
-  color: #D81E5B;
+  color: #FF4A59;
   padding: 9px 6px;
 }
 
 .il-mainbar-triggers .btn-bulky.engaged {
-  border-left: 4px solid #D81E5B;
+  border-left: 4px solid #FF4A59;
 }
 
 .il-mainbar-tools-button .btn-bulky.engaged {
-  border-left: 4px solid #D81E5B;
+  border-left: 4px solid #FF4A59;
 }
 
 .il-mainbar-tools-button .btn-bulky, .il-mainbar-tools-button .btn-bulky.engaged {
@@ -19401,7 +19401,7 @@ div.Access {
 #wayf_submit_button {
   width: 100% !important;
   border: none !important;
-  background-color: #D81E5B !important;
+  background-color: #FF4A59 !important;
   color: #ffffff !important;
   border-radius: 3px;
 }
@@ -19409,7 +19409,7 @@ div.Access {
 #wayf_submit_button:hover {
   width: 100% !important;
   border: none !important;
-  background-color: #680e2c !important;
+  background-color: #ca0011 !important;
   color: white !important;
 }
 

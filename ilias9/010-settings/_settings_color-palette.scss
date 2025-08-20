@@ -94,9 +94,9 @@ $il-extended-color-6: #A69FB3 !default;
 //** Variant 7 of the extended color set in ILIAS
 $il-extended-color-7: $il-info-color !default;
 //** Variant 8 of the extended color set in ILIAS
-$il-extended-color-8: $il-danger-color !default;
+$il-extended-color-8: #D81E5B !default;
 //** Variant 9 of the extended color set in ILIAS
-$il-extended-color-9: #D81E5B !default;
+$il-extended-color-9: $il-danger-color !default;
 
 //** all variants of letter avatar background colors (MUST be 26), note for a11y reason, they must be in contrast 3x1 to white (foreground color)
 $il-avatar-letter-color-variants: (#0e6252, #107360, #896F06, #A06608, #176437, #196f3d, #B25E15, #a04000, #1d6fa5, #1b557a, #bf2718, #81261d, #713b87, #522764, #6A747C, #34495e, #2c3e50, #566566, #90175a, #9e2b6e, #d22f10, #666d4e, #715a32, #83693a, #963a30, #DE2F1B) !default;

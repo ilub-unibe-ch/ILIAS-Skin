@@ -37,7 +37,7 @@ $il-standard-page-system-info-contrast-threshold: 43%;
 /** three color variants for neutral, important, breaking Head Infos **/
 $il-standard-page-system-info-color-variant-neutral: lighten($il-info-color, 20%); // looks nice with $il-mainbar-btn-bg-color as well
 $il-standard-page-system-info-color-variant-important: lighten($il-warning-color, 6%);
-$il-standard-page-system-info-color-variant-breaking: lighten($il-extended-color-9, 18%);
+$il-standard-page-system-info-color-variant-breaking: lighten($il-extended-color-8, 18%);
 
 .il-system-info {
 
