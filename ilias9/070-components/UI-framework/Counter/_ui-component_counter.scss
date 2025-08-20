@@ -19,7 +19,7 @@ $il-counter-status-position-bottom: -5px;
 //== Novelty Counter
 //
 //##
-$il-counter-novelty-bg: $il-warning-color;
+$il-counter-novelty-bg: $il-danger-color; //$il-warning-color;
 $il-counter-novelty-position-top: -5px;
 
 .badge {

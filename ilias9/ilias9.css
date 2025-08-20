@@ -3802,7 +3802,7 @@ button .minimize, button .close {
   padding: 2px 4px;
   position: absolute;
   top: -5px;
-  background-color: #FB8F67;
+  background-color: #FF4A59;
 }
 
 .il-counter-status {
@@ -6074,7 +6074,7 @@ footer {
 }
 .il-mainbar-tools-button .btn-bulky,
 .il-mainbar-tools-button .btn-bulky.engaged {
-  background-color: #FF4A59;
+  background-color: #D81E5B;
   color: white;
 }
 .il-mainbar-tools-button .btn-bulky .icon,
@@ -6493,43 +6493,43 @@ footer {
   -webkit-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
-  background-color: #f0f0f5;
+  background-color: #b9c6e1;
   border-top: #e0d9e0 none;
   border-bottom: #e0d9e0 none;
   border-left: #e0d9e0 none;
   border-right: #e0d9e0 none;
-  color: contrast(greyscale(#f0f0f5), #484b6b, white, 43%);
+  color: contrast(greyscale(#b9c6e1), #1f2c49, white, 43%);
 }
 .il-system-info.il-system-info-neutral a.glyph {
-  color: contrast(greyscale(#f0f0f5), #484b6b, white, 43%);
+  color: contrast(greyscale(#b9c6e1), #1f2c49, white, 43%);
 }
 .il-system-info.il-system-info-important {
   -webkit-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
-  background-color: white;
+  background-color: #fca585;
   border-top: #e0d9e0 none;
   border-bottom: #e0d9e0 none;
   border-left: #e0d9e0 none;
   border-right: #e0d9e0 none;
-  color: contrast(greyscale(white), #cc0011, white, 43%);
+  color: contrast(greyscale(#fca585), #4d1602, white, 43%);
 }
 .il-system-info.il-system-info-important a.glyph {
-  color: contrast(greyscale(white), #cc0011, white, 43%);
+  color: contrast(greyscale(#fca585), #4d1602, white, 43%);
 }
 .il-system-info.il-system-info-breaking {
   -webkit-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -10px 4px -10px rgba(0, 0, 0, 0.25);
-  background-color: #ff172a;
+  background-color: #ea6893;
   border-top: #e0d9e0 none;
   border-bottom: #e0d9e0 none;
   border-left: #e0d9e0 none;
   border-right: #e0d9e0 none;
-  color: contrast(greyscale(#ff172a), black, white, 43%);
+  color: contrast(greyscale(#ea6893), #1c040c, white, 43%);
 }
 .il-system-info.il-system-info-breaking a.glyph {
-  color: contrast(greyscale(#ff172a), black, white, 43%);
+  color: contrast(greyscale(#ea6893), #1c040c, white, 43%);
 }
 .il-system-info.full {
   height: auto;
@@ -11019,7 +11019,7 @@ ul.il-book-obj-selection li {
 }
 
 .il-book-border-mark-9 {
-  border-left: 3px solid #FF4A59;
+  border-left: 3px solid #D81E5B;
 }
 
 .il-book-slot-1 {
@@ -11082,7 +11082,7 @@ ul.il-book-obj-selection li {
   height: 100%;
   width: 100%;
   padding: 3px;
-  border-left: 3px solid #FF4A59;
+  border-left: 3px solid #D81E5B;
 }
 
 /* Modules/Chatroom */
@@ -18382,7 +18382,7 @@ div.il_HeaderInner.media {
 
 #ilTab > li.active > a, #ilTab > li.active > a:hover, #ilTab > li.active > a:focus {
   background-color: white;
-  border-bottom: 0px solid #FF4A59;
+  border-bottom: 0px solid #D81E5B;
   color: #5D6089;
   border-radius: 3px 3px 0 0;
 }
@@ -18394,7 +18394,7 @@ div.il_HeaderInner.media {
 
 #ilTab > li > a:hover, .nav > li > a:focus {
   background-color: white;
-  border-bottom: 0px solid #FF4A59;
+  border-bottom: 0px solid #D81E5B;
   color: #000000;
   border-radius: 3px 3px 0 0;
 }
@@ -18568,7 +18568,7 @@ table.calmini a {
 }
 
 table.calmini td.calminitoday {
-  background-color: #FF4A59;
+  background-color: #D81E5B;
   border-radius: 16px;
 }
 
@@ -18616,16 +18616,16 @@ td.calministd:hover {
 }
 .breadcrumb_wrapper .breadcrumb > span + span:before {
   font-size: 0.625rem;
-  color: #FF4A59;
+  color: #D81E5B;
   padding: 9px 6px;
 }
 
 .il-mainbar-triggers .btn-bulky.engaged {
-  border-left: 4px solid #FF4A59;
+  border-left: 4px solid #D81E5B;
 }
 
 .il-mainbar-tools-button .btn-bulky.engaged {
-  border-left: 4px solid #FF4A59;
+  border-left: 4px solid #D81E5B;
 }
 
 .il-mainbar-tools-button .btn-bulky, .il-mainbar-tools-button .btn-bulky.engaged {
@@ -19401,7 +19401,7 @@ div.Access {
 #wayf_submit_button {
   width: 100% !important;
   border: none !important;
-  background-color: #FF4A59 !important;
+  background-color: #D81E5B !important;
   color: #ffffff !important;
   border-radius: 3px;
 }
@@ -19409,7 +19409,7 @@ div.Access {
 #wayf_submit_button:hover {
   width: 100% !important;
   border: none !important;
-  background-color: #ca0011 !important;
+  background-color: #680e2c !important;
   color: white !important;
 }
 
