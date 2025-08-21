@@ -76,12 +76,12 @@ $unibe-il-media-HeaderInner-before-content: "\00a0";
 $unibe-il-Head-Action-display: none; // entfernt "Aktionen" Label bei Top Actions
 $unibe-il-Head-Action-glyph-color: $il-text-color; // färbt Glyph in Stageheader sichtbar ein
 $unibe-il-headerinner-min-height: 120px;
-$unibe-il-header-image-width: 64px;
-$unibe-il-header-image-height: 64px;
+$unibe-il-header-image-width: 45px;
+$unibe-il-header-image-height: 45px;
 // Small screen
 $unibe-il-media-body-small-padding-left: 0px;
-$unibe-il-header-image-small-width: 56px;
-$unibe-il-header-image-small-height: 56px;
+$unibe-il-header-image-small-width: 54px;
+$unibe-il-header-image-small-height: 54px;
 $unibe-il-header-image-small-margin-bottom: 10px;
 $unibe-il-headerinner-small-min-height: 90px;
 
@@ -143,6 +143,9 @@ $unibe-il-btn-link-color: $il-link-color; //$unibe-il-link-nav-color;
 $unibe-il-footer-btn-link-color: $il-link-color;
 $unibe-il-footer-text-font-size: $il-font-size-small;
 $unibe-il-footer-text-padding-left: $il-padding-large-horizontal;
+$unibe-il-footer-text-padding-bottom: 40px;
+$unibe-il-footer-text-align: center;
+
 
 // Dropdown
 $unibe-button-glyph-color: $unibe-il-link-nav-color;
@@ -248,7 +251,13 @@ $unibe-il-container-ItemTitle-link-color: $unibe-il-link-nav-color;
 $unibe-il-container-ItemTitle-link-color-hover: $unibe-il-link-nav-color-hover;
 $unibe-il-container-ItemTitle-text-decoration: $unibe-il-link-nav-text-decoration;
 $unibe-il-container-ItemAlert-property: $il-danger-color;
-$unibe-il-container-block-header-expcoll-padding-left: 45px;
+$unibe-il-container-block-header-expcoll-padding-left: 36px;
+$unibe-il-container-block-header-expcoll-padding-right: 15px;
+$unibe-il-container-block-header-coll-bg-position: 12px 10px;
+$unibe-il-container-block-header-coll-bg-size: 18px 18px;
+$unibe-il-container-block-header-exp-bg-position: 12px 10px;
+$unibe-il-container-block-header-exp-bg-size: 18px 18px;
+$unibe-il-container-block-header-padding: 9px 0;
 
 // Accordion
 $unibe-il-AccordionHead-color: $il-text-color;

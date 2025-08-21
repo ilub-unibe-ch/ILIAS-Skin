@@ -41,8 +41,6 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 }
 
 // Ausrichten von Seiteneditor-Inhalten auf Content-Tab
-#il_center_col > .ilCOPageSection,
-.ilc_Paragraph,
-.ilc_media_cont_MediaContainer > .ilc_Mob {
-margin: 0 14px;
+#ilContentContainer {
+  margin: 0 14px 0 14px;
 }

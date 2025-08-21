@@ -23,6 +23,10 @@
   }
 }
 
+.ilContainerBlockHeader {
+  padding: $unibe-il-container-block-header-padding;
+}
+
 .ilContainerBlockHeader h2.ilHeader {
   font-weight: 600;
   text-transform: uppercase;
@@ -30,10 +34,22 @@
 
 .ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
   padding-left: $unibe-il-container-block-header-expcoll-padding-left;
+  padding-right: $unibe-il-container-block-header-expcoll-padding-right;
   &:hover {
     background-color: $unibe-il-ObjListRow-bg-color-hover;
   }
 }
+
+.ilContainerBlockHeaderCollapsed {
+  background-position: $unibe-il-container-block-header-coll-bg-position;
+  background-size: $unibe-il-container-block-header-coll-bg-size;
+}
+
+.ilContainerBlockHeaderExpanded {
+  background-position: $unibe-il-container-block-header-exp-bg-position;
+  background-size: $unibe-il-container-block-header-exp-bg-size;
+}
+
 
 span.il_ItemAlertProperty {
   color: $unibe-il-container-ItemAlert-property;

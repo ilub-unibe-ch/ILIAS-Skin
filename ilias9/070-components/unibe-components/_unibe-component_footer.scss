@@ -1,7 +1,12 @@
 @use "../../010-settings/settings_unibe_variables" as *;
 
+footer {
+  text-align: $unibe-il-footer-text-align;
+}
+
 /* rendered by */
 span.il-footer-text {
   font-size: $unibe-il-footer-text-font-size;
   padding-left: $unibe-il-footer-text-padding-left;
+  padding-bottom: $unibe-il-footer-text-padding-bottom;
 }

@@ -18318,8 +18318,8 @@ h1.il-page-content-header {
   border-radius: 12px;
   padding: 6px;
   box-shadow: 4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e;
-  width: 64px;
-  height: 64px;
+  width: 45px;
+  height: 45px;
   margin-right: 24px;
 }
 
@@ -18335,8 +18335,8 @@ h1.il-page-content-header {
     min-height: 90px;
   }
   #headerimage {
-    width: 56px;
-    height: 56px;
+    width: 54px;
+    height: 54px;
     margin-bottom: 10px;
   }
 }
@@ -18662,16 +18662,31 @@ td.calministd:hover {
   color: #5D6089;
 }
 
+.ilContainerBlockHeader {
+  padding: 9px 0;
+}
+
 .ilContainerBlockHeader h2.ilHeader {
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
-  padding-left: 45px;
+  padding-left: 36px;
+  padding-right: 15px;
 }
 .ilContainerBlockHeaderExpanded:hover, .ilContainerBlockHeaderCollapsed:hover {
   background-color: #f6f4f6;
+}
+
+.ilContainerBlockHeaderCollapsed {
+  background-position: 12px 10px;
+  background-size: 18px 18px;
+}
+
+.ilContainerBlockHeaderExpanded {
+  background-position: 12px 10px;
+  background-size: 18px 18px;
 }
 
 span.il_ItemAlertProperty {
@@ -18813,10 +18828,8 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   padding: 0px 9px 0px 9px;
 }
 
-#il_center_col > .ilCOPageSection,
-.ilc_Paragraph,
-.ilc_media_cont_MediaContainer > .ilc_Mob {
-  margin: 0 14px;
+#ilContentContainer {
+  margin: 0 14px 0 14px;
 }
 
 .c-launcher .btn-bulky:not([disabled]) .glyph {
@@ -18833,10 +18846,15 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   color: #5D6089;
 }
 
+footer {
+  text-align: center;
+}
+
 /* rendered by */
 span.il-footer-text {
   font-size: 0.75rem;
   padding-left: 12px;
+  padding-bottom: 40px;
 }
 
 .il-maincontrols-slate-content .il-item-title a {
