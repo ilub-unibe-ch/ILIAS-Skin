@@ -4729,8 +4729,8 @@ td.form-inline > div.form-group {
   order: 1;
 }
 .c-launcher__status__icon .il-chart-progressmeter-viewbox {
-  height: 45px;
-  width: 45px;
+  height: 48px;
+  width: 48px;
 }
 
 /*
@@ -5557,7 +5557,7 @@ footer {
     text-align: left;
   }
   .il-maincontrols-slate .il-avatar {
-    margin-right: 22.5px;
+    margin-right: 21px;
   }
   .il-maincontrols-slate .link-bulky .icon.small, .il-maincontrols-slate .btn-bulky .icon.small {
     margin-right: 25px;
@@ -7471,8 +7471,8 @@ div.alert ul > li:before {
   line-height: 35px;
 }
 .icon.large {
-  height: 45px;
-  line-height: 45px;
+  height: 48px;
+  line-height: 48px;
 }
 .icon.responsive {
   width: 100%;
@@ -8776,8 +8776,8 @@ div.alert ul > li:before {
 /* In 070-components > UI-framework > _ui-component_mainbar.scss sind weitere Anpassungen direkt zu Tools-Buttons vorgenommen worden */
 /* Alert Header */
 .il-avatar {
-  height: 45px;
-  width: 45px;
+  height: 48px;
+  width: 48px;
   display: inline-block;
   border-radius: 50%;
   border-style: solid;
@@ -8791,8 +8791,8 @@ div.alert ul > li:before {
   border-color: #e0d9e0;
 }
 .il-avatar.il-avatar-picture img {
-  height: 45px;
-  width: 45px;
+  height: 48px;
+  width: 48px;
   vertical-align: top;
   border: 50%;
   overflow: hidden;
@@ -8801,10 +8801,10 @@ div.alert ul > li:before {
 .il-avatar.il-avatar-letter span.abbreviation {
   font-weight: 300;
   text-transform: inherit;
-  font-size: 20.5px;
+  font-size: 22px;
   line-height: 1;
   position: relative;
-  top: 10.25px;
+  top: 11px;
 }
 .il-avatar.il-avatar-letter.il-avatar-letter-color-1 {
   background-color: #0e6252;
@@ -8939,17 +8939,17 @@ div.alert ul > li:before {
 
 @media only screen and (max-width: 991px) {
   .il-avatar {
-    height: 22.5px;
-    width: 22.5px;
+    height: 24px;
+    width: 24px;
     border-width: 0px;
   }
   .il-avatar.il-avatar-picture img {
-    height: 22.5px;
-    width: 22.5px;
+    height: 24px;
+    width: 24px;
   }
   .il-avatar.il-avatar-letter span.abbreviation {
-    font-size: 11.25px;
-    top: 3.2142857143px;
+    font-size: 12px;
+    top: 3.4285714286px;
   }
 }
 .il-table-presentation-viewcontrols {
@@ -15619,7 +15619,7 @@ div.ilHFormFooter .ilFormCmds {
 }
 .btn-file:focus-within {
   outline: 3px solid #0078D7;
-  box-shadow: inset 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 7px red;
+  box-shadow: inset 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 7px #FFFFFF;
 }
 
 .btn-file input[type=file] {
@@ -18358,6 +18358,10 @@ div.ilHeaderAlert {
 
 .ilHeadAction .btn span:not(.caret) {
   display: none;
+}
+
+.ilHeadAction a {
+  color: #000000;
 }
 
 div.il_HeaderInner.media {

@@ -78,6 +78,10 @@ div.ilHeaderAlert {
   display: $unibe-il-Head-Action-display;
 }
 
+.ilHeadAction a {
+  color: $unibe-il-Head-Action-glyph-color;
+}
+
 // Zwischenraum Dropzone und Tabs
 div.il_HeaderInner.media {
   background-color: $unibe-il-page-content-header-bg-color;
