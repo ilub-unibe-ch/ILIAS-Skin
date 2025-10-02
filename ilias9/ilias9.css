@@ -18888,6 +18888,26 @@ span.il-footer-text {
   text-decoration: none;
 }
 
+input::selection, textarea::selection {
+  background: #C2B2C9;
+}
+
+::selection {
+  background-color: #C2B2C9;
+}
+
+.il-system-info.il-system-info-neutral {
+  background-color: #b9c6e1;
+}
+
+.il-system-info.il-system-info-important {
+  background-color: #fca585;
+}
+
+.il-system-info.il-system-info-breaking {
+  background-color: #ea6893;
+}
+
 /*
 	These classes are used to limit the number of rows when displaying larger chunks of text.
 	The mixin receives $height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10
