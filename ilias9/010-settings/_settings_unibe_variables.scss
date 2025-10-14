@@ -61,15 +61,15 @@ $unibe-il-mainbar-tools-button-color: $il-text-color;
 
 //## Stage Header
 $unibe-il-header-image-border-radius: 12px;
-$unibe-il-header-image-box-shadow: 4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e;
+$unibe-il-header-image-box-shadow: 4px 4px 16px #7A5258, -6px -6px 14px #9D6C74; //4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e;
 $unibe-il-header-image-padding: $il-padding-large-vertical; //Innenabstand zu Icon
 $unibe-il-h1-header-padding: 0px; // Bündigkeit Icon zu Titel
-$unibe-il-page-content-header-bg-color: $il-main-color;
+$unibe-il-page-content-header-bg-color: #8B5D65; //$il-main-color;
 $unibe-il-page-content-header-padding: $il-padding-xxxlarge-vertical;
 $unibe-il-page-content-header-margin: $il-margin-xxlarge-vertical 0px 0px 0px;
 $unibe-il-page-content-header-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
-$unibe-il-page-content-header-color: $unibe-il-accent-color;
-$unibe-il-header-desc-color: $unibe-il-accent-color;
+$unibe-il-page-content-header-color: #FFF6E5; //$unibe-il-accent-color;
+$unibe-il-header-desc-color: #FFF6E5; //$unibe-il-accent-color;
 $unibe-il-header-desc-font-size: $il-font-size-large;
 $unibe-il-header-desc-padding: $il-padding-base 0;
 $unibe-il-media-HeaderInner-before-content: "\00a0";
