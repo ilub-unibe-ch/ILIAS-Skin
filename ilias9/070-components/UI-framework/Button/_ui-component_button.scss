@@ -56,21 +56,21 @@ input.btn {
 }
 
 .btn-default {
-  @include make-button($set-basics: false, $set-design: true, 
-    $button-color: s.$il-btn-standard-bg,
+  @include make-button($set-basics: false, $set-design: true,
+  $button-color: s.$il-btn-standard-bg,
 
-    $bg-color: s.$il-btn-standard-bg,
-    $text-color: s.$il-btn-standard-color,
-    $border-color: s.$il-btn-standard-border,
+  $bg-color: s.$il-btn-standard-bg,
+  $text-color: s.$il-btn-standard-color,
+  $border-color: s.$il-btn-standard-border,
 
-    $disabled_bg-color: s.$il-disabled-btn-bg,
-    $disabled_text-color: s.$il-disabled-btn-color,
-    $disabled_border-color: s.$il-disabled-btn-border,
-    
-    $engaged_bg-color: s.$il-engaged-btn-bg,
-    $engaged_text-color: s.$il-engaged-btn-color,
-    $engaged_border-color: s.$il-btn-standard-border,
-    $engaged_border-width: 1px);
+  $disabled_bg-color: s.$il-disabled-btn-bg,
+  $disabled_text-color: s.$il-disabled-btn-color,
+  $disabled_border-color: s.$il-disabled-btn-border,
+
+  $engaged_bg-color: s.$il-engaged-btn-bg,
+  $engaged_text-color: s.$il-engaged-btn-color,
+  $engaged_border-color: s.$il-btn-standard-border,
+  $engaged_border-width: 1px);
 }
 
 .navbar-form > a {
@@ -80,29 +80,29 @@ input.btn {
 
 .btn-primary {
   @include make-button($set-basics: false, $set-design: true,
-    $button-color: s.$il-btn-primary-bg,
+  $button-color: s.$il-btn-primary-bg,
 
-    $bg-color: s.$il-btn-primary-bg,
-    $text-color: s.$il-btn-primary-color,
-    $border-color: s.$il-btn-primary-border,
+  $bg-color: s.$il-btn-primary-bg,
+  $text-color: s.$il-btn-primary-color,
+  $border-color: s.$il-btn-primary-border,
 
-    $disabled_bg-color: s.$il-disabled-btn-bg,
-    $disabled_text-color: s.$il-disabled-btn-color,
-    $disabled_border-color: s.$il-disabled-btn-border,
-    
-    $engaged_bg-color: s.$il-engaged-btn-bg,
-    $engaged_text-color: s.$il-engaged-btn-color,
-    $engaged_border-color: s.$il-btn-primary-border,
-    $engaged_border-width: 1px);
+  $disabled_bg-color: s.$il-disabled-btn-bg,
+  $disabled_text-color: s.$il-disabled-btn-color,
+  $disabled_border-color: s.$il-disabled-btn-border,
+
+  $engaged_bg-color: s.$il-engaged-btn-bg,
+  $engaged_text-color: s.$il-engaged-btn-color,
+  $engaged_border-color: s.$il-btn-primary-border,
+  $engaged_border-width: 1px);
 }
 
 .btn-ctrl {
   @include make-button($input-field-height: s.$il-btn-ctrl-outer-height,
-                        $border-radius: s.$il-border-radius-secondary-large,
-                        $button-text-color: s.$il-btn-ctrl-color,
-                        $button-color: s.$il-btn-ctrl-bg,
-                        $border-color: s.$il-btn-ctrl-border,
-                        $hover_border-color: s.$il-btn-ctrl-engaged-border);
+  $border-radius: s.$il-border-radius-secondary-large,
+  $button-text-color: s.$il-btn-ctrl-color,
+  $button-color: s.$il-btn-ctrl-bg,
+  $border-color: s.$il-btn-ctrl-border,
+  $hover_border-color: s.$il-btn-ctrl-engaged-border);
   &.engaged,
   .open & {
     border: 1px solid s.$il-btn-ctrl-engaged-border;
@@ -119,7 +119,7 @@ input.btn {
     @extend .btn-ctrl;
     margin-left: l.$il-margin-xs-horizontal;
   }
-} 
+}
 
 // ILIAS doesn't use btn-success, btn-info, btn-warning, btn-danger
 
@@ -129,8 +129,8 @@ input.btn {
 // Make a button look and behave like a link
 .btn-link {
   padding: 0;
-	text-align: left;
-	white-space: normal;
+  text-align: left;
+  white-space: normal;
   vertical-align: baseline;
   font-size: inherit;
   font-weight: s.$il-font-weight-base;
@@ -161,6 +161,7 @@ input.btn {
     background-color: s.$il-disabled-btn-bg;
     color: s.$il-disabled-btn-color;
     border: 1px solid s.$il-disabled-btn-border;
+    cursor: not-allowed;
     &:hover {
       text-decoration: none;
     }
@@ -178,30 +179,30 @@ input.btn {
 // base styling for all
 
 .btn-bulky {
-	@include make-button($set-basics: false, $set-design: true,
-    $button-color: s.$il-bulky-bg-color,
-    $text-color: s.$il-bulky-text-color,
-    $border-color: s.$il-bulky-border-color,
-    $font-size: s.$il-bulky-label-size,
-    $input-field-height: $input-min-height-large,
+  @include make-button($set-basics: false, $set-design: true,
+  $button-color: s.$il-bulky-bg-color,
+  $text-color: s.$il-bulky-text-color,
+  $border-color: s.$il-bulky-border-color,
+  $font-size: s.$il-bulky-label-size,
+  $input-field-height: $input-min-height-large,
 
-    $set-full-width: true,
-    $padding-small-x: l.$il-padding-large-horizontal,
-    $padding-small-y: l.$il-padding-large-vertical,
-    $inner-spacing: l.$il-padding-large-vertical,
+  $set-full-width: true,
+  $padding-small-x: l.$il-padding-large-horizontal,
+  $padding-small-y: l.$il-padding-large-vertical,
+  $inner-spacing: l.$il-padding-large-vertical,
 
-    $hover_bg-color: s.$il-bulky-bg-color-engaged,
-    $hover_border-color: s.$il-bulky-bg-color-engaged,
+  $hover_bg-color: s.$il-bulky-bg-color-engaged,
+  $hover_border-color: s.$il-bulky-bg-color-engaged,
 
-    $disabled_bg-color: s.$il-disabled-btn-bg,
-    $disabled_text-color: s.$il-disabled-btn-color,
-    $disabled_border-color: s.$il-disabled-btn-border,
-    
-    $active_transform: null,
+  $disabled_bg-color: s.$il-disabled-btn-bg,
+  $disabled_text-color: s.$il-disabled-btn-color,
+  $disabled_border-color: s.$il-disabled-btn-border,
 
-    $engaged_text-color: inherit,
-    $engaged_bg-color: s.$il-bulky-bg-color-engaged,
-    $engaged_border-width: 1px);
+  $active_transform: null,
+
+  $engaged_text-color: inherit,
+  $engaged_bg-color: s.$il-bulky-bg-color-engaged,
+  $engaged_border-width: 1px);
   @include f.il-focus-border-only();
 }
 
@@ -258,16 +259,16 @@ button > .glyphicon {
 // button with loading animation
 //
 .il-btn-with-loading-animation {
-	background-image: url("#{s.$il-background-images-path}media/loader.svg");
+  background-image: url("#{s.$il-background-images-path}media/loader.svg");
   background-color: s.$il-disabled-btn-bg;
   border-color: s.$il-disabled-btn-border;
   &:hover {
     background-color: s.$il-disabled-btn-bg;
     border-color: s.$il-disabled-btn-border;
   }
-	background-repeat: no-repeat;
-	background-position: right center;
-	padding-right: 18px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 18px;
 }
 
 .minimize, .close {

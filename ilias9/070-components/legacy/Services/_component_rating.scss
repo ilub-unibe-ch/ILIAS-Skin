@@ -10,12 +10,16 @@ img.ilRatingMarker {
 	height: 7px;
 }
 
-a.ilRating {
+a.ilRating, button.ilRating {
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 div.ilRatingOverlay {
-   z-index: 1000 !important;
-   padding: 0 5px;
-   display: none;
+	z-index: 1000 !important;
+	padding: 0 5px;
+	display: none;
 }
