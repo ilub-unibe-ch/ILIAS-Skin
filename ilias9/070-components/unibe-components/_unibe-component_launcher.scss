@@ -4,3 +4,13 @@
 .c-launcher .btn-bulky[disabled], .c-launcher .btn-bulky fieldset[disabled] {
   color: $unibe-il-launcher-btn-bulky-disabled-color;
 }
+
+.c-launcher {
+  .btn-bulky {
+    &:not([disabled]) .glyph {
+      color: $unibe-il-launcher-glyph-color; //s.$il-text-color-invert;
+      font-size: $unibe-il-launcher-glyph-font-size;
+      padding-right: $unibe-il-launcher-glyph-padding-right;
+    }
+  }
+}

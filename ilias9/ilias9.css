@@ -18854,6 +18854,12 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   color: #737373;
 }
 
+.c-launcher .btn-bulky:not([disabled]) .glyph {
+  color: #3e5c4a;
+  font-size: 1.5rem;
+  padding-right: 3px;
+}
+
 .btn-link {
   color: #5D6089;
 }
