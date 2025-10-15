@@ -4827,7 +4827,7 @@ div.il-system-infos {
 }
 
 .il-logo {
-  height: 26px;
+  height: 45px;
   overflow: hidden;
   justify-self: start;
   display: flex;
@@ -18611,9 +18611,9 @@ td.calministd:hover {
   margin-left: 0px;
 }
 
-.il-logo > .hidden-xs > a > img.img-standard {
-  width: 26px;
-  height: 26px;
+.il-logo .hidden-xs img.img-standard {
+  width: 21px;
+  height: 21px;
   margin-left: 18px;
 }
 
