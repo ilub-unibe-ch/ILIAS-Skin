@@ -292,3 +292,11 @@ $tax-il-login-submit-border-hover: none;
 $tax-aai-login-width: 350px;
 $tax-il-taxUserAgreement-text-align: center;
 $tax-il-taxUserAgreement-margin-top: 2*$il-margin-xxlarge-vertical;
+
+// Selected Text
+$unibe-il-selection-bg-color: #C2B2C9;
+
+// System Info
+$unibe-il-standard-page-system-info-color-variant-neutral: lighten($il-info-color, 20%);
+$unibe-il-standard-page-system-info-color-variant-important: lighten($il-warning-color, 6%);
+$unibe-il-standard-page-system-info-color-variant-breaking: lighten($il-extended-color-8, 18%);
