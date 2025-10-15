@@ -2,9 +2,9 @@
 @use "../../010-settings/settings_unibe_variables" as *;
 
 // Header Logo
-.il-logo > .hidden-xs > a > img.img-standard {
-  width: $il-standard-page-logo-width;
-  height:$il-standard-page-logo-height;
+.il-logo .hidden-xs img.img-standard {
+  width: $unibe-il-standard-page-logo-width;
+  height: $unibe-il-standard-page-logo-height;
   margin-left: $unibe-il-logo-margin-left;
 }
 
