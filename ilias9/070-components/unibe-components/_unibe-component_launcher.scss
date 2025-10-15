@@ -1,11 +1,6 @@
+@use "../../010-settings/" as *;
 @use "../../010-settings/settings_unibe_variables" as *;
 
-.c-launcher {
-  .btn-bulky {
-    &:not([disabled]) .glyph {
-      color: $unibe-il-launcher-glyph-color; //s.$il-text-color-invert;
-      font-size: $unibe-il-launcher-glyph-font-size;
-      padding-right: $unibe-il-launcher-glyph-padding-right;
-    }
-  }
+.c-launcher .btn-bulky[disabled], .c-launcher .btn-bulky fieldset[disabled] {
+  color: $unibe-il-launcher-btn-bulky-disabled-color;
 }
