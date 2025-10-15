@@ -4,3 +4,10 @@
 ::selection{
   background-color: $unibe-il-selection-bg-color;
 }
+
+// Opencast Serie
+
+.xoct_preview_image {
+  border-radius: $unibe-il-xoct-preview-img-border-radius;
+  background-color: $unibe-il-xoct-preview-img-bg-color;
+}
