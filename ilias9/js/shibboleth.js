@@ -33,7 +33,7 @@ var wayf_sp_handlerURL = window.location.origin+"/Shibboleth.sso";
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vars[key] = value;
+        vars[key] = value;var wayf_unhide_idps = new Array('https://aai-idp.unibe.ch/idp/shibboleth','https://aai-login.phbern.ch/idp/shibboleth');
     });
     return vars;
 }
@@ -127,21 +127,21 @@ var wayf_auto_login = true;
 // Example of how to hide categories
 // var wayf_hide_categories =  new Array("other", "library");
 // [Optional, default: none]
-var wayf_hide_categories =  new Array("uppersecondary");
+var wayf_hide_categories =  new Array("all");
 
 // EntityIDs of Identity Provider whose category is hidden but that should be shown anyway
 // Example of how to unhide certain Identity Providers
 // var wayf_unhide_idps = new Array("https://aai-login.uzh.ch/idp/shibboleth");
 // [Optional, default: none]
 // var wayf_unhide_idps = new Array();
-var wayf_unhide_idps = new Array();
+var wayf_unhide_idps = new Array('https://aai-idp.unibe.ch/idp/shibboleth','https://aai-login.phbern.ch/idp/shibboleth');
 
 // EntityIDs of Identity Provider that should not be shown at all
 // Example of how to hide certain Identity Provider
 // var wayf_hide_idps = new Array("https://idp.unige.ch/idp/shibboleth", "https://aai-logon.switch.ch/idp/shibboleth");
 // [Optional, default: none]
 // var wayf_hide_idps = new Array();
-var wayf_hide_idps = new Array("https://eduid.ch/idp/shibboleth");;
+//var wayf_hide_idps = new Array("https://eduid.ch/idp/shibboleth");;
 
 //////////////////// ADVANCED SETTINGS ////////////////////
 
