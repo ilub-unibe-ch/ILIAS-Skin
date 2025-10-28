@@ -120,7 +120,7 @@ var wayf_auto_login = true;
 // list if this feature is used.
 // Will not be shown if wayf_show_categories is false
 // [Optional, default: none]
- var wayf_most_used_idps =  new Array("https://aai-idp.unibe.ch/idp/shibboleth", "https://aai-login.phbern.ch/idp/shibboleth", "https://aai-logon.vho-switchaai.ch/idp/shibboleth","https://aai.insel.ch/idp/shibboleth");
+//var wayf_most_used_idps =  new Array("https://aai-idp.unibe.ch/idp/shibboleth", "https://aai-login.phbern.ch/idp/shibboleth");
 
 // Categories of Identity Provider that should not be shown
 // Possible values are: "university","uas","hospital","library","tertiaryb","uppersecondary","vho","others", "all"
