@@ -18868,6 +18868,10 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   color: #5D6089;
 }
 
+.c-input-markdown__actions .glyph, .c-input-markdown__actions .glyph:hover {
+  color: #000000;
+}
+
 footer {
   text-align: center;
 }
@@ -18917,6 +18921,11 @@ input::selection, textarea::selection {
   background-color: #ea6893;
 }
 
+@media only screen and (max-width: 991px) {
+  .il-header-locator .dropdown-toggle {
+    display: inline-block;
+  }
+}
 /*
 	These classes are used to limit the number of rows when displaying larger chunks of text.
 	The mixin receives $height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10
