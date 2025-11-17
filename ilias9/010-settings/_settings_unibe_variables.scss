@@ -215,6 +215,10 @@ $unibe-il-table-header-multicolumn-glyph: "\e038";
 $unibe-il-table-multiaction-btn-default-border: 1px solid $il-btn-standard-border;
 $unibe-il-table-head-border-bottom: 3px solid #000000;
 
+//## Survey
+$unibe-il-td-matrixrow-padding: 10px;
+$unibe-il-matrix-tblrow2-bg-color: lighten($il-info-color, 32%);
+
 // OpenCast Status
 $unibe-il-xoct-event-state-padding: $il-padding-large-vertical;
 $unibe-il-xoct-event-state-margin: $il-padding-base-vertical 0 0 0;

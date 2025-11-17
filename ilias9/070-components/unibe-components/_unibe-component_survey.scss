@@ -1,0 +1,16 @@
+@use "../../010-settings/" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+
+td#matrixrowtext {
+  padding: $unibe-il-td-matrixrow-padding;
+}
+
+td#matrix, th#matrix {
+  padding: $unibe-il-td-matrixrow-padding;
+}
+
+@media screen {
+  .matrix .tblrow2 {
+    background-color: $unibe-il-matrix-tblrow2-bg-color;
+  }
+}

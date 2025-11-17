@@ -18926,6 +18926,19 @@ input::selection, textarea::selection {
     display: inline-block;
   }
 }
+td#matrixrowtext {
+  padding: 10px;
+}
+
+td#matrix, th#matrix {
+  padding: 10px;
+}
+
+@media screen {
+  .matrix .tblrow2 {
+    background-color: #e4e9f3;
+  }
+}
 /*
 	These classes are used to limit the number of rows when displaying larger chunks of text.
 	The mixin receives $height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10
