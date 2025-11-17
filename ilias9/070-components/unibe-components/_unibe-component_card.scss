@@ -9,6 +9,7 @@
 
   .il-card-repository-head {
     order: 4;
+    height: $unibe-il-card-repository-head-heigt;
     > div.il-card-repository-dropdown > .dropdown > button {
       border: $unibe-il-card-dropdown-border;
       &:hover{
@@ -44,9 +45,15 @@
 
   .caption {
     order: 3;
+    dl {
+      margin-bottom: $unibe-il-card-caption-dl-margin-bottom;
+    }
     }
 
   .card-title {
+    font-size: $unibe-il-card-title-font-size;
+    margin-top: $unibe-il-card-title-margin-top;
+
     .btn-link, a {
       color: $unibe-il-card-caption-color;
     }

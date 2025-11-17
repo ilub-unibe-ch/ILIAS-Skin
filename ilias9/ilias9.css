@@ -18512,6 +18512,7 @@ button.btn.btn-ctrl.dropdown-toggle {
 }
 .il-card .il-card-repository-head {
   order: 4;
+  height: 44px;
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
   border: none;
@@ -18541,6 +18542,13 @@ button.btn.btn-ctrl.dropdown-toggle {
 }
 .il-card .caption {
   order: 3;
+}
+.il-card .caption dl {
+  margin-bottom: 9px;
+}
+.il-card .card-title {
+  font-size: 1rem;
+  margin-top: 3px;
 }
 .il-card .card-title .btn-link, .il-card .card-title a {
   color: #000000;
@@ -18939,6 +18947,10 @@ td#matrix, th#matrix {
     background-color: #e4e9f3;
   }
 }
+.il-deck .row {
+  margin-bottom: 9px;
+}
+
 /*
 	These classes are used to limit the number of rows when displaying larger chunks of text.
 	The mixin receives $height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10

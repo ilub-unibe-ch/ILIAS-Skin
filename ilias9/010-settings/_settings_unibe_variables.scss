@@ -3,6 +3,7 @@
 @use "./settings_button" as *;
 @use "../050-layout/basics/layout_spacing-variables" as *;
 @use "./settings_typography" as *;
+@use "../010-settings/legacy-settings/legacy-settings_symbol" as *;
 @use 'sass:color';
 
 
@@ -186,12 +187,19 @@ $unibe-il-card-repository-icon-margin: 2px 0 0 0;
 $unibe-il-card-head-icon-filter: contrast(0) opacity(0.5);
 $unibe-il-card-dropdown-border: $unibe-il-dropdown-button-border;
 $unibe-il-card-dropdown-color: $unibe-il-dropdown-button-color;
-$unibe-il-deck-card-box-shadow-hover: $unibe-il-box-shadow-darken;
 $unibe-il-card-image-container-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
 $unibe-il-card-caption-color: $il-text-color;
 $unibe-il-card-caption-btn-link-a-hover: $il-main-color;
 $unibe-il-card-title-text-decoration: $unibe-il-link-nav-text-decoration;
+$unibe-il-card-title-font-size: $il-font-size-large;
+$unibe-il-card-title-margin-top: $il-margin-xs-horizontal;
+$unibe-il-card-caption-dl-margin-bottom: $il-margin-base-horizontal;
 $unibe-il-card-repository-head-icon-padding: 10px 3px;
+$unibe-il-card-repository-head-heigt: calc($il-icon-size-medium + $il-padding-base-horizontal);
+
+//## Deck
+$unibe-il-deck-card-box-shadow-hover: $unibe-il-box-shadow-darken;
+$unibe-il-deck-row-margin-bottom: $il-margin-xlarge-vertical;
 
 //## Modal
 $unibe-il-modal-title-padding: 0px $il-padding-xxlarge-horizontal;

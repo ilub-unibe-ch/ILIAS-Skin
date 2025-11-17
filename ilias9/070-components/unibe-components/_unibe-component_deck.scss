@@ -1,0 +1,7 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.il-deck {
+  .row {
+    margin-bottom: $unibe-il-deck-row-margin-bottom;
+  }
+}
