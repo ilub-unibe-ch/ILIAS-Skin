@@ -283,7 +283,61 @@ var wayf_use_improved_drop_down_list = true;
 //
 // The IdPs will be displayed in the order they are defined
 // [Optional, default: none]
-// var wayf_additional_idps = [ ];
+var wayf_additional_idps = [
+
+  {
+    name: "eduGAIN Access Check",
+    entityID: "https://access-check.edugain.org/simplesaml/saml2/idp/metadata.php",
+    data: "http://www.renater.fr/ "
+  },
+  {
+    name: "Ollscoil na Gaillimhe - University of Galway",
+    entityID: "https://idp.nuigalway.ie/shibboleth",
+    data: "https://www.universityofgalway.ie/"
+  },
+  {
+    name: "i2basque",
+    entityID: "https://www.rediris.es/sir/i2basqueidp",
+    data: "http://www.i2basque.es/index.php"
+  },
+  {
+    name: "Université de Bordeaux",
+    entityID: "https://idp-ubx.u-bordeaux.fr/idp/shibboleth",
+    data: "http://www.u-bordeaux.fr"
+  },
+  {
+    name: "Uppsala University",
+    entityID: "https://weblogin.uu.se/idp/shibboleth",
+    data: "http://www.uu.se/en/"
+  },
+  {
+    name: "Ghent University",
+    entityID: "https://identity.ugent.be/simplesaml/saml2/idp/metadata.php",
+    data: "http://www.ugent.be"
+  },
+  {
+    name: "University of Tartu",
+    entityID: "https://auth.ut.ee/idp/saml2/idp/metadata.php",
+    data: "http://www.ut.ee/et/"
+  },
+  {
+    name: "University of Groningen",
+    entityID: "https://signon.rug.nl/nidp/saml2/metadata",
+    data: "http://www.rug.nl"
+  },
+  {
+    name: "Georg-August University Göttingen",
+    entityID: "https://shibboleth-idp.uni-goettingen.de/uni/shibboleth",
+    data: "http://www.uni-goettingen.de/"
+  },
+  {
+    name: "Comenius University",
+    entityID: "https://idp.uniba.sk/idp/shibboleth",
+    data: "http://www.uniba.sk/en/"
+  }
+
+
+];
 
 // Example of how to add Identity Provider from other federations
 // var wayf_additional_idps = [
