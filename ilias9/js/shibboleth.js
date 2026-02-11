@@ -285,11 +285,11 @@ var wayf_use_improved_drop_down_list = true;
 // [Optional, default: none]
 var wayf_additional_idps = [
 
-  {
-    name: "eduGAIN Access Check",
-    entityID: "https://access-check.edugain.org/simplesaml/saml2/idp/metadata.php",
-    data: "http://www.renater.fr/ "
-  },
+  //Access Check is only relevant on test{
+  //  name: "eduGAIN Access Check",
+  //  entityID: "https://access-check.edugain.org/simplesaml/saml2/idp/metadata.php",
+  //  data: "http://www.renater.fr/ "
+  //},
   {
     name: "Ollscoil na Gaillimhe - University of Galway",
     entityID: "https://idp.nuigalway.ie/shibboleth",
