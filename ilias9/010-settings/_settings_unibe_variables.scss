@@ -12,6 +12,9 @@
 
 // Colors
 $unibe-il-accent-color: #7CFD98;
+$unibe-il-exam-color: #8B5D65;
+$unibe-il-exam-darker-color: darken($unibe-il-exam-color, 10%);
+$unibe-il-exam-lighter-color: #FFF6E5;
 
 // Link Navs
 /* Links in Navigation unterscheiden sich von Links in Textabsätzen. So haben
@@ -66,7 +69,7 @@ $unibe-il-header-image-border-radius: 12px;
 $unibe-il-header-image-box-shadow: 4px 4px 16px #7A5258, -6px -6px 14px #9D6C74; //4px 4px 16px #4f5274, -6px -6px 14px #6b6e9e;
 $unibe-il-header-image-padding: $il-padding-large-vertical; //Innenabstand zu Icon
 $unibe-il-h1-header-padding: 0px; // Bündigkeit Icon zu Titel
-$unibe-il-page-content-header-bg-color: #8B5D65; //$il-main-color;
+$unibe-il-page-content-header-bg-color: $unibe-il-exam-color;
 $unibe-il-page-content-header-padding: $il-padding-xxxlarge-vertical;
 $unibe-il-page-content-header-margin: $il-margin-xxlarge-vertical 0px 0px 0px;
 $unibe-il-page-content-header-border-radius: $il-border-radius-base $il-border-radius-base 0 0;
