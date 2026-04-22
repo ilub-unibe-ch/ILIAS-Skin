@@ -5916,7 +5916,7 @@ footer {
 }
 .il-mainbar-triggers .btn-bulky .bulky-label,
 .il-mainbar-triggers .il-link.link-bulky .bulky-label {
-  color: #FFF6E5;
+  color: #FFFFFF;
   text-align: center;
 }
 .il-mainbar-triggers .btn-bulky .icon,
@@ -5937,11 +5937,11 @@ footer {
 .il-mainbar-triggers .btn-bulky.engaged,
 .il-mainbar-triggers .il-link.link-bulky.engaged {
   background-color: #6c494f;
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky.engaged .glyph,
 .il-mainbar-triggers .il-link.link-bulky.engaged .glyph {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky.engaged .icon,
 .il-mainbar-triggers .il-link.link-bulky.engaged .icon {
@@ -5955,16 +5955,16 @@ footer {
 }
 .il-mainbar-triggers .btn-bulky.engaged .bulky-label,
 .il-mainbar-triggers .il-link.link-bulky.engaged .bulky-label {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky:focus-visible,
 .il-mainbar-triggers .il-link.link-bulky:focus-visible {
   background-color: #6c494f;
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky:focus-visible .glyph,
 .il-mainbar-triggers .il-link.link-bulky:focus-visible .glyph {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky:focus-visible .icon,
 .il-mainbar-triggers .il-link.link-bulky:focus-visible .icon {
@@ -5978,17 +5978,17 @@ footer {
 }
 .il-mainbar-triggers .btn-bulky:focus-visible .bulky-label,
 .il-mainbar-triggers .il-link.link-bulky:focus-visible .bulky-label {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky:hover,
 .il-mainbar-triggers .il-link.link-bulky:hover {
   transition: all 0.15s ease-in;
   background-color: #6c494f;
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky:hover .glyph,
 .il-mainbar-triggers .il-link.link-bulky:hover .glyph {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky:hover .icon,
 .il-mainbar-triggers .il-link.link-bulky:hover .icon {
@@ -6002,11 +6002,11 @@ footer {
 }
 .il-mainbar-triggers .btn-bulky:hover .bulky-label,
 .il-mainbar-triggers .il-link.link-bulky:hover .bulky-label {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers .btn-bulky .glyph,
 .il-mainbar-triggers .il-link.link-bulky .glyph {
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-triggers.engaged {
   background: #8B5D65;
@@ -6015,7 +6015,7 @@ footer {
   .il-mainbar-triggers .btn-bulky:hover,
   .il-mainbar-triggers .il-link.link-bulky:hover {
     background-color: #8B5D65;
-    color: #FFF6E5;
+    color: #FFFFFF;
   }
   .il-mainbar-triggers .btn-bulky:hover .icon,
   .il-mainbar-triggers .il-link.link-bulky:hover .icon {
@@ -6031,12 +6031,12 @@ footer {
 @media (hover: none) {
   .il-mainbar-triggers .btn-bulky:hover .bulky-label,
   .il-mainbar-triggers .il-link.link-bulky:hover .bulky-label {
-    color: #FFF6E5;
+    color: #FFFFFF;
   }
   .il-mainbar-triggers .btn-bulky.engaged,
   .il-mainbar-triggers .il-link.link-bulky.engaged {
     background-color: #6c494f;
-    color: #FFF6E5;
+    color: #FFFFFF;
   }
   .il-mainbar-triggers .btn-bulky.engaged .icon,
   .il-mainbar-triggers .il-link.link-bulky.engaged .icon {
@@ -6052,7 +6052,7 @@ footer {
 @media (hover: none) {
   .il-mainbar-triggers .btn-bulky.engaged .bulky-label,
   .il-mainbar-triggers .il-link.link-bulky.engaged .bulky-label {
-    color: #FFF6E5;
+    color: #FFFFFF;
   }
 }
 
@@ -6101,7 +6101,7 @@ footer {
 }
 .il-mainbar-tools-button .btn-bulky.engaged {
   background-color: #d2d3e0;
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-tools-button .btn-bulky.engaged .icon {
   filter: invert(30%);
@@ -6118,7 +6118,7 @@ footer {
 .il-mainbar-tools-entries .btn-bulky, .il-mainbar-tools-entries .btn-bulky,
 .il-mainbar-tools-entries .il-link.link-bulky {
   background-color: #5D6089;
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-tools-entries .btn-bulky .icon, .il-mainbar-tools-entries .btn-bulky .icon,
 .il-mainbar-tools-entries .il-link.link-bulky .icon {
@@ -6138,7 +6138,7 @@ footer {
 .il-mainbar-tools-entries .btn-bulky.engaged, .il-mainbar-tools-entries .btn-bulky.engaged,
 .il-mainbar-tools-entries .il-link.link-bulky.engaged {
   background-color: white;
-  color: #FFF6E5;
+  color: #FFFFFF;
 }
 .il-mainbar-tools-entries .btn-bulky.engaged:not(:focus-visible), .il-mainbar-tools-entries .btn-bulky.engaged:not(:focus-visible),
 .il-mainbar-tools-entries .il-link.link-bulky.engaged:not(:focus-visible) {
