@@ -1,0 +1,50 @@
+@use "010-settings" as settings;
+@use "010-settings/settings_unibe-variables" as *;
+@use "050-layout/basics" as *;
+
+#wayf_div{
+  margin-top: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-width: 0 !important;
+  overflow: hidden;
+  padding: 0px !important;
+  text-align: center;
+
+}
+
+@media only screen and (min-width: 480px){
+  #wayf_div{
+    width: $tax-aai-login-width !important;
+
+  }
+}
+
+#wayf_submit_button {
+  width: 100% !important;
+  border: none !important;
+  background-color: $tax-il-login-submit-bg-color !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+  //&:extend(.btn,.btn-primary, .btn-lg);
+}
+#wayf_submit_button:hover {
+  width: 100% !important;
+  border: $tax-il-login-submit-border-hover !important;
+  background-color: $tax-il-login-submit-bg-color-hover !important;
+  color: $tax-il-login-submit-text-color-hover !important;
+  //&:extend(.btn:hover,.btn-primary:hover);
+}
+
+#wayf_remember_checkbox_div {
+  display: none;
+}
+
+// Nutzungsvereinbarung
+
+.taxUserAgreement {
+  text-align: $tax-il-taxUserAgreement-text-align;
+  margin-top: $tax-il-taxUserAgreement-margin-top;
+}
