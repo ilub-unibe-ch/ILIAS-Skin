@@ -20498,6 +20498,10 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   vertical-align: baseline;
 }
 
+[data-il-ui-component=multiple-options-field-input] input.multiple-options-input.option-input.xlvo-template {
+  width: 100%;
+}
+
 .c-maincontrols__footer-grid {
   padding: 0px;
 }

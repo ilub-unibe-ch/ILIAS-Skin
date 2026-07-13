@@ -15,3 +15,9 @@
 #category_button{
   vertical-align: baseline;
 }
+
+[data-il-ui-component="multiple-options-field-input"] {
+  input.multiple-options-input.option-input.xlvo-template {
+    width: 100%;
+  }
+}
