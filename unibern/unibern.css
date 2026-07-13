@@ -2459,8 +2459,11 @@ code {
 */
 /* UI Framework */
 .c-tooltip__container {
-  position: relative;
   display: inline-block;
+}
+
+.c-tooltip__container.c-tooltip--visible {
+  position: relative;
 }
 
 .c-tooltip__container::before {
@@ -12583,6 +12586,10 @@ td.chatroom {
   display: inline;
 }
 
+#chat_function_list .btn + .btn {
+  margin-left: 0;
+}
+
 /* Modules/Course */
 .ilValignTop {
   vertical-align: top;
@@ -13961,6 +13968,17 @@ table.kprimchoicewizard th {
   vertical-align: top;
 }
 
+table.imagemapareas tr [class*=_add].btn,
+table.kvpwizard tr [class*=_add].btn,
+table.matchingwizard tr [class*=_add].btn,
+table.matchingpairwizard tr [class*=_add].btn,
+table.errortextwizard tr [class*=_add].btn,
+table.singlechoicewizard tr [class*=_add].btn,
+table.multiplechoicewizard tr [class*=_add].btn {
+  min-width: 40px;
+  min-height: 40px;
+}
+
 table.kprimchoicewizard th.true,
 table.kprimchoicewizard th.false {
   padding: 5px 5px;
@@ -14053,6 +14071,28 @@ table.il_tst_answer_aggregation td.answer_frequency {
   border: 2px #9bd9fe solid;
   padding: 3px 2px;
   margin-right: 2px;
+}
+
+#thumb_size {
+  min-width: 10ch;
+}
+
+.imageselection {
+  width: max-content;
+}
+.imageselection > .row {
+  margin: 0;
+  padding: 0;
+}
+.imageselection > .row > [class*=col-] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.imageselection > .row > [class*=col-] > .input-group input {
+  field-sizing: content;
+  border: none;
+  background: transparent;
 }
 
 .questionpool_info {
@@ -14321,7 +14361,7 @@ div.ilc_Page.readonly textarea[disabled] {
 #tst_output #tst_left {
   width: 20%;
   min-width: 200px;
-  margin-right: 21.328px;
+  margin-right: 26.66px;
 }
 #tst_output #tst_left:empty {
   display: none;
@@ -14338,7 +14378,7 @@ div.ilc_Page.readonly textarea[disabled] {
 }
 #tst_output #tst_right .ilc_Page {
   background-color: white;
-  padding: 16px 21.328px;
+  padding: 20px 26.66px;
 }
 @media screen and (max-width: 991px) {
   #tst_output {
@@ -14357,7 +14397,7 @@ div.ilc_Page.readonly textarea[disabled] {
 }
 #tst_output .ilTstNavigation {
   display: flex;
-  padding: 16px 21.328px;
+  padding: 20px 26.66px;
   justify-content: space-between;
   background-color: #f6f4f6;
 }
@@ -14367,7 +14407,7 @@ div.ilc_Page.readonly textarea[disabled] {
   padding: 0;
 }
 #tst_output #tst_left ul.shortlist li {
-  padding: 0 0 16px 31.992px;
+  padding: 0 0 20px 39.99px;
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: 0px 5px;
@@ -14395,7 +14435,7 @@ div.ilc_Page.readonly textarea[disabled] {
   font-weight: 600;
 }
 #tst_output #tst_right h1.ilc_page_title_PageTitle {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 #tst_output #tst_right .dd-item, #ilAssQuestionPreview .dd-item, #il_prop_cont_order_elems .dd-item {
@@ -14408,6 +14448,10 @@ div.ilc_Page.readonly textarea[disabled] {
 
 #tst_pass_details_overview tr {
   scroll-margin-top: 30px;
+}
+
+.ilc_qanswer_Answer.ilc_answers.answers.ilAssClozeTest p input[type=text] {
+  width: 100%;
 }
 
 /* Modules/Wiki */
@@ -14922,6 +14966,13 @@ div.ilCalSelTitle {
   font-size: 0.866rem;
 }
 
+.il-viewcontrol-section .il-btn-month {
+  font-size: 0.866rem;
+}
+.il-viewcontrol-section .il-btn-month input[inputmode=numeric] {
+  width: 9ch !important;
+}
+
 table.calmini {
   width: 100%;
   font-size: 0.866rem;
@@ -15357,9 +15408,205 @@ div.ilChartWrapper {
   grid-column: 1/2;
 }
 
-.ilObjListRow {
-  padding: 16px 21.328px;
+div.ilPreconditionItem {
+  margin: 0 -10px;
 }
+
+/* Repository */
+div.ilContainerListItemOuter {
+  padding: 16px 21.328px;
+  zoom: 1;
+}
+div.ilContainerListItemOuter .subitem {
+  margin-right: -26.66px;
+}
+
+.ilContainerItemsContainer {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.tblfooter.ilContainerListFooter {
+  font-size: 1rem;
+  padding: 20px 26.66px;
+  text-align: left;
+  margin: 0;
+}
+div.tblfooter.ilContainerListFooter > input {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+div.tblfooter.ilContainerListFooter > label {
+  margin: 0;
+  padding: 0 0 0 8px;
+  vertical-align: top;
+  width: auto;
+}
+
+input[name^="position[blocks]"] {
+  margin: 0 0 0 -2px;
+}
+
+div.ilListItemSection {
+  clear: both;
+  max-width: calc(100% - 40px);
+}
+
+div.ilContainerListItemOuterHighlight {
+  background-color: #e1ebe5;
+  zoom: 1;
+}
+
+.ilCLI {
+  padding: 0;
+}
+
+div.ilContainerListItemCB {
+  /*float: left;
+  width: 25px;*/
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 26.66px;
+}
+div.ilContainerListItemCB img {
+  width: 20px;
+}
+
+div.ilContainerListItemIcon {
+  /* margin-top: -3px;
+     float: left;
+  position: absolute; */
+  display: table-cell;
+  vertical-align: top;
+}
+
+div.ilContainerListItemIcon a {
+  display: block;
+  margin-top: -10px;
+}
+
+div.ilContainerListItemIconCB {
+  margin-left: 26.66px;
+}
+
+div[class^=il_editarea] .ilContainerListItemOuter img,
+img.ilListItemIcon {
+  width: 35px;
+  height: 35px;
+  max-width: none;
+}
+
+div.ilContainerListItemContent {
+  /* margin-left: 35px; */
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* If checkbox is activated, add spacing */
+div.ilContainerListItemContentCB {
+  /* margin-left: 60px; */
+}
+
+div.il_ContainerListItem {
+  margin: 10px 0;
+  padding-left: 21.328px;
+  width: 100%;
+}
+
+.ilContainerBlockHeader .form-control {
+  width: auto;
+  display: inline-block;
+}
+
+.ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  background-size: 20px 20px;
+  padding-left: 45px;
+  /* padding-top: 6px; */
+  background-color: #f6f4f6;
+  cursor: pointer;
+}
+
+.ilContainerBlockHeaderExpanded {
+  background-image: url("images/nav/tree_exp.svg");
+}
+
+.ilContainerBlockHeaderCollapsed {
+  background-image: url("images/nav/tree_col.svg");
+}
+
+div#cont_paste_explorer_tree ul.il_Explorer {
+  margin: 0 0 0 24px;
+}
+
+#ilContRepIntro {
+  margin: 20px 0 50px 0;
+  clear: both;
+}
+
+div#ilContRepIntro img {
+  float: right;
+  width: 150px;
+  height: 150px;
+}
+
+.ilContObjectiveObjectListItem {
+  background-color: white;
+}
+
+.ilContObjectivesViewTestItem {
+  background-color: #f6f4f6;
+  margin-bottom: 10px;
+}
+
+.ilContainerTileRows {
+  padding: 16px 26.66px;
+  background-color: white;
+}
+
+.ilContainerTileRows .card-no-highlight {
+  height: 0px;
+}
+
+.ilContainerTileRows .il-chart-progressmeter-container {
+  height: 100%;
+}
+
+.ilContainerTileRows .il-card h5 button.btn {
+  font-size: inherit;
+}
+
+.ilContainerShowMore {
+  padding: 15px 10px;
+  background-color: #f6f4f6;
+  text-align: center;
+  margin: 0 -26.66px;
+}
+
+.il_ContainerListItem .navbar-form .modal .radio {
+  display: block;
+}
+
+.il_ContainerListItem .navbar-form .modal .form-group {
+  display: block;
+}
+
+.il_ContainerItemTitle .modal .form-horizontal .radio {
+  display: block;
+}
+
+.il_ContainerItemTitle .modal .form-horizontal .form-group {
+  display: block;
+}
+
+.il_ContainerItemTitle .btn {
+  font-size: 1.241rem;
+}
+
 .ilObjListRow:hover {
   background-color: #f6f4f6;
 }
@@ -17724,6 +17971,17 @@ div.ilRatingOverlay {
   display: none;
 }
 
+ul.il-rating-stars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.il-rating-stars li.il-rating-star {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 #ilMMSearch ul li {
   padding: 5px;
 }
@@ -19072,7 +19330,6 @@ a.ilMediaLightboxClose:hover {
 }
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > .c-tooltip__container > a:hover, .nav > li > .c-tooltip__container > a:focus {
   text-decoration: none;
-  background-color: #e0d9e0;
 }
 .nav > li.disabled > a, .nav > li.disabled > .c-tooltip__container > a {
   color: #f6f4f6;
@@ -20224,7 +20481,7 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   border: none !important;
   background-color: #FF4A59 !important;
   color: #ffffff !important;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 #wayf_submit_button:hover {
