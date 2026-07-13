@@ -1,0 +1,17 @@
+@use "010-settings/settings_color-palette" as *;
+.xlvo-vote-free-input .well{
+  border-color: $il-text-color;
+}
+@media (min-width: 992px)
+{
+#xlvo-display-results .inputs .col-md-3 {
+  width: 48%;
+}
+}
+#answers div.bars {
+  height: 0%;
+}
+
+#category_button{
+  vertical-align: baseline;
+}

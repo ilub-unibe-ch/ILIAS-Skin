@@ -20478,7 +20478,24 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 }
 
 .self-evaluation-presentation .container-fluid .row.block-question {
-  --bs-gutter-x:not;
+  --bs-gutter-x: not;
+}
+
+.xlvo-vote-free-input .well {
+  border-color: #000000;
+}
+
+@media (min-width: 992px) {
+  #xlvo-display-results .inputs .col-md-3 {
+    width: 48%;
+  }
+}
+#answers div.bars {
+  height: 0%;
+}
+
+#category_button {
+  vertical-align: baseline;
 }
 
 /*# sourceMappingURL=unibern.css.map */
