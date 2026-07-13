@@ -1,4 +1,8 @@
+@use "050-layout/basics/layout_spacing-variables" as *;
 @use "../../../../../../../../templates/default/070-components/UI-framework/Panel/ui-component_panel" with (
   $make-legacy-blocks-into-panels: false,
-  $il-panel-style-boxed: true,
+  $il-panel-style-boxed: false,
 );
+.panel-title {
+  padding: $spacing-base 0;
+}
