@@ -20528,8 +20528,5 @@ div.il_editarea_selected:hover > div.ilEditLabel {
     max-width: 100vw;
   }
 }
-ul.c-listing-entity {
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-}
 
 /*# sourceMappingURL=unibern.css.map */
