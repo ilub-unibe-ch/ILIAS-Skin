@@ -20498,4 +20498,8 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   vertical-align: baseline;
 }
 
+.c-maincontrols__footer-grid {
+  padding: 0px;
+}
+
 /*# sourceMappingURL=unibern.css.map */
