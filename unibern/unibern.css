@@ -20473,5 +20473,8 @@ div.il_editarea_selected:hover > div.ilEditLabel {
     max-width: 100vw;
   }
 }
+.self-evaluation-presentation .container-fluid .row .rating .table {
+  width: 100%;
+}
 
 /*# sourceMappingURL=unibern.css.map */
