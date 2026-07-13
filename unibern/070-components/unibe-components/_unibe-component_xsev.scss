@@ -2,3 +2,7 @@
 .self-evaluation-presentation .container-fluid .row .rating .table{
   width:100%;
 }
+
+.self-evaluation-presentation .container-fluid .row.block-question {
+  --bs-gutter-x: not;
+}
