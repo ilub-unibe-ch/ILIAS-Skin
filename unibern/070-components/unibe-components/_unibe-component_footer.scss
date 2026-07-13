@@ -1,3 +1,9 @@
+@use "../../../../../../../templates/default/010-settings/_settings_typography.scss" as font;
 .c-maincontrols__footer-grid{
   padding: 0px;
+}
+
+.ilubmods-footer{
+  font-size: font.$il-font-size-small;
+  padding-top: 0;
 }
