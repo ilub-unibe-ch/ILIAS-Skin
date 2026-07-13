@@ -16501,6 +16501,15 @@ input[type=radio] {
     margin-bottom: 10px;
   }
 }
+.form-horizontal .il_InfoScreenPropertyValue {
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .form-horizontal .il_InfoScreenPropertyValue {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
 .form-horizontal input[type=text],
 .form-horizontal input[type=number],
 .form-horizontal input[type=date],
