@@ -20500,4 +20500,36 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   margin-top: 40px;
 }
 
+.il-layout-page.with-mainbar-slates-engaged .il-filter:has(form[data-cmd-apply*=xoct]) ~ .panel .panel-body ul.c-listing-entity {
+  position: relative;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  right: 50%;
+  left: calc(50% + 209.5px);
+  max-width: calc(100vw - 419px);
+  padding: 16px 21.328px;
+}
+
+.il-layout-page:not(.with-mainbar-slates-engaged) .il-filter:has(form[data-cmd-apply*=xoct]) ~ .panel .panel-body ul.c-listing-entity {
+  position: relative;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  right: 50%;
+  left: calc(50% + 45px);
+  max-width: calc(100vw - 90px);
+  padding: 16px 21.328px;
+}
+
+@media screen and (max-width: 992px) {
+  .il-layout-page.with-mainbar-slates-engaged .il-filter:has(form[data-cmd-apply*=xoct]) ~ .panel .panel-body ul.c-listing-entity,
+  .il-layout-page:not(.with-mainbar-slates-engaged) .il-filter:has(form[data-cmd-apply*=xoct]) ~ .panel .panel-body ul.c-listing-entity {
+    left: 50%;
+    right: 50%;
+    max-width: 100vw;
+  }
+}
+ul.c-listing-entity {
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+}
+
 /*# sourceMappingURL=unibern.css.map */

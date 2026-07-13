@@ -1,0 +1,9 @@
+@use "050-layout/basics" as l;
+@use "050-layout/layout_breakout-from-content-box" as breakout;
+@include breakout.breakout-section(".il-filter:has(form[data-cmd-apply*='xoct']) ~ .panel .panel-body ul.c-listing-entity") {
+  padding: l.$il-padding-medium-vertical l.$il-padding-medium-horizontal;
+}
+
+ul.c-listing-entity {
+  grid-template-columns: repeat(auto-fit,minmax(800px, 1fr));
+}
