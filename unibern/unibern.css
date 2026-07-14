@@ -20498,6 +20498,10 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   padding: 16px 0px;
 }
 
+#question_buttons_bellow_form {
+  margin-bottom: 16px;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }
