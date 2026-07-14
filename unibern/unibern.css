@@ -20519,6 +20519,15 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   margin-left: 0;
 }
 
+.toc-inner {
+  margin-top: 10px;
+}
+
+.scroll-text {
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }
