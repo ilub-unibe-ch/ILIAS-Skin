@@ -6,3 +6,19 @@
 .panel-title {
   padding: $spacing-base 0;
 }
+.ilContainerBlockHeader:not(.ilHeader) {
+  padding-right: 21px;
+}
+
+.ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
+  background-position: 10px 16px !important;
+  padding-left: 36px !important;
+  padding-top: 12px !important;
+  background-color: transparent !important;
+  padding-bottom: 12px;
+
+  &:hover {
+    background-color: #f6f4f6 !important;
+    border-radius: 3px;
+  }
+}

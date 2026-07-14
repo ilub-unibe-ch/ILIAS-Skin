@@ -7848,6 +7848,22 @@ div.alert ul > li:before {
   padding: 16px 0;
 }
 
+.ilContainerBlockHeader:not(.ilHeader) {
+  padding-right: 21px;
+}
+
+.ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
+  background-position: 10px 16px !important;
+  padding-left: 36px !important;
+  padding-top: 12px !important;
+  background-color: transparent !important;
+  padding-bottom: 12px;
+}
+.ilContainerBlockHeaderExpanded:hover, .ilContainerBlockHeaderCollapsed:hover {
+  background-color: #f6f4f6 !important;
+  border-radius: 3px;
+}
+
 .il-audio-container > audio,
 .il-audio-container > button {
   width: 100%;
