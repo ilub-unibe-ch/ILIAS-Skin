@@ -20582,6 +20582,10 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   width: 100%;
 }
 
+.c-table-data__positioninput .c-input[data-il-ui-component] input {
+  width: 80px;
+}
+
 .c-maincontrols__footer-grid {
   padding: 0px;
 }
