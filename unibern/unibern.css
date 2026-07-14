@@ -20558,4 +20558,8 @@ li.ilWikiBlockItem a {
   padding-left: 8px;
 }
 
+.il-survey-question textarea {
+  width: 100%;
+}
+
 /*# sourceMappingURL=unibern.css.map */

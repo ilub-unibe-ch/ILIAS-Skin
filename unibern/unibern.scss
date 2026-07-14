@@ -21,5 +21,6 @@
 @use "070-components/unibe-components/unibe-component_livevoting";
 @use "070-components/unibe-components/unibe-component_footer";
 @use "070-components/legacy/Services/UIComponent/_component_table";
-@use "070-components/unibe-components/unibe_component_wiki.scss";
+@use "070-components/unibe-components/_unibe-component_wiki";
+@use "070-components/unibe-components/_unibe-component_input";
 
