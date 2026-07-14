@@ -5799,7 +5799,7 @@ main {
     max-width: 100vw;
   }
 }
-.il-layout-page.with-mainbar-slates-engaged form:has(.ilTableOuter) {
+.il-layout-page.with-mainbar-slates-engaged .il-layout-page-content:not(:has(#il_right_col)) form:has(.ilTableOuter) {
   position: relative;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -5807,11 +5807,11 @@ main {
   left: calc(50% + 209.5px);
   max-width: calc(100vw - 419px);
 }
-.il-layout-page.with-mainbar-slates-engaged form:has(.ilTableOuter) .ilTableOuter table {
+.il-layout-page.with-mainbar-slates-engaged .il-layout-page-content:not(:has(#il_right_col)) form:has(.ilTableOuter) .ilTableOuter table {
   margin: 0 auto;
 }
 
-.il-layout-page:not(.with-mainbar-slates-engaged) form:has(.ilTableOuter) {
+.il-layout-page:not(.with-mainbar-slates-engaged) .il-layout-page-content:not(:has(#il_right_col)) form:has(.ilTableOuter) {
   position: relative;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -5819,13 +5819,13 @@ main {
   left: calc(50% + 45px);
   max-width: calc(100vw - 90px);
 }
-.il-layout-page:not(.with-mainbar-slates-engaged) form:has(.ilTableOuter) .ilTableOuter table {
+.il-layout-page:not(.with-mainbar-slates-engaged) .il-layout-page-content:not(:has(#il_right_col)) form:has(.ilTableOuter) .ilTableOuter table {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 992px) {
-  .il-layout-page.with-mainbar-slates-engaged form:has(.ilTableOuter),
-  .il-layout-page:not(.with-mainbar-slates-engaged) form:has(.ilTableOuter) {
+  .il-layout-page.with-mainbar-slates-engaged .il-layout-page-content:not(:has(#il_right_col)) form:has(.ilTableOuter),
+  .il-layout-page:not(.with-mainbar-slates-engaged) .il-layout-page-content:not(:has(#il_right_col)) form:has(.ilTableOuter) {
     left: 50%;
     right: 50%;
     max-width: 100vw;
