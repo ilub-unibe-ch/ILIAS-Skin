@@ -1,0 +1,12 @@
+@use "010-settings/settings_color-palette" as *;
+@use "../../../../010-settings/settings_borders" as *;
+
+fieldset.ilTableFilter {
+  margin: 16px 16px 26.66px 16px;
+  border: 1px solid $il-main-border-dark-color;
+  border-radius: $il-border-radius-base;
+}
+
+div.ilTableFilterInput {
+  background-color: $il-main-dark-bg;
+}
