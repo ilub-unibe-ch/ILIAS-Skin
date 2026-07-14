@@ -5294,6 +5294,10 @@ hr.il-divider-with-label {
     min-width: 73.32px;
   }
 }
+.il-mainbar-slates .il-item h4.il-item-title {
+  font-size: inherit;
+}
+
 .c-launcher .btn-bulky {
   background-color: #aac6b5;
   color: #000000;
@@ -16498,6 +16502,15 @@ input[type=radio] {
 }
 @media screen and (max-width: 768px) {
   .form-horizontal .control-label {
+    margin-bottom: 10px;
+  }
+}
+.form-horizontal .il_InfoScreenPropertyValue {
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .form-horizontal .il_InfoScreenPropertyValue {
+    margin-top: 0;
     margin-bottom: 10px;
   }
 }
