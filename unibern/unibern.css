@@ -20502,6 +20502,11 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   margin-bottom: 16px;
 }
 
+.modal_feedback {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }
