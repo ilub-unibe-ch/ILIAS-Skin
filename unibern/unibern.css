@@ -20511,6 +20511,14 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   margin-left: 16px;
 }
 
+.checkbox-inline #show_best_solution {
+  margin-left: 0 !important;
+}
+
+#show_best_solution {
+  margin-left: 0;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }

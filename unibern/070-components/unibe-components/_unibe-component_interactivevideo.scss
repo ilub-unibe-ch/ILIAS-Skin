@@ -11,3 +11,11 @@
   margin-right: space.$spacing-base;
   margin-left: space.$spacing-base;
 }
+
+.checkbox-inline #show_best_solution {
+  margin-left: 0 !important;
+}
+
+#show_best_solution {
+  margin-left: 0;
+}
