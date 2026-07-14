@@ -20550,6 +20550,17 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   border-radius: 3px;
 }
 
+.ilSubForm {
+  background-color: #f6f4f6;
+  padding: 16px;
+}
+
+.form-horizontal .form-group .form-group {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }
