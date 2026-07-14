@@ -1,0 +1,4 @@
+@use "../../../../../../../templates/default/050-layout/basics/_layout_spacing-variables.scss" as space;
+.ilFormFooter .iv_comment_buttons {
+  padding: space.$spacing-base 0px;
+}

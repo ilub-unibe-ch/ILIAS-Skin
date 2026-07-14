@@ -20494,6 +20494,10 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   --bs-gutter-x: not;
 }
 
+.ilFormFooter .iv_comment_buttons {
+  padding: 16px 0px;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }
