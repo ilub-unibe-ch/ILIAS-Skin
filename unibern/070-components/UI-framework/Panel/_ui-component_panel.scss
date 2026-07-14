@@ -1,4 +1,5 @@
-@use "050-layout/basics/layout_spacing-variables" as *;
+@use "050-layout/basics" as *;
+@use "010-settings/settings_borders" as *;
 @use "../../../../../../../../templates/default/070-components/UI-framework/Panel/ui-component_panel" with (
   $make-legacy-blocks-into-panels: false,
   $il-panel-style-boxed: false,
@@ -9,7 +10,11 @@
 .ilContainerBlockHeader:not(.ilHeader) {
   padding-right: 21px;
 }
-
+#il_right_col .panel{
+  border: $il-main-border;
+  padding: 0 $il-padding-large-horizontal $il-padding-large-vertical $il-padding-large-horizontal;
+  border-radius: $il-border-radius-base;
+}
 .ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
   background-position: 10px 16px !important;
   padding-left: 36px !important;

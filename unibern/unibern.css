@@ -7852,6 +7852,12 @@ div.alert ul > li:before {
   padding-right: 21px;
 }
 
+#il_right_col .panel {
+  border: 1px solid #dddddd;
+  padding: 0 26.66px 20px 26.66px;
+  border-radius: 3px;
+}
+
 .ilContainerBlockHeaderExpanded, .ilContainerBlockHeaderCollapsed {
   background-position: 10px 16px !important;
   padding-left: 36px !important;
