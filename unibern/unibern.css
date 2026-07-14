@@ -20547,4 +20547,11 @@ div.ilTableFilterInput {
   background-color: #f6f4f6;
 }
 
+li.ilWikiBlockItem {
+  font-size: 1rem;
+}
+li.ilWikiBlockItem a {
+  padding-left: 8px;
+}
+
 /*# sourceMappingURL=unibern.css.map */
