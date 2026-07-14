@@ -20616,4 +20616,8 @@ li.ilWikiBlockItem a {
   width: 100%;
 }
 
+.c-table-data__table {
+  min-width: 70%;
+}
+
 /*# sourceMappingURL=unibern.css.map */
