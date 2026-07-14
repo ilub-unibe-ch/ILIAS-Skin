@@ -7488,6 +7488,10 @@ a[aria-disabled].il-link.link-bulky:hover {
   padding-bottom: 10px;
 }
 
+.c-drilldown.c-drilldown--filtered .c-drilldown__menu .c-drilldown__menulevel--trigger {
+  color: #000000;
+}
+
 div.alert div {
   margin-top: 10px;
 }
