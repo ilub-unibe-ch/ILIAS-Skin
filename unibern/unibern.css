@@ -5294,6 +5294,10 @@ hr.il-divider-with-label {
     min-width: 73.32px;
   }
 }
+.il-mainbar-slates .il-item h4.il-item-title {
+  font-size: inherit;
+}
+
 .c-launcher .btn-bulky {
   background-color: #aac6b5;
   color: #000000;
@@ -16501,6 +16505,15 @@ input[type=radio] {
     margin-bottom: 10px;
   }
 }
+.form-horizontal .il_InfoScreenPropertyValue {
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .form-horizontal .il_InfoScreenPropertyValue {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
 .form-horizontal input[type=text],
 .form-horizontal input[type=number],
 .form-horizontal input[type=date],
@@ -20505,6 +20518,18 @@ div.il_editarea_selected:hover > div.ilEditLabel {
 .ilubmods-footer {
   font-size: 0.866rem;
   padding-top: 0;
+}
+
+div.ilTableOuter,
+.c-table-data {
+  border-top: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+  background: transparent;
+}
+
+.c-table-data {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /*# sourceMappingURL=unibern.css.map */

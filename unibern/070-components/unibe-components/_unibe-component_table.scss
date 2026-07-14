@@ -1,0 +1,15 @@
+@use "010-settings" as s;
+@use "010-settings/settings_unibe-variables" as ub;
+@use "050-layout/basics" as l;
+
+div.ilTableOuter,
+.c-table-data {
+  border-top: ub.$unibe-il-table-border;
+  border-bottom: ub.$unibe-il-table-border;
+  background: ub.$unibe-il-table-bg-color;
+}
+
+.c-table-data {
+  padding-top: l.$il-padding-medium-vertical;
+  padding-bottom: l.$il-padding-medium-vertical;
+}
