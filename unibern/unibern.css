@@ -20595,29 +20595,16 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   padding-top: 0;
 }
 
-fieldset.ilTableFilter {
-  margin: 16px 16px 26.66px 16px;
-  border: 1px solid #757575;
-  border-radius: 3px;
+div.ilTableOuter,
+.c-table-data {
+  border-top: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+  background: transparent;
 }
 
-div.ilTableFilterInput {
-  background-color: #f6f4f6;
-}
-
-li.ilWikiBlockItem {
-  font-size: 1rem;
-}
-li.ilWikiBlockItem a {
-  padding-left: 8px;
-}
-
-.il-survey-question textarea {
-  width: 100%;
-}
-
-.c-table-data__table {
-  min-width: 70%;
+.c-table-data {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /*# sourceMappingURL=unibern.css.map */
