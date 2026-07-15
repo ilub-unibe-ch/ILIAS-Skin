@@ -2,3 +2,7 @@
 @use "../../../../../templates/default/070-components/UI-framework/Menu/ui-component_drilldown" with (
   $c-drilldown-item-hover-bg: s.$il-highlight-bg,
 );
+
+.c-drilldown.c-drilldown--filtered .c-drilldown__menu .c-drilldown__menulevel--trigger {
+  color: s.$il-text-color
+}

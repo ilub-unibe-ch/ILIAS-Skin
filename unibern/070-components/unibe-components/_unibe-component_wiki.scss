@@ -1,0 +1,7 @@
+@use "../../../../../../../templates/default/010-settings/settings_typography" as font;
+li.ilWikiBlockItem {
+  font-size: font.$il-font-size-base;
+  a {
+    padding-left: 8px;
+  }
+}

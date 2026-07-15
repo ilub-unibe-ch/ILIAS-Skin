@@ -1,0 +1,43 @@
+@use "../../../../../../../templates/default/050-layout/basics/_layout_spacing-variables.scss" as space;
+@use "010-settings/settings_color-palette" as *;
+@use "010-settings/settings_borders" as *;
+.ilFormFooter .iv_comment_buttons {
+  padding: space.$spacing-base 0px;
+}
+
+#question_buttons_bellow_form {
+  margin-bottom: space.$spacing-base;
+}
+
+.modal_feedback {
+  margin-right: space.$spacing-base;
+  margin-left: space.$spacing-base;
+}
+
+.checkbox-inline #show_best_solution {
+  margin-left: 0 !important;
+}
+
+#show_best_solution {
+  margin-left: 0;
+}
+
+.toc-inner {
+  margin-top: 10px;
+}
+
+.scroll-text {
+  border: 1px solid $il-main-border-color;
+  border-radius: $il-border-radius-base;
+}
+
+.ilSubForm {
+  background-color: $il-main-dark-bg;
+  padding: space.$spacing-base;
+}
+
+.form-horizontal .form-group .form-group {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
