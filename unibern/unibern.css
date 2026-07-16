@@ -20466,7 +20466,7 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   padding: 16px;
 }
 
-.form-horizontal .form-group .form-group {
+#subform_is_task .form-group {
   margin-top: 0px;
   display: flex;
   flex-direction: column;
