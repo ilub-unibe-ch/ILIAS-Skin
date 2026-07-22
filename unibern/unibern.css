@@ -6122,6 +6122,9 @@ a[aria-disabled].il-link.link-bulky:hover {
   visibility: hidden;
 }
 
+.il-maincontrols-slate.engaged[data-depth-level="2"] {
+  background-color: #f6f4f6;
+}
 .il-maincontrols-slate.engaged[data-depth-level="2"] .btn-bulky:not(:hover),
 .il-maincontrols-slate.engaged[data-depth-level="2"] .link-bulky:not(:hover),
 .il-maincontrols-slate.engaged[data-depth-level="2"] .ilExplorerContainer,
@@ -6159,8 +6162,7 @@ a[aria-disabled].il-link.link-bulky:hover {
 .il-maincontrols-slate-content li.il-workflow-step {
   padding: 0 26.66px;
 }
-.il-maincontrols-slate-content > .c-form,
-.il-maincontrols-slate-content > #copg-editor-slate-content > .c-form {
+.il-maincontrols-slate-content > .c-form {
   padding: 20px 26.66px;
 }
 
@@ -15744,7 +15746,8 @@ div.ilEditVAccordICont {
   background-color: white;
 }
 
-.ilTinyMenuSection .dropdown, .il-copg-button-group .dropdown {
+.ilTinyMenuSection .dropdown, .il-copg-button-group .dropdown,
+.ilTinyMenuSection .btn {
   display: inline-block;
 }
 
@@ -15761,15 +15764,8 @@ div.ilEditVAccordICont {
   fill: #D0D0D0;
 }
 
-div.ilTinyMenuSection, .il-copg-button-group {
-  /* border-right: 1px solid #e0e0e0; */
-  /* padding: 0 10px 4px 0; */
-  margin-right: 10px;
-  margin: 10px 10px 10px 0;
-}
 div.ilTinyMenuSection p, .il-copg-button-group p {
   margin-bottom: 5px;
-  padding: 2px 5px;
   background-color: #ede9ed;
 }
 div.ilTinyMenuSection .btn, .il-copg-button-group .btn {
@@ -15802,13 +15798,13 @@ div.il-copg-button-group-wide {
 #iltinymenu .bd div.last {
   float: left;
   white-space: nowrap;
-  padding: 0 10px 2px 0;
   border-right: 0;
   margin: 0;
 }
 
-#iltinymenu {
-  padding: 0 26.66px;
+#iltinymenu h2.ilHeader {
+  display: block;
+  margin-bottom: 16px;
 }
 #iltinymenu .bd div.last {
   float: left;
@@ -16187,14 +16183,13 @@ div.ilCOPGMediaPrint {
 }
 
 #copg-editor-slate-content {
-  padding: 20px 0px;
+  padding: 20px 26.66px;
 }
 #copg-editor-slate-content p {
   padding: 0;
   margin: 5px 0;
 }
 #copg-editor-slate-content p.ilTinyInfo {
-  padding: 4px;
   width: 100%;
 }
 @media only screen and (max-width: 991px) {
@@ -16210,11 +16205,28 @@ div.ilCOPGMediaPrint {
 #copg-editor-slate-content div.alert {
   margin: 10px 0;
 }
-#copg-editor-slate-content form.form-horizontal {
-  margin-bottom: 20px;
+#copg-editor-slate-content form.c-form--horizontal select,
+#copg-editor-slate-content form.form-horizontal select {
+  min-width: unset;
+  width: 100%;
 }
-#copg-editor-slate-content form.form-horizontal .ilFormHeader {
-  padding: 20px 26.66px;
+#copg-editor-slate-content form.c-form--horizontal input[type=checkbox],
+#copg-editor-slate-content form.form-horizontal input[type=checkbox] {
+  margin-top: 6px;
+}
+#copg-editor-slate-content form.c-form--horizontal input[type=checkbox]:first-child,
+#copg-editor-slate-content form.form-horizontal input[type=checkbox]:first-child {
+  margin-top: 0;
+}
+#copg-editor-slate-content form.c-form--horizontal label,
+#copg-editor-slate-content form.c-form--horizontal .content-label,
+#copg-editor-slate-content form.form-horizontal label,
+#copg-editor-slate-content form.form-horizontal .content-label {
+  margin-bottom: 6px;
+}
+#copg-editor-slate-content form.c-form--horizontal .c-input[data-il-ui-component] {
+  display: flex;
+  flex-direction: column;
 }
 #copg-editor-slate-content form.form-horizontal .ilFormHeader h3.ilHeader {
   font-size: 1rem;
@@ -16222,24 +16234,8 @@ div.ilCOPGMediaPrint {
 #copg-editor-slate-content form.form-horizontal .col-sm-4, #copg-editor-slate-content form.form-horizontal .col-sm-3, #copg-editor-slate-content form.form-horizontal .col-sm-8, #copg-editor-slate-content form.form-horizontal .col-sm-9 {
   width: 100%;
 }
-#copg-editor-slate-content form.form-horizontal .control-label {
-  text-align: left;
-  font-weight: bold;
-  min-height: auto;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
 #copg-editor-slate-content form.form-horizontal .ilFormFooter {
-  padding: 10px 26.66px;
   background-color: white;
-}
-#copg-editor-slate-content > .btn-link {
-  padding: 0px 26.66px;
-}
-
-#copg-table-top-actions,
-#copg-top-actions {
-  padding: 0 26.66px;
 }
 
 #copg-table-top-actions .il-viewcontrol-mode {
@@ -16406,7 +16402,7 @@ input[type=radio] {
 
 .form-horizontal select,
 .c-form select {
-  min-width: 300px;
+  min-width: 260px;
 }
 
 .form-horizontal .ilFormHeader:not(:first-child) {
