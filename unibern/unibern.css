@@ -20468,6 +20468,15 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   flex-direction: column;
 }
 
+.bootstrap-timepicker-widget table td input {
+  padding: 0px;
+}
+
+.bootstrap-timepicker-widget table td span {
+  left: 15px;
+  width: 80%;
+}
+
 .xlvo-vote-free-input .well {
   border-color: #000000;
 }
