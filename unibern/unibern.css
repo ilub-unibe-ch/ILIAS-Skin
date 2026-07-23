@@ -7788,7 +7788,7 @@ div.alert ul > li:before {
 }
 
 .ilContainerBlockHeader:not(.ilHeader) {
-  padding-right: 21px;
+  padding-right: 21.328px;
 }
 
 #il_right_col .panel {
@@ -20546,6 +20546,11 @@ div.ilTableOuter,
 
 .c-table-data__table {
   min-width: 70%;
+}
+
+div.ilContainerListItemOuter {
+  padding: 21.328px 13.33px;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=unibern.css.map */

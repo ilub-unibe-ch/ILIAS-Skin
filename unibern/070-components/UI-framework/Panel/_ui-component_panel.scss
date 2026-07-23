@@ -8,7 +8,7 @@
   padding: $spacing-base 0;
 }
 .ilContainerBlockHeader:not(.ilHeader) {
-  padding-right: 21px;
+  padding-right: $il-padding-medium-horizontal;
 }
 #il_right_col .panel{
   border: $il-main-border;

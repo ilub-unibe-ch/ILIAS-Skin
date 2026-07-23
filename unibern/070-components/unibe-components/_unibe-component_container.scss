@@ -1,0 +1,6 @@
+@use "050-layout/basics" as *;
+
+div.ilContainerListItemOuter {
+  padding: $il-padding-medium-horizontal $il-padding-small-horizontal;
+  margin: 0px;
+}
