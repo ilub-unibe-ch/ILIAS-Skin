@@ -1,8 +1,34 @@
 @use "010-settings" as s;
+@use "050-layout/basics" as *;
 @use "../../../../../templates/default/070-components/UI-framework/Menu/ui-component_drilldown" with (
   $c-drilldown-item-hover-bg: s.$il-highlight-bg,
 );
 
 .c-drilldown.c-drilldown--filtered .c-drilldown__menu .c-drilldown__menulevel--trigger {
-  color: s.$il-text-color
+  color: s.$il-text-color;
+}
+
+.modal-content .c-drilldown,
+#il_center_col .c-drilldown {
+  border: 1px solid s.$il-main-border-dark-color;
+}
+
+.c-drilldown {
+  margin-bottom: $il-padding-medium-vertical;
+}
+
+.c-drilldown ul, .c-drilldown li {
+  margin-bottom: $il-padding-xs-vertical;
+}
+
+.c-drilldown:not(.c-drilldown--filtered) .c-drilldown__menulevel--engagedparent > li:not(.c-drilldown__menuitem--filtered) > ul {
+  background-color: s.$il-main-dark-bg;
+}
+
+.il-maincontrols-slate-content .c-drilldown:not(.c-drilldown--filtered) .c-drilldown__menulevel--engagedparent > li:not(.c-drilldown__menuitem--filtered) > ul:not(.il-maincontrols-slate engaged) {
+  background-color: s.$il-main-bg;
+}
+
+.c-drilldown .c-drilldown__menu--no-items, .c-drilldown .c-drilldown__menulevel--trigger {
+  margin-bottom: 0;
 }

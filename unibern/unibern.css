@@ -7431,6 +7431,34 @@ a[aria-disabled].il-link.link-bulky:hover {
   color: #000000;
 }
 
+.modal-content .c-drilldown,
+#il_center_col .c-drilldown {
+  border: 1px solid #757575;
+}
+
+/*#il_center_col .c-drilldown {
+  border: 1px solid s.$il-main-border-dark-color;
+}*/
+.c-drilldown {
+  margin-bottom: 16px;
+}
+
+.c-drilldown ul, .c-drilldown li {
+  margin-bottom: 6px;
+}
+
+.c-drilldown:not(.c-drilldown--filtered) .c-drilldown__menulevel--engagedparent > li:not(.c-drilldown__menuitem--filtered) > ul {
+  background-color: #f6f4f6;
+}
+
+.il-maincontrols-slate-content .c-drilldown:not(.c-drilldown--filtered) .c-drilldown__menulevel--engagedparent > li:not(.c-drilldown__menuitem--filtered) > ul:not(.il-maincontrols-slate engaged) {
+  background-color: white;
+}
+
+.c-drilldown .c-drilldown__menu--no-items, .c-drilldown .c-drilldown__menulevel--trigger {
+  margin-bottom: 0;
+}
+
 div.alert div {
   margin-top: 10px;
 }
