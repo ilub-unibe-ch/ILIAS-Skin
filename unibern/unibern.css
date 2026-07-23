@@ -7436,9 +7436,6 @@ a[aria-disabled].il-link.link-bulky:hover {
   border: 1px solid #757575;
 }
 
-/*#il_center_col .c-drilldown {
-  border: 1px solid s.$il-main-border-dark-color;
-}*/
 .c-drilldown {
   margin-bottom: 16px;
 }
@@ -20253,6 +20250,10 @@ td.calministd:hover {
   color: #5D6089;
 }
 
+.btn-sm {
+  font-size: 0.866rem;
+}
+
 button.copg-add.dropdown-toggle.btn .glyphicon-plus-sign,
 button.copg-add.dropdown-toggle.btn:focus .glyphicon-plus-sign,
 button.copg-add.dropdown-toggle.btn:hover .glyphicon-plus-sign,
@@ -20476,6 +20477,17 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   margin-left: 0;
 }
 
+.best_solution_block {
+  margin-right: -24px;
+}
+
+input[type=submit] {
+  min-height: 28px;
+}
+
+/*#close_form {
+  min-height: 44px;
+}*/
 .toc-inner {
   margin-top: 10px;
 }
