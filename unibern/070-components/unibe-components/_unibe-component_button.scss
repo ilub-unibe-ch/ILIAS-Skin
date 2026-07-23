@@ -5,6 +5,12 @@
   color: $unibe-il-btn-link-color;
 }
 
+// Beim Interactive Video sind die Buttonlabels sonst zu klein
 .btn-sm {
   font-size: $il-font-size-small;
+}
+
+// Administration > Layout > Hauptmenü > Ersetzen von Icons ist die Schrift "Datei auswählen" bei Hover nicht gut lesbar
+.ui-input-file-input-dropzone button:disabled, .ui-input-file-input-dropzone button:disabled:hover {
+  color: $il-text-light-color;
 }

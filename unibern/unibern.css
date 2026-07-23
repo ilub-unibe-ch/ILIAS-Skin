@@ -20254,6 +20254,10 @@ td.calministd:hover {
   font-size: 0.866rem;
 }
 
+.ui-input-file-input-dropzone button:disabled, .ui-input-file-input-dropzone button:disabled:hover {
+  color: #737373;
+}
+
 button.copg-add.dropdown-toggle.btn .glyphicon-plus-sign,
 button.copg-add.dropdown-toggle.btn:focus .glyphicon-plus-sign,
 button.copg-add.dropdown-toggle.btn:hover .glyphicon-plus-sign,
