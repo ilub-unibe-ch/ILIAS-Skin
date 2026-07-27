@@ -16,3 +16,13 @@ div.ilTableOuter,
 .c-table-data__table{
   min-width: 70%;
 }
+
+// Korrigiert in Content Styles die Darstellung von Styleklassen-Formularen (sich überlagernde Inputfelder)
+#il_prop_cont_margin td,
+#il_prop_cont_padding td,
+#il_prop_cont_border-width td,
+#il_prop_cont_border-color td,
+#il_prop_cont_background-position td,
+#il_prop_cont_transform-origin td {
+  display:flex;
+}

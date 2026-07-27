@@ -20592,6 +20592,15 @@ div.ilTableOuter,
   min-width: 70%;
 }
 
+#il_prop_cont_margin td,
+#il_prop_cont_padding td,
+#il_prop_cont_border-width td,
+#il_prop_cont_border-color td,
+#il_prop_cont_background-position td,
+#il_prop_cont_transform-origin td {
+  display: flex;
+}
+
 div.ilContainerListItemOuter {
   padding: 21.328px 13.33px;
   margin: 0px;
