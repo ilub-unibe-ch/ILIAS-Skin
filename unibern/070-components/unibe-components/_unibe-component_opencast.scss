@@ -7,3 +7,10 @@
 ul.c-listing-entity {
  // grid-template-columns: repeat(auto-fit,minmax(800px, 1fr));
 }
+.c-entity__reactions, .c-entity__reactionbar, .c-entity__main-details{
+  padding-top: 0px;
+}
+
+.c-entity__main-details{
+  padding-bottom: 0px;
+}

@@ -20526,6 +20526,14 @@ div.il_editarea_selected:hover > div.ilEditLabel {
     max-width: 100vw;
   }
 }
+.c-entity__reactions, .c-entity__reactionbar, .c-entity__main-details {
+  padding-top: 0px;
+}
+
+.c-entity__main-details {
+  padding-bottom: 0px;
+}
+
 .self-evaluation-presentation .container-fluid .row .rating .table {
   width: 100%;
 }
