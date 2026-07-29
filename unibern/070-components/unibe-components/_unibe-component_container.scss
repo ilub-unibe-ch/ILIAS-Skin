@@ -1,6 +1,13 @@
 @use "050-layout/basics" as *;
+@use "../../010-settings/settings_unibe-variables" as *;
+
 
 div.ilContainerListItemOuter {
   padding: $il-padding-medium-horizontal $il-padding-small-horizontal;
   margin: 0px;
+}
+
+::selection {
+  background-color: $unibe-il-selection-bg-color;
+  color: #000;
 }

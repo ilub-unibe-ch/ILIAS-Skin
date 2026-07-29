@@ -1537,12 +1537,6 @@ th {
   flex-wrap: wrap;
   align-items: center;
 }
-.l-bar__space-keeper .l-bar__group,
-.l-bar__space-keeper .l-bar__element,
-.l-bar__group .l-bar__group,
-.l-bar__group .l-bar__element {
-  flex-wrap: nowrap;
-}
 
 .l-bar__space-keeper:not(:empty) {
   margin-bottom: calc(-1 * var(--l-bar__element__margin-bottom));
@@ -1555,14 +1549,14 @@ th {
 .l-bar__group > .l-bar__element {
   margin-bottom: var(--l-bar__element__margin-bottom);
 }
+.l-bar__space-keeper > .l-bar__element:last-child,
+.l-bar__group > .l-bar__element:last-child {
+  margin-right: 0;
+}
 
 .l-bar__group > .l-bar__element,
 .l-bar__space-keeper > .l-bar__element {
   margin-right: var(--l-bar__gap--elements);
-}
-.l-bar__group > .l-bar__element:last-child,
-.l-bar__space-keeper > .l-bar__element:last-child {
-  margin-right: 0;
 }
 
 .l-bar__space-keeper > .l-bar__group,
@@ -1915,19 +1909,21 @@ fieldset[disabled] input[type=checkbox] {
   cursor: not-allowed;
 }
 
-input[type=file]:focus, input[type=file]:focus-visible,
+input[type=file]:focus,
 input[type=radio]:focus,
+input[type=checkbox]:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+input[type=file]:focus-visible,
 input[type=radio]:focus-visible,
-input[type=checkbox]:focus,
 input[type=checkbox]:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-input[type=file]:focus::after, input[type=file]:focus-visible::after,
-input[type=radio]:focus::after,
+input[type=file]:focus-visible::after,
 input[type=radio]:focus-visible::after,
-input[type=checkbox]:focus::after,
 input[type=checkbox]:focus-visible::after {
   content: " ";
   position: absolute;
@@ -1985,34 +1981,6 @@ img {
     /* height: auto; messes e.g. survey progress bar */
     max-width: 100%;
   }
-}
-
-a:has(img):focus {
-  border: inherit;
-  box-shadow: inherit;
-  outline: none;
-  outline-offset: 0px;
-}
-a:has(img):focus-visible {
-  border: inherit;
-  box-shadow: inherit;
-  outline: none;
-  outline-offset: 0px;
-}
-a:has(img):focus, a:has(img):focus-visible {
-  position: relative;
-  outline: 2px solid #FFFFFF;
-  outline-offset: 5px;
-}
-a:has(img):focus::after, a:has(img):focus-visible::after {
-  content: " ";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid #FFFFFF;
-  outline: 3px solid #0078D7;
 }
 
 script {
@@ -4344,99 +4312,70 @@ hr.il-divider-with-label {
   width: 100%;
 }
 
-.c-entity__container {
+.c-entity.__container {
   display: grid;
-  grid-template-columns: max-content auto;
-  grid-template-rows: repeat(9, minmax(min-content, auto));
+  grid-template-areas: "f-blocking f-blocking f-blocking f-blocking actions" "second-id f-prop f-prop f-prop actions" "second-id prim-id prim-id prim-id actions" "second-id status status status status" "second-id f-details f-details f-details f-details" "second-id availab availab availab availab" "second-id details details details details" "second-id reaction reaction f-reaction f-reaction";
+  grid-template-columns: min-content auto auto min-content min-content;
   border: 1px solid #dddddd;
   background-color: white;
-  padding: 19px 25.327px;
+  padding: 10px 13.33px;
 }
-.c-entity__container > * {
-  padding: 19px 25.327px;
+.c-entity.__container > *:not(:empty) {
+  padding: 10px 13.33px;
 }
-@media screen and (max-width: 768px) {
-  .c-entity__container {
-    display: block;
-  }
+.c-entity.__blocking-conditions {
+  grid-area: f-blocking;
+  font-size: 1.333rem;
 }
-.c-entity__featured-headerbar {
-  column-span: 2;
+.c-entity.__actions {
+  display: flex;
+  justify-content: end;
+  grid-area: actions;
 }
-.c-entity__featured-headerbar > .l-bar__space-keeper {
-  flex-wrap: nowrap;
+.c-entity.__actions .dropdown {
+  height: max-content;
 }
-.c-entity__featured-headerbar > .l-bar__space-keeper .l-bar__group,
-.c-entity__featured-headerbar > .l-bar__space-keeper .l-bar__element {
-  align-self: flex-start;
+.c-entity.__secondary-identifier {
+  grid-area: second-id;
 }
-.c-entity__secondary-identifier {
-  grid-column: 1;
-  grid-row: 1/10;
-}
-.c-entity__secondary-identifier.--string, .c-entity__secondary-identifier.--shy, .c-entity__secondary-identifier.--shylink {
+.c-entity.__secondary-identifier.--string, .c-entity.__secondary-identifier.--shy, .c-entity.__secondary-identifier.--shylink {
   width: 10rem;
 }
-.c-entity__secondary-identifier.--symbol img {
-  width: auto;
+.c-entity.__secondary-identifier.--symbol {
+  min-width: 3rem;
 }
-.c-entity__secondary-identifier.--image img {
-  max-width: 360px;
+.c-entity.__secondary-identifier.--image {
+  width: 15rem;
 }
-.c-entity__primary-identifier {
+.c-entity.__primary-identifier {
+  grid-area: prim-id;
   font-weight: 600;
   font-size: 1.777rem;
 }
-.c-entity__featured {
-  font-size: 1.241rem;
+.c-entity.__featured {
+  grid-area: f-prop;
+  font-size: 1.333rem;
 }
-.c-entity__workflow-actions {
-  padding-top: 76px;
+.c-entity.__personal-status {
+  grid-area: status;
 }
-.c-entity__blocking-conditions {
-  padding-bottom: 76px;
-  font-size: 1.241rem;
+.c-entity.__main-details {
+  grid-area: f-details;
 }
-.c-entity__main-details {
-  padding-top: 76px;
+.c-entity.__availability {
+  grid-area: availab;
 }
-.c-entity__details {
-  font-size: 0.866rem;
+.c-entity.__details {
+  grid-area: details;
 }
-.c-entity__reactions {
-  padding-top: 76px;
+.c-entity.__reactions {
+  grid-area: reaction;
 }
-.c-entity__reactionbar {
-  align-self: stretch;
-  align-content: flex-end;
-  grid-column: 2;
-  grid-row: 9;
-}
-.c-entity__featured-reactions {
-  padding-top: 76px;
-  text-align: end;
+.c-entity.__featured-reactions {
+  display: flex;
+  justify-content: end;
+  grid-area: f-reaction;
   min-width: max-content;
-}
-@media screen and (max-width: 768px) {
-  .c-entity__container {
-    display: flex;
-    flex-direction: column;
-  }
-  .c-entity__container > * {
-    order: 2;
-  }
-  .c-entity__secondary-identifier {
-    order: 1;
-  }
-  .c-entity__secondary-identifier.--image img {
-    width: calc(100% + 101.308px);
-    max-width: unset;
-    margin-left: -50.654px;
-    margin-top: -38px;
-  }
-  .c-entity__reactionbar {
-    flex-grow: 1;
-  }
 }
 
 .c-field-tag {
@@ -5898,16 +5837,7 @@ a[aria-disabled].il-link.link-bulky:hover {
   background-color: unset;
 }
 
-/*
-	These classes are used to limit the number of rows when displaying larger chunks of text.
-	The mixin receives $height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10
-	can be used to limit the number of rows for text to 2,3,5 or 10 lines in any template,
-	e.g. the Standard Listing Panels limit the property values to 3 lines using il-multi-line-cap-3
-
-	Technical discussion can be found in https://mantis.ilias.de/view.php?id=21583
-	The background/gradient fallback can be removed as soon as all browsers support line-clamp.
- */
-.c-listing-property__propertylabel:not(:has(.glyphicon)):after {
+.c-listing-property__propertylabel:after {
   content: ":";
 }
 
@@ -6121,47 +6051,9 @@ a[aria-disabled].il-link.link-bulky:hover {
   padding: 38px 26.66px;
 }
 
-.c-listing-entity,
-.c-listing-entity-grid {
+.c-listing-entity {
   list-style: none;
   padding-left: 0;
-}
-
-.c-listing-entity {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
-  gap: 38px;
-}
-
-.c-listing-entity-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 38px;
-}
-.c-listing-entity-grid .c-entity__container {
-  display: flex;
-  flex-direction: column;
-}
-.c-listing-entity-grid .c-entity__container > * {
-  order: 2;
-}
-.c-listing-entity-grid .c-entity__secondary-identifier {
-  order: 1;
-}
-.c-listing-entity-grid .c-entity__secondary-identifier.--image img {
-  width: calc(100% + 101.308px);
-  max-width: unset;
-  margin-left: -50.654px;
-  margin-top: -38px;
-}
-.c-listing-entity-grid .c-entity__reactionbar {
-  flex-grow: 1;
-}
-.c-listing-entity-grid .c-entity__container {
-  height: 100%;
-}
-.c-listing-entity-grid .c-entity__container .c-listing-property__propertyvalue:has(.t-text-more-less__toggle:not(:checked)) .t-text-more-less__text-body {
-  height: 2lh;
 }
 
 .il-maincontrols-slate.disengaged {
@@ -6460,6 +6352,15 @@ a[aria-disabled].il-link.link-bulky:hover {
   }
 }
 
+/*
+	These classes are used to limit the number of rows when displaying larger chunks of text.
+	The mixin receives $height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10
+	can be used to limit the number of rows for text to 2,3,5 or 10 lines in any template,
+	e.g. the Standard Listing Panels limit the property values to 3 lines using il-multi-line-cap-3
+
+	Technical discussion can be found in https://mantis.ilias.de/view.php?id=21583
+	The background/gradient fallback can be removed as soon as all browsers support line-clamp.
+ */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -14702,12 +14603,16 @@ div.ilc_va_icont_VAccordICont {
   border-bottom: 1px solid #dddddd;
   background-color: white;
 }
-.ilAwarenessItem > div[role=button]:focus-visible:focus, .ilAwarenessItem > div[role=button]:focus-visible:focus-visible {
+.ilAwarenessItem > div[role=button]:focus-visible:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+.ilAwarenessItem > div[role=button]:focus-visible:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-.ilAwarenessItem > div[role=button]:focus-visible:focus::after, .ilAwarenessItem > div[role=button]:focus-visible:focus-visible::after {
+.ilAwarenessItem > div[role=button]:focus-visible:focus-visible::after {
   content: " ";
   position: absolute;
   top: -2px;
@@ -16466,12 +16371,16 @@ p#copg-auto-save {
   position: static;
 }
 
-.ilPageVideo button:focus, .ilPageVideo button:focus-visible, .ilPageAudio button:focus, .ilPageAudio button:focus-visible {
+.ilPageVideo button:focus, .ilPageAudio button:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+.ilPageVideo button:focus-visible, .ilPageAudio button:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-.ilPageVideo button:focus::after, .ilPageVideo button:focus-visible::after, .ilPageAudio button:focus::after, .ilPageAudio button:focus-visible::after {
+.ilPageVideo button:focus-visible::after, .ilPageAudio button:focus-visible::after {
   content: " ";
   position: absolute;
   top: -2px;
@@ -17154,15 +17063,18 @@ a.mailunread, a.mailunread:visited {
   background-image: url("images/media/bigplay.svg");
 }
 
-.mejs__overlay-button:focus, .mejs__overlay-button:focus-visible,
-.ilPlayerPreviewPlayButton:focus,
+.mejs__overlay-button:focus,
+.ilPlayerPreviewPlayButton:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+.mejs__overlay-button:focus-visible,
 .ilPlayerPreviewPlayButton:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-.mejs__overlay-button:focus::after, .mejs__overlay-button:focus-visible::after,
-.ilPlayerPreviewPlayButton:focus::after,
+.mejs__overlay-button:focus-visible::after,
 .ilPlayerPreviewPlayButton:focus-visible::after {
   content: " ";
   position: absolute;
@@ -17174,12 +17086,16 @@ a.mailunread, a.mailunread:visited {
   outline: 3px solid #0078D7;
 }
 
-.mejs__time-total:focus, .mejs__time-total:focus-visible {
+.mejs__time-total:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+.mejs__time-total:focus-visible {
   position: relative;
   outline: 1px solid #FFFFFF;
   outline-offset: 2px;
 }
-.mejs__time-total:focus::after, .mejs__time-total:focus-visible::after {
+.mejs__time-total:focus-visible::after {
   content: " ";
   position: absolute;
   top: -1px;
@@ -19192,15 +19108,18 @@ a.ilMediaLightboxClose:hover {
 #ilTab > li > .c-tooltip__container > a:focus-visible::after {
   content: none;
 }
-#ilTab > li > a:focus, #ilTab > li > a:focus-visible,
-#ilTab > li > .c-tooltip__container > a:focus,
+#ilTab > li > a:focus,
+#ilTab > li > .c-tooltip__container > a:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+#ilTab > li > a:focus-visible,
 #ilTab > li > .c-tooltip__container > a:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-#ilTab > li > a:focus::after, #ilTab > li > a:focus-visible::after,
-#ilTab > li > .c-tooltip__container > a:focus::after,
+#ilTab > li > a:focus-visible::after,
 #ilTab > li > .c-tooltip__container > a:focus-visible::after {
   content: " ";
   position: absolute;
@@ -19273,15 +19192,18 @@ a.ilMediaLightboxClose:hover {
 #ilSubTab > li > .c-tooltip__container > a:focus-visible::after {
   content: none;
 }
-#ilSubTab > li > a:focus, #ilSubTab > li > a:focus-visible,
-#ilSubTab > li > .c-tooltip__container > a:focus,
+#ilSubTab > li > a:focus,
+#ilSubTab > li > .c-tooltip__container > a:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+#ilSubTab > li > a:focus-visible,
 #ilSubTab > li > .c-tooltip__container > a:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-#ilSubTab > li > a:focus::after, #ilSubTab > li > a:focus-visible::after,
-#ilSubTab > li > .c-tooltip__container > a:focus::after,
+#ilSubTab > li > a:focus-visible::after,
 #ilSubTab > li > .c-tooltip__container > a:focus-visible::after {
   content: " ";
   position: absolute;
@@ -19442,12 +19364,16 @@ img.ilUserXXSmall {
 .webdav-view-control {
   text-align: center;
 }
-.webdav-view-control:focus, .webdav-view-control:focus-visible {
+.webdav-view-control:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+.webdav-view-control:focus-visible {
   position: relative;
   outline: 2px solid #FFFFFF;
   outline-offset: 5px;
 }
-.webdav-view-control:focus::after, .webdav-view-control:focus-visible::after {
+.webdav-view-control:focus-visible::after {
   content: " ";
   position: absolute;
   top: -2px;
@@ -20686,6 +20612,11 @@ div.ilTableOuter,
 div.ilContainerListItemOuter {
   padding: 21.328px 13.33px;
   margin: 0px;
+}
+
+::selection {
+  background-color: #C2B2C9;
+  color: #000;
 }
 
 .il-system-info.il-system-info-neutral {
