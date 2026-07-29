@@ -14,3 +14,8 @@
 .ui-input-file-input-dropzone button:disabled, .ui-input-file-input-dropzone button:disabled:hover {
   color: $il-text-light-color;
 }
+
+// z.B. Opencast "Geplante Aufzeichnung"
+.btn-tag[disabled] {
+  color: $il-text-light-color;
+}
