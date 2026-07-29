@@ -1,0 +1,15 @@
+@use "010-settings/settings_color-palette" as *;
+@use "050-layout/basics" as *;
+@use "../../010-settings/settings_unibe-variables" as *;
+
+h4.il-divider {
+  //background-color: $il-main-dark-bg;
+  padding: $il-padding-xs-vertical 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h4.il-divider::before,
+h4.il-divider::after
+{
+  border-bottom: none;
+}
