@@ -13,3 +13,8 @@ h4.il-divider::after
 {
   border-bottom: none;
 }
+
+.il-maincontrols-slate-content .dropdown-menu {
+  right: auto;
+  left: inherit;
+}
