@@ -20614,4 +20614,23 @@ div.ilContainerListItemOuter {
   margin: 0px;
 }
 
+.il-system-info.il-system-info-neutral {
+  background-color: #b9c6e1;
+  padding: 10px 21.328px;
+}
+
+.il-system-info.il-system-info-important {
+  background-color: #fca585;
+  padding: 10px 21.328px;
+}
+
+.il-system-info.il-system-info-breaking {
+  background-color: #ea6893;
+  padding: 10px 21.328px;
+}
+
+.il-system-info {
+  height: 44px;
+}
+
 /*# sourceMappingURL=unibern.css.map */

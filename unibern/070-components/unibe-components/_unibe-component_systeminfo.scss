@@ -1,0 +1,21 @@
+@use "050-layout/basics" as *;
+@use "../../010-settings/settings_unibe-variables" as *;
+
+.il-system-info.il-system-info-neutral {
+  background-color: $unibe-il-standard-page-system-info-color-variant-neutral;
+  padding: $il-padding-small-vertical $il-padding-medium-horizontal;
+}
+
+.il-system-info.il-system-info-important {
+  background-color: $unibe-il-standard-page-system-info-color-variant-important;
+  padding: $il-padding-small-vertical $il-padding-medium-horizontal;
+}
+
+.il-system-info.il-system-info-breaking {
+  background-color: $unibe-il-standard-page-system-info-color-variant-breaking;
+  padding: $il-padding-small-vertical $il-padding-medium-horizontal;
+}
+
+.il-system-info {
+  height: 44px;
+}
