@@ -20406,6 +20406,7 @@ div.il_editarea_selected:hover > div.ilEditLabel {
   background-color: #FF4A59 !important;
   color: #ffffff !important;
   border-radius: 5px;
+  min-height: 44px;
 }
 
 #wayf_submit_button:hover {
