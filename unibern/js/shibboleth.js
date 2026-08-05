@@ -165,7 +165,7 @@ var wayf_hide_idps = new Array("https://eduid.ch/idp/shibboleth");;
 // dangerous, there is always a risk when loading content (in this case
 // images) from third party hosts.
 // [Optional, default: false]
-var wayf_use_improved_drop_down_list = true;
+var wayf_use_improved_drop_down_list = false;
 
 // If true the improved drop-down-list will not display IdP logos that
 // have to be loaded from remote URLs. That way the web browser
@@ -267,6 +267,7 @@ var wayf_use_improved_drop_down_list = true;
 // else
 //   return false;
 // }
+
 
 // EntityIDs, Names and SSO URLs of Identity Providers from other federations
 // that should be added to the drop-down list.
