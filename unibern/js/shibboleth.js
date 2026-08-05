@@ -109,7 +109,7 @@ var wayf_auto_login = true;
 // For other Service Provider implementations have a look at the setting
 // wayf_check_login_state_function that allows you to customize this
 // [Optional, default: true]
- var wayf_hide_after_login = false;
+ var wayf_hide_after_login = true;
 
 // Whether or not to show the categories in the drop-down list
 // Possible values are: true or false
@@ -268,9 +268,6 @@ var wayf_use_improved_drop_down_list = false;
 //   return false;
 // }
 
-var wayf_check_login_state_function = function () {
-    return false;
-};
 
 // EntityIDs, Names and SSO URLs of Identity Providers from other federations
 // that should be added to the drop-down list.
