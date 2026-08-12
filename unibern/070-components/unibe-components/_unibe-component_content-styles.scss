@@ -1,0 +1,15 @@
+@use "050-layout/layout_breakout-from-content-box" as l-brkout;
+@use "050-layout/layout_breakpoints" as l-brk;
+@use "050-layout/basics" as l;
+
+////
+/// Meant to (over-)style Content Styles
+////
+
+@include l-brkout.breakout-section(".ilc_section_BreakoutPage");
+.ilc_section_BreakoutPage {
+  padding: 0 l.$il-padding-medium-horizontal;
+  @include l-brk.on-screen-size("small") {
+    padding: 0 l.$il-padding-small-horizontal;
+  }
+}
