@@ -297,9 +297,9 @@ var wayf_additional_idps = [
     data: "https://www.universityofgalway.ie/"
   },
   {
-    name: "i2basque",
-    entityID: "https://www.rediris.es/sir/i2basqueidp",
-    data: "http://www.i2basque.es/index.php"
+    name: "University of the Basque Country",
+    entityID: "https://www.rediris.es/sir/ehuidp",
+    data: "\thttps://www.ehu.eus/en/"
   },
   {
     name: "Université de Bordeaux",
