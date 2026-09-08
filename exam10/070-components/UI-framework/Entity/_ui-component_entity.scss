@@ -1,0 +1,125 @@
+@use "sass:math";
+@use "../../../010-settings/" as s;
+@use "../../../050-layout/basics/" as l;
+@use "../../../050-layout/layout_breakpoints" as l-brk;
+
+$entity-padding-vertical: l.$il-padding-xlarge-vertical;
+$entity-spacer-padding-vertical: l.$il-padding-xlarge-vertical * 2;
+$entity-padding-horizontal: l.$il-padding-xlarge-horizontal; // counterstyling in use for padding-less images on mobile
+$img-large-max-width: 360px;
+$max-rows: 9;
+
+@mixin entity-limited-space-design() {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        > * {
+            order: 2;
+        }
+    }
+    &__secondary-identifier {
+        order: 1;
+        &.--image {
+            img {
+                // break out of padding to reach from edge to edge
+                width: calc(100% + $entity-padding-horizontal * 2);
+                max-width: unset;
+                margin-left: -($entity-padding-horizontal);
+                margin-top: -($entity-padding-vertical);
+            }
+        }
+    }
+    &__reactionbar {
+        flex-grow: 1;
+    }
+}
+
+.c-entity {
+
+    &__container {
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-template-rows: repeat($max-rows, minmax(min-content, auto));
+        border: s.$il-main-border;
+        background-color: s.$il-main-bg;
+        padding: math.div($entity-padding-vertical, 2) math.div($entity-padding-horizontal, 2);
+        > * {
+            // half paddings edge to edge equal a full padding
+            padding: math.div($entity-padding-vertical, 2) math.div($entity-padding-horizontal, 2);
+        }
+        @include l-brk.on-screen-size(small) {
+            display: block;
+        }
+    }
+
+    &__featured-headerbar {
+        column-span: 2;
+        > .l-bar__space-keeper {
+            flex-wrap: nowrap;
+            .l-bar__group,
+            .l-bar__element {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    &__secondary-identifier {
+        grid-column: 1;
+        grid-row: 1 / #{$max-rows + 1}; // number high enough so all others can fit on the right
+        &.--string,
+        &.--shy,
+        &.--shylink {
+            width: 10rem;
+        }
+        &.--symbol {
+            img { width: auto; }
+        }
+        &.--image {
+            img { max-width: $img-large-max-width; };
+        }
+    }
+
+    &__primary-identifier {
+        font-weight: s.$il-font-weight-bold;
+        font-size: s.$il-font-size-xxlarge;
+    }
+
+    &__featured {
+        font-size: s.$il-font-size-large;
+    }
+
+    &__workflow-actions {
+        padding-top: $entity-spacer-padding-vertical;
+    }
+
+    &__blocking-conditions {
+        padding-bottom: $entity-spacer-padding-vertical;
+        font-size: s.$il-font-size-large;
+    }
+    &__main-details {
+        padding-top: $entity-spacer-padding-vertical;
+    }
+    &__details {
+        font-size: s.$il-font-size-small;
+    }
+
+    &__reactions {
+        padding-top: $entity-spacer-padding-vertical;
+    }
+
+    &__reactionbar {
+        align-self: stretch;
+        align-content: flex-end;
+        grid-column: 2;
+        grid-row: $max-rows; // always in last row
+    }
+
+    &__featured-reactions {
+        padding-top: $entity-spacer-padding-vertical;
+        text-align: end;
+        min-width: max-content;
+    }
+    @include l-brk.on-screen-size(small) {
+        @include entity-limited-space-design();
+    }
+}

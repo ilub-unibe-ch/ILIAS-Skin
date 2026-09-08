@@ -1,0 +1,13 @@
+@use "../../../010-settings" as s;
+@use "../../../030-tools/tool_multi-line-cap" as t-cap;
+@use "../../../030-tools/tool_focus-outline" as t-focus;
+@use "../../../050-layout/basics/" as l;
+@use "../../../050-layout/layout_breakpoints" as l-brk;
+
+.c-listing-property__propertylabel:not(:has(.glyphicon)):after {
+    content: ":";
+}
+
+.c-listing-property + .c-listing-property {
+    margin-top: l.$il-margin-large-vertical;
+}
