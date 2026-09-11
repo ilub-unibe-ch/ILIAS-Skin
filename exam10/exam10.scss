@@ -31,3 +31,40 @@
 // # Relative paths differences
 // SCSS paths are relativ to the SCSS file
 // CSS paths (linked fonts) are relative to the compiled template CSS
+
+// UniBE Components
+/*@use "delos" with (
+  $il-web-font-path: "../../../../assets/fonts/",
+  $il-icon-font-path: "../../../../assets/fonts/bootstrap/",
+  $il-background-images-path: "images/",
+  $il-standard-page-header-height: 60px,
+);*/
+
+@use "070-components/unibe-components/unibe-component_header";
+@use "070-components/unibe-components/unibe-component_stageheader";
+@use "070-components/unibe-components/unibe-component_breadcrumb";
+@use "070-components/unibe-components/unibe-component_mainbar";
+@use "070-components/unibe-components/unibe-component_slate";
+
+@use "070-components/unibe-components/unibe-component_dropdown";
+@use "070-components/unibe-components/unibe-component_button";
+@use "070-components/unibe-components/unibe-component_toggle";
+@use "070-components/unibe-components/unibe-component_toolbar";
+@use "070-components/unibe-components/unibe-component_viewcontrol";
+
+@use "070-components/unibe-components/unibe-component_panel";
+@use "070-components/unibe-components/unibe-component_card";
+@use "070-components/unibe-components/unibe-component_table";
+@use "070-components/unibe-components/unibe-component_containeritems";
+
+@use "070-components/unibe-components/unibe-component_calendar";
+@use "070-components/unibe-components/unibe-component_explorer2";
+@use "070-components/unibe-components/unibe-component_launcher";
+@use "070-components/unibe-components/unibe-component_progressbar";
+
+@use "070-components/unibe-components/unibe-component_pageeditor";
+@use "070-components/unibe-components/unibe-component_forms";
+@use "070-components/unibe-components/unibe-component_content";
+@use "070-components/unibe-components/unibe-component_media";
+
+@use "070-components/unibe-components/unibe-component_system_info";

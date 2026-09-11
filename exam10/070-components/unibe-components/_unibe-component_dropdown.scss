@@ -1,0 +1,42 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+// Dropdown Button
+
+.btn .caret {
+  border-top: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  &:before {
+    font-family: il-icons;
+    content: $unibe-il-btn-caret-content-glyph;
+  }
+}
+
+.dropdown button, .dropdown-toggle.btn-default {
+  background-color: $unibe-il-dropdown-button-bg-color;
+  color: $unibe-il-dropdown-button-color;
+  border: $unibe-il-dropdown-button-border;
+  &:hover {
+    background-color: $unibe-il-dropdown-button-bg-color-hover;
+  }
+}
+
+button.btn.btn-ctrl.dropdown-toggle {
+  background-color: $unibe-il-dropdown-btn-ctrl-bg-color;
+}
+
+// Opencast Dreier-Dropdown mit Button Info und 2 Dropdown
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  background-color: $unibe-il-btn-group-vertical-first-child-bg-color;
+}
+
+.btn-group-vertical .dropdown-toggle {
+  background-color: $unibe-il-btn-group-vertical-dropdown-border;
+}
+
+
+
+// Seiteneditor Textabsatz Abstand btn Label zu Caret-Symbol
+.ilTinyMenuSection .btn .caret {
+  padding-left: $unibe-il-btn-caret-padding-left;
+}

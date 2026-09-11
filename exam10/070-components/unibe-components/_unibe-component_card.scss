@@ -1,0 +1,65 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+@use "../UI-framework/Card/_ui-component_card.scss" as *;
+
+.il-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $unibe-il-card-box-shadow;
+  border: $unibe-il-card-border;
+
+  .il-card-repository-head {
+    order: 4;
+    > div.il-card-repository-dropdown > .dropdown > button {
+      border: $unibe-il-card-dropdown-border;
+      &:hover{
+        background-color: $unibe-il-dropdown-button-bg-color-hover;
+      }
+    }
+
+    .caret {
+      color: $unibe-il-card-dropdown-color;
+    }
+
+    .icon {
+      filter: $unibe-il-card-head-icon-filter;
+      height: $unibe-il-card-repository-icon-height;
+      margin: $unibe-il-card-repository-icon-margin;
+    }
+
+    > div {
+      padding: $unibe-il-card-repository-head-icon-padding; // definiert Position Objekticons
+    }
+  }
+
+  .il-card-image-container {
+    order: 1;
+    img.img-responsive, img.img-standard {
+      border-radius: $unibe-il-card-image-container-border-radius;
+    }
+  }
+
+  .card-no-highlight, .card-highlight {
+    order: 2;
+  }
+
+  .caption {
+    order: 3;
+  }
+
+  .card-title {
+    .btn-link, a {
+      color: $unibe-il-card-caption-color;
+    }
+    > .btn-link:hover, a:hover {
+      text-decoration: $unibe-il-card-title-text-decoration;
+      color: $unibe-il-card-caption-btn-link-a-hover;
+    }
+  }
+
+
+}
+
+.il-deck .il-card:hover {
+  box-shadow: $unibe-il-deck-card-box-shadow-hover;
+  transition: $unibe-il-transition-base;
+}

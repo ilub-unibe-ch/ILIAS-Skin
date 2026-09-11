@@ -1,14 +1,15 @@
 @use "./settings_color-palette" as s;
+@use "./settings_unibe_variables" as *;
 
-$il-mainbar-btn-color: s.$il-main-bg !default;
-$il-mainbar-btn-bg-color: s.$il-neutral-color !default;
+$il-mainbar-btn-color: $unibe-il-exam-lighter-color !default; //s.$il-main-bg !default;
+$il-mainbar-btn-bg-color: $unibe-il-exam-color !default; //s.$il-neutral-color !default;
 
-$il-mainbar-btn-color-hover: s.$il-neutral-color !default;
-$il-mainbar-btn-bg-color-hover: s.$il-main-bg !default;
+$il-mainbar-btn-color-hover: $unibe-il-exam-lighter-color !default; //s.$il-neutral-color !default;
+$il-mainbar-btn-bg-color-hover: $unibe-il-exam-darker-color !default; //s.$il-main-bg !default;
 
-$il-mainbar-btn-color-engaged: s.$il-neutral-color !default;
-$il-mainbar-btn-bg-color-engaged: s.$il-main-bg !default;
+$il-mainbar-btn-color-engaged: $unibe-il-exam-lighter-color !default; //s.$il-neutral-color !default;
+$il-mainbar-btn-bg-color-engaged: $unibe-il-exam-darker-color !default; //s.$il-main-bg !default;
 
 $il-mainbar-btn-icon-filter: brightness(0) invert(1) !default;
-$il-mainbar-btn-hover-icon-filter: invert(50%) !default;
-$il-mainbar-btn-engaged-icon-filter: invert(50%) !default;
+$il-mainbar-btn-hover-icon-filter: brightness(0) invert(1) !default;
+$il-mainbar-btn-engaged-icon-filter: brightness(0) invert(1) !default;

@@ -1,0 +1,16 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.jstree.jstree-default a {
+  color: $unibe-il-jstree-color !important;
+  &:hover {
+    color: $unibe-il-jstree-color-hover !important;
+  }
+}
+
+.jstree.jstree-default .jstree-closed > i {
+  background-position: $unibe-il-jstree-closed-bg-position;
+}
+
+.jstree.jstree-default .jstree-open > i {
+  background-position: $unibe-il-jstree-open-bg-position;
+}

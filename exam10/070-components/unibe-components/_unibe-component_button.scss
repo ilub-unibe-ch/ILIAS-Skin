@@ -1,0 +1,16 @@
+@use "../../010-settings/" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.btn-link {
+  color: $unibe-il-btn-link-color;
+}
+
+// Footer
+.il-footer-permanent-url > .btn-link {
+  color: $unibe-il-footer-btn-link-color;
+}
+
+// Markdown Editor
+.c-input-markdown__actions .glyph, .c-input-markdown__actions .glyph:hover {
+  color: $unibe-il-input-markdown-actions-glyph-color;
+}

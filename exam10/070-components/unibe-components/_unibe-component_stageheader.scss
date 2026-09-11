@@ -1,0 +1,150 @@
+@use "../../050-layout/basics/layout_spacing-variables" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+@use "../../010-settings/settings_color-palette" as *;
+@use "../../010-settings/" as *;
+
+//## Stage Header
+// Content Page Header (Icon, Title, Description, Actions)
+
+div.il_HeaderInner {
+  padding-bottom: $il-padding-xxxlarge-vertical;
+  min-height: $unibe-il-headerinner-min-height;
+
+  & div.ilHeaderDesc {
+    color: $unibe-il-header-desc-color;
+    padding: $unibe-il-header-desc-padding;
+    font-size: $unibe-il-header-desc-font-size;
+  }
+}
+
+h1.ilHeader {
+  padding: $unibe-il-h1-header-padding;
+}
+
+h1.il-page-content-header {
+  color: $unibe-il-page-content-header-color;
+}
+
+
+#headerimage {
+  border-radius: $unibe-il-header-image-border-radius;
+  padding: $unibe-il-header-image-padding;
+  box-shadow: $unibe-il-header-image-box-shadow;
+  width: $unibe-il-header-image-width;
+  height: $unibe-il-header-image-height;
+  margin-right: 24px;
+}
+
+.il-pagetitle {
+  padding-left: $unibe-il-pagetitle-padding-left;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .media-body {
+    padding-left: $unibe-il-media-body-small-padding-left;
+  }
+
+  .il_HeaderInner.media {
+    min-height: $unibe-il-headerinner-small-min-height;
+  }
+
+  #headerimage {
+    width: $unibe-il-header-image-small-width;
+    height: $unibe-il-header-image-small-height;
+    margin-bottom: $unibe-il-header-image-small-margin-bottom;
+  }
+}
+
+div.ilHeaderAlert {
+  color: $unibe-il-header-alert-color;
+  font-size: $unibe-il-header-alert-font-size;
+  background-color: $unibe-il-header-alert-bg-color;
+  padding: $unibe-il-header-alert-padding;
+  margin-bottom: $unibe-il-header-alert-margin-bottom;
+  width: $unibe-il-header-alert-width;
+  text-align: $unibe-il-header-alert-text-align;
+  min-width: $unibe-il-header-alert-min-width;
+  border-radius: $unibe-il-header-alert-border-radius;
+}
+
+// Beim Ausblenden des Titels wird Leerzeichen hinzugefügt, weil sonst leerer weisser Balken bei Aktionen vorhanden
+.media.il_HeaderInner:before {
+  content: $unibe-il-media-HeaderInner-before-content;
+}
+
+// Header Aktion wird ohne Label angezeigt
+.ilHeadAction .btn span:not(.caret) {
+  display: $unibe-il-Head-Action-display;
+}
+
+.ilHeadAction a {
+  color: $unibe-il-Head-Action-glyph-color;
+}
+
+// Zwischenraum Dropzone und Tabs
+div.il_HeaderInner.media {
+  background-color: $unibe-il-page-content-header-bg-color;
+  padding: $unibe-il-page-content-header-padding;
+  border-radius: $unibe-il-page-content-header-border-radius;
+  margin: $unibe-il-page-content-header-margin;
+}
+
+// Dropzone
+
+.ui-dropzone {
+  margin-bottom: 0;
+}
+
+//## Tabs Nav
+
+#ilTab {
+  margin: $unibe-il-tab-margin;
+  padding: $unibe-il-tab-padding;
+  background-color: $unibe-il-page-content-header-bg-color;
+  border-bottom: $unibe-il-tab-border-bottom;
+  border-radius: $unibe-il-tab-border-radius;
+  box-shadow: $unibe-il-tab-box-shadow;
+}
+
+#ilTab > li.active > a, #ilTab > li.active > a:hover, #ilTab > li.active > a:focus {
+  background-color: $unibe-il-tab-active-background-color;
+  border-bottom: $unibe-il-tab-active-border-bottom;
+  color: $unibe-il-tab-active-color;
+  border-radius: $unibe-il-tab-active-border-radius;
+}
+
+#ilTab > li > a {
+  color: $unibe-il-tab-color;
+  padding-bottom: $unibe-il-nav-tab-padding-bottom;
+}
+
+#ilTab > li > a:hover, .nav > li > a:focus {
+  background-color: $unibe-il-tab-active-background-color;
+  border-bottom: $unibe-il-tab-active-border-bottom;
+  color: $unibe-il-tab-hover-color;
+  border-radius: $unibe-il-tab-border-radius-hover;
+}
+
+
+// Subtabs
+
+#ilSubTab {
+  padding: $unibe-il-subtab-padding;
+}
+
+#ilSubTab > li > a {
+  font-size: $unibe-il-subtab-font-size;
+  color: $unibe-il-subtab-color;
+}
+
+#ilSubTab > li > a:hover {
+  border-bottom: $unibe-il-subtab-border-bottom;
+  color: $unibe-il-subtab-hover-color;
+  text-decoration: $unibe-il-subtab-hover-text-decoration;
+}
+
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+  text-decoration: $unibe-subtab-active-text-decoration;
+  color: $unibe-il-subtab-active-color;
+}

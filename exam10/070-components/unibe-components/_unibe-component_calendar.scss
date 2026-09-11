@@ -1,0 +1,38 @@
+@use "../../010-settings/" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+
+// Mini Calendar
+
+table.calmini {
+  font-size: $unibe-il-calmini-font-size;
+  background-color: $unibe-il-calmini-table-background-color;
+
+  a {
+    color: $unibe-il-calmini-day-color;
+    text-decoration: none;
+  }
+}
+
+table.calmini td.calminitoday {
+  background-color: $unibe-il-calmini-bg-color;
+  border-radius: $unibe-il-calmini-border-radius;
+}
+
+td.calministd:hover {
+  background-color: $unibe-il-calmini-day-hover-bg-color;
+  border-radius: $unibe-il-calmini-day-hover-border-radius;
+}
+
+// Calendar Selection
+.ilCalSelTitle label a {
+  color: $unibe-calendar-link-color;
+  &:hover {
+    color: $unibe-calendar-link-hover-color;
+    text-decoration: $unibe-calendar-link-hover-text-decoration;
+  }
+}
+
+// Calendar Liste
+.ui-dropzone .btn {
+  margin-left: $unibe-il-dropzone-btn-margin-left;
+}

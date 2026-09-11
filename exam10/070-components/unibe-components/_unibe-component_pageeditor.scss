@@ -1,0 +1,46 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+button.copg-add.dropdown-toggle.btn .glyphicon-plus-sign,
+button.copg-add.dropdown-toggle.btn:focus .glyphicon-plus-sign,
+button.copg-add.dropdown-toggle.btn:hover .glyphicon-plus-sign,
+#copg-editor-help .glyphicon-plus-sign,
+button.copg-add.dropdown-toggle.btn .il-copg-add-text,
+button.copg-add.dropdown-toggle.btn:focus .il-copg-add-text,
+button.copg-add.dropdown-toggle.btn:hover .il-copg-add-text,
+#copg-editor-help .il-copg-add-text {
+  color: $unibe-il-copg-button-color;
+}
+
+button.copg-add.dropdown-toggle.btn:hover {
+  background-color: $unibe-il-copg-button-bg-color-hover;
+}
+
+#il_EditPage div.il_editarea_selected, #il_EditPage div.copg-current-edit, iframe#tinytarget_ifr {
+  border-style: $unibe-il-copg-editarea-selected-border-style;
+  border-width: $unibe-il-copg-editarea-selected-border-width;
+  border-color: $unibe-il-copg-editarea-selected-border-color;
+}
+
+div.il_editarea_selected:hover > div.ilEditLabel {
+  color: $unibe-il-copg-editarea-selected-label-color;
+}
+
+//## Glyphs
+
+.ilTinyMenuSection > .btn-default > .glyph {
+  color: $unibe-il-copg-btn-default-glyph-color;
+}
+
+.ilTinyMenuSection > .btn-default:hover {
+  background-color: $unibe-il-copg-btn-default-hover-bg-color;
+}
+
+// Lists
+.ilc_list_u_BulletedList {
+  padding: $unibe-il-ilc-bulletedlist-padding;
+}
+
+// Ausrichten von Seiteneditor-Inhalten auf Content-Tab
+#ilContentContainer {
+  margin: 0 14px 0 14px;
+}

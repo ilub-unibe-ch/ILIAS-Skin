@@ -1,0 +1,66 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.c-table-data__table-wrapper {
+  box-shadow: $unibe-il-table-box-shadow;
+  background-color: $unibe-il-table-bg-color;
+}
+
+.c-table-data__cell {
+  background-color: $unibe-il-table-cell-bg-color;
+}
+
+// Kopfzeile
+.c-table-data__header {
+  border-bottom: $unibe-il-table-head-border-bottom;
+
+  .btn-link {
+    color: $unibe-il-table-header-color;
+    font-weight: $unibe-il-table-header-font-weight;
+    &:hover {
+      color: $unibe-il-table-header-hover-color;
+      text-decoration: $unibe-il-table-header-hover-text-decoration;
+    }
+  }
+
+  .glyphicon-plus-sign:before {
+    content: $unibe-il-table-header-multicolumn-glyph;
+  }
+}
+
+.c-table-data__multiaction-triggerer {
+  .btn-default {
+    border: $unibe-il-table-multiaction-btn-default-border;
+  }
+}
+
+//## Legacy Table
+
+// Multiactions Pfeile
+.ilTableCommandRowTop .ilFloatLeft img, .ilTableCommandRow .ilFloatLeft img {
+  width: $unibe-il-table-command-img-width;
+}
+
+div.ilTableOuter, div.ilTableCommandRow, div.ilTableCommandRowTop {
+  background-color: transparent;
+}
+
+.table > thead > tr > th, .table > thead > tr > td {
+  border-bottom: $unibe-il-table-head-border-bottom;
+}
+
+.tblheader {
+  color: #000000;
+  font-weight: 600;
+
+}
+
+//## Opencast Status Hinweis in Tabelle
+
+.xoct_event_state {
+  padding: $unibe-il-xoct-event-state-padding;
+  margin: $unibe-il-xoct-event-state-margin;
+}
+
+.label-info {
+  background-color: $unibe-il-xoct-label-info-bg-color;
+}

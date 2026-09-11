@@ -1,0 +1,7 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.progress-bar {
+  color: $unibe-progress-color;
+  background-color: $il-unibe-progress-bg-color;
+  border-right: $unibe-progress-border-right;
+}

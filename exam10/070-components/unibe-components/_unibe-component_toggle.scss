@@ -1,0 +1,9 @@
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.il-filter-bar .il-filter-bar-toggle {
+  padding-top: $unibe-il-filter-bar-toggle-padding-top;
+}
+
+.il-toggle-button.on .il-toggle-label-on {
+  color: $unibe-il-toggle-label-on-color;
+}

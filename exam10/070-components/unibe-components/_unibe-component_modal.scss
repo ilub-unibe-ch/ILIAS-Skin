@@ -1,0 +1,6 @@
+@use "../../010-settings/" as *;
+@use "../../010-settings/settings_unibe_variables" as *;
+
+.modal-title {
+  padding: $unibe-il-modal-title-padding;
+}
