@@ -1,5 +1,4 @@
-
-//Fix for IE versions to correct location property, see: https://stackoverflow.com/questions/22564167/window-location-origin-gives-wrong-value-when-using-ie
+// Fix for IE versions to correct location property, see: https://stackoverflow.com/questions/22564167/window-location-origin-gives-wrong-value-when-using-ie
 window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
 
 // To use this JavaScript, please access:
@@ -120,21 +119,21 @@ var wayf_auto_login = true;
 // list if this feature is used.
 // Will not be shown if wayf_show_categories is false
 // [Optional, default: none]
- var wayf_most_used_idps =  new Array("https://aai-idp.unibe.ch/idp/shibboleth", "https://aai-login.phbern.ch/idp/shibboleth", "https://aai-logon.vho-switchaai.ch/idp/shibboleth","https://aai.insel.ch/idp/shibboleth");
+ var wayf_most_used_idps =  new Array("https://aai-idp.unibe.ch/idp/shibboleth", "https://aai-login.phbern.ch/idp/shibboleth");
 
 // Categories of Identity Provider that should not be shown
 // Possible values are: "university","uas","hospital","library","tertiaryb","uppersecondary","vho","others", "all"
 // Example of how to hide categories
 // var wayf_hide_categories =  new Array("other", "library");
 // [Optional, default: none]
-var wayf_hide_categories =  new Array("uppersecondary");
+var wayf_hide_categories =  new Array("all");
 
 // EntityIDs of Identity Provider whose category is hidden but that should be shown anyway
 // Example of how to unhide certain Identity Providers
 // var wayf_unhide_idps = new Array("https://aai-login.uzh.ch/idp/shibboleth");
 // [Optional, default: none]
 // var wayf_unhide_idps = new Array();
-var wayf_unhide_idps = new Array();
+var wayf_unhide_idps = new Array('https://aai-idp.unibe.ch/idp/shibboleth','https://aai-login.phbern.ch/idp/shibboleth');
 
 // EntityIDs of Identity Provider that should not be shown at all
 // Example of how to hide certain Identity Provider
