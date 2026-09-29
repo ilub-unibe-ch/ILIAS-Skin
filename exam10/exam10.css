@@ -3512,7 +3512,7 @@ button > .glyphicon {
 }
 
 .il-btn-with-loading-animation {
-  background-image: url("../images/media/loader.svg");
+  background-image: url("images/media/loader.svg");
   background-color: white;
   border-color: #e0d9e0;
   background-repeat: no-repeat;
@@ -7963,7 +7963,7 @@ button > .glyphicon {
 }
 
 .il-btn-with-loading-animation {
-  background-image: url("../images/media/loader.svg");
+  background-image: url("images/media/loader.svg");
   background-color: white;
   border-color: #e0d9e0;
   background-repeat: no-repeat;
@@ -9106,7 +9106,7 @@ div.alert ul > li:before {
   padding: 0;
 }
 .il-popover i.icon-refresh {
-  background: url("../images/media/loading.gif") no-repeat;
+  background: url("images/media/loading.gif") no-repeat;
   height: 30px;
 }
 .il-popover .il-popover-title-container {
@@ -11912,7 +11912,7 @@ div.ilHeaderBanner img.ilHeaderImg {
 }
 
 div.ilBox {
-  background: url("../images/contentstyle/FramedBack.png") repeat-x;
+  background: url("images/contentstyle/FramedBack.png") repeat-x;
   border: 1px solid #e0d9e0;
   padding: 10px;
   margin-bottom: 20px;
@@ -15432,7 +15432,7 @@ li.ilWikiBlockItem {
   cursor: pointer;
   color: #5D6089;
   font-size: 1rem;
-  background-image: url("../images/nav/tree_col.svg");
+  background-image: url("images/nav/tree_col.svg");
   background-repeat: no-repeat;
   background-color: #f6f4f6;
   background-position: 15px 9px;
@@ -15462,7 +15462,7 @@ li.ilWikiBlockItem {
 }
 
 .il_HAccordionHeadActive, .il_VAccordionHeadActive {
-  background-image: url("../images/nav/tree_exp.svg");
+  background-image: url("images/nav/tree_exp.svg");
   background-color: #e1ebe5;
 }
 
@@ -15649,7 +15649,7 @@ div.ilc_va_icont_VAccordICont {
 }
 
 .ilAwarenessItemRow .media-body.ilAwarenessOnline {
-  background-image: url("../images/scorm/completed.svg");
+  background-image: url("images/scorm/completed.svg");
 }
 
 .ilAwarenessLoader {
@@ -16459,11 +16459,11 @@ div.il_ContainerListItem {
 }
 
 .ilContainerBlockHeaderExpanded {
-  background-image: url("../images/nav/tree_exp.svg");
+  background-image: url("images/nav/tree_exp.svg");
 }
 
 .ilContainerBlockHeaderCollapsed {
-  background-image: url("../images/nav/tree_col.svg");
+  background-image: url("images/nav/tree_col.svg");
 }
 
 .ilContainerBlock {
@@ -16546,7 +16546,7 @@ div#ilContRepIntro img {
 
 /* --- Services/COPage ---*/
 a.ilEditSubmit {
-  background: url("../images/ButtonsBack.png") repeat-x bottom white;
+  background: url("images/ButtonsBack.png") repeat-x bottom white;
   padding: 2px;
   margin: 0;
   border: 1px solid #bababa;
@@ -16565,7 +16565,7 @@ input.ilEditSubmit {
   font-size: 0.75rem;
   line-height: 14px;
   cursor: pointer;
-  background: url("../images/ButtonsBack.png") repeat-x bottom white;
+  background: url("images/ButtonsBack.png") repeat-x bottom white;
   border: 1px solid #bababa;
   border-bottom-color: #737373;
   border-right-color: #737373;
@@ -17154,7 +17154,7 @@ div.ilc_question_MultipleChoice .ilc_qanswer_Answer > div:first-child {
 div.ilCOPGMediaPrint {
   background-color: #f6f4f6 !important;
   position: relative !important;
-  background-image: url("../images/media/play.svg") !important;
+  background-image: url("images/media/play.svg") !important;
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   background-size: auto 90% !important;
@@ -18420,7 +18420,7 @@ a.mailunread, a.mailunread:visited {
   color: #f0f0f0;
   /* margin-top: -240px; */
   top: 0;
-  background: url("../images/media/black60.png");
+  background: url("images/media/black60.png");
 }
 
 .ilPlayerPreviewOverlay img {
@@ -18438,7 +18438,7 @@ a.mailunread, a.mailunread:visited {
 }
 
 .mejs-overlay-button {
-  background-image: url("../images/media/bigplay.svg");
+  background-image: url("images/media/bigplay.svg");
 }
 
 .mejs__overlay-button:focus, .mejs__overlay-button:focus-visible,
@@ -18508,7 +18508,7 @@ a.mejs__volume-slider:focus-visible {
 }
 
 .ilPlayerPreviewPlayButton {
-  background: url("../images/media/bigplay.svg") no-repeat scroll 0 0 transparent;
+  background: url("images/media/bigplay.svg") no-repeat scroll 0 0 transparent;
   height: 100px;
   left: 50%;
   margin: -50px 0 0 -50px;
@@ -19580,21 +19580,21 @@ div.ilc_PredTextPlaceHolderThumb {
   padding: 5px 2px 5px 0;
   border: 1px solid #2c2c2c;
   font-size: 0.625rem;
-  background: url("../images/placeholder/question_placeholder_thumb.png") no-repeat center;
+  background: url("images/placeholder/question_placeholder_thumb.png") no-repeat center;
   background-color: white;
   font-weight: 600;
 }
 
 div.ilc_MediaPlaceHolderThumb {
-  background-image: url("../images/placeholder/media_placeholder_thumb.png");
+  background-image: url("images/placeholder/media_placeholder_thumb.png");
 }
 
 div.ilc_TextPlaceHolderThumb {
-  background-image: url("../images/placeholder/text_placeholder_thumb.png");
+  background-image: url("images/placeholder/text_placeholder_thumb.png");
 }
 
 div.ilc_PredTextPlaceHolderThumb {
-  background-image: url("../images/placeholder/pred_text_placeholder_thumb.png");
+  background-image: url("images/placeholder/pred_text_placeholder_thumb.png");
 }
 
 div.ilc_HeadlineThumb {
@@ -20297,7 +20297,7 @@ div.il_ExplorerItemDescription {
 }
 
 .jstree li, .jstree.jstree-default li i {
-  background: url("../images/nav/jstree.svg") no-repeat;
+  background: url("images/nav/jstree.svg") no-repeat;
   vertical-align: top;
 }
 
