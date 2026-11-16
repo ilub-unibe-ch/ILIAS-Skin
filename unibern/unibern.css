@@ -20661,6 +20661,10 @@ li.ilWikiBlockItem a {
   width: 100%;
 }
 
+input.ilAssMultipleChoiceOption.ilAssMultipleChoiceResult {
+  margin-top: 0;
+}
+
 div.ilTableOuter,
 .c-table-data {
   border-top: 1px solid #757575;
