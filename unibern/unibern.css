@@ -20631,6 +20631,10 @@ input[type=submit] {
   width: 80px;
 }
 
+.ilTabsContentOuter.xlvo-fullscreen {
+  padding: 15px;
+}
+
 .c-maincontrols__footer-grid {
   padding: 0px;
 }
